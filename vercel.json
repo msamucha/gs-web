@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/privacy-policy-golfsocial", "destination": "/privacy-policy", "permanent": true },
+    { "source": "/privatlivspolitik", "destination": "/privacy-policy", "permanent": true }
+  ]
+}

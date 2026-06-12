@@ -1,0 +1,299 @@
+/* ════════════════════════════════════════════════════════════
+   Golfsocial — v12 ARTICLE SYSTEM  (blog posts + stories)
+
+   LOCKED DESIGN. Content authors never edit this file.
+   It styles bare semantic tags (<p>, <h2>, <h3>, <ul>, <blockquote>,
+   <figure>, <hr>, <a>) inside .article__body, so writing an article is
+   just writing clean content — the design is applied automatically and
+   cannot drift no matter what content goes in.
+
+   Loaded AFTER styles.css, so it reuses every v12 token, the masthead,
+   the footer and the motion system.  rem = px ÷ 10 at the 1507px width.
+   ════════════════════════════════════════════════════════════ */
+
+/* ──────────────────────────── shell ──────────────────────────── */
+.article {
+  padding: 0 var(--gut-wide);
+  margin-top: 3.5rem;
+}
+
+/* the reading column — flush left, on-brand with the v12 hero */
+.article__body,
+.article__foot { max-width: 76rem; }
+
+/* header — big title + meta on the left, a floating rounded photo on the
+   right (same cover-image treatment as the homepage blog cards) */
+.article__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+}
+.article__head-text { flex: 1 1 auto; max-width: 76rem; }
+.article__media {
+  flex: 0 0 auto;
+  position: relative;
+  width: 55rem;
+  aspect-ratio: 380 / 440;
+  border-radius: 3rem;
+  overflow: hidden;
+  transform: translateY(3.4rem);   /* sits a touch lower than the title */
+}
+.article__media-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ──────────────────────────── header ──────────────────────────── */
+.article__eyebrow {
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: -0.02rem;
+  color: var(--accent);
+  margin-bottom: 2.6rem;
+}
+/* article title — reuses the homepage "Blogs, notes & news" heading style */
+.article__title {
+  font-weight: 500;
+  font-size: 8rem;
+  line-height: 7.7rem;
+  letter-spacing: -0.2rem;
+  color: var(--black);
+  max-width: 100rem;
+}
+.article__meta {
+  margin-top: 2.8rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #8a8a8a;
+}
+
+/* cover image — wider than the text column, capped */
+.article__cover {
+  margin-top: 5.4rem;
+  max-width: 116rem;
+  border-radius: 2.4rem;
+  overflow: hidden;
+}
+.article__cover img { width: 100%; height: auto; display: block; }
+
+/* ─────────── body / prose : bare semantic tags are styled here ─────────── */
+.article__body { margin-top: 3.4rem; }
+.article__body > *:first-child { margin-top: 0; }
+
+.article__body p {
+  font-weight: 400;
+  font-size: 2.1rem;
+  line-height: 3.4rem;
+  letter-spacing: -0.01rem;
+  color: #1a1a1a;
+  margin-top: 2.8rem;
+}
+/* optional intro paragraph — add class="lead" to the first paragraph */
+.article__body p.lead {
+  font-size: 2.6rem;
+  line-height: 3.9rem;
+  letter-spacing: -0.03rem;
+  color: var(--black);
+}
+
+.article__body h2 {
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.06rem;
+  color: var(--black);
+  margin-top: 6.4rem;
+}
+.article__body h3 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  letter-spacing: -0.03rem;
+  color: var(--black);
+  margin-top: 4.8rem;
+}
+
+.article__body ul,
+.article__body ol {
+  margin-top: 2.8rem;
+  padding-left: 2.6rem;
+}
+.article__body li {
+  font-weight: 400;
+  font-size: 2.1rem;
+  line-height: 3.2rem;
+  color: #1a1a1a;
+  margin-top: 1.2rem;
+}
+.article__body li::marker { color: var(--accent); }
+
+.article__body blockquote {
+  margin-top: 5rem;
+  padding-left: 3rem;
+  border-left: 0.3rem solid var(--accent);
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.04rem;
+  color: var(--black);
+}
+
+.article__body figure { margin-top: 5rem; }
+.article__body figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  display: block;
+}
+.article__body figcaption {
+  margin-top: 1.4rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #8a8a8a;
+}
+
+.article__body hr {
+  margin-top: 5rem;
+  border: 0;
+  height: 0.1rem;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.article__body a {
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 0.35rem;
+  text-decoration-thickness: 0.08rem;
+  transition: text-underline-offset 0.2s var(--ease);
+}
+.article__body a:hover { text-underline-offset: 0.6rem; }
+.article__body strong { font-weight: 600; }
+.article__body em { font-style: italic; }
+
+/* optional soft-green panel for "key points" — add class="callout" to a <div> */
+.article__body .callout {
+  margin-top: 5rem;
+  background: #f1f5f3;
+  border-radius: 2rem;
+  padding: 4rem 4.4rem;
+}
+.article__body .callout > *:first-child { margin-top: 0; }
+.article__body .callout h3 { margin-top: 0; }
+
+/* ──────────────────────────── article foot ──────────────────────────── */
+.article__foot { margin-top: 7rem; }
+.article__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--black);
+  transition: gap 0.25s var(--ease-out), color 0.18s var(--ease);
+}
+.article__back:hover { gap: 1.6rem; color: var(--accent); }
+.article__back svg { width: 1.8rem; height: 1.8rem; }
+
+.article + .foot { margin-top: 10rem; }
+
+/* ════════════════════════════════════════════════════════════
+   STORY template — green statement hero (the only structural
+   difference from the blog-post template; the body below it uses
+   the exact same prose system above)
+   ════════════════════════════════════════════════════════════ */
+.story-hero {
+  margin: 4rem var(--gut) 0;
+  background: var(--green-card);
+  border-radius: 3.4rem;
+  padding: 7.6rem 7rem 7rem;
+  color: var(--white);
+}
+.story-hero__eyebrow {
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: -0.02rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 3rem;
+}
+.story-hero__title {
+  font-weight: 500;
+  font-size: 6.2rem;
+  line-height: 6.6rem;
+  letter-spacing: -0.18rem;
+  max-width: 104rem;
+}
+.story-hero__byline {
+  margin-top: 3.4rem;
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* ════════════════════════════════════════════════════════════
+   MOTION — reveal on scroll (only when JS is on; reduced-motion safe)
+   ════════════════════════════════════════════════════════════ */
+/* the article header + body text are always visible (no fade-in);
+   only the secondary sections below gently reveal on scroll */
+.js .article__cover,
+.js .story-hero,
+.js .article__foot,
+.js .news,
+.js .foot__cta,
+.js .foot__bar {
+  opacity: 0;
+  transform: translateY(2.2rem);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+}
+.js .is-in { opacity: 1 !important; transform: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .article__head,
+  .js .article__cover,
+  .js .story-hero,
+  .js .article__body > *,
+  .js .article__foot,
+  .js .foot__cta,
+  .js .foot__bar { opacity: 1; transform: none; transition: none; }
+}
+
+/* ════════════════════════════════════════════════════════════
+   RESPONSIVE — mirrors the stepped scaling in styles.css
+   (root font-size already jumps at 1024 / 600; these just retune
+   the gutters and the reading measure)
+   ════════════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .article { padding: 0 var(--gut); margin-top: 6rem; }
+  .article__body, .article__foot { max-width: 100%; }
+  .article__title { font-size: 6.4rem; line-height: 6.6rem; }
+  .article__head { flex-direction: column; align-items: flex-start; gap: 4.4rem; }
+  .article__head-text { max-width: 100%; }
+  .article__media { width: 100%; max-width: 64rem; aspect-ratio: 16 / 10; margin-top: 0; transform: none; }
+  .article__cover { max-width: 100%; }
+  .story-hero { margin: 3rem var(--gut) 0; padding: 6rem 5rem; }
+  .story-hero__title { font-size: 5.4rem; line-height: 5.8rem; }
+}
+
+@media (max-width: 600px) {
+  .article { padding: 0 var(--gut); margin-top: 4rem; }
+  .article__eyebrow { font-size: 1.6rem; margin-bottom: 1.8rem; }
+  .article__title { font-size: 4.2rem; line-height: 4.4rem; letter-spacing: -0.1rem; }
+  .article__meta { font-size: 1.6rem; margin-top: 2rem; }
+  .article__cover { border-radius: 1.6rem; margin-top: 3.4rem; }
+  .article__media { border-radius: 2rem; aspect-ratio: 3 / 2; }
+  .article__body { margin-top: 3.8rem; }
+  .article__body p { font-size: 1.9rem; line-height: 3rem; }
+  .article__body p.lead { font-size: 2.2rem; line-height: 3.2rem; }
+  .article__body h2 { font-size: 2.8rem; line-height: 3.2rem; margin-top: 4.6rem; }
+  .article__body h3 { font-size: 2.2rem; line-height: 2.7rem; margin-top: 3.6rem; }
+  .article__body li { font-size: 1.9rem; line-height: 2.9rem; }
+  .article__body blockquote { font-size: 2.3rem; line-height: 3.1rem; padding-left: 2rem; }
+  .article__body .callout { padding: 2.8rem 2.4rem; }
+  .story-hero { margin: 2rem var(--gut) 0; padding: 4.4rem 3rem; border-radius: 2.2rem; }
+  .story-hero__eyebrow { font-size: 1.5rem; margin-bottom: 2rem; }
+  .story-hero__title { font-size: 3.6rem; line-height: 4rem; letter-spacing: -0.08rem; }
+  .story-hero__byline { font-size: 1.6rem; margin-top: 2.4rem; }
+}

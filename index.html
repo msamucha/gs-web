@@ -1,510 +1,257 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Golf Social — Del runder, følg venner, spil mere golf</title>
-  <meta name="description" content="Golf Social er det sociale hjem for danske golfspillere. Track dine runder, følg dine venner, og del de bedste øjeblikke fra banen — alt synkroniseret med DGU." />
-  <meta property="og:title" content="Golf Social — Del runder, følg venner, spil mere golf" />
-  <meta property="og:description" content="Det sociale hjem for danske golfspillere. Synkroniseret med Dansk Golf Union." />
-  <meta property="og:image" content="assets/background_login.png" />
-  <link rel="icon" type="image/png" href="assets/icon.png" />
-  <link rel="apple-touch-icon" href="assets/icon.png" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+  <title>Golfsocial</title>
+  <meta name="description" content="Golf is more than a round. It's the standings, the trash talk, the rematch. We built that app." />
+  <link rel="canonical" href="https://golfsocial.club/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=12-42" />
 </head>
 <body>
 
-  <!-- ============================================================
-       Header
-       ============================================================ -->
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a href="index.html" class="brand">
-        <span class="brand__mark">G</span>
-        <span>Golf Social</span>
+  <!-- ════════════════════ HEADER ════════════════════ -->
+  <header class="masthead">
+    <a class="masthead__brand" href="#" aria-label="Golfsocial">
+      <img class="masthead__logo" src="images/logo.svg" alt="Golfsocial" />
+    </a>
+    <nav class="masthead__nav" aria-label="Top">
+      <a class="masthead__social" href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="17" cy="7" r="1.05" fill="currentColor"/>
+        </svg>
       </a>
-      <nav class="nav">
-        <a href="#features">Funktioner</a>
-        <a href="#how">Sådan virker det</a>
-        <a href="about.html">Om os</a>
-        <a href="support.html">Support</a>
-      </nav>
-      <div class="nav-actions">
-        <a href="support.html" class="btn btn-ghost">Log ind</a>
-        <a href="#download" class="btn btn-primary">Hent app</a>
-        <button class="nav-toggle" data-nav-toggle aria-label="Menu"><span></span></button>
+      <a class="masthead__social" href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M7.4 10.6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="7.4" cy="7.9" r="0.6" fill="currentColor"/>
+          <path d="M11.1 16.6v-6m0 2.5c0-1.6 1-2.5 2.3-2.5 1.2 0 2.1.9 2.1 2.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social masthead__social--x" href="https://x.com/golfsocialclub" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+      <div class="lang" role="group" aria-label="Language">
+        <span class="lang__opt is-active">EN</span><span class="lang__opt">DA</span>
       </div>
-    </div>
+    </nav>
   </header>
 
-  <!-- Mobile drawer -->
-  <div class="mobile-nav" data-mobile-nav>
-    <a href="#features">Funktioner</a>
-    <a href="#how">Sådan virker det</a>
-    <a href="about.html">Om os</a>
-    <a href="support.html">Support</a>
-    <a href="#download">Hent app</a>
-  </div>
-
-  <!-- ============================================================
-       Hero
-       ============================================================ -->
+  <!-- ════════════════════ HERO ════════════════════ -->
   <section class="hero">
-    <div class="hero__bg">
-      <img src="assets/background_login.png" alt="" />
+    <h1 class="hero__title" data-da="Golf er mere end en runde. Det er stillingen, drillerierne, omkampen. Den app har vi bygget.">Golf is more than a round. It's the standings, the trash talk, the rematch. We built that app.</h1>
+    <p class="hero__sub" data-da="Ét sted til dine scores, din gruppe, dit handicap og alt det der sker efter sidste hul">One place for your scores, your group, your handicap and everything that happens after the last hole</p>
+    <div class="badges">
+      <a href="https://apps.apple.com/dk/app/id6743446900" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+        <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#16221F"/><g fill="#FCFBF8"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
+      </a>
+      <a href="#" class="badge" aria-label="Get it on Google Play">
+        <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#16221F"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FCFBF8"/></g><g fill="#FCFBF8"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
+      </a>
     </div>
+  </section>
 
-    <div class="container hero__content">
-      <div class="hero__copy fade-up">
-        <span class="eyebrow" style="color:#9bd6c7">Til danske golfspillere</span>
-        <h1 style="margin-top:14px;">
-          Time to tee up<br />
-          and
-          <span class="word-mask" data-rotating-word>
-            <span>connect</span>
+  <!-- ════════════════════ STATS CARD ════════════════════ -->
+  <section class="statband">
+    <div class="statcard">
+      <img class="statcard__bg" src="images/hero-green.webp" alt="" />
+      <div class="statcard__inner">
+        <div class="statcard__top">
+          <div class="stats">
+            <div class="stat">
+              <span class="stat__num">79</span>
+              <span class="stat__label" data-da="Slag">Strokes</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">38</span>
+              <span class="stat__label" data-da="Point">Points</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">9</span>
+              <span class="stat__label">HCP</span>
+            </div>
+          </div>
+          <div class="reactions">
+            <span class="pill">
+              <span class="pill__num">19</span>
+              <svg class="pill__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 10.5v8.5M7 11l3.2-7.2c.2-.5.7-.8 1.2-.8h.1c.9 0 1.6.7 1.6 1.6V9h4.6c1 0 1.8.9 1.6 1.9l-1.3 6.4c-.2.9-1 1.6-2 1.6H7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="pill">
+              <span class="pill__num">9</span>
+              <svg class="pill__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20 12c0 3.9-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5L4 20l1.3-3.4C4.5 15.4 4 13.8 4 12c0-3.9 3.6-7 8-7s8 3.1 8 7Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="statcard__bottom">
+          <hr class="statcard__rule" />
+          <div class="statcard__copy">
+            <h2 class="statcard__h" data-da="Golfsocial er mere end bare tallet">Golfsocial is more than just the number</h2>
+            <p class="statcard__p" data-da="Et handicap er bare én linje på et scorekort. Resten af din golf, dine runder, dine grupper, din sæson, havde aldrig et hjem. Det har det nu.">A handicap is just one line on a scorecard. The rest of your golf, your rounds, your groups, your season, never had a home. But now it does.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ DGU PARTNERSHIP ════════════════════ -->
+  <section class="dgu">
+    <div class="dgu__text">
+      <p class="dgu__eyebrow" data-da="Et samarbejde med Dansk Golf Union">A partnership with the Danish Golf Union</p>
+      <h2 class="dgu__h" data-da="Dit rigtige WHS-handicap, med stemplet på.">Your real WHS handicap, with the stamp on it.</h2>
+      <p class="dgu__body" data-da="En officiel integration med Dansk Golf Union. WHS-godkendt og synkroniseret efter hver godkendt runde. Ingen dobbeltindtastning, ingen eksport, ingen diskussion med regnearket.">An official integration with the Danish Golf Union. WHS-approved and synced after every approved round. No double-entry, no exporting, no arguing with the spreadsheet.</p>
+      <a class="dgu__link" href="dgu-collaboration.html" data-da="Læs om samarbejdet">Read about the collaboration</a>
+    </div>
+    <div class="dgu__gallery">
+      <!-- connect screen — stays; its button is "tapped" to start the flow -->
+      <div class="dgu__tile dgu__tile--connect">
+        <img src="images/dgu-1.webp" alt="Connect with the Danish Golf Union" />
+      </div>
+      <!-- story tile — slides from loading (checklist) to profile -->
+      <div class="dgu__tile dgu__tile--story">
+        <div class="dgu__screen dgu__screen--loading">
+          <span class="dgu__sync-spinner"></span>
+          <ul class="dgu__sync-list">
+            <li class="dgu__sync-item dgu__sync-item--1">Forbundet <span class="dgu__sync-check">✓</span></li>
+            <li class="dgu__sync-item dgu__sync-item--2">20 runder hentet <span class="dgu__sync-check">✓</span></li>
+            <li class="dgu__sync-item dgu__sync-item--3">
+              <span class="dgu__sync-doing">Synkroniserer handicap…</span>
+              <span class="dgu__sync-done">Handicap synkroniseret <span class="dgu__sync-check">✓</span></span>
+            </li>
+          </ul>
+        </div>
+        <div class="dgu__screen dgu__screen--profile">
+          <img src="images/dgu-2.webp" alt="Your profile with official handicap" />
+        </div>
+      </div>
+      <div class="dgu__tile dgu__tile--ghost" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ INSIDE THE APP ════════════════════ -->
+  <section class="insideband">
+    <div class="inside">
+      <img class="inside__bg" src="images/inside-bg-blur.webp" alt="" />
+      <h2 class="inside__title" data-da="Inde i appen">Inside the app</h2>
+      <div class="inside__badges badges">
+        <a href="https://apps.apple.com/dk/app/id6743446900" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#FFFFFF"/><g fill="#16221F"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
+        </a>
+        <a href="#" class="badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#FFFFFF"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#16221F"/></g><g fill="#16221F"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
+        </a>
+      </div>
+      <div class="inside__phone">
+        <img src="images/inside-phone.webp" alt="The Golfsocial feed" />
+      </div>
+      <div class="inside__features">
+        <span class="inside__rule" aria-hidden="true"></span>
+        <button type="button" class="inside__feat inside__feat--lead" data-shot="images/inside-phone.webp" data-da="Dit feed, men kun golf. Hver runde din gruppe spiller, mens det sker.">Your feed, but only golf. Every round your group plays, as it happens.</button>
+        <button type="button" class="inside__feat" data-shot="images/inside-round.webp" data-pos="center top" data-da="Log det én gang, og det bliver. Også dit slag på hul 12. Især det.">Log it once and it stays. Including your shot on 12. Especially that one.</button>
+        <button type="button" class="inside__feat" data-shot="images/inside-chat.webp" data-pos="center top" data-da="Jeres gruppechat, uden aftensmadsplaner og den forsvundne oplader.">Your group chat, minus the dinner plans and the lost charger.</button>
+        <button type="button" class="inside__feat" data-shot="images/inside-leaderboard.webp" data-pos="center top" data-da="Et leaderboard kun for jeres gruppe. &lsquo;Jeg slår ham normalt&rsquo; er sværere at sige nu.">A leaderboard for just your group. &lsquo;I usually beat him&rsquo; is harder to say now.</button>
+        <button type="button" class="inside__feat" data-shot="images/inside-notifications.webp" data-pos="center top" data-da="Notifikationer værd at åbne. Runde-invitationer, score-godkendelser, og et hul i et i ny og næ.">Notifications worth opening. Round invites, score approvals, the odd hole-in-one.</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ BLOGS / NOTES / NEWS ════════════════════ -->
+  <section class="blogs" id="blogs">
+    <div class="blogs__head">
+      <h2 class="blogs__title" data-da="Blogs, noter &amp; nyheder fra banen">Blogs, notes &amp; news from the course</h2>
+      <p class="blogs__intro" data-da="Historier, idéer og en og anden skarp holdning fra folk der rent faktisk spiller. Værd at læse mellem runderne.">Stories, ideas and the occasional strong opinion from people who actually play. Worth a read between rounds.</p>
+    </div>
+    <hr class="blogs__rule" />
+    <div class="blogs__row">
+      <a class="bcard" href="5-surprising-social-benefits-of-playing-golf.html">
+        <h3 class="bcard__title bcard__title--sm" data-da="5 overraskende sociale fordele ved at spille golf">5 Surprising Social Benefits of Playing Golf</h3>
+        <p class="bcard__meta" data-da="~4 min læsning · Af Dan Chessa, Golf Marketing Officer">~4 min read · By Dan Chessa, Golf Marketing Officer</p>
+        <div class="bcard__img bcard__img--tall"><span class="bcard__img-bg" style="background-image:url('images/social-group.webp')"></span></div>
+      </a>
+      <span class="blogs__div" aria-hidden="true"></span>
+      <a class="bcard" href="the-future-of-golf-how-tech-is-changing-the-game.html">
+        <div class="bcard__img bcard__img--wide"><span class="bcard__img-bg" style="background-image:url('images/blog-2.webp')"></span></div>
+        <h3 class="bcard__title" data-da="Golfens fremtid: Sådan ændrer teknologien spillet">The Future of Golf: How Tech Is Changing the Game</h3>
+        <p class="bcard__meta" data-da="~4 min læsning · Af Dan Chessa, Golf Marketing Officer">~4 min read · By Dan Chessa, Golf Marketing Officer</p>
+      </a>
+      <span class="blogs__div" aria-hidden="true"></span>
+      <a class="bcard" href="#">
+        <h3 class="bcard__title bcard__title--threads" data-da="Vi har lavet Tråde til jeres grupper">We made Threads for your groups</h3>
+        <p class="bcard__body" data-da="Kun golf-snak. Book næste runde, driller løs, og lad dine makkere vide hvor meget du nyder at spille med dem.">Golf only conversations. Book your next round, shit-talk, and let your mates know how much you enjoy playing with them.</p>
+        <div class="bthreads">
+          <div class="bthreads__phone"><img src="images/blog-threads.webp" alt="Threads for your golf group" /></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ════════════════════ NEWSLETTER ════════════════════ -->
+  <section class="newsband">
+    <div class="news">
+      <img class="news__bg" src="images/news-bg.webp" alt="" />
+      <div class="news__inner">
+        <div class="news__text">
+          <h2 class="news__h" data-da="En sjælden hilsen fra banen.">The occasional note from the course.</h2>
+          <p class="news__sub" data-da="Ingen støj. Kun en sjælden læsning.">No noise. Only the occasional read.</p>
+        </div>
+        <form class="news__form" data-ml-form="165875690760046481" novalidate>
+          <input class="news__email" type="email" name="fields[email]" placeholder="you@email.com" data-da="dig@email.com" aria-label="Email address" required />
+          <button class="news__btn" type="submit" data-da="Tilmeld">Subscribe</button>
+          <span class="news__confirm" aria-hidden="true">
+            <span class="news__confirm-check">
+              <svg viewBox="0 0 52 52" aria-hidden="true">
+                <circle class="news__confirm-circle" cx="26" cy="26" r="24" fill="none" />
+                <path class="news__confirm-tick" fill="none" d="M15 27 l7.5 7.5 L37.5 19" />
+              </svg>
+            </span>
+            <span class="news__confirm-text" data-da="Du er på. Vi ses på banen.">You&rsquo;re in. See you on the course.</span>
           </span>
-        </h1>
-        <p class="hero__sub">
-          Track dine runder, følg dine venner og del de bedste øjeblikke fra banen.
-          Golf Social henter dit handicap automatisk fra Dansk Golf Union — så du kan
-          fokusere på næste swing.
-        </p>
-
-        <div class="hero__cta">
-          <a href="#download" class="btn btn-apple">
-            <svg width="18" height="18" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true">
-              <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
-            </svg>
-            Download til iOS
-          </a>
-          <a href="#download" class="btn btn-light">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <polyline points="3,3 21,12 3,21" />
-            </svg>
-            Google Play
-          </a>
-        </div>
-
-        <div class="hero__meta">
-          <div class="hero__avatars">
-            <img src="assets/avatar-mikkel.png" alt="" />
-            <img src="assets/avatar-rasmus.png" alt="" />
-            <img src="assets/avatar-poul.png" alt="" />
-            <img src="assets/avatar-frank.png" alt="" />
-            <img src="assets/avatar-mike.png" alt="" />
-          </div>
-          <span>Bruges af golfspillere i hele Danmark</span>
-        </div>
-      </div>
-
-      <!-- Phone mock -->
-      <div class="hero__phone fade-up">
-        <div class="phone">
-          <div class="phone__notch"></div>
-          <div class="phone__screen">
-            <div class="app-mock">
-              <div class="app-mock__statusbar">
-                <span>9:41</span>
-                <span>● ●●●</span>
-              </div>
-              <div class="app-mock__header">
-                <div class="app-mock__title">Feed</div>
-                <div class="app-mock__icon">M</div>
-              </div>
-              <div class="app-mock__feed">
-                <div class="post-card">
-                  <div class="post-card__head">
-                    <img src="assets/avatar-rasmus.png" alt="" class="post-card__avatar" />
-                    <div>
-                      <div class="post-card__user">Rasmus K.</div>
-                      <div class="post-card__sub">Furesø Golfklub · 2 t siden</div>
-                    </div>
-                  </div>
-                  <div class="post-card__photo" style="background-image:url('assets/golf-course-1.jpg')"></div>
-                  <div class="post-card__score">
-                    <div class="score-cell"><strong>82</strong><small>Score</small></div>
-                    <div class="score-cell score-cell--accent"><strong>+10</strong><small>To Par</small></div>
-                    <div class="score-cell"><strong>3</strong><small>Birdies</small></div>
-                  </div>
-                  <div class="post-card__actions">
-                    <span>♡ 12</span><span>💬 4</span><span>↗ Del</span>
-                  </div>
-                </div>
-
-                <div class="post-card">
-                  <div class="post-card__head">
-                    <img src="assets/avatar-mikkel.png" alt="" class="post-card__avatar" />
-                    <div>
-                      <div class="post-card__user">Mikkel B.</div>
-                      <div class="post-card__sub">Brokerede 80 · i går</div>
-                    </div>
-                  </div>
-                  <div class="post-card__score">
-                    <div class="score-cell"><strong>79</strong><small>Score</small></div>
-                    <div class="score-cell score-cell--accent"><strong>+7</strong><small>To Par</small></div>
-                    <div class="score-cell"><strong>21.4</strong><small>HCP</small></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- ============================================================
-       Logo strip — partners / integrations
-       ============================================================ -->
-  <section class="logo-strip">
-    <div class="container">
-      <div class="logo-strip__inner">
-        <span class="logo-strip__label">Synkroniseret med branchen</span>
-        <span class="logo-strip__item">Dansk Golf Union</span>
-        <span class="logo-strip__item">Trackman</span>
-        <span class="logo-strip__item">Golfexperten</span>
-        <span class="logo-strip__item">SimGolf</span>
-        <span class="logo-strip__item">Othania</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       Features
-       ============================================================ -->
-  <section class="section features" id="features">
-    <div class="container">
-      <div class="section-head fade-up">
-        <span class="eyebrow">Alt du behøver på banen</span>
-        <h2>Bygget til den måde du faktisk spiller golf på</h2>
-        <p class="lead">Fra første tee-time til 19. hul — Golf Social samler dine runder, dine venner og dit handicap ét sted.</p>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature-card fade-up">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <h3>Track runder live</h3>
-          <p>Indtast scores hul for hul, eller importér efter runden. Putts, fairways, greens — alt logges automatisk.</p>
-        </article>
-
-        <article class="feature-card fade-up">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          </div>
-          <h3>HCP fra DGU</h3>
-          <p>Forbind med Dansk Golf Union, og dit officielle handicap synkroniseres automatisk efter hver godkendt runde.</p>
-        </article>
-
-        <article class="feature-card fade-up">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>Følg dine venner</h3>
-          <p>Se hvem der spiller, hvor de spiller og hvordan det gik. Reager, kommenter og pep hinanden op til næste runde.</p>
-        </article>
-
-        <article class="feature-card fade-up">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          </div>
-          <h3>Grupper &amp; tråde</h3>
-          <p>Saml klubvennerne i private grupper. Tag billeder, send beskeder og koordinér tee-times direkte i appen.</p>
-        </article>
-
-        <article class="feature-card fade-up">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-          </div>
-          <h3>Bedrifter &amp; streaks</h3>
-          <p>Broke 80 for første gang? Tre birdies i træk? Golf Social fanger og fejrer milepælene automatisk.</p>
-        </article>
-
-        <article class="feature-card fade-up">
-          <div class="feature-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
-          </div>
-          <h3>Statistik der hjælper</h3>
-          <p>Find mønstre i dit spil: greens-in-regulation, scoring averages, performance pr. bane. Bliv klogere på dit eget spil.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       Showcase 1 — Feed
-       ============================================================ -->
-  <section class="section">
-    <div class="container">
-      <div class="showcase fade-up">
-        <div class="showcase__media">
-          <img src="assets/golf-course-2.jpg" alt="Feed med runder fra venner" />
-        </div>
-        <div class="showcase__copy">
-          <span class="eyebrow">Feed</span>
-          <h2>Et feed der elsker golf — ikke algoritmer</h2>
-          <p>Kronologisk, simpelt og fyldt med dine venners runder. Ingen reklamer, ingen tilfældige influencers — bare folk du faktisk spiller med.</p>
-          <ul class="showcase__list">
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Reaktioner og kommentarer i realtid</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Tag billeder fra runden direkte i opslaget</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Filtrer efter gruppe, klub eller bedrifter</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="showcase showcase--reverse fade-up" style="margin-top:120px;">
-        <div class="showcase__media">
-          <img src="assets/golf-course-3.jpg" alt="Score-tracking visualisering" />
-        </div>
-        <div class="showcase__copy">
-          <span class="eyebrow">Scorekort</span>
-          <h2>Det hurtigste digitale scorekort i Danmark</h2>
-          <p>Stableford eller slag. 9 eller 18. Indtast på under et sekund pr. hul, og lad appen klare resten. Når runden er færdig, indrapporteres scoren til DGU automatisk.</p>
-          <ul class="showcase__list">
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Stableford, slagspil &amp; matchplay</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Op til 4 spillere på samme kort</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Auto-indberetning til DGU</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="showcase fade-up" style="margin-top:120px;">
-        <div class="showcase__media">
-          <img src="assets/golf-photo-1.jpg" alt="Grupper med klubkammerater" />
-        </div>
-        <div class="showcase__copy">
-          <span class="eyebrow">Grupper</span>
-          <h2>Hold klubben i lommen</h2>
-          <p>Opret grupper for golfholdet, makkerturen eller herredagen. Send beskeder, planlæg runder og se gruppens samlede form på ét overblik.</p>
-          <ul class="showcase__list">
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Privat tråd-baseret feed</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Inviter via link, kontakt eller QR</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Gruppeleaderboard pr. måned</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       Stats
-       ============================================================ -->
-  <section class="section stats">
-    <div class="container">
-      <div class="stats__grid">
-        <div class="fade-up">
-          <div class="stat__value">14<em>k+</em></div>
-          <div class="stat__label">Aktive golfspillere</div>
-        </div>
-        <div class="fade-up">
-          <div class="stat__value">280<em>k</em></div>
-          <div class="stat__label">Runder logget</div>
-        </div>
-        <div class="fade-up">
-          <div class="stat__value">98%</div>
-          <div class="stat__label">Synkroniseret med DGU</div>
-        </div>
-        <div class="fade-up">
-          <div class="stat__value">4.9★</div>
-          <div class="stat__label">App Store rating</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       How it works
-       ============================================================ -->
-  <section class="section" id="how">
-    <div class="container">
-      <div class="section-head fade-up">
-        <span class="eyebrow">Sådan virker det</span>
-        <h2>Du er igang på under to minutter</h2>
-        <p class="lead">Hent appen, forbind med DGU, og inviter dine venner. Det er det.</p>
-      </div>
-
-      <div class="steps">
-        <div class="step fade-up">
-          <div class="step__num">1</div>
-          <h3>Log ind med Apple eller Google</h3>
-          <p>Ingen lange formularer. Et tap, og du er inde.</p>
-        </div>
-        <div class="step fade-up">
-          <div class="step__num">2</div>
-          <h3>Forbind med Dansk Golf Union</h3>
-          <p>Vi henter dit handicap og dine sidste 20 runder automatisk.</p>
-        </div>
-        <div class="step fade-up">
-          <div class="step__num">3</div>
-          <h3>Inviter dine golfvenner</h3>
-          <p>Find dine kontakter eller del et link. Feedet fyldes med det samme.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       Testimonials
-       ============================================================ -->
-  <section class="section testimonials">
-    <div class="container">
-      <div class="section-head fade-up">
-        <span class="eyebrow">Spillerne siger</span>
-        <h2>Bedre end klubhusets ølbar</h2>
-      </div>
-
-      <div class="testimonial-grid">
-        <div class="testimonial fade-up">
-          <p class="testimonial__quote">"Endelig et sted hvor jeg kan se alle mine venners runder uden at scrolle gennem en masse hund- og kattebilleder."</p>
-          <div class="testimonial__author">
-            <img src="assets/avatar-mikkel.png" alt="" />
-            <div>
-              <strong>Mikkel B.</strong>
-              <span>HCP 18.4 · Furesø Golfklub</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial fade-up">
-          <p class="testimonial__quote">"DGU-synkroniseringen alene er pengene værd. Jeg behøver aldrig at indtaste en score to gange igen."</p>
-          <div class="testimonial__author">
-            <img src="assets/avatar-rasmus.png" alt="" />
-            <div>
-              <strong>Rasmus K.</strong>
-              <span>HCP 9.2 · Helsingør Golf</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial fade-up">
-          <p class="testimonial__quote">"Vores herredagsgruppe har aldrig været mere aktiv. Vi har næsten skrottet vores Facebook-gruppe."</p>
-          <div class="testimonial__author">
-            <img src="assets/avatar-poul.png" alt="" />
-            <div>
-              <strong>Poul J.</strong>
-              <span>HCP 24.1 · Rungsted Golfklub</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       FAQ
-       ============================================================ -->
-  <section class="section" id="faq">
-    <div class="container">
-      <div class="section-head fade-up">
-        <span class="eyebrow">FAQ</span>
-        <h2>Spørgsmål, vi får oftest</h2>
-      </div>
-
-      <div class="faq" data-faq>
-        <div class="faq__item">
-          <button class="faq__q">Er Golf Social gratis?<span class="faq__icon"></span></button>
-          <div class="faq__a"><p>Ja. Hele appens kerne — feed, runder, venner, grupper og DGU-sync — er 100% gratis. Vi har en valgfri Pro-plan undervejs til avanceret statistik.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q">Hvordan fungerer DGU-synkroniseringen?<span class="faq__icon"></span></button>
-          <div class="faq__a"><p>Du logger ind med dit DGU-medlemsnummer i appen. Vi henter dit handicap og dine sidste 20 godkendte runder, og opdaterer automatisk efter hver ny runde.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q">Hvilke platforme understøttes?<span class="faq__icon"></span></button>
-          <div class="faq__a"><p>iOS 16+ og Android 12+. En tablet- og webversion er på vej.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q">Hvem kan se mine runder?<span class="faq__icon"></span></button>
-          <div class="faq__a"><p>Du bestemmer. Du kan dele runder offentligt med dine venner, kun i private grupper, eller helt privat for dig selv.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q">Kan jeg importere runder fra andre apps?<span class="faq__icon"></span></button>
-          <div class="faq__a"><p>Vi henter automatisk runder fra DGU. Import fra GolfBox og Trackman kommer i en kommende opdatering.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q">Bruges mine data til reklamer?<span class="faq__icon"></span></button>
-          <div class="faq__a"><p>Nej. Vi sælger ikke dine data, og vi viser ikke reklamer i appen. Læs mere i vores <a href="privacy.html" style="color:var(--green-highlight)">privatlivspolitik</a>.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       Final CTA / download
-       ============================================================ -->
-  <section class="cta-band" id="download">
-    <div class="container">
-      <span class="eyebrow" style="color:#9bd6c7;">Hent appen</span>
-      <h2 class="fade-up" style="margin-top:14px;">Klar til at gøre golf social?</h2>
-      <p class="fade-up">Hent Golf Social og inviter dine golfvenner. Vi sender en notifikation, når den nye sæson starter.</p>
-      <div class="btn-row fade-up">
-        <a href="#" class="btn btn-primary" style="background:#fff;color:var(--green-dark);">
-          <svg width="18" height="18" viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-          App Store
+  <!-- ════════════════════ DOWNLOAD CTA + FOOTER ════════════════════ -->
+  <footer class="foot">
+    <hr class="foot__rule" />
+    <div class="foot__cta">
+      <h2 class="foot__headline" data-da="Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed.">Download Golfsocial. Because good friends never let friends golf in silence.</h2>
+      <div class="badges foot__badges">
+        <a href="https://apps.apple.com/dk/app/id6743446900" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#16221F"/><g fill="#FCFBF8"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
         </a>
-        <a href="#" class="btn btn-light">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3,3 21,12 3,21"/></svg>
-          Google Play
+        <a href="#" class="badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#16221F"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FCFBF8"/></g><g fill="#FCFBF8"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
         </a>
       </div>
     </div>
-  </section>
-
-  <!-- ============================================================
-       Footer
-       ============================================================ -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="site-footer__grid">
-        <div>
-          <a href="index.html" class="brand">
-            <span class="brand__mark">G</span>
-            <span>Golf Social</span>
-          </a>
-          <p class="site-footer__about">
-            Det sociale hjem for danske golfspillere. Track runder, følg venner og del de bedste øjeblikke fra banen.
-          </p>
-        </div>
-        <div>
-          <h4>Produkt</h4>
-          <ul>
-            <li><a href="features.html">Funktioner</a></li>
-            <li><a href="#how">Sådan virker det</a></li>
-            <li><a href="#download">Hent app</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Selskab</h4>
-          <ul>
-            <li><a href="about.html">Om os</a></li>
-            <li><a href="about.html#team">Holdet</a></li>
-            <li><a href="mailto:hej@golfsocial.dk">Kontakt</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Hjælp</h4>
-          <ul>
-            <li><a href="support.html">Support</a></li>
-            <li><a href="support.html#contact">Kontakt support</a></li>
-            <li><a href="support.html#status">Driftsstatus</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Juridisk</h4>
-          <ul>
-            <li><a href="privacy.html">Privatlivspolitik</a></li>
-            <li><a href="terms.html">Vilkår</a></li>
-            <li><a href="privacy.html#cookies">Cookies</a></li>
-          </ul>
-        </div>
+    <div class="foot__bar">
+      <div class="foot__left">
+        <nav class="foot__links" aria-label="Footer">
+          <a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener">Linkedin</a>
+          <a href="#">x.com</a>
+          <a href="mailto:hello@golfsocial.club" data-da="Kontakt">Contact</a>
+          <a href="privacy-policy.html" data-da="Privatlivspolitik">Privacy Policy</a>
+        </nav>
+        <p class="foot__copy" data-da="© 2026 Golfsocial. Alle rettigheder forbeholdes.">© 2026 Golfsocial. All rights reserved.</p>
       </div>
-      <div class="site-footer__base">
-        <span>© <span data-year>2026</span> Golf Social ApS · CVR 44 12 34 56 · København</span>
-        <span><a href="privacy.html">Privatliv</a> · <a href="terms.html">Vilkår</a></span>
-      </div>
+      <p class="foot__made" data-da="Bygget og designet i København">Built and designed in Copenhagen</p>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="script.js?v=12"></script>
 </body>
 </html>
