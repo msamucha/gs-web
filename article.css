@@ -56,8 +56,9 @@
   transform: translateX(-50%);
   top: 3.4rem;
   width: 40rem;
-  border-radius: 1.6rem 1.6rem 0 0;
+  border-radius: 3rem 3rem 0 0;
   overflow: hidden;
+  box-shadow: 0 0.4rem 7rem rgba(0, 0, 0, 0.35);
 }
 .article__media-screen img { width: 100%; height: auto; display: block; }
 
