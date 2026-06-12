@@ -133,7 +133,7 @@
 
   var saved;
   try { saved = localStorage.getItem('gs-lang'); } catch (e) {}
-  if (saved === 'da') setLang('da');
+  setLang(saved === 'en' ? 'en' : 'da');   // Danish is the default
 })();
 
 /* newsletter sign-up → MailerLite, with a custom confirmation */

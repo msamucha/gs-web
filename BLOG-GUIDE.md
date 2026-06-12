@@ -1,14 +1,13 @@
-# Golfsocial — how to add a blog post or story
+# Golfsocial — how to add a blog post
 
 The design is locked. You only ever write **content**, never styling. Follow
 the three steps below and the page will always match the rest of the site.
 
-There are two templates:
+There is one template:
 
 | Template | File to copy | Use it for |
 | --- | --- | --- |
-| **Blog post** | `5-surprising-social-benefits-of-playing-golf.html` | Normal articles, how-tos, opinions |
-| **Story** | `dgu-collaboration.html` | Features and partnerships (opens with a green statement hero) |
+| **Article** | `5-surprising-social-benefits-of-playing-golf.html` | Any article: news, how-tos, opinions, features, partnerships |
 
 ---
 
@@ -29,9 +28,8 @@ That filename becomes the page address (`golfsocial.club/how-to-lower-your-handi
 Open the file and change only:
 
 1. The `<title>` and `<meta name="description">` in the `<head>` (used by Google and link previews).
-2. The header text — **eyebrow**, **title** and **meta** (read time · author).
-   Stories instead have a green hero with **eyebrow**, **title** and **byline**.
-3. The cover image (blog posts): put your image in the `images/` folder and point `src` at it.
+2. The header text — **title** and **meta** (read time · author).
+3. The cover image: put your image in the `images/` folder and point the `background-image` url at it.
 4. The article text, between `<!-- CONTENT START -->` and `<!-- CONTENT END -->`.
 
 Leave everything else exactly as it is — the header, the footer, the `<link>`
@@ -73,7 +71,7 @@ applied automatically, so you never need a class except where noted.
 <strong>bold</strong>, <em>italic</em>, <a href="https://...">a link</a>
 ```
 
-### Optional: a green "key points" panel (mainly for stories)
+### Optional: a green "key points" panel
 
 ```html
 <div class="callout">
@@ -106,18 +104,18 @@ applied automatically, so you never need a class except where noted.
 
 ## A prompt you can give your AI
 
-Paste this, then add your article text and which template to use:
+Paste this, then add your article text:
 
 > You are editing a Golfsocial website article. I will give you the article
-> text. Put it into a copy of the **[blog post / story]** template
-> (`[filename].html`). Only edit the parts marked « EDIT » and the content
+> text. Put it into a copy of the article template
+> (`5-surprising-social-benefits-of-playing-golf.html`). Only edit the parts marked « EDIT » and the content
 > between `<!-- CONTENT START -->` and `<!-- CONTENT END -->`. Use only these
 > tags: `<p>`, `<p class="lead">` (first paragraph), `<h2>`, `<h3>`, `<ul>/<ol>/<li>`,
 > `<blockquote>`, `<figure><img><figcaption>`, `<hr>`, `<strong>`, `<em>`, `<a>`,
 > and `<div class="callout">` for a key-points box. Do not add any `style`
 > attributes, `<style>` tags or new class names. Do not change the header,
 > footer, stylesheet links or scripts. Use sentence case, no ALL CAPS, and no
-> em-dashes. Set the `<title>`, the meta description, the eyebrow, the title and
+> em-dashes. Set the `<title>`, the meta description, the title and
 > the meta/byline to match the article. Here is the article:
 >
 > [paste your title, author, and body text here]

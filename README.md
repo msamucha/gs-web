@@ -22,9 +22,9 @@ HTML/CSS/JS site, no build step, deployed with Vercel.
 
 ```
 index.html                                   homepage
-5-surprising-social-benefits-...html         blog post (also the blog template)
+5-surprising-social-benefits-...html         blog post (also the article template)
 the-future-of-golf-...html                   blog post
-dgu-collaboration.html                       story (also the story template)
+dgu-collaboration.html                       blog post
 privacy-policy.html                          privacy policy (EN/DA)
 styles.css                                   design system — do not edit
 article.css                                  article design — do not edit

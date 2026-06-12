@@ -17,11 +17,10 @@ content (blog posts, stories, copy fixes) can be added without touching design.
 
 ## What you MAY do
 
-- Create a new blog post or story by **copying a template file** and editing
+- Create a new blog post by **copying the template file** and editing
   only the parts marked « EDIT » and the content between
   `<!-- CONTENT START -->` and `<!-- CONTENT END -->`.
-  - Blog post template: `5-surprising-social-benefits-of-playing-golf.html`
-  - Story template (green hero): `dgu-collaboration.html`
+  - Article template: `5-surprising-social-benefits-of-playing-golf.html`
   - Full instructions + allowed tags: `BLOG-GUIDE.md` (read it before writing)
 - Fix typos or update copy in existing articles (inside the content markers).
 - Add a new card to the homepage blog row: duplicate an existing
