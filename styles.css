@@ -569,6 +569,9 @@ a { color: inherit; text-decoration: none; }
   color: var(--white);
 }
 
+/* swipe carousel exists only at ≤1024 (replaces phone + feature list) */
+.inside__swipe { display: none; }
+
 /* ════════════════════ BLOGS / NOTES / NEWS ════════════════════ */
 .blogs {
   margin-top: 15rem;
@@ -974,21 +977,58 @@ a { color: inherit; text-decoration: none; }
   .dgu__tile { flex: 1 1 0; width: auto; height: auto; aspect-ratio: 303 / 659; }
   .dgu__tile--ghost { display: none; }
 
-  /* INSIDE THE APP — stack title / badges / phone / features */
+  /* INSIDE THE APP — centred title/badges, swipe carousel replaces phone + list */
   .inside {
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 4.5rem;
     padding: 7rem var(--gut);
   }
   .inside::after { background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)); }
-  .inside__title { position: static; width: auto; }
+  .inside__title { position: static; width: auto; text-align: center; }
   .inside__badges { position: static; }
-  .inside__phone { position: static; align-self: center; width: 34rem; max-width: 80%; height: auto; }
-  .inside__phone img { margin-top: 0; }
-  .inside__features { position: static; width: 100%; max-width: 52rem; }
+  .inside__phone { display: none; }
+  .inside__features { display: none; }
+  .inside__swipe {
+    display: flex;
+    gap: 2.4rem;
+    width: calc(100% + 2 * var(--gut));
+    margin: 0 calc(-1 * var(--gut));
+    padding: 0.5rem var(--gut) 3rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: var(--gut);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .inside__swipe::-webkit-scrollbar { display: none; }
+  .inside__slide {
+    flex: 0 0 auto;
+    width: 30rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    scroll-snap-align: start;
+  }
+  .inside__slide img {
+    width: 100%;
+    aspect-ratio: 371 / 762;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 2.4rem;
+    box-shadow: 0 0.3rem 2.4rem rgba(0, 0, 0, 0.3);
+    display: block;
+  }
+  .inside__slide--feed img { object-position: center bottom; }
+  .inside__slide figcaption {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: var(--white);
+  }
 
   /* BLOGS — single column, drop vertical rules */
   .blogs__head { flex-direction: column; align-items: flex-start; gap: 4rem; }
@@ -1063,12 +1103,13 @@ a { color: inherit; text-decoration: none; }
   .insideband { margin-top: 8rem; }
   .inside { gap: 3.6rem; padding: 5.5rem var(--gut); }
   .inside__title { font-size: 4rem; line-height: 4.3rem; }
-  .inside__features { gap: 2.4rem; }
-  .inside__feat { width: 100%; font-size: 1.7rem; line-height: 2.3rem; }
-  .inside__feat--lead { font-size: 1.7rem; line-height: 2.3rem; transform: scale(1.1); }
+  .inside__slide { width: 26rem; gap: 1.6rem; }
+  .inside__slide figcaption { font-size: 1.7rem; line-height: 2.3rem; }
 
   /* blogs */
   .blogs { margin-top: 8rem; }
+  .blogs__rule { margin-top: 4rem; }
+  .blogs__row { margin-top: 4rem; }
   .blogs__title { font-size: 3.8rem; line-height: 4rem; }
   .blogs__intro { font-size: 1.7rem; line-height: 2.3rem; }
   .blogs__row { gap: 6rem; }
@@ -1093,8 +1134,8 @@ a { color: inherit; text-decoration: none; }
   .news__btn { font-size: 1.5rem; padding: 0.9rem 2.2rem; }
 
   /* footer */
-  .foot { margin-top: 8rem; padding-bottom: 5rem; }
-  .foot__cta { gap: 2.6rem; }
+  .foot { margin-top: 5rem; padding-bottom: 5rem; }
+  .foot__cta { margin-top: 4.5rem; gap: 2.6rem; }
   .foot__badges { flex-wrap: wrap; }
   .foot__badges .badge svg { height: 3.6rem; }
   .foot__headline { font-size: 2.8rem; line-height: 3.4rem; }
