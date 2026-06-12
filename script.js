@@ -166,51 +166,37 @@
   email.addEventListener('input', function () { form.classList.remove('is-error'); });
 })();
 
-/* "Inside the app" — click a feature to swap the phone screenshot */
+/* "Inside the app" carousel: drag-to-scroll with the mouse (touch already swipes) */
 (function () {
-  var feats = document.querySelectorAll('.inside__feat[data-shot]');
-  var img = document.querySelector('.inside__phone img');
-  var rule = document.querySelector('.inside__rule');
-  if (!feats.length || !img) return;
+  var swipe = document.querySelector('.inside__swipe');
+  if (!swipe) return;
 
-  // preload the screenshots so swaps are instant
-  feats.forEach(function (f) {
-    var s = f.getAttribute('data-shot');
-    if (s) { var pre = new Image(); pre.src = s; }
+  var dragging = false;
+  var startX = 0;
+  var startScroll = 0;
+
+  swipe.addEventListener('pointerdown', function (e) {
+    if (e.pointerType !== 'mouse') return;   // leave touch/pen to native scroll-snap
+    dragging = true;
+    startX = e.clientX;
+    startScroll = swipe.scrollLeft;
+    swipe.style.scrollSnapType = 'none';     // let the drag move freely, snap re-engages on release
+    swipe.classList.add('is-dragging');
+    swipe.setPointerCapture(e.pointerId);
   });
 
-  // slide the rule so it sits just above the active feature
-  function moveRule() {
-    if (!rule) return;
-    var active = document.querySelector('.inside__feat--lead');
-    if (!active) return;
-    var rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 10;
-    var y = active.offsetTop - 1.4 * rem;
-    rule.style.transform = 'translateY(' + Math.max(0, y) + 'px)';
+  swipe.addEventListener('pointermove', function (e) {
+    if (!dragging) return;
+    swipe.scrollLeft = startScroll - (e.clientX - startX);
+  });
+
+  function end() {
+    if (!dragging) return;
+    dragging = false;
+    swipe.style.scrollSnapType = '';         // hand control back to scroll-snap
+    swipe.classList.remove('is-dragging');
   }
 
-  feats.forEach(function (f) {
-    f.addEventListener('click', function () {
-      var shot = f.getAttribute('data-shot');
-      var pos = f.getAttribute('data-pos') || 'center bottom';
-      feats.forEach(function (x) { x.classList.remove('inside__feat--lead'); });
-      f.classList.add('inside__feat--lead');
-      moveRule();
-      if (!shot || img.getAttribute('src') === shot) {
-        img.style.objectPosition = pos;
-        return;
-      }
-      img.style.opacity = '0';
-      setTimeout(function () {
-        img.setAttribute('src', shot);
-        img.style.objectPosition = pos;
-        img.style.opacity = '1';
-      }, 200);
-    });
-  });
-
-  // position on load (and keep it right when the layout reflows)
-  requestAnimationFrame(moveRule);
-  window.addEventListener('load', moveRule);
-  window.addEventListener('resize', moveRule);
+  swipe.addEventListener('pointerup', end);
+  swipe.addEventListener('pointercancel', end);
 })();

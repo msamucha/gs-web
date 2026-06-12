@@ -506,71 +506,56 @@ a { color: inherit; text-decoration: none; }
 }
 .inside__badges .badge svg { height: 3.4rem; }
 
-.inside__phone {
+/* the screenshot carousel lives in the right half of the card on every breakpoint.
+   a left-edge mask fades each slide out as it scrolls away, so slides fade out at
+   the left edge instead of sliding across the title + badges in the left zone. */
+.inside__swipe {
   position: absolute;
-  left: 49.6rem;
-  top: 6.6rem;
-  width: 37.1rem;
-  height: 76.2rem;
-  border-radius: 3rem;
-  overflow: hidden;
-  box-shadow: 0 0.4rem 7rem rgba(0, 0, 0, 0.35);
+  left: 47rem;
+  right: 0;
+  top: 8rem;
+  bottom: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-left: 9rem;            /* = the fade zone: the active slide rests where the mask is solid */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 9rem;
+  scrollbar-width: none;
+  cursor: grab;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 9rem);
+  mask-image: linear-gradient(to right, transparent 0, #000 9rem);
 }
-.inside__phone img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center bottom;
-  transition: opacity 0.22s var(--ease);
-}
-
-.inside__features {
-  position: absolute;
-  left: 96.4rem;
-  top: 15.2rem;
-  width: 34.4rem;
-  padding-top: 2.6rem;        /* room for the rule, which slides to the active item */
+.inside__swipe.is-dragging { cursor: grabbing; }
+.inside__swipe::-webkit-scrollbar { display: none; }
+.inside__slide {
+  flex: 0 0 auto;
+  width: 30rem;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 3rem;
+  gap: 2rem;
+  scroll-snap-align: start;
+  user-select: none;
 }
-.inside__rule {
-  position: absolute;
-  top: 0;
-  left: 0;
+.inside__slide img {
   width: 100%;
-  height: 0.1rem;
-  background: rgba(255, 255, 255, 0.45);
-  transition: transform 0.42s var(--ease-out);
-}
-.inside__feat {
-  width: 30.9rem;
+  aspect-ratio: 371 / 762;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 2.4rem;
+  box-shadow: 0 0.3rem 2.4rem rgba(0, 0, 0, 0.3);
   display: block;
-  text-align: left;
-  background: none;
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 1.9rem;
-  line-height: 2.7rem;
-  color: rgba(255, 255, 255, 0.5);
-  transform-origin: left center;   /* zoom keeps the left edge aligned */
-  transition: transform 0.35s var(--ease-out), color 0.3s var(--ease);
+  -webkit-user-drag: none;
 }
-.inside__feat:hover { color: rgba(255, 255, 255, 0.78); }
-/* active = a small zoom out from the centre (transform), not a font-size scale → no reflow */
-.inside__feat--lead,
-.inside__feat--lead:hover {
-  transform: scale(1.12);
+.inside__slide--feed img { object-position: center bottom; }
+.inside__slide figcaption {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
   color: var(--white);
 }
-
-/* swipe carousel exists only at ≤1024 (replaces phone + feature list) */
-.inside__swipe { display: none; }
 
 /* ════════════════════ BLOGS / NOTES / NEWS ════════════════════ */
 .blogs {
@@ -989,17 +974,24 @@ a { color: inherit; text-decoration: none; }
   .inside::after { background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)); }
   .inside__title { position: static; width: auto; text-align: center; }
   .inside__badges { position: static; }
-  .inside__phone { display: none; }
-  .inside__features { display: none; }
   .inside__swipe {
+    position: static;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    align-items: stretch;
+    cursor: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+    padding: 0.5rem var(--gut) 3rem;
+    scroll-padding-left: var(--gut);
     display: flex;
     gap: 2.4rem;
     width: calc(100% + 2 * var(--gut));
     margin: 0 calc(-1 * var(--gut));
-    padding: 0.5rem var(--gut) 3rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-padding-left: var(--gut);
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
