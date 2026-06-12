@@ -47,6 +47,20 @@
   background-repeat: no-repeat;
 }
 
+/* app-screenshot variant — the screen sits on a dark panel (same treatment
+   as the homepage Threads card): margin at the top, cropped at the bottom */
+.article__media--screen { background: #343434; }
+.article__media-screen {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3.4rem;
+  width: 40rem;
+  border-radius: 1.6rem 1.6rem 0 0;
+  overflow: hidden;
+}
+.article__media-screen img { width: 100%; height: auto; display: block; }
+
 /* ──────────────────────────── header ──────────────────────────── */
 .article__eyebrow {
   font-weight: 500;
@@ -284,6 +298,7 @@
   .article__meta { font-size: 1.6rem; margin-top: 2rem; }
   .article__cover { border-radius: 1.6rem; margin-top: 3.4rem; }
   .article__media { border-radius: 2rem; aspect-ratio: 3 / 2; }
+  .article__media-screen { width: 24rem; top: 2.2rem; }
   .article__body { margin-top: 3.8rem; }
   .article__body p { font-size: 1.9rem; line-height: 3rem; }
   .article__body p.lead { font-size: 2.2rem; line-height: 3.2rem; }
