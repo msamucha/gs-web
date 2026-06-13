@@ -728,8 +728,8 @@ a { color: inherit; text-decoration: none; }
   padding: 4.2rem 0;
   cursor: pointer;
   font-weight: 500;
-  font-size: 4.4rem;
-  line-height: 5rem;
+  font-size: 3.8rem;
+  line-height: 4.4rem;
   letter-spacing: -0.1rem;
   color: var(--black);
   transition: color 0.25s var(--ease);
@@ -738,8 +738,8 @@ a { color: inherit; text-decoration: none; }
 .faq__q:hover { color: rgba(0, 0, 0, 0.58); }
 .faq__chev {
   flex: 0 0 auto;
-  width: 3rem;
-  height: 3rem;
+  width: 2.8rem;
+  height: 2.8rem;
   color: var(--black);
   transition: transform 0.32s var(--ease-out);
 }
@@ -1180,8 +1180,8 @@ a { color: inherit; text-decoration: none; }
   .faq { margin-top: 8rem; }
   .faq__head { margin-bottom: 4rem; }
   .faq__title { font-size: 4.6rem; line-height: 5rem; }
-  .faq__q { font-size: 3rem; line-height: 3.4rem; padding: 3.2rem 0; gap: 1.8rem; }
-  .faq__chev { width: 2.6rem; height: 2.6rem; }
+  .faq__q { font-size: 2.7rem; line-height: 3.2rem; padding: 3.2rem 0; gap: 1.8rem; }
+  .faq__chev { width: 2.4rem; height: 2.4rem; }
   .faq__a { font-size: 1.8rem; line-height: 2.5rem; padding-bottom: 3.2rem; }
 
   /* newsletter */
