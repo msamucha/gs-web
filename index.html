@@ -21,6 +21,49 @@
   <meta name="twitter:title" content="Golfsocial" />
   <meta name="twitter:description" content="Golf is more than a round. It's the standings, the trash talk, the rematch. We built that app." />
   <meta name="twitter:image" content="https://golfsocial.club/images/og-home.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://golfsocial.club/#organization",
+        "name": "Golfsocial",
+        "url": "https://golfsocial.club/",
+        "logo": "https://golfsocial.club/images/logo.svg",
+        "description": "Golfsocial brings your rounds, scores, groups and handicap into one place, with an official integration with the Danish Golf Union.",
+        "sameAs": [
+          "https://instagram.com/golfsocial_club",
+          "https://www.linkedin.com/company/golfsocial",
+          "https://x.com/golfsocialclub"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://golfsocial.club/#website",
+        "url": "https://golfsocial.club/",
+        "name": "Golfsocial",
+        "inLanguage": ["da-DK", "en"],
+        "publisher": { "@id": "https://golfsocial.club/#organization" }
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://golfsocial.club/#app",
+        "name": "Golfsocial",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "SportsApplication",
+        "url": "https://golfsocial.club/",
+        "downloadUrl": [
+          "https://apps.apple.com/dk/app/id6743446900",
+          "https://play.google.com/store/apps/details?id=com.golfsocialapp.production"
+        ],
+        "description": "Track your rounds, scores and handicap with your golf group. Golfsocial includes an official Danish Golf Union integration for your WHS handicap.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "DKK" },
+        "publisher": { "@id": "https://golfsocial.club/#organization" }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
