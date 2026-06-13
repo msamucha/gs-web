@@ -8,8 +8,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
   <link rel="manifest" href="site.webmanifest" />
   <meta name="theme-color" content="#123f36" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="preload" as="image" href="images/hero-green.webp" imagesrcset="images/hero-green-720.webp 720w, images/hero-green.webp 1072w" imagesizes="100vw" fetchpriority="high" />
   <script>document.documentElement.classList.add('js');</script>
-  <title>Golfsocial</title>
+  <title>Golfsocial: golf rounds, scores and handicap, with your group</title>
   <meta name="description" content="Golf is more than a round. It's the standings, the trash talk, the rematch. We built that app." />
   <link rel="canonical" href="https://golfsocial.club/" />
   <meta property="og:type" content="website" />
@@ -41,7 +43,9 @@
           "https://instagram.com/golfsocial_club",
           "https://www.linkedin.com/company/golfsocial",
           "https://x.com/golfsocialclub"
-        ]
+        ],
+        "email": "hello@golfsocial.club",
+        "address": { "@type": "PostalAddress", "addressLocality": "Copenhagen", "addressCountry": "DK" }
       },
       {
         "@type": "WebSite",
@@ -63,6 +67,12 @@
           "https://play.google.com/store/apps/details?id=com.golfsocialapp.production"
         ],
         "description": "Track your rounds, scores and handicap with your golf group. Golfsocial includes an official Danish Golf Union integration for your WHS handicap.",
+        "featureList": "Round tracking, live scoring with your group, group chat, private leaderboards, official WHS handicap via the Danish Golf Union",
+        "screenshot": [
+          "https://golfsocial.club/images/inside-phone.webp",
+          "https://golfsocial.club/images/inside-round.webp",
+          "https://golfsocial.club/images/inside-leaderboard.webp"
+        ],
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "DKK" },
         "publisher": { "@id": "https://golfsocial.club/#organization" }
       }
@@ -139,7 +149,7 @@
   <!-- ════════════════════ STATS CARD ════════════════════ -->
   <section class="statband">
     <div class="statcard">
-      <img class="statcard__bg" src="images/hero-green.webp" alt="" />
+      <img class="statcard__bg" src="images/hero-green.webp" srcset="images/hero-green-720.webp 720w, images/hero-green.webp 1072w" sizes="100vw" fetchpriority="high" alt="" />
       <div class="statcard__inner">
         <div class="statcard__top">
           <div class="stats">
