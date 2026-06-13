@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  GOLFSOCIAL — BLOG POST TEMPLATE                                  ║
+  ║                                                                  ║
+  ║  To publish a new blog post: copy this file, rename it to your   ║
+  ║  url slug (e.g. how-to-lower-your-handicap.html), then change    ║
+  ║  ONLY the things marked « EDIT ».  Everything else — the design, ║
+  ║  the header, the footer, the stylesheets — stays exactly as is.  ║
+  ║                                                                  ║
+  ║  The article text lives between the CONTENT START and CONTENT    ║
+  ║  END markers below. Inside it you only ever write plain          ║
+  ║  content tags; the design is applied automatically:              ║
+  ║                                                                  ║
+  ║    <p class="lead">…</p>   first / intro paragraph (bigger)      ║
+  ║    <p>…</p>                a normal paragraph                    ║
+  ║    <h2>…</h2>              a section heading                     ║
+  ║    <h3>…</h3>              a smaller sub-heading                 ║
+  ║    <ul><li>…</li></ul>     a bullet list (use <ol> for numbers)  ║
+  ║    <blockquote>…</blockquote>   a pull-quote                     ║
+  ║    <figure><img src="images/your-image.webp" alt="…">           ║
+  ║      <figcaption>…</figcaption></figure>   an image             ║
+  ║    <hr>                    a divider line                        ║
+  ║    <strong>…</strong> / <em>…</em> / <a href="…">…</a>          ║
+  ║                                                                  ║
+  ║  Never add inline styles, <style> tags or new classes.          ║
+  ║  See BLOG-GUIDE.md for the full guide + a ready-made prompt.     ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#123f36" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- « EDIT » page title + description for search engines / social -->
+  <title>Hvad er et godt golfhandicap? · Golfsocial</title>
+  <meta name="description" content="Hvad er et godt golfhandicap? Sådan ligger niveauerne, hvad der typisk regnes som godt, og hvordan du arbejder dig nedad, forklaret enkelt." />
+
+  <link rel="canonical" href="https://golfsocial.club/hvad-er-et-godt-golfhandicap" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Golfsocial" />
+  <meta property="og:locale" content="da_DK" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="Hvad er et godt golfhandicap? · Golfsocial" />
+  <meta property="og:description" content="Hvad er et godt golfhandicap? Sådan ligger niveauerne, hvad der typisk regnes som godt, og hvordan du arbejder dig nedad, forklaret enkelt." />
+  <meta property="og:url" content="https://golfsocial.club/hvad-er-et-godt-golfhandicap" />
+  <meta property="og:image" content="https://golfsocial.club/images/og-good-handicap.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hvad er et godt golfhandicap? · Golfsocial" />
+  <meta name="twitter:description" content="Hvad er et godt golfhandicap? Sådan ligger niveauerne, hvad der typisk regnes som godt, og hvordan du arbejder dig nedad, forklaret enkelt." />
+  <meta name="twitter:image" content="https://golfsocial.club/images/og-good-handicap.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://golfsocial.club/hvad-er-et-godt-golfhandicap",
+    "headline": "Hvad er et godt golfhandicap?",
+    "description": "Hvad er et godt golfhandicap? Sådan ligger niveauerne, hvad der typisk regnes som godt, og hvordan du arbejder dig nedad, forklaret enkelt.",
+    "image": "https://golfsocial.club/images/og-good-handicap.png",
+    "inLanguage": "da-DK",
+    "dateModified": "2026-06-13",
+    "author": { "@type": "Person", "name": "Dan Chessa", "jobTitle": "Golf Marketing Officer" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Golfsocial",
+      "logo": { "@type": "ImageObject", "url": "https://golfsocial.club/images/logo.svg" }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://golfsocial.club/" },
+      { "@type": "ListItem", "position": 2, "name": "Hvad er et godt golfhandicap?", "item": "https://golfsocial.club/hvad-er-et-godt-golfhandicap" }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=12-42" />
+  <link rel="stylesheet" href="article.css?v=12" />
+</head>
+<body>
+
+  <!-- ════════════════════ HEADER (do not edit) ════════════════════ -->
+  <header class="masthead">
+    <a class="masthead__brand" href="index.html" aria-label="Golfsocial">
+      <img class="masthead__logo" src="images/logo.svg" alt="Golfsocial" />
+    </a>
+    <nav class="masthead__nav" aria-label="Top">
+      <a class="masthead__social" href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="17" cy="7" r="1.05" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M7.4 10.6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="7.4" cy="7.9" r="0.6" fill="currentColor"/>
+          <path d="M11.1 16.6v-6m0 2.5c0-1.6 1-2.5 2.3-2.5 1.2 0 2.1.9 2.1 2.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social masthead__social--x" href="https://x.com/golfsocialclub" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+      <div class="lang" role="group" aria-label="Language">
+        <span class="lang__opt is-active">EN</span><span class="lang__opt">DA</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ════════════════════ ARTICLE ════════════════════ -->
+  <article class="article">
+
+    <!-- ── header : « EDIT » title + meta + side photo (swap the image url) ── -->
+    <header class="article__head">
+      <div class="article__head-text">
+        <h1 class="article__title" data-da="Hvad er et godt golfhandicap?">What is a good golf handicap?</h1>
+        <p class="article__meta" data-da="~4 min læsning · Af Dan Chessa, Golf Marketing Officer">~4 min read · By Dan Chessa, Golf Marketing Officer</p>
+      </div>
+      <figure class="article__media">
+        <span class="article__media-img" style="background-image:url('images/blog-1.webp')"></span>
+      </figure>
+    </header>
+
+    <div class="article__body">
+      <!-- ╭───────────────────────── CONTENT START ─────────────────────────╮ -->
+
+      <p class="lead" data-da="Det korte svar er at det afhænger af, hvor længe du har spillet, hvor meget du øver, og hvad du sammenligner med. Men der findes nogle gode pejlemærker. Det vigtigste at have med fra start: jo lavere dit handicap er, desto stærkere spiller er du.">The short answer is that it depends on how long you have played, how much you practise, and what you are comparing against. But there are some useful reference points. The most important thing to take with you from the outset: the lower your handicap, the stronger a player you are.</p>
+
+      <h2 data-da="Hurtig genopfriskning: hvad handicap egentlig er">A quick refresher: what a handicap actually is</h2>
+      <p data-da="Dit golfhandicap er et tal, der beskriver dit spillemæssige niveau. Det bygger på dine seneste runder og fortæller, hvor mange slag over banens sværhedsgrad du typisk lægger. Den vigtigste pointe er enkel: et lavt index betyder en stærkere spiller, og et højere index betyder, at der er mere at arbejde med. Et handicap på 8 er altså bedre end et handicap på 20.">Your golf handicap is a number that describes your playing level. It is based on your recent rounds and reflects how many strokes over the course&rsquo;s difficulty you typically take. The key point is simple: a lower index means a stronger player, and a higher index means there is more room to grow. A handicap of 8 is better than a handicap of 20.</p>
+      <p data-da="Fordi handicappet udjævner forskellene mellem spillere, kan du tage en runde mod nogen, der er meget bedre eller dårligere end dig, og stadig få en jævnbyrdig dyst. Det er en stor del af, hvorfor golf er så socialt.">Because the handicap evens out the differences between players, you can take on a round against someone much better or much worse than you and still have a fair contest. That is a big part of why golf is so social.</p>
+
+      <h2 data-da="Hvad regnes typisk som et godt handicap?">What is typically considered a good handicap?</h2>
+      <p data-da="Der findes ikke ét rigtigt tal, men nogle niveauer går igen, når golfere taler om, hvad der er godt. Brug dem som pejlemærker, ikke som en facitliste.">There is no single correct number, but a few levels come up again and again when golfers talk about what counts as good. Treat them as reference points, not a verdict.</p>
+      <div class="callout">
+        <h3 data-da="Pejlemærker, groft sagt">Reference points, roughly speaking</h3>
+        <ul>
+          <li><strong data-da="Scratch (omkring 0):">Scratch (around 0):</strong> <span data-da="meget dygtigt og typisk forbeholdt spillere, der øver målrettet og spiller ofte.">very accomplished, and typically the domain of players who practise with intent and play often.</span></li>
+          <li><strong data-da="Single-digit (under 10):">Single digit (under 10):</strong> <span data-da="regnes bredt som stærkt og er for mange et håndgribeligt langsigtet mål.">widely regarded as strong, and for many players a tangible long-term goal.</span></li>
+          <li><strong data-da="Lavt to-cifret (omkring 10 til 18):">Lower double digits (around 10 to 18):</strong> <span data-da="et solidt, fornuftigt niveau, hvor mange engagerede fritidsspillere ligger.">a solid, sensible level where many committed recreational players sit.</span></li>
+          <li><strong data-da="Højere handicap (over 18):">Higher handicap (above 18):</strong> <span data-da="ofte hvor man er tidligt i golflivet, og hvor der typisk er mest at hente ved at spille lidt mere.">often where you are early in your golfing life, and usually where there is the most to gain from simply playing a bit more.</span></li>
+        </ul>
+      </div>
+      <p data-da="Mange fritidsspillere ligger højere end single-digit, og det er helt normalt. Pointen med pejlemærkerne er ikke at sætte dig i bås, men at give dig en fornemmelse af, hvor du står, og hvad der ligger forude.">Many recreational players sit higher than single digits, and that is entirely normal. The point of these markers is not to box you in, but to give you a sense of where you stand and what lies ahead.</p>
+
+      <h2 data-da="&laquo;Godt&raquo; er relativt">&ldquo;Good&rdquo; is relative</h2>
+      <p data-da="Et godt handicap for en nybegynder ser anderledes ud end et godt handicap for en, der har spillet i ti år. For nybegynderen kan det at komme stabilt under et bestemt tal være en stor sejr. For den erfarne spiller kan de sidste par slag ned mod single-digit være det sværeste arbejde af det hele.">A good handicap for a beginner looks different from a good handicap for someone who has played for ten years. For the beginner, getting consistently below a certain number can be a major win. For the experienced player, the last couple of strokes down toward single digits can be the hardest work of all.</p>
+      <p data-da="Derfor er det bedste mål sjældent en andens tal. Det er din egen fremgang over tid. Hvis dit handicap bevæger sig den rigtige vej, spiller du godt golf, uanset hvor du startede.">That is why the best measure is rarely someone else&rsquo;s number. It is your own progress over time. If your handicap is moving in the right direction, you are playing good golf, no matter where you started.</p>
+
+      <blockquote data-da="Det bedste handicap at jagte er ikke en andens. Det er det, der er en smule lavere end dit eget i sidste måned.">The best handicap to chase is not someone else&rsquo;s. It is the one that sits a little lower than your own from last month.</blockquote>
+
+      <h2 data-da="Sådan arbejder du dig nedad">How to work your way down</h2>
+      <p data-da="Der er ingen genvej, men opskriften er enkel: spil mere, registrér dine runder, og hold øje med din udvikling. Jo flere runder du fører ind, desto mere retvisende bliver dit handicap, og desto tydeligere ser du, hvor slagene forsvinder. De fleste spillere finder hurtigt ud af, at de taber flest slag omkring greenen, ikke ude på driving rangen.">There is no shortcut, but the recipe is simple: play more, record your rounds, and keep an eye on your development. The more rounds you log, the more accurate your handicap becomes, and the clearer it gets where the strokes are slipping away. Most players quickly discover they lose the most shots around the green, not out on the driving range.</p>
+      <p><span data-da="Det er her det hjælper at have et sted, hvor det er nemt at holde styr på dine scores og faktisk se fremgangen. Med">This is where it helps to have somewhere that makes it easy to keep track of your scores and actually see the progress. With</span> <a href="index.html">Golfsocial</a> <span data-da="kan du føre dine runder, følge din udvikling over tid og dele den med vennerne, så motivationen ikke står og falder med en enkelt dårlig dag. Og fordi dit officielle WHS-handicap synkroniseres via vores samarbejde med">you can log your rounds, follow your development over time, and share it with friends, so your motivation does not rise and fall with a single bad day. And because your official WHS handicap syncs through our collaboration with the</span> <a href="dgu-collaboration.html" data-da="Dansk Golf Union">Danish Golf Union</a><span data-da=", er det tal, du ser, det rigtige.">, the number you see is the real one.</span></p>
+
+      <h2 data-da="Kort afrunding">A short conclusion</h2>
+      <p data-da="Et godt golfhandicap er først og fremmest et, der bliver lavere, end det var. Single-digit og scratch er fine pejlemærker at have i baghovedet, men de er ikke målestokken for, om du har det sjovt eller spiller godt for dig. Spil dine runder, før dem ind, og lad tallet fortælle historien om din fremgang. Resten kommer af sig selv.">A good golf handicap is, above all, one that ends up lower than it was. Single digits and scratch are fine markers to keep in the back of your mind, but they are not the yardstick for whether you are enjoying yourself or playing well for you. Play your rounds, record them, and let the number tell the story of your progress. The rest follows on its own.</p>
+
+      <!-- ╰────────────────────────── CONTENT END ──────────────────────────╯ -->
+    </div>
+
+    <!-- ── back link (do not edit) ── -->
+    <div class="article__foot">
+      <a class="article__back" href="index.html#blogs" data-da="Tilbage til alle artikler">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to all articles
+      </a>
+    </div>
+  </article>
+
+  <!-- ════════════════════ NEWSLETTER (reused from the homepage, do not edit) ════════════════════ -->
+  <section class="newsband">
+    <div class="news">
+      <img class="news__bg" src="images/news-bg.webp" alt="" />
+      <div class="news__inner">
+        <div class="news__text">
+          <h2 class="news__h" data-da="En hilsen fra banen.">The occasional note from the course.</h2>
+          <p class="news__sub" data-da="Ingen støj. Kun når vi har noget at fortælle.">No noise. Only the occasional read.</p>
+        </div>
+        <form class="news__form" data-ml-form="165875690760046481" novalidate>
+          <input class="news__email" type="email" name="fields[email]" placeholder="you@email.com" data-da="dig@email.com" aria-label="Email address" required />
+          <button class="news__btn" type="submit" data-da="Tilmeld">Subscribe</button>
+          <span class="news__confirm" aria-hidden="true">
+            <span class="news__confirm-check">
+              <svg viewBox="0 0 52 52" aria-hidden="true">
+                <circle class="news__confirm-circle" cx="26" cy="26" r="24" fill="none" />
+                <path class="news__confirm-tick" fill="none" d="M15 27 l7.5 7.5 L37.5 19" />
+              </svg>
+            </span>
+            <span class="news__confirm-text" data-da="Du er med. Vi ses på banen.">You&rsquo;re in. See you on the course.</span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ DOWNLOAD CTA + FOOTER (do not edit) ════════════════════ -->
+  <footer class="foot">
+    <hr class="foot__rule" />
+    <div class="foot__cta">
+      <h2 class="foot__headline" data-da="Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed.">Download Golfsocial. Because good friends never let friends golf in silence.</h2>
+      <div class="badges foot__badges">
+        <a href="https://apps.apple.com/dk/app/id6743446900" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#16221F"/><g fill="#FCFBF8"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#16221F"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FCFBF8"/></g><g fill="#FCFBF8"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <div class="foot__left">
+        <nav class="foot__links" aria-label="Footer">
+          <a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener">Linkedin</a>
+          <a href="https://x.com/golfsocialclub" target="_blank" rel="noopener">x.com</a>
+          <a href="mailto:hello@golfsocial.club" data-da="Kontakt">Contact</a>
+          <a href="privacy-policy.html" data-da="Privatlivspolitik">Privacy Policy</a>
+        </nav>
+        <p class="foot__copy" data-da="© 2026 Golfsocial. Alle rettigheder forbeholdes.">© 2026 Golfsocial. All rights reserved.</p>
+      </div>
+      <p class="foot__made" data-da="Bygget og designet i København">Built and designed in Copenhagen</p>
+    </div>
+  </footer>
+
+  <script src="article.js?v=5"></script>
+</body>
+</html>
