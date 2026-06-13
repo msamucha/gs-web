@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  GOLFSOCIAL — BLOG POST TEMPLATE                                  ║
+  ║                                                                  ║
+  ║  To publish a new blog post: copy this file, rename it to your   ║
+  ║  url slug (e.g. how-to-lower-your-handicap.html), then change    ║
+  ║  ONLY the things marked « EDIT ».  Everything else — the design, ║
+  ║  the header, the footer, the stylesheets — stays exactly as is.  ║
+  ║                                                                  ║
+  ║  The article text lives between the CONTENT START and CONTENT    ║
+  ║  END markers below. Inside it you only ever write plain          ║
+  ║  content tags; the design is applied automatically:              ║
+  ║                                                                  ║
+  ║    <p class="lead">…</p>   first / intro paragraph (bigger)      ║
+  ║    <p>…</p>                a normal paragraph                    ║
+  ║    <h2>…</h2>              a section heading                     ║
+  ║    <h3>…</h3>              a smaller sub-heading                 ║
+  ║    <ul><li>…</li></ul>     a bullet list (use <ol> for numbers)  ║
+  ║    <blockquote>…</blockquote>   a pull-quote                     ║
+  ║    <figure><img src="images/your-image.webp" alt="…">           ║
+  ║      <figcaption>…</figcaption></figure>   an image             ║
+  ║    <hr>                    a divider line                        ║
+  ║    <strong>…</strong> / <em>…</em> / <a href="…">…</a>          ║
+  ║                                                                  ║
+  ║  Never add inline styles, <style> tags or new classes.          ║
+  ║  See BLOG-GUIDE.md for the full guide + a ready-made prompt.     ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#123f36" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- « EDIT » page title + description for search engines / social -->
+  <title>Golf for begyndere: sådan kommer du godt i gang · Golfsocial</title>
+  <meta name="description" content="Ny til golf? Sådan kommer du i gang: udstyret du behøver, din første tur på banen, regler og etikette i grove træk, og hvordan du får et officielt handicap." />
+
+  <link rel="canonical" href="https://golfsocial.club/golf-for-begyndere" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Golfsocial" />
+  <meta property="og:locale" content="da_DK" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="Golf for begyndere: sådan kommer du godt i gang · Golfsocial" />
+  <meta property="og:description" content="Ny til golf? Sådan kommer du i gang: udstyret du behøver, din første tur på banen, regler og etikette i grove træk, og hvordan du får et officielt handicap." />
+  <meta property="og:url" content="https://golfsocial.club/golf-for-begyndere" />
+  <meta property="og:image" content="https://golfsocial.club/images/og-beginners.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Golf for begyndere: sådan kommer du godt i gang · Golfsocial" />
+  <meta name="twitter:description" content="Ny til golf? Sådan kommer du i gang: udstyret du behøver, din første tur på banen, regler og etikette i grove træk, og hvordan du får et officielt handicap." />
+  <meta name="twitter:image" content="https://golfsocial.club/images/og-beginners.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://golfsocial.club/golf-for-begyndere",
+    "headline": "Golf for begyndere: sådan kommer du godt i gang",
+    "description": "Ny til golf? Sådan kommer du i gang: udstyret du behøver, din første tur på banen, regler og etikette i grove træk, og hvordan du får et officielt handicap.",
+    "image": "https://golfsocial.club/images/og-beginners.png",
+    "inLanguage": "da-DK",
+    "dateModified": "2026-06-14",
+    "author": { "@type": "Person", "name": "Dan Chessa", "jobTitle": "Golf Marketing Officer" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Golfsocial",
+      "logo": { "@type": "ImageObject", "url": "https://golfsocial.club/images/logo.svg" }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://golfsocial.club/" },
+      { "@type": "ListItem", "position": 2, "name": "Golf for begyndere: sådan kommer du godt i gang", "item": "https://golfsocial.club/golf-for-begyndere" }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=12-42" />
+  <link rel="stylesheet" href="article.css?v=12" />
+</head>
+<body>
+
+  <!-- ════════════════════ HEADER (do not edit) ════════════════════ -->
+  <header class="masthead">
+    <a class="masthead__brand" href="index.html" aria-label="Golfsocial">
+      <img class="masthead__logo" src="images/logo.svg" alt="Golfsocial" />
+    </a>
+    <nav class="masthead__nav" aria-label="Top">
+      <a class="masthead__social" href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="17" cy="7" r="1.05" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M7.4 10.6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="7.4" cy="7.9" r="0.6" fill="currentColor"/>
+          <path d="M11.1 16.6v-6m0 2.5c0-1.6 1-2.5 2.3-2.5 1.2 0 2.1.9 2.1 2.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social masthead__social--x" href="https://x.com/golfsocialclub" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+      <div class="lang" role="group" aria-label="Language">
+        <span class="lang__opt is-active">EN</span><span class="lang__opt">DA</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ════════════════════ ARTICLE ════════════════════ -->
+  <article class="article">
+
+    <!-- ── header : « EDIT » title + meta + side photo (swap the image url) ── -->
+    <header class="article__head">
+      <div class="article__head-text">
+        <h1 class="article__title" data-da="Golf for begyndere: sådan kommer du godt i gang">Golf for beginners: how to get started</h1>
+        <p class="article__meta" data-da="~7 min læsning · Af Dan Chessa, Golf Marketing Officer">~7 min read · By Dan Chessa, Golf Marketing Officer</p>
+      </div>
+      <figure class="article__media">
+        <span class="article__media-img" style="background-image:url('images/article-beginners.webp')"></span>
+      </figure>
+    </header>
+
+    <div class="article__body">
+      <!-- ╭───────────────────────── CONTENT START ─────────────────────────╮ -->
+
+      <p class="lead" data-da="Golf ser sværere ud udefra, end det er at gå i gang med. Du behøver ikke et fuldt sæt køller, et lavt handicap eller et helt sæt regler i hovedet for at komme afsted. Du skal bare have lyst til at slå til en bold og være lidt nysgerrig. Denne guide tager dig igennem det første: hvad du reelt behøver, hvor du øver, hvordan du kommer på banen, og hvordan du får et officielt handicap, helt uden bøvl.">Golf looks harder to start than it actually is. You don&rsquo;t need a full set of clubs, a low handicap, or a rulebook memorised before you can play. You just need the urge to hit a ball and a little curiosity. This guide walks you through the early steps: what you actually need, where to practise, how to get on the course, and how to earn an official handicap, with no fuss.</p>
+
+      <h2 data-da="Hvad du behøver for at starte">What you need to get started</h2>
+      <p data-da="Den gode nyhed: du behøver ikke alt fra dag ét. Mange begyndere bruger alt for mange penge på udstyr, før de overhovedet ved, om de bliver hængende. Start let, og byg på efterhånden.">The good news: you don&rsquo;t need everything from day one. A lot of beginners spend far too much on gear before they even know whether the game sticks. Start light, and add as you go.</p>
+      <ul>
+        <li><strong data-da="Et halvt sæt køller:">Half a set of clubs:</strong> <span data-da="du behøver ikke fjorten køller. En driver eller et fairwaytræ, et par jern (fx et 7-jern og et 9-jern), en wedge og en putter rækker langt i starten. Et brugt sæt eller et lånt sæt er helt fint.">you don&rsquo;t need fourteen clubs. A driver or fairway wood, a couple of irons (say a 7-iron and a 9-iron), a wedge, and a putter will take you a long way at first. A second-hand set or a borrowed one is perfectly fine.</span></li>
+        <li><strong data-da="Sko med godt greb:">Shoes with grip:</strong> <span data-da="rigtige golfsko er rare, men ikke et must i begyndelsen. Et par flade sko med solid sål dur fint på range og par-3-banen.">proper golf shoes are nice but not essential early on. A pair of flat shoes with a solid sole works fine on the range and the par-3 course.</span></li>
+        <li><strong data-da="Et par bolde og nogle tees:">A few balls and some tees:</strong> <span data-da="køb ikke de dyre. Du kommer til at miste nogle, og det er helt normalt. Billige bolde til træning er din ven.">don&rsquo;t buy the expensive ones. You will lose a few, and that is completely normal. Cheap practice balls are your friend.</span></li>
+        <li><strong data-da="En handske (valgfrit):">A glove (optional):</strong> <span data-da="den giver bedre greb og færre vabler, men du kan sagtens slå dine første bolde uden.">it gives better grip and fewer blisters, but you can easily hit your first balls without one.</span></li>
+      </ul>
+      <p data-da="Pointen er enkel: skaf nok til at komme i gang, og udskyd resten. Du lærer hurtigt, hvad der passer til netop dit spil.">The point is simple: get enough to begin, and put off the rest. You will quickly learn what suits your own game.</p>
+
+      <h2 data-da="Hvor du øver først">Where to practise first</h2>
+      <p data-da="Du skal ikke ud på en stor 18-hullers bane på din første dag. Begynd de steder, hvor der er lavt til loftet og masser af plads til at ramme ved siden af.">You shouldn&rsquo;t head out onto a full 18-hole course on your first day. Begin in the places where the pressure is low and there is plenty of room to miss.</p>
+      <ul>
+        <li><strong data-da="Driving range:">The driving range:</strong> <span data-da="her slår du bold efter bold uden at gå nogen steder. Det er det bedste sted at få en fornemmelse for svinget og finde ud af, hvilke køller du kan lide.">here you hit ball after ball without going anywhere. It is the best place to get a feel for the swing and work out which clubs you like.</span></li>
+        <li><strong data-da="Par-3-banen:">The par-3 course:</strong> <span data-da="kortere huller, mindre at gå galt i. Perfekt til din allerførste rigtige runde, hvor du øver dig i at slå, gå videre og putte.">shorter holes, less that can go wrong. Perfect for your very first real round, where you practise hitting, walking on, and putting.</span></li>
+        <li><strong data-da="Pitch &amp; putt:">Pitch &amp; putt:</strong> <span data-da="korte huller med fokus på det korte spil og putting, der er hvor de fleste slag faktisk falder. Afslappet, hurtigt og venligt over for begyndere.">short holes focused on the short game and putting, which is where most of your shots actually happen. Relaxed, quick, and beginner-friendly.</span></li>
+      </ul>
+      <p data-da="Et par timer med en træner her i starten er givet godt ud. Du undgår de værste vaner, og du får hurtigt en svingfølelse, der holder.">A couple of lessons with a coach early on are money well spent. You avoid the worst habits, and you build a swing feel that lasts.</p>
+
+      <h2 data-da="Meld dig ind i en klub og kom på banen">Join a club and get on the course</h2>
+      <p data-da="Når svinget begynder at sidde, er næste skridt at komme rigtigt på banen. I Danmark går det typisk gennem et begynderforløb i en golfklub, ofte kaldet et kanin-forløb. Her lærer du reglerne, etiketten og det praktiske, og du får lov at gå på den store bane, når du er klar.">Once the swing starts to settle, the next step is getting properly onto the course. In Denmark this usually runs through a beginner course at a golf club, often called a kanin programme. There you learn the rules, the etiquette, and the practical side, and you earn the right to play the main course once you are ready.</p>
+      <p data-da="Et begynderforløb i klub er også den nemmeste vej til at møde andre, der lige er startet. I stedet for at stå alene på range går du runder med folk på samme niveau, og det er ofte sådan, de første golfvenskaber bliver til.">A club beginner programme is also the easiest way to meet others who have just started. Instead of standing alone on the range, you play rounds with people at the same level, and that is often how the first golf friendships are formed.</p>
+
+      <h2 data-da="Få et officielt handicap">Get an official handicap</h2>
+      <p><span data-da="For at spille de fleste runder og turneringer i Danmark skal du have et officielt handicap. Det udstedes ikke af os, men af">To play most rounds and tournaments in Denmark you need an official handicap. It isn&rsquo;t issued by us, but by the</span> <a href="dgu-collaboration.html" data-da="Dansk Golf Union">Danish Golf Union</a><span data-da=" (DGU), som administrerer WHS-handicap herhjemme. Du får dit handicap gennem din klub, typisk efter at have gennemført begynderforløbet og afleveret nogle godkendte scores.">&nbsp;(DGU), which administers the WHS-handicap system here. You get your handicap through your club, typically after completing the beginner programme and handing in a few approved scores.</span></p>
+      <p><span data-da="Vil du vide præcis, hvordan det foregår, fra de første tællende runder til det tal, der følger dig, har vi en hel guide til">If you want to know exactly how it works, from your first counting rounds to the number that follows you around, we have a full guide on</span> <a href="officielt-handicap-i-danmark" data-da="hvordan du får et officielt handicap i Danmark">how to get an official handicap in Denmark</a><span data-da=". Kort fortalt: dit handicap er bare et tal, der siger noget om dit niveau, så du kan spille jævnbyrdigt mod andre uanset deres niveau.">. In short: your handicap is just a number that reflects your level, so you can play on fair terms against others whatever their level.</span></p>
+
+      <h2 data-da="Etikette og tempo i grove træk">Etiquette and pace, in broad strokes</h2>
+      <p data-da="Golf har et par uskrevne regler, og de fleste handler om hensyn. Du behøver ikke kunne dem alle udenad, men disse få gør dig velkommen i ethvert flight.">Golf has a few unwritten rules, and most of them come down to consideration. You don&rsquo;t need to know them all by heart, but these few will make you welcome in any group.</p>
+      <ul>
+        <li><strong data-da="Hold tempoet:">Keep up the pace:</strong> <span data-da="vær klar til at slå, når det er din tur, og vink en hurtigere bold igennem, hvis I sakker bagud. Ingen forventer, at du spiller hurtigt, kun at du ikke trækker den i langdrag.">be ready to play when it is your turn, and wave a faster group through if you fall behind. Nobody expects you to play fast, only that you don&rsquo;t hold things up.</span></li>
+        <li><strong data-da="Vær stille, når andre slår:">Stay quiet while others hit:</strong> <span data-da="stå stille og lad være med at snakke, mens en anden er ved at slå. Bagefter er der al den snak, I gider.">stand still and hold the chatter while someone is about to swing. There is plenty of time to talk afterwards.</span></li>
+        <li><strong data-da="Ryd op efter dig:">Tidy up after yourself:</strong> <span data-da="læg dine turf-stykker tilbage, rive bunkeren efter dig og reparér dine nedslagsmærker på greenen. Efterlad banen, som du selv vil finde den.">replace your divots, rake the bunker behind you, and fix your pitch marks on the green. Leave the course as you would want to find it.</span></li>
+        <li><strong data-da="Pas på de andre:">Look out for others:</strong> <span data-da="råb &rsquo;fore&rsquo;, hvis din bold flyver mod nogen. Sikkerhed først, altid.">shout &lsquo;fore&rsquo; if your ball flies towards anyone. Safety first, always.</span></li>
+      </ul>
+
+      <div class="callout">
+        <h3 data-da="Kom-i-gang-tjekliste">Get-started checklist</h3>
+        <ul>
+          <li><strong data-da="Skaf et halvt sæt:">Get half a set:</strong> <span data-da="et træ, et par jern, en wedge, en putter. Lånt eller brugt er fint.">a wood, a couple of irons, a wedge, a putter. Borrowed or second-hand is fine.</span></li>
+          <li><strong data-da="Øv på range og par-3:">Practise on the range and par-3:</strong> <span data-da="byg svingfølelse, før du går på den store bane.">build a swing feel before the full course.</span></li>
+          <li><strong data-da="Tag et par timer:">Take a couple of lessons:</strong> <span data-da="en træner sparer dig for dårlige vaner.">a coach saves you from bad habits.</span></li>
+          <li><strong data-da="Meld dig ind i en klub:">Join a club:</strong> <span data-da="begynderforløbet giver dig regler, runder og nye venner.">the beginner programme gives you the rules, rounds, and new friends.</span></li>
+          <li><strong data-da="Få dit handicap gennem DGU:">Get your handicap through the DGU:</strong> <span data-da="dit tal, så du kan spille jævnbyrdigt med alle.">your number, so you can play on fair terms with anyone.</span></li>
+        </ul>
+      </div>
+
+      <h2 data-da="Følg din rejse og del den med vennerne">Follow your journey and share it with friends</h2>
+      <p><span data-da="Det, der holder de fleste begyndere i gang, er ikke et perfekt sving, men selskabet. At se sig selv blive bedre, dele en god runde og følge med i, hvad vennerne har gang i, gør hver tur sjovere. Det er præcis det,">What keeps most beginners going isn&rsquo;t a perfect swing, it&rsquo;s the company. Seeing yourself improve, sharing a good round, and following what your friends are up to makes every trip more fun. That is exactly what</span> <a href="index.html">Golfsocial</a> <span data-da="er bygget til: et sted hvor du kan følge din rejse, dele dine højdepunkter og holde kontakten med din golfkreds, uanset om du lige er startet eller har spillet i årevis.">is built for: a place where you can follow your journey, share your highlights, and stay connected with your golf circle, whether you have just started or played for years.</span></p>
+      <p data-da="Golf er nemmere at begynde på, end det ser ud, og langt sjovere, når du ikke står alene med det. Skaf et par køller, find en range, meld dig ind et sted, og kom afsted. Resten lærer du undervejs.">Golf is easier to start than it looks, and a lot more fun when you don&rsquo;t do it alone. Grab a few clubs, find a range, join somewhere, and get out there. The rest you learn along the way.</p>
+
+      <!-- ╰────────────────────────── CONTENT END ──────────────────────────╯ -->
+    </div>
+
+    <!-- ── back link (do not edit) ── -->
+    <div class="article__foot">
+      <a class="article__back" href="index.html#blogs" data-da="Tilbage til alle artikler">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to all articles
+      </a>
+    </div>
+  </article>
+
+  <!-- ════════════════════ NEWSLETTER (reused from the homepage, do not edit) ════════════════════ -->
+  <section class="newsband">
+    <div class="news">
+      <img class="news__bg" src="images/news-bg.webp" alt="" />
+      <div class="news__inner">
+        <div class="news__text">
+          <h2 class="news__h" data-da="En hilsen fra banen.">The occasional note from the course.</h2>
+          <p class="news__sub" data-da="Ingen støj. Kun når vi har noget at fortælle.">No noise. Only the occasional read.</p>
+        </div>
+        <form class="news__form" data-ml-form="165875690760046481" novalidate>
+          <input class="news__email" type="email" name="fields[email]" placeholder="you@email.com" data-da="dig@email.com" aria-label="Email address" required />
+          <button class="news__btn" type="submit" data-da="Tilmeld">Subscribe</button>
+          <span class="news__confirm" aria-hidden="true">
+            <span class="news__confirm-check">
+              <svg viewBox="0 0 52 52" aria-hidden="true">
+                <circle class="news__confirm-circle" cx="26" cy="26" r="24" fill="none" />
+                <path class="news__confirm-tick" fill="none" d="M15 27 l7.5 7.5 L37.5 19" />
+              </svg>
+            </span>
+            <span class="news__confirm-text" data-da="Du er med. Vi ses på banen.">You&rsquo;re in. See you on the course.</span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ DOWNLOAD CTA + FOOTER (do not edit) ════════════════════ -->
+  <footer class="foot">
+    <hr class="foot__rule" />
+    <div class="foot__cta">
+      <h2 class="foot__headline" data-da="Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed.">Download Golfsocial. Because good friends never let friends golf in silence.</h2>
+      <div class="badges foot__badges">
+        <a href="https://apps.apple.com/dk/app/id6743446900" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#16221F"/><g fill="#FCFBF8"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#16221F"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FCFBF8"/></g><g fill="#FCFBF8"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <div class="foot__left">
+        <nav class="foot__links" aria-label="Footer">
+          <a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener">Linkedin</a>
+          <a href="https://x.com/golfsocialclub" target="_blank" rel="noopener">x.com</a>
+          <a href="mailto:hello@golfsocial.club" data-da="Kontakt">Contact</a>
+          <a href="privacy-policy.html" data-da="Privatlivspolitik">Privacy Policy</a>
+        </nav>
+        <p class="foot__copy" data-da="© 2026 Golfsocial. Alle rettigheder forbeholdes.">© 2026 Golfsocial. All rights reserved.</p>
+      </div>
+      <p class="foot__made" data-da="Bygget og designet i København">Built and designed in Copenhagen</p>
+    </div>
+  </footer>
+
+  <script src="article.js?v=5"></script>
+</body>
+</html>
