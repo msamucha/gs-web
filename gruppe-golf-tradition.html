@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  GOLFSOCIAL — BLOG POST TEMPLATE                                  ║
+  ║                                                                  ║
+  ║  To publish a new blog post: copy this file, rename it to your   ║
+  ║  url slug (e.g. how-to-lower-your-handicap.html), then change    ║
+  ║  ONLY the things marked « EDIT ».  Everything else — the design, ║
+  ║  the header, the footer, the stylesheets — stays exactly as is.  ║
+  ║                                                                  ║
+  ║  The article text lives between the CONTENT START and CONTENT    ║
+  ║  END markers below. Inside it you only ever write plain          ║
+  ║  content tags; the design is applied automatically:              ║
+  ║                                                                  ║
+  ║    <p class="lead">…</p>   first / intro paragraph (bigger)      ║
+  ║    <p>…</p>                a normal paragraph                    ║
+  ║    <h2>…</h2>              a section heading                     ║
+  ║    <h3>…</h3>              a smaller sub-heading                 ║
+  ║    <ul><li>…</li></ul>     a bullet list (use <ol> for numbers)  ║
+  ║    <blockquote>…</blockquote>   a pull-quote                     ║
+  ║    <figure><img src="images/your-image.webp" alt="…">           ║
+  ║      <figcaption>…</figcaption></figure>   an image             ║
+  ║    <hr>                    a divider line                        ║
+  ║    <strong>…</strong> / <em>…</em> / <a href="…">…</a>          ║
+  ║                                                                  ║
+  ║  Never add inline styles, <style> tags or new classes.          ║
+  ║  See BLOG-GUIDE.md for the full guide + a ready-made prompt.     ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#123f36" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEBPZS1TT2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XEBPZS1TT2');
+  </script>
+
+  <!-- « EDIT » page title + description for search engines / social -->
+  <title>Gør gruppe-golf til en tradition · Golfsocial</title>
+  <meta name="description" content="Den faste runde med vennerne er guld værd. Sådan starter du en golftradition der holder: et fast tidspunkt, en stående fourball, en sæsondyst og de små ritualer der binder den sammen." />
+
+  <link rel="canonical" href="https://golfsocial.club/gruppe-golf-tradition" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Golfsocial" />
+  <meta property="og:locale" content="da_DK" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="Gør gruppe-golf til en tradition · Golfsocial" />
+  <meta property="og:description" content="Den faste runde med vennerne er guld værd. Sådan starter du en golftradition der holder: et fast tidspunkt, en stående fourball, en sæsondyst og de små ritualer der binder den sammen." />
+  <meta property="og:url" content="https://golfsocial.club/gruppe-golf-tradition" />
+  <meta property="og:image" content="https://golfsocial.club/images/og-home.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gør gruppe-golf til en tradition · Golfsocial" />
+  <meta name="twitter:description" content="Den faste runde med vennerne er guld værd. Sådan starter du en golftradition der holder: et fast tidspunkt, en stående fourball, en sæsondyst og de små ritualer der binder den sammen." />
+  <meta name="twitter:image" content="https://golfsocial.club/images/og-home.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://golfsocial.club/gruppe-golf-tradition",
+    "headline": "Gør gruppe-golf til en tradition",
+    "description": "Den faste runde med vennerne er guld værd. Sådan starter du en golftradition der holder: et fast tidspunkt, en stående fourball, en sæsondyst og de små ritualer der binder den sammen.",
+    "image": "https://golfsocial.club/images/og-home.png",
+    "inLanguage": "da-DK",
+    "dateModified": "2026-06-14",
+    "author": { "@type": "Organization", "name": "Golfsocial" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Golfsocial",
+      "logo": { "@type": "ImageObject", "url": "https://golfsocial.club/images/logo.svg" }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://golfsocial.club/" },
+      { "@type": "ListItem", "position": 2, "name": "Gør gruppe-golf til en tradition", "item": "https://golfsocial.club/gruppe-golf-tradition" }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=12-42" />
+  <link rel="stylesheet" href="article.css?v=12" />
+</head>
+<body>
+
+  <!-- ════════════════════ HEADER (do not edit) ════════════════════ -->
+  <header class="masthead">
+    <a class="masthead__brand" href="index.html" aria-label="Golfsocial">
+      <img class="masthead__logo" src="images/logo.svg" alt="Golfsocial" />
+    </a>
+    <nav class="masthead__nav" aria-label="Top">
+      <a class="masthead__social" href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="17" cy="7" r="1.05" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M7.4 10.6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="7.4" cy="7.9" r="0.6" fill="currentColor"/>
+          <path d="M11.1 16.6v-6m0 2.5c0-1.6 1-2.5 2.3-2.5 1.2 0 2.1.9 2.1 2.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social masthead__social--x" href="https://x.com/golfsocialclub" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+      <div class="lang" role="group" aria-label="Language">
+        <span class="lang__opt is-active">EN</span><span class="lang__opt">DA</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ════════════════════ ARTICLE ════════════════════ -->
+  <article class="article">
+
+    <!-- ── header : « EDIT » title + meta + side photo (swap the image url) ── -->
+    <header class="article__head">
+      <div class="article__head-text">
+        <h1 class="article__title" data-da="Gør gruppe-golf til en tradition">Make group golf a tradition</h1>
+        <p class="article__meta" data-da="~6 min læsning">~6 min read</p>
+      </div>
+      <figure class="article__media">
+        <span class="article__media-img" style="background-image:url('images/social-group.webp')"></span>
+      </figure>
+    </header>
+
+    <div class="article__body">
+      <!-- ╭───────────────────────── CONTENT START ─────────────────────────╮ -->
+
+      <p class="lead" data-da="Tænk på dine bedste golfminder. Det er sjældent den ene perfekte runde eller det tal der stod på scorekortet. Det er som regel folkene: den faste tirsdag med de samme tre, den årlige tur, det væddemål ingen kan huske hvordan startede, men som stadig kører. Niveauet betyder mindre end du tror. Det der gør golf til mere end en sport, er gentagelsen, de samme mennesker, igen og igen.">Think about your best golf memories. They are rarely the one perfect round or the number on the scorecard. They are usually the people: the standing Tuesday with the same three, the annual trip, the bet nobody remembers starting but everybody is still settling. The level matters less than you think. What turns golf into more than a sport is the repetition, the same people, again and again.</p>
+
+      <p data-da="Den gode nyhed er at en tradition ikke opstår af sig selv, men den er heller ikke svær at starte. Du skal ikke bruge en klub, et udvalg eller et stort opslag. Du skal bruge et fast tidspunkt, et par faste folk og nogle få ting der gentager sig. Her er opskriften på en golftradition der faktisk holder.">The good news is that a tradition does not appear on its own, but it is not hard to start either. You do not need a club, a committee, or a big announcement. You need a fixed time, a few fixed people, and a handful of things that repeat. Here is how to build a golf tradition that actually lasts.</p>
+
+      <h2 data-da="Vælg ét fast tidspunkt og hold fast i det">Pick one fixed time and protect it</h2>
+      <p data-da="Det vigtigste valg er tidspunktet, ikke banen og ikke formatet. Et fast tidspunkt fjerner det der slår de fleste golfaftaler ihjel: koordineringen. Ligger runden på samme tid hver gang, behøver ingen at spørge, foreslå eller vente på svar. Den er der bare. Vælg noget der passer ind i livet. Tirsdag aften efter arbejde virker for mange, fordi weekenden er fyldt med alt muligt andet, og en fast søndag om måneden virker hvis I bor spredt og ikke kan ses hver uge. Det handler ikke om hvor ofte, men om at det er forudsigeligt. En gang om måneden i to år slår hver uge i seks uger.">The most important choice is the time, not the course and not the format. A fixed time removes the thing that kills most golf plans: the coordination. When the round sits at the same time every time, nobody has to ask, suggest, or wait for a reply. It is simply there. Pick something that fits into life. Tuesday evening after work works for many, because the weekend is already full of everything else, and a set Sunday once a month works if you live spread out and cannot meet every week. It is not about how often, but about being predictable. Once a month for two years beats every week for six weeks.</p>
+
+      <h2 data-da="Byg en stående fourball">Build a standing fourball</h2>
+      <p data-da="En tradition har brug for en fast kerne. Find tre andre der gerne vil binde sig til tidspunktet, og gør jer til en stående fourball. Det betyder ikke at det altid er præcis de samme fire, men at der er en kerne der bærer aftalen, og at pladserne er værd at få. Når en ikke kan, tager en gæst pladsen, og så er det tit sådan nye folk siver ind. Hold gruppen lille nok til at alle kender alle, og stor nok til at den overlever en travl uge. Fire er ikke et tilfældigt tal. Det er en bold, det er et format, og det er lille nok til at alle når at snakke med alle på en runde.">A tradition needs a fixed core. Find three others who want to commit to the time, and make yourselves a standing fourball. That does not mean it is always the exact same four, but that there is a core carrying the arrangement, and that the spots are worth having. When someone cannot make it, a guest takes the place, and that is often how new people drift in. Keep the group small enough that everyone knows everyone, and large enough to survive a busy week. Four is not a random number. It is one group, it is a format, and it is small enough for everyone to talk to everyone over a round.</p>
+
+      <h2 data-da="Hold en dyst der løber over sæsonen">Run a contest that spans the season</h2>
+      <p><span data-da="En enkelt runde glemmes. En stilling gør ikke. Det der binder en tradition sammen over måneder, er en sæsonlang dyst der samler de enkelte runder til én historie. Det enkleste er en order of merit: hver runde giver point efter placering, og pointene lægges sammen hen over sæsonen. Pludselig betyder den våde tirsdag i april noget i september. Hold reglerne så enkle at de kan forklares på vej til første tee. Spil stableford så alle uanset handicap kan være med i toppen, giv point for top tre, og lad det køre. Vil I have lidt ekstra krydderi, kan I lægge små sidespil oven på, og der har vi samlet nogle stykker i vores guide til">A single round is forgotten. A standing does not. What holds a tradition together across months is a season-long contest that gathers the individual rounds into one story. The simplest version is an order of merit: each round awards points by finishing position, and the points add up across the season. Suddenly the wet Tuesday in April matters in September. Keep the rules simple enough to explain on the way to the first tee. Play stableford so everyone, regardless of handicap, can sit near the top, give points for the top three, and let it run. If you want a little extra spice, you can add small side games on top, and we have gathered a few in our guide to</span> <a href="golf-spil-og-vaeddemaal.html" data-da="golfspil og væddemål">golf games and bets</a><span data-da=".">.</span></p>
+
+      <div class="callout">
+        <h3 data-da="Sådan starter I traditionen">How to start the tradition</h3>
+        <ul>
+          <li><strong data-da="Lås tidspunktet først:">Lock the time first:</strong> <span data-da="vælg én fast dag og time, fx tirsdag aften eller første søndag i måneden, og book den i kalenderen før alt andet.">pick one fixed day and hour, for example Tuesday evening or the first Sunday of the month, and put it in the calendar before anything else.</span></li>
+          <li><strong data-da="Saml en kerne på fire:">Gather a core of four:</strong> <span data-da="find tre der vil binde sig, så I har en stående fourball med en gæsteplads når nogen ikke kan.">find three who will commit, so you have a standing fourball with a guest spot when someone is out.</span></li>
+          <li><strong data-da="Sæt en stilling op:">Set up a standing:</strong> <span data-da="lav en simpel order of merit med point efter placering, så hele sæsonen hænger sammen.">make a simple order of merit with points by finishing position, so the whole season hangs together.</span></li>
+          <li><strong data-da="Find på et navn:">Give it a name:</strong> <span data-da="døb gruppen og dysten, og find en lille vandrepokal så vinderen har noget at give videre.">name the group and the contest, and find a small travelling trophy so the winner has something to pass on.</span></li>
+          <li><strong data-da="Gentag ritualerne:">Repeat the rituals:</strong> <span data-da="samme hul 19, samme væddemål, samme kaffe på vej ud, det er gentagelsen der gør det til en tradition.">same nineteenth hole, same bet, same coffee on the way out, the repetition is what makes it a tradition.</span></li>
+        </ul>
+      </div>
+
+      <h2 data-da="Giv det et navn og en pokal">Give it a name and a trophy</h2>
+      <p data-da="Det lyder fjollet, og det er præcis derfor det virker. I det øjeblik gruppen får et navn, holder den op med at være en løs aftale og bliver til noget man er med i. Det behøver ikke være gennemtænkt. De fleste gode gruppenavne er en intern joke, et stednavn eller noget der gik galt en gang. Læg en lille vandrepokal oven på. En brugt pokal fra loppemarkedet, en gravering til en flad hundredelap eller bare en grim ting ingen vil have stående hjemme. Pointen er ikke prisen, men at den skifter hænder: vinderen har den til næste gang, og taberne har noget at jagte. En pokal der vandrer, holder en sæsondyst i live på en måde et regneark aldrig gør.">It sounds silly, and that is exactly why it works. The moment the group gets a name, it stops being a loose arrangement and becomes something you are part of. It does not need to be clever. Most good group names are an inside joke, a place name, or something that went wrong once. Add a small travelling trophy on top. A used cup from a flea market, an engraving for the price of a round of coffee, or just an ugly thing nobody wants on their shelf at home. The point is not the cost, but that it changes hands: the winner keeps it until next time, and the rest have something to chase. A trophy that travels keeps a season-long contest alive in a way a spreadsheet never does.</p>
+
+      <h2 data-da="Hold fast i de små ritualer">Hold on to the small rituals</h2>
+      <p data-da="Det er de små, faste ting der gør en tradition genkendelig. Samme hul 19 hver gang. Samme væddemål om hvem der køber den første. Den samme dårlige vittighed på det samme svære par 3. Den samme der altid kommer for sent, og den samme der altid minder om det. Du behøver ikke planlægge ritualerne, du skal bare lade være med at bryde dem når de først opstår. Gentager noget sig tre gange, er det ikke længere et tilfælde, det er sådan I gør. Det er den slags der får en ny gæst til at mærke at her er en historie, de lige er trådt ind i, og det er ofte det der får dem til at komme igen.">It is the small, fixed things that make a tradition recognisable. The same nineteenth hole every time. The same bet over who buys the first round. The same bad joke on the same tricky par 3. The same person who is always late, and the same person who always points it out. You do not need to plan the rituals, you just have to avoid breaking them once they appear. When something repeats three times, it is no longer a coincidence, it is how you do things. That is the kind of thing that lets a new guest sense there is a story here they have just stepped into, and that is often what brings them back.</p>
+
+      <h2 data-da="Det er gentagelsen, ikke niveauet">It is the repetition, not the level</h2>
+      <p data-da="Du behøver hverken at være god eller seriøs for at have en golftradition. Faktisk overlever de mest afslappede grupper ofte længst, fordi de ikke gør det til et arbejde. Det eneste der virkelig kræves, er at I bliver ved. En tradition er bare en aftale du har holdt så mange gange at den er holdt op med at føles som en aftale. Vælg tidspunktet, saml folkene, giv det et navn, hold en stilling og lad ritualerne sætte sig. Resten kommer af sig selv.">You do not need to be good or serious to have a golf tradition. In fact, the most relaxed groups often last the longest, because they never turn it into work. The only thing genuinely required is that you keep going. A tradition is just an arrangement you have kept so many times that it has stopped feeling like an arrangement. Pick the time, gather the people, give it a name, run a standing, and let the rituals settle in. The rest takes care of itself.</p>
+
+      <h2 data-da="Sådan holder Golfsocial traditionen samlet ét sted">How Golfsocial keeps the tradition in one place</h2>
+      <p><span data-da="Det svære ved en tradition er ikke at starte den, men at holde styr på den, og det er præcis der">The hard part of a tradition is not starting it, but keeping track of it, and that is exactly where</span> <a href="index.html">Golfsocial</a> <span data-da="kommer ind. Gruppen, runderne og stillingen samler vi ét sted, så I slipper for at jagte resultater i en chattråd eller et regneark der altid bliver væk. I opretter jeres gruppe, scorerne fra runderne lægger sig ind på en fælles stilling, og alle kan følge med i hvem der fører, hvem der haler ind, og hvem der bare dukkede op. Så bliver det nemmere at holde fast i det faste tidspunkt, fordi der altid er noget at vende tilbage til.">comes in. The group, the rounds, and the standing all live in one place, so you do not have to chase results in a chat thread or a spreadsheet that always gets lost. You set up your group, the scores from the rounds settle onto a shared standing, and everyone can follow who is leading, who is closing in, and who simply turned up. That makes it easier to protect the fixed time, because there is always something to come back to.</span></p>
+
+      <!-- ╰────────────────────────── CONTENT END ──────────────────────────╯ -->
+    </div>
+
+    <!-- ── back link (do not edit) ── -->
+    <div class="article__foot">
+      <a class="article__back" href="index.html#blogs" data-da="Tilbage til alle artikler">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to all articles
+      </a>
+    </div>
+  </article>
+
+  <!-- ════════════════════ NEWSLETTER (reused from the homepage, do not edit) ════════════════════ -->
+  <section class="newsband">
+    <div class="news">
+      <img class="news__bg" src="images/news-bg.webp" alt="" />
+      <div class="news__inner">
+        <div class="news__text">
+          <h2 class="news__h" data-da="En hilsen fra banen.">The occasional note from the course.</h2>
+          <p class="news__sub" data-da="Ingen støj. Kun når vi har noget at fortælle.">No noise. Only the occasional read.</p>
+        </div>
+        <form class="news__form" data-ml-form="165875690760046481" novalidate>
+          <input class="news__email" type="email" name="fields[email]" placeholder="you@email.com" data-da="dig@email.com" aria-label="Email address" required />
+          <button class="news__btn" type="submit" data-da="Tilmeld">Subscribe</button>
+          <span class="news__confirm" aria-hidden="true">
+            <span class="news__confirm-check">
+              <svg viewBox="0 0 52 52" aria-hidden="true">
+                <circle class="news__confirm-circle" cx="26" cy="26" r="24" fill="none" />
+                <path class="news__confirm-tick" fill="none" d="M15 27 l7.5 7.5 L37.5 19" />
+              </svg>
+            </span>
+            <span class="news__confirm-text" data-da="Du er med. Vi ses på banen.">You&rsquo;re in. See you on the course.</span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ DOWNLOAD CTA + FOOTER (do not edit) ════════════════════ -->
+  <footer class="foot">
+    <hr class="foot__rule" />
+    <div class="foot__cta">
+      <h2 class="foot__headline" data-da="Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed.">Download Golfsocial. Because good friends never let friends golf in silence.</h2>
+      <div class="badges foot__badges">
+        <a href="https://apps.apple.com/dk/app/id6743446900" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#16221F"/><g fill="#FCFBF8"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#16221F"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FCFBF8"/></g><g fill="#FCFBF8"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <div class="foot__left">
+        <nav class="foot__links" aria-label="Footer">
+          <a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener">Linkedin</a>
+          <a href="https://x.com/golfsocialclub" target="_blank" rel="noopener">x.com</a>
+          <a href="mailto:hello@golfsocial.club" data-da="Kontakt">Contact</a>
+          <a href="privacy-policy.html" data-da="Privatlivspolitik">Privacy Policy</a>
+        </nav>
+        <p class="foot__copy" data-da="© 2026 Golfsocial. Alle rettigheder forbeholdes.">© 2026 Golfsocial. All rights reserved.</p>
+      </div>
+      <p class="foot__made" data-da="Bygget og designet i København">Built and designed in Copenhagen</p>
+    </div>
+  </footer>
+
+  <script src="article.js?v=5"></script>
+</body>
+</html>

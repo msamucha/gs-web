@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  GOLFSOCIAL — BLOG POST TEMPLATE                                  ║
+  ║                                                                  ║
+  ║  To publish a new blog post: copy this file, rename it to your   ║
+  ║  url slug (e.g. how-to-lower-your-handicap.html), then change    ║
+  ║  ONLY the things marked « EDIT ».  Everything else — the design, ║
+  ║  the header, the footer, the stylesheets — stays exactly as is.  ║
+  ║                                                                  ║
+  ║  The article text lives between the CONTENT START and CONTENT    ║
+  ║  END markers below. Inside it you only ever write plain          ║
+  ║  content tags; the design is applied automatically:              ║
+  ║                                                                  ║
+  ║    <p class="lead">…</p>   first / intro paragraph (bigger)      ║
+  ║    <p>…</p>                a normal paragraph                    ║
+  ║    <h2>…</h2>              a section heading                     ║
+  ║    <h3>…</h3>              a smaller sub-heading                 ║
+  ║    <ul><li>…</li></ul>     a bullet list (use <ol> for numbers)  ║
+  ║    <blockquote>…</blockquote>   a pull-quote                     ║
+  ║    <figure><img src="images/your-image.webp" alt="…">           ║
+  ║      <figcaption>…</figcaption></figure>   an image             ║
+  ║    <hr>                    a divider line                        ║
+  ║    <strong>…</strong> / <em>…</em> / <a href="…">…</a>          ║
+  ║                                                                  ║
+  ║  Never add inline styles, <style> tags or new classes.          ║
+  ║  See BLOG-GUIDE.md for the full guide + a ready-made prompt.     ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#123f36" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEBPZS1TT2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XEBPZS1TT2');
+  </script>
+
+  <!-- « EDIT » page title + description for search engines / social -->
+  <title>Putting-statistik: hvad du skal måle, og hvad du kan droppe · Golfsocial</title>
+  <meta name="description" content="Antal putts pr. runde snyder dig. Her er de putting-tal der faktisk siger noget: putts pr. green, tre-putts og hvor du reelt taber slag på greenen." />
+
+  <link rel="canonical" href="https://golfsocial.club/putting-statistik" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Golfsocial" />
+  <meta property="og:locale" content="da_DK" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="Putting-statistik: hvad du skal måle, og hvad du kan droppe · Golfsocial" />
+  <meta property="og:description" content="Antal putts pr. runde snyder dig. Her er de putting-tal der faktisk siger noget: putts pr. green, tre-putts og hvor du reelt taber slag på greenen." />
+  <meta property="og:url" content="https://golfsocial.club/putting-statistik" />
+  <meta property="og:image" content="https://golfsocial.club/images/og-home.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Putting-statistik: hvad du skal måle, og hvad du kan droppe · Golfsocial" />
+  <meta name="twitter:description" content="Antal putts pr. runde snyder dig. Her er de putting-tal der faktisk siger noget: putts pr. green, tre-putts og hvor du reelt taber slag på greenen." />
+  <meta name="twitter:image" content="https://golfsocial.club/images/og-home.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://golfsocial.club/putting-statistik",
+    "headline": "Putting-statistik: hvad du skal måle, og hvad du kan droppe",
+    "description": "Antal putts pr. runde snyder dig. Her er de putting-tal der faktisk siger noget: putts pr. green, tre-putts og hvor du reelt taber slag på greenen.",
+    "image": "https://golfsocial.club/images/og-home.png",
+    "inLanguage": "da-DK",
+    "dateModified": "2026-06-14",
+    "author": { "@type": "Organization", "name": "Golfsocial" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Golfsocial",
+      "logo": { "@type": "ImageObject", "url": "https://golfsocial.club/images/logo.svg" }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://golfsocial.club/" },
+      { "@type": "ListItem", "position": 2, "name": "Putting-statistik: hvad du skal måle, og hvad du kan droppe", "item": "https://golfsocial.club/putting-statistik" }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=12-42" />
+  <link rel="stylesheet" href="article.css?v=12" />
+</head>
+<body>
+
+  <!-- ════════════════════ HEADER (do not edit) ════════════════════ -->
+  <header class="masthead">
+    <a class="masthead__brand" href="index.html" aria-label="Golfsocial">
+      <img class="masthead__logo" src="images/logo.svg" alt="Golfsocial" />
+    </a>
+    <nav class="masthead__nav" aria-label="Top">
+      <a class="masthead__social" href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="17" cy="7" r="1.05" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M7.4 10.6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="7.4" cy="7.9" r="0.6" fill="currentColor"/>
+          <path d="M11.1 16.6v-6m0 2.5c0-1.6 1-2.5 2.3-2.5 1.2 0 2.1.9 2.1 2.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social masthead__social--x" href="https://x.com/golfsocialclub" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+      <div class="lang" role="group" aria-label="Language">
+        <span class="lang__opt is-active">EN</span><span class="lang__opt">DA</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ════════════════════ ARTICLE ════════════════════ -->
+  <article class="article">
+
+    <!-- ── header : « EDIT » title + meta + side photo (swap the image url) ── -->
+    <header class="article__head">
+      <div class="article__head-text">
+        <h1 class="article__title" data-da="Putting-statistik: hvad du skal måle, og hvad du kan droppe">Putting stats: what to measure and what to ignore</h1>
+        <p class="article__meta" data-da="~6 min læsning">~6 min read</p>
+      </div>
+      <figure class="article__media">
+        <span class="article__media-img" style="background-image:url('images/article-stableford.webp')"></span>
+      </figure>
+    </header>
+
+    <div class="article__body">
+      <!-- ╭───────────────────────── CONTENT START ─────────────────────────╮ -->
+
+      <p class="lead" data-da="Det mest brugte putting-tal er også det mest misvisende. De fleste tæller deres samlede antal putts pr. runde, ser et lavt tal og konkluderer at de puttede godt. Men det tal afhænger næsten lige så meget af dit jernspil som af din putter, og det kan let snyde dig til at øve det forkerte.">The most widely used putting stat is also the most misleading. Most golfers count their total putts per round, see a low number, and conclude they putted well. But that number depends almost as much on your iron play as on your putter, and it can easily fool you into practising the wrong thing.</p>
+
+      <p><span data-da="Tænk over hvorfor. Rammer du mange greens i regulation, ligger din bold ofte langt fra hullet, og så er to putts helt normalt, selv på en god dag. Misser du greens, chipper du ind, og en god chip efterlader dig tæt på, hvor du sætter den korte putt og noterer ét putt på hullet. To spillere kan have det samme samlede putt-tal, hvor den ene puttede fremragende og den anden bare chippede tæt på. Det samlede tal kan ikke kende forskel. Derfor er det værd at se på de tal der faktisk fortæller noget om, hvad der sker på greenen. Hos">Think about why. If you hit a lot of greens in regulation, your ball is often a long way from the hole, so two putts is perfectly normal even on a good day. If you miss greens, you chip on, and a good chip leaves you close, where you tap in the short one and record a single putt on the hole. Two players can post the same total putt count where one putted superbly and the other simply chipped it tight. The total can&rsquo;t tell them apart. That is why it pays to look at the numbers that actually describe what happens on the green. At</span> <a href="index.html">Golfsocial</a> <span data-da="kan du registrere dine putts pr. runde og se tendensen over tid, så det her ikke bare bliver en mavefornemmelse.">you can log your putts per round and watch the trend over time, so this stays more than a gut feeling.</span></p>
+
+      <h2 data-da="De tal der faktisk siger noget">The numbers that actually mean something</h2>
+      <p data-da="I stedet for ét samlet tal er det mere oplysende at dele puttingen op i et par mål, der hver især isolerer en ting du kan øve.">Rather than one combined figure, it is more revealing to split your putting into a few measures, each of which isolates something you can practise.</p>
+
+      <div class="callout">
+        <h3 data-da="Det værd at måle">Worth measuring</h3>
+        <ul>
+          <li><strong data-da="Putts pr. green in regulation:">Putts per green in regulation:</strong> <span data-da="tæl kun de huller hvor du ramte greenen i regulation. Det fjerner chip-effekten og viser dig din rene putting. Ligger du stabilt på to putts herfra, putter du fint; falder tallet, gør du noget rigtigt.">count only the holes where you hit the green in regulation. That removes the chipping effect and shows your putting on its own. If you sit steadily at two putts from there, you are putting fine; if the number drops, you are doing something right.</span></li>
+          <li><strong data-da="Antal tre-putts:">Number of three-putts:</strong> <span data-da="den enkelte vane der koster flest slag. Et tre-putt giver et helt slag væk, og det sker næsten altid enten fordi den første putt fra langt hold ender for langt fra hullet, eller fordi den korte returputt misses. Hold øje med, hvor mange du laver pr. runde.">the single habit that costs the most strokes. A three-putt gives away a full shot, and it almost always happens either because the first putt from distance finishes too far from the hole, or because the short return putt is missed. Track how many you make per round.</span></li>
+          <li><strong data-da="Make-andel på de korte (1 til 2 meter):">Make rate on the short ones (1 to 2 metres):</strong> <span data-da="de putts du forventes at lave, og dem der gør mest ondt at misse. Noter hvor mange du forsøger og hvor mange du lukker. Det er her selvtilliden bygges eller smuldrer.">the putts you are expected to hole, and the ones that hurt most to miss. Note how many you face and how many you close out. This is where confidence is built or eroded.</span></li>
+          <li><strong data-da="Lag-putting fra langt hold:">Lag putting from distance:</strong> <span data-da="fra lange putts handler det ikke om at hulle, men om afstandskontrol. Det rigtige mål er enkelt: efterlod du dig selv tæt nok på til en stressfri næste putt? Hvis dine lange putts ofte ender inden for en putterlængde, undgår du de fleste tre-putts helt af sig selv.">from long putts the point is not to hole out but to control distance. The right measure is simple: did you leave yourself close enough for a stress-free next putt? If your long putts regularly finish within a putter length, you avoid most three-putts almost automatically.</span></li>
+        </ul>
+      </div>
+
+      <h2 data-da="Hvad du roligt kan ignorere">What you can safely ignore</h2>
+      <p data-da="Du behøver ikke drukne i tal for at putte bedre. Det samlede antal putts pr. runde kan du godt notere af nysgerrighed, men brug det aldrig til at vurdere din putting alene, netop fordi det blandes sammen med dit spil ind mod greenen. Du behøver heller ikke føre regnskab med antal forsøgte enkelt-putts fra hver eneste afstand, eller gennemsnitlig længde på dine putts ned til centimeteren. Den slags hører hjemme hos en tourspiller med en caddie og målere, ikke i en almindelig weekendrunde. For de fleste skaber det mere bogføring end indsigt, og bogføring du ikke gider holde ved lige, er værre end ingen data. Hold dig til de få tal ovenfor.">You don&rsquo;t need to drown in data to putt better. Total putts per round is fine to note out of curiosity, but never use it to judge your putting on its own, precisely because it gets tangled up with your play into the green. You also don&rsquo;t need to keep a ledger of attempted one-putts from every distance, or your average putt length down to the centimetre. That sort of thing belongs to a tour player with a caddie and measuring tools, not an ordinary weekend round. For most people it creates more bookkeeping than insight, and bookkeeping you won&rsquo;t keep up is worse than no data at all. Stick to the few numbers above.</p>
+
+      <blockquote data-da="Det samlede antal putts måler lige så meget dit jernspil som din putter. Mål det der sker på greenen, ikke på vej derhen.">Total putts measures your iron play as much as your putter. Measure what happens on the green, not on the way to it.</blockquote>
+
+      <h2 data-da="Hvad tallene fortæller dig at øve">What the numbers tell you to practise</h2>
+      <p data-da="Pointen med at måle er at vide hvad du skal bruge din tid på. Tallene peger ret tydeligt.">The point of measuring is knowing where to spend your time. The numbers point fairly clearly.</p>
+      <ul>
+        <li><strong data-da="Mange tre-putts?">Lots of three-putts?</strong> <span data-da="Så er problemet næsten altid afstandskontrol fra langt hold, ikke selve strøget. Øv lange putts, hvor du sigter efter at standse bolden i en cirkel omkring hullet i stedet for at hulle.">The culprit is almost always distance control from long range, not the stroke itself. Practise long putts where you aim to stop the ball inside a circle around the hole rather than holing it.</span></li>
+        <li><strong data-da="Misser du de korte?">Missing the short ones?</strong> <span data-da="Så er det rutine og opsætning, ikke kræfter. Øv de samme korte putts igen og igen fra samme afstand, til de føles automatiske.">That is routine and setup, not power. Repeat the same short putts from the same distance until they feel automatic.</span></li>
+        <li><strong data-da="Højt antal putts pr. green in regulation?">High putts per green in regulation?</strong> <span data-da="Så ligger du for langt fra hullet ved første putt. Det handler igen om afstand, ikke om at jagte hver eneste birdie.">You are leaving the first putt too far from the hole. Again it comes back to distance, not chasing every birdie.</span></li>
+      </ul>
+
+      <h2 data-da="Sådan holder du øje med tendensen">How to keep an eye on the trend</h2>
+      <p><span data-da="Et enkelt tal fra én runde betyder ikke meget. Det interessante er tendensen over flere runder. Registrér dine putts pr. runde i">A single number from one round means little. What matters is the trend across several rounds. Log your putts per round in</span> <a href="index.html">Golfsocial</a><span data-da=", og kig på kurven hen over en sæson i stedet for at hænge dig i en enkelt dårlig dag på greenen. Et tre-putt på 18. hul betyder ikke at du putter dårligt; ti runder i træk med faldende putt-tal betyder at noget virker. Det er den slags overblik der gør, at du øver det rigtige i stedet for det, der bare føltes skævt sidste søndag.">, and read the curve across a season instead of fixating on one bad day on the greens. A three-putt on the 18th doesn&rsquo;t mean you putt badly; ten rounds in a row with falling putt counts means something is working. That kind of overview is what keeps you practising the right thing instead of whatever simply felt off last Sunday.</span></p>
+
+      <h2 data-da="Til sidst">Final thoughts</h2>
+      <p data-da="Putting afgør en stor del af din score, men kun hvis du måler den rigtigt. Drop det samlede antal putts som facit og se i stedet på putts pr. green in regulation, dine tre-putts, hvor mange korte du lukker, og om du efterlader dig selv tæt fra langt hold. De fire tal fortæller dig, hvad der reelt sker på greenen, og hvad der er værd at øve. Resten kan du roligt lade ligge.">Putting decides a large part of your score, but only if you measure it properly. Drop total putts as the verdict and look instead at putts per green in regulation, your three-putts, how many short ones you close out, and whether you leave yourself close from distance. Those four numbers tell you what is really happening on the green and what is worth practising. The rest you can comfortably leave alone.</p>
+
+      <!-- ╰────────────────────────── CONTENT END ──────────────────────────╯ -->
+    </div>
+
+    <!-- ── back link (do not edit) ── -->
+    <div class="article__foot">
+      <a class="article__back" href="index.html#blogs" data-da="Tilbage til alle artikler">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to all articles
+      </a>
+    </div>
+  </article>
+
+  <!-- ════════════════════ NEWSLETTER (reused from the homepage, do not edit) ════════════════════ -->
+  <section class="newsband">
+    <div class="news">
+      <img class="news__bg" src="images/news-bg.webp" alt="" />
+      <div class="news__inner">
+        <div class="news__text">
+          <h2 class="news__h" data-da="En hilsen fra banen.">The occasional note from the course.</h2>
+          <p class="news__sub" data-da="Ingen støj. Kun når vi har noget at fortælle.">No noise. Only the occasional read.</p>
+        </div>
+        <form class="news__form" data-ml-form="165875690760046481" novalidate>
+          <input class="news__email" type="email" name="fields[email]" placeholder="you@email.com" data-da="dig@email.com" aria-label="Email address" required />
+          <button class="news__btn" type="submit" data-da="Tilmeld">Subscribe</button>
+          <span class="news__confirm" aria-hidden="true">
+            <span class="news__confirm-check">
+              <svg viewBox="0 0 52 52" aria-hidden="true">
+                <circle class="news__confirm-circle" cx="26" cy="26" r="24" fill="none" />
+                <path class="news__confirm-tick" fill="none" d="M15 27 l7.5 7.5 L37.5 19" />
+              </svg>
+            </span>
+            <span class="news__confirm-text" data-da="Du er med. Vi ses på banen.">You&rsquo;re in. See you on the course.</span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ DOWNLOAD CTA + FOOTER (do not edit) ════════════════════ -->
+  <footer class="foot">
+    <hr class="foot__rule" />
+    <div class="foot__cta">
+      <h2 class="foot__headline" data-da="Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed.">Download Golfsocial. Because good friends never let friends golf in silence.</h2>
+      <div class="badges foot__badges">
+        <a href="https://apps.apple.com/dk/app/id6743446900" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#16221F"/><g fill="#FCFBF8"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#16221F"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FCFBF8"/></g><g fill="#FCFBF8"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <div class="foot__left">
+        <nav class="foot__links" aria-label="Footer">
+          <a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener">Linkedin</a>
+          <a href="https://x.com/golfsocialclub" target="_blank" rel="noopener">x.com</a>
+          <a href="mailto:hello@golfsocial.club" data-da="Kontakt">Contact</a>
+          <a href="privacy-policy.html" data-da="Privatlivspolitik">Privacy Policy</a>
+        </nav>
+        <p class="foot__copy" data-da="© 2026 Golfsocial. Alle rettigheder forbeholdes.">© 2026 Golfsocial. All rights reserved.</p>
+      </div>
+      <p class="foot__made" data-da="Bygget og designet i København">Built and designed in Copenhagen</p>
+    </div>
+  </footer>
+
+  <script src="article.js?v=5"></script>
+</body>
+</html>

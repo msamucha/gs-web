@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  GOLFSOCIAL — BLOG POST TEMPLATE                                  ║
+  ║                                                                  ║
+  ║  To publish a new blog post: copy this file, rename it to your   ║
+  ║  url slug (e.g. how-to-lower-your-handicap.html), then change    ║
+  ║  ONLY the things marked « EDIT ».  Everything else — the design, ║
+  ║  the header, the footer, the stylesheets — stays exactly as is.  ║
+  ║                                                                  ║
+  ║  The article text lives between the CONTENT START and CONTENT    ║
+  ║  END markers below. Inside it you only ever write plain          ║
+  ║  content tags; the design is applied automatically:              ║
+  ║                                                                  ║
+  ║    <p class="lead">…</p>   first / intro paragraph (bigger)      ║
+  ║    <p>…</p>                a normal paragraph                    ║
+  ║    <h2>…</h2>              a section heading                     ║
+  ║    <h3>…</h3>              a smaller sub-heading                 ║
+  ║    <ul><li>…</li></ul>     a bullet list (use <ol> for numbers)  ║
+  ║    <blockquote>…</blockquote>   a pull-quote                     ║
+  ║    <figure><img src="images/your-image.webp" alt="…">           ║
+  ║      <figcaption>…</figcaption></figure>   an image             ║
+  ║    <hr>                    a divider line                        ║
+  ║    <strong>…</strong> / <em>…</em> / <a href="…">…</a>          ║
+  ║                                                                  ║
+  ║  Never add inline styles, <style> tags or new classes.          ║
+  ║  See BLOG-GUIDE.md for the full guide + a ready-made prompt.     ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#123f36" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEBPZS1TT2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XEBPZS1TT2');
+  </script>
+
+  <!-- « EDIT » page title + description for search engines / social -->
+  <title>Kend dine afstande: byg din egen distance-tabel · Golfsocial</title>
+  <meta name="description" content="De fleste overvurderer deres længde. Sådan finder du dine pålidelige carry-afstande, lukker hullerne mellem køllerne og bygger en distance-tabel du kan stole på." />
+
+  <link rel="canonical" href="https://golfsocial.club/kend-dine-golf-afstande" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Golfsocial" />
+  <meta property="og:locale" content="da_DK" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="Kend dine afstande: byg din egen distance-tabel · Golfsocial" />
+  <meta property="og:description" content="De fleste overvurderer deres længde. Sådan finder du dine pålidelige carry-afstande, lukker hullerne mellem køllerne og bygger en distance-tabel du kan stole på." />
+  <meta property="og:url" content="https://golfsocial.club/kend-dine-golf-afstande" />
+  <meta property="og:image" content="https://golfsocial.club/images/og-home.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kend dine afstande: byg din egen distance-tabel · Golfsocial" />
+  <meta name="twitter:description" content="De fleste overvurderer deres længde. Sådan finder du dine pålidelige carry-afstande, lukker hullerne mellem køllerne og bygger en distance-tabel du kan stole på." />
+  <meta name="twitter:image" content="https://golfsocial.club/images/og-home.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://golfsocial.club/kend-dine-golf-afstande",
+    "headline": "Kend dine afstande: byg din egen distance-tabel",
+    "description": "De fleste overvurderer deres længde. Sådan finder du dine pålidelige carry-afstande, lukker hullerne mellem køllerne og bygger en distance-tabel du kan stole på.",
+    "image": "https://golfsocial.club/images/og-home.png",
+    "inLanguage": "da-DK",
+    "dateModified": "2026-06-14",
+    "author": { "@type": "Organization", "name": "Golfsocial" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Golfsocial",
+      "logo": { "@type": "ImageObject", "url": "https://golfsocial.club/images/logo.svg" }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://golfsocial.club/" },
+      { "@type": "ListItem", "position": 2, "name": "Kend dine afstande: byg din egen distance-tabel", "item": "https://golfsocial.club/kend-dine-golf-afstande" }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=12-42" />
+  <link rel="stylesheet" href="article.css?v=12" />
+</head>
+<body>
+
+  <!-- ════════════════════ HEADER (do not edit) ════════════════════ -->
+  <header class="masthead">
+    <a class="masthead__brand" href="index.html" aria-label="Golfsocial">
+      <img class="masthead__logo" src="images/logo.svg" alt="Golfsocial" />
+    </a>
+    <nav class="masthead__nav" aria-label="Top">
+      <a class="masthead__social" href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="17" cy="7" r="1.05" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M7.4 10.6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="7.4" cy="7.9" r="0.6" fill="currentColor"/>
+          <path d="M11.1 16.6v-6m0 2.5c0-1.6 1-2.5 2.3-2.5 1.2 0 2.1.9 2.1 2.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social masthead__social--x" href="https://x.com/golfsocialclub" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+      <div class="lang" role="group" aria-label="Language">
+        <span class="lang__opt is-active">EN</span><span class="lang__opt">DA</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ════════════════════ ARTICLE ════════════════════ -->
+  <article class="article">
+
+    <!-- ── header : « EDIT » title + meta + side photo (swap the image url) ── -->
+    <header class="article__head">
+      <div class="article__head-text">
+        <h1 class="article__title" data-da="Kend dine afstande: byg din egen distance-tabel">Know your distances: build your own distance chart</h1>
+        <p class="article__meta" data-da="~6 min læsning">~6 min read</p>
+      </div>
+      <figure class="article__media">
+        <span class="article__media-img" style="background-image:url('images/article-gear.webp')"></span>
+      </figure>
+    </header>
+
+    <div class="article__body">
+      <!-- ╭───────────────────────── CONTENT START ─────────────────────────╮ -->
+
+      <p class="lead" data-da="Den hyppigste fejl med afstande er ikke at slå for kort. Det er at spille efter sit bedste slag. Du rammer dit 7-jern helt rent én gang, ser hvor langt det fløj, og fra den dag er det dén afstand 7-jernet kan i dit hoved. Resten af sæsonen kommer du så til kort med en kølle, fordi du valgte ud fra et slag du måske rammer hvert tiende forsøg. Et pålideligt gennemsnit er et langt mere brugbart tal end dit personlige rekordslag.">The most common distance mistake is not hitting it short. It is playing to your best shot. You catch one 7-iron flush, see how far it flew, and from that day on that is what your 7-iron does in your head. For the rest of the season you keep coming up short with a club, because you picked it based on a shot you maybe pull off one swing in ten. A reliable average is a far more useful number than your personal record.</p>
+
+      <p data-da="Det handler ikke om at slå længere. Det handler om at vide præcis hvor langt du slår, så valget af kølle holder op med at være gætværk. Og det første du skal blive enig med dig selv om, er hvilket tal du overhovedet skal måle.">This isn&rsquo;t about hitting it further. It is about knowing exactly how far you hit it, so club selection stops being guesswork. And the first thing to settle is which number you should even be measuring.</p>
+
+      <h2 data-da="Mål carry, ikke total">Measure carry, not total</h2>
+      <p data-da="Et slag har to afstande: carry, altså hvor langt bolden flyver i luften før den lander, og total, som er carry plus det den triller bagefter. Det tal der reelt afgør dine køllevalg er carry. Det er carry der bestemmer om bolden bærer over bunkeren, når vandet på den anden side eller lander på greenen i stedet for foran. Total afhænger af alt det du ikke kan styre: hvor hård fairwayen er, om det er regnet, om der er medvind. To slag med samme carry kan trille vidt forskelligt alt efter underlaget. Bygger du din tabel på total, bygger du den på forhold der ændrer sig fra dag til dag. Bygger du den på carry, har du et tal du kan stole på.">A shot has two distances: carry, meaning how far the ball flies through the air before it lands, and total, which is carry plus whatever it rolls afterwards. The number that actually decides your club choices is carry. Carry is what determines whether the ball clears the bunker, carries the water on the far side, or lands on the green instead of in front of it. Total depends on everything you can&rsquo;t control: how firm the fairway is, whether it has rained, whether there is a tailwind. Two shots with the same carry can roll out completely differently depending on the ground. Build your chart on total and you build it on conditions that change by the day. Build it on carry and you have a number you can trust.</p>
+
+      <h2 data-da="Sådan samler du data">How to gather the data</h2>
+      <p data-da="Du finder ikke dine afstande på ét slag eller én eftermiddag. Du finder dem ved at samle nok slag til at mønsteret bliver tydeligt. Der er tre måder at gøre det på, og de virker bedst sammen.">You won&rsquo;t find your distances in one shot or one afternoon. You find them by gathering enough swings for the pattern to show. There are three ways to do it, and they work best together.</p>
+      <ul>
+        <li><strong data-da="En range-session med en launch monitor:">A range session with a launch monitor:</strong> <span data-da="det mest præcise. Mange ranger og fittere har en launch monitor der måler carry på hvert eneste slag. Slå en håndfuld bolde med hver kølle, og du har rene tal at gå ud fra. Hvis du ikke selv ejer en, så spørg i klubben, eller book en kølletilpasning hvor måling indgår.">the most accurate. Many ranges and fitters have a launch monitor that measures carry on every shot. Hit a handful of balls with each club and you have clean numbers to work from. If you don&rsquo;t own one, ask at the club, or book a club fitting where measurement is part of it.</span></li>
+        <li><strong data-da="På banen:">On the course:</strong> <span data-da="virkelige slag tæller mere end perfekte range-slag. Læg mærke til hvor dine slag faktisk lander, ikke hvor du håbede de ville. Mange afstandsmålere og GPS-ure kan vise hvor langt et slag bar.">real shots count for more than perfect range swings. Notice where your shots actually land, not where you hoped they would. Many rangefinders and GPS watches can show how far a shot carried.</span></li>
+        <li><strong data-da="En app der husker dine runder:">An app that remembers your rounds:</strong> <span data-da="over tid bliver dine egne registreringer mere troværdige end en enkelt god dag på rangen. Følg dine runder og slag i">over time your own logged rounds become more trustworthy than a single good day on the range. Track your rounds and shots in</span> <a href="index.html">Golfsocial</a><span data-da=", så du kan se det samme slag igen og igen i stedet for at huske det skævt.">, so you see the same shot again and again instead of misremembering it.</span></li>
+      </ul>
+
+      <h2 data-da="Find din pålidelige carry, ikke din ene perfekte">Find your reliable carry, not your one perfect one</h2>
+      <p data-da="Når du har dine tal, så modstå fristelsen til at notere det længste. Det slag rammer du sjældent, og hvis du planlægger efter det, kommer du oftere til kort end ikke. Din pålidelige carry er den du rammer en helt almindelig dag, hvor svinget ikke føles specielt. Kig på dine slag med hver kølle og find det tal du rammer flest gange, ikke toppen. Mange erfarne spillere noterer bevidst en anelse under deres gennemsnit, så de hellere kommer lige langt nok end lige for kort. Det tal er det ærlige tal, og det ærlige tal er det der senere får dig til at vælge den rigtige kølle under pres.">Once you have your numbers, resist the urge to write down the longest. You rarely hit that shot, and planning around it leaves you short more often than not. Your reliable carry is the one you hit on an ordinary day, when the swing feels nothing special. Look at your shots with each club and find the number you hit most often, not the peak. Many experienced players deliberately note a touch below their average, so they err on just enough rather than just short. That number is the honest one, and the honest number is what later makes you pick the right club under pressure.</p>
+
+      <blockquote data-da="Din pålidelige carry er det slag du rammer en almindelig dag, ikke det ene du fortæller historier om.">Your reliable carry is the shot you hit on an ordinary day, not the one you tell stories about.</blockquote>
+
+      <h2 data-da="Byg tabellen og luk hullerne">Build the chart and close the gaps</h2>
+      <p data-da="Når hver kølle har et ærligt carry-tal, skriver du dem op i rækkefølge fra længste til korteste. Det er din distance-tabel. Nu kan du se noget du ikke kunne se før: afstanden mellem køllerne. I de lange jern og hybrider er springene som regel store og nogenlunde jævne, og det er fint. Det er nede i wedges hullerne bliver et problem, og det handler gapping om: afstanden mellem dine wedges. Hvis du springer fra en pitching wedge der bærer et godt stykke, direkte ned til en sand wedge, opdager du tit et stort hul midt imellem, præcis i det område hvor mange af dine slag mod greenen lander. Resultatet er den klassiske klemte afstand, hvor den ene kølle er for meget og den næste for lidt, og du må til at tage kræfter af eller lægge til på følelsen.">Once every club has an honest carry number, write them in order from longest to shortest. That is your distance chart. Now you can see something you couldn&rsquo;t before: the gap between clubs. In the long irons and hybrids the steps are usually large and fairly even, and that is fine. It is down in the wedges that the gaps become a problem, and that is what gapping is about: the distance between your wedges. If you jump from a pitching wedge that carries a fair way straight down to a sand wedge, you often find a big hole in between, right in the zone where many of your approach shots land. The result is the classic awkward distance, where one club is too much and the next too little, and you end up taking pace off or adding it by feel.</p>
+
+      <div class="callout">
+        <h3 data-da="Sådan bygger du tabellen">How to build the chart</h3>
+        <ul>
+          <li><strong data-da="Mål i carry:">Measure in carry:</strong> <span data-da="ét ærligt carry-tal pr. kølle, ikke dit bedste slag.">one honest carry number per club, not your best shot.</span></li>
+          <li><strong data-da="Skriv dem op i rækkefølge:">List them in order:</strong> <span data-da="fra længste til korteste, så hullerne mellem køllerne bliver synlige.">longest to shortest, so the gaps between clubs become visible.</span></li>
+          <li><strong data-da="Hold øje med wedges:">Watch the wedges:</strong> <span data-da="tjek at springene mellem dine wedges er jævne. Et stort hul her er det der oftest klemmer dine slag mod greenen.">check the steps between your wedges are even. A big hole here is what most often squeezes your approach shots.</span></li>
+          <li><strong data-da="Opdater den løbende:">Keep it current:</strong> <span data-da="dine afstande ændrer sig hen over en sæson. Mål igen et par gange om året i stedet for at stole på et tal fra i fjor.">your distances shift over a season. Measure again a couple of times a year rather than trusting a number from last year.</span></li>
+        </ul>
+      </div>
+
+      <p data-da="Du behøver ikke nye køller for at lukke et hul. Tit er det nok at lære at slå en kontrolleret tre-kvart-sving med en kølle du allerede har, så du får en ekstra afstand ud af den. Men du opdager kun hullet hvis du har skrevet tallene ned. Det er hele pointen med tabellen.">You don&rsquo;t need new clubs to close a gap. Often it is enough to learn a controlled three-quarter swing with a club you already own, giving you one extra distance from it. But you only spot the gap if you have written the numbers down. That is the whole point of the chart.</p>
+
+      <h2 data-da="Brug tabellen til bedre køllevalg">Use the chart for better club choices</h2>
+      <p data-da="Når tabellen sidder fast, ændrer beslutningen på banen sig. I stedet for at kigge på flaget og fornemme hvad der skal til, ser du afstanden til hvor du vil have bolden til at lande, og du vælger den kølle hvis pålidelige carry passer. Det fjerner det meste af tvivlen, og det fjerner den dyre vane med at vælge for lidt kølle, fordi du husker dit bedste slag. De fleste amatører kommer til kort på slag mod greenen, ikke for langt, og en ærlig tabel retter netop den fejl. Læg dertil at du nu kan justere bevidst: lidt mere kølle i modvind, lidt mindre når det er hårdt og bolden triller, i stedet for at gætte fra slag til slag.">When the chart is set, the decision on the course changes. Instead of looking at the flag and sensing what it takes, you read the distance to where you want the ball to land, and you pick the club whose reliable carry matches. That removes most of the doubt, and it removes the costly habit of taking too little club because you remember your best shot. Most amateurs come up short on approach shots, not long, and an honest chart fixes exactly that error. Add to this that you can now adjust deliberately: a little more club into a headwind, a little less when it is firm and the ball runs, instead of guessing shot to shot.</p>
+
+      <h2 data-da="Til sidst">Final thoughts</h2>
+      <p data-da="En distance-tabel lyder teknisk, men den løser et meget menneskeligt problem: vi husker vores gode slag og glemmer de almindelige. Mål din carry frem for total, find den afstand du rammer en helt almindelig dag, skriv køllerne op i rækkefølge og luk hullerne, især i dine wedges. Så har du et beslutningsgrundlag i stedet for en mavefornemmelse. Følg dine runder og slag i Golfsocial, så bliver tallene kun mere troværdige jo flere runder du spiller, og næste gang du står over en afstand, vælger du kølle ud fra det du faktisk slår, ikke det du engang slog.">A distance chart sounds technical, but it solves a very human problem: we remember our good shots and forget our ordinary ones. Measure your carry rather than total, find the distance you hit on a perfectly ordinary day, list the clubs in order, and close the gaps, especially in your wedges. Then you have something to decide from instead of a gut feeling. Track your rounds and shots in Golfsocial and the numbers only get more trustworthy the more rounds you play, so the next time you stand over a distance, you pick a club based on what you actually hit, not what you once hit.</p>
+
+      <!-- ╰────────────────────────── CONTENT END ──────────────────────────╯ -->
+    </div>
+
+    <!-- ── back link (do not edit) ── -->
+    <div class="article__foot">
+      <a class="article__back" href="index.html#blogs" data-da="Tilbage til alle artikler">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to all articles
+      </a>
+    </div>
+  </article>
+
+  <!-- ════════════════════ NEWSLETTER (reused from the homepage, do not edit) ════════════════════ -->
+  <section class="newsband">
+    <div class="news">
+      <img class="news__bg" src="images/news-bg.webp" alt="" />
+      <div class="news__inner">
+        <div class="news__text">
+          <h2 class="news__h" data-da="En hilsen fra banen.">The occasional note from the course.</h2>
+          <p class="news__sub" data-da="Ingen støj. Kun når vi har noget at fortælle.">No noise. Only the occasional read.</p>
+        </div>
+        <form class="news__form" data-ml-form="165875690760046481" novalidate>
+          <input class="news__email" type="email" name="fields[email]" placeholder="you@email.com" data-da="dig@email.com" aria-label="Email address" required />
+          <button class="news__btn" type="submit" data-da="Tilmeld">Subscribe</button>
+          <span class="news__confirm" aria-hidden="true">
+            <span class="news__confirm-check">
+              <svg viewBox="0 0 52 52" aria-hidden="true">
+                <circle class="news__confirm-circle" cx="26" cy="26" r="24" fill="none" />
+                <path class="news__confirm-tick" fill="none" d="M15 27 l7.5 7.5 L37.5 19" />
+              </svg>
+            </span>
+            <span class="news__confirm-text" data-da="Du er med. Vi ses på banen.">You&rsquo;re in. See you on the course.</span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ DOWNLOAD CTA + FOOTER (do not edit) ════════════════════ -->
+  <footer class="foot">
+    <hr class="foot__rule" />
+    <div class="foot__cta">
+      <h2 class="foot__headline" data-da="Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed.">Download Golfsocial. Because good friends never let friends golf in silence.</h2>
+      <div class="badges foot__badges">
+        <a href="https://apps.apple.com/dk/app/id6743446900" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#16221F"/><g fill="#FCFBF8"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#16221F"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FCFBF8"/></g><g fill="#FCFBF8"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <div class="foot__left">
+        <nav class="foot__links" aria-label="Footer">
+          <a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener">Linkedin</a>
+          <a href="https://x.com/golfsocialclub" target="_blank" rel="noopener">x.com</a>
+          <a href="mailto:hello@golfsocial.club" data-da="Kontakt">Contact</a>
+          <a href="privacy-policy.html" data-da="Privatlivspolitik">Privacy Policy</a>
+        </nav>
+        <p class="foot__copy" data-da="© 2026 Golfsocial. Alle rettigheder forbeholdes.">© 2026 Golfsocial. All rights reserved.</p>
+      </div>
+      <p class="foot__made" data-da="Bygget og designet i København">Built and designed in Copenhagen</p>
+    </div>
+  </footer>
+
+  <script src="article.js?v=5"></script>
+</body>
+</html>

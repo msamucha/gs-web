@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  GOLFSOCIAL — BLOG POST TEMPLATE                                  ║
+  ║                                                                  ║
+  ║  To publish a new blog post: copy this file, rename it to your   ║
+  ║  url slug (e.g. how-to-lower-your-handicap.html), then change    ║
+  ║  ONLY the things marked « EDIT ».  Everything else — the design, ║
+  ║  the header, the footer, the stylesheets — stays exactly as is.  ║
+  ║                                                                  ║
+  ║  The article text lives between the CONTENT START and CONTENT    ║
+  ║  END markers below. Inside it you only ever write plain          ║
+  ║  content tags; the design is applied automatically:              ║
+  ║                                                                  ║
+  ║    <p class="lead">…</p>   first / intro paragraph (bigger)      ║
+  ║    <p>…</p>                a normal paragraph                    ║
+  ║    <h2>…</h2>              a section heading                     ║
+  ║    <h3>…</h3>              a smaller sub-heading                 ║
+  ║    <ul><li>…</li></ul>     a bullet list (use <ol> for numbers)  ║
+  ║    <blockquote>…</blockquote>   a pull-quote                     ║
+  ║    <figure><img src="images/your-image.webp" alt="…">           ║
+  ║      <figcaption>…</figcaption></figure>   an image             ║
+  ║    <hr>                    a divider line                        ║
+  ║    <strong>…</strong> / <em>…</em> / <a href="…">…</a>          ║
+  ║                                                                  ║
+  ║  Never add inline styles, <style> tags or new classes.          ║
+  ║  See BLOG-GUIDE.md for the full guide + a ready-made prompt.     ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#123f36" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEBPZS1TT2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XEBPZS1TT2');
+  </script>
+
+  <!-- « EDIT » page title + description for search engines / social -->
+  <title>Sådan får du vennerne med til golf · Golfsocial</title>
+  <meta name="description" content="Golf er sjovest med vennerne. Her er hvordan du får dem med uden at skræmme dem væk: start let, drop reglerne, hold det socialt og gør den første runde til en god oplevelse." />
+
+  <link rel="canonical" href="https://golfsocial.club/faa-dine-venner-med-til-golf" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Golfsocial" />
+  <meta property="og:locale" content="da_DK" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="Sådan får du vennerne med til golf · Golfsocial" />
+  <meta property="og:description" content="Golf er sjovest med vennerne. Her er hvordan du får dem med uden at skræmme dem væk: start let, drop reglerne, hold det socialt og gør den første runde til en god oplevelse." />
+  <meta property="og:url" content="https://golfsocial.club/faa-dine-venner-med-til-golf" />
+  <meta property="og:image" content="https://golfsocial.club/images/og-home.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sådan får du vennerne med til golf · Golfsocial" />
+  <meta name="twitter:description" content="Golf er sjovest med vennerne. Her er hvordan du får dem med uden at skræmme dem væk: start let, drop reglerne, hold det socialt og gør den første runde til en god oplevelse." />
+  <meta name="twitter:image" content="https://golfsocial.club/images/og-home.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://golfsocial.club/faa-dine-venner-med-til-golf",
+    "headline": "Sådan får du vennerne med til golf",
+    "description": "Golf er sjovest med vennerne. Her er hvordan du får dem med uden at skræmme dem væk: start let, drop reglerne, hold det socialt og gør den første runde til en god oplevelse.",
+    "image": "https://golfsocial.club/images/og-home.png",
+    "inLanguage": "da-DK",
+    "dateModified": "2026-06-14",
+    "author": { "@type": "Organization", "name": "Golfsocial" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Golfsocial",
+      "logo": { "@type": "ImageObject", "url": "https://golfsocial.club/images/logo.svg" }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://golfsocial.club/" },
+      { "@type": "ListItem", "position": 2, "name": "Sådan får du vennerne med til golf", "item": "https://golfsocial.club/faa-dine-venner-med-til-golf" }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=12-42" />
+  <link rel="stylesheet" href="article.css?v=12" />
+</head>
+<body>
+
+  <!-- ════════════════════ HEADER (do not edit) ════════════════════ -->
+  <header class="masthead">
+    <a class="masthead__brand" href="index.html" aria-label="Golfsocial">
+      <img class="masthead__logo" src="images/logo.svg" alt="Golfsocial" />
+    </a>
+    <nav class="masthead__nav" aria-label="Top">
+      <a class="masthead__social" href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="17" cy="7" r="1.05" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M7.4 10.6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="7.4" cy="7.9" r="0.6" fill="currentColor"/>
+          <path d="M11.1 16.6v-6m0 2.5c0-1.6 1-2.5 2.3-2.5 1.2 0 2.1.9 2.1 2.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social masthead__social--x" href="https://x.com/golfsocialclub" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+      <div class="lang" role="group" aria-label="Language">
+        <span class="lang__opt is-active">EN</span><span class="lang__opt">DA</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ════════════════════ ARTICLE ════════════════════ -->
+  <article class="article">
+
+    <!-- ── header : « EDIT » title + meta + side photo (swap the image url) ── -->
+    <header class="article__head">
+      <div class="article__head-text">
+        <h1 class="article__title" data-da="Sådan får du vennerne med til golf">How to get your mates into golf</h1>
+        <p class="article__meta" data-da="~6 min læsning">~6 min read</p>
+      </div>
+      <figure class="article__media">
+        <span class="article__media-img" style="background-image:url('images/blog-1.webp')"></span>
+      </figure>
+    </header>
+
+    <div class="article__body">
+      <!-- ╭───────────────────────── CONTENT START ─────────────────────────╮ -->
+
+      <p class="lead"><span data-da="Golf er allerbedst med vennerne. Problemet er bare at de fleste skræmmer deres venner væk på første forsøg: 18 huller, fuldt sæt regler og en eftermiddag hvor den nye bare føler sig i vejen. Den bedste måde at få nogen ind i golf på er at sænke barren, gøre det nemt at sige ja, og lade det første møde med spillet handle om at have det sjovt sammen. Resten kommer af sig selv. Det er præcis derfor">Golf is at its best with your mates. The problem is that most people scare their friends off on the first try: 18 holes, the full rulebook, and an afternoon where the newcomer just feels in the way. The best way to get someone into golf is to lower the bar, make it easy to say yes, and let their first taste of the game be about having fun together. The rest follows. That is exactly why</span> <a href="index.html">Golfsocial</a> <span data-da="findes: en gruppe der spiller sammen og følger med i hinandens runder.">exists: a group that plays together and keeps up with each other&rsquo;s rounds.</span></p>
+
+      <p data-da="Her er hvordan du får dem med uden at de aldrig gider igen.">Here is how to get them on board without making sure they never come back.</p>
+
+      <h2 data-da="Start på driving range eller i en simulator">Start on the driving range or in a simulator</h2>
+      <p data-da="Glem 18 huller første gang. En tur på driving range eller en time i en golf-simulator er den nemmeste indgang der findes. Ingen tee-tider man skal nå, ingen folk bagved der venter, og ingen score man skal stå til ansvar for. Man slår en spand bolde, griner ad de værste forsøg og rammer en enkelt ren som man husker resten af ugen. En simulator er ekstra god om vinteren eller i regnvejr. Pointen er at lade vennen mærke følelsen af at ramme bolden godt, før der overhovedet er tale om en bane.">Forget 18 holes the first time. A trip to the driving range or an hour in a golf simulator is the easiest way in there is. No tee times to make, no group waiting behind you, and no score to answer for. You hit a bucket of balls, laugh at the worst attempts, and catch one clean strike that you remember for the rest of the week. A simulator is especially good in winter or the rain. The point is to let your friend feel what it is like to hit the ball well, long before a course is even on the table.</p>
+
+      <h2 data-da="Drop regel-rytteriet i starten">Drop the rules policing at the start</h2>
+      <p data-da="Intet jager en nybegynder hurtigere væk end en ven der retter dem hvert andet slag. Hvilken hånd der er øverst, hvor man må stå, hvad der tæller som et slag, glem det de første par gange. Lad bolden ligge bedre end reglerne tillader, lad dem tee op overalt, og lad dem samle op når et hul er kørt af sporet. Reglerne er en del af charmen senere, men i begyndelsen er de bare en mur. Spil efter ånden: kom rundt, hav det sjovt, hold tempoet. Når interessen først er der, spørger folk selv om reglerne.">Nothing chases a beginner off faster than a friend who corrects them every other shot. Which hand goes on top, where you are allowed to stand, what counts as a stroke, leave it for the first few outings. Let the ball sit better than the rules allow, let them tee it up anywhere, and let them pick up when a hole has gone off the rails. The rules are part of the charm later, but in the beginning they are just a wall. Play by the spirit of it: get round, have fun, keep the pace going. Once the interest is there, people ask about the rules themselves.</p>
+
+      <h2 data-da="Spil scramble eller på hold">Play a scramble or as a team</h2>
+      <p data-da="Det værste man kan gøre ved en ny spiller er at lade dem stå alene med en elendig runde. Løsningen er at spille scramble: alle slår, og I spiller videre fra det bedste slag. Pludselig tæller vennens ene gode drive lige så meget som dit, og de dårlige slag forsvinder bare. Det tager presset af, holder tempoet oppe, og gør at ingen står tilbage og tæller dobbeltbogeys alene. Hold-format gør golf til en holdsport for en dag, og det er svært ikke at hygge sig med.">The worst thing you can do to a new player is leave them stranded with a miserable round. The fix is to play a scramble: everyone hits, and you all play on from the best shot. Suddenly your friend&rsquo;s one good drive counts just as much as yours, and the bad shots simply disappear. It takes the pressure off, keeps the pace up, and means nobody is left counting double bogeys on their own. The team format turns golf into a team sport for a day, and that is hard not to enjoy.</p>
+
+      <blockquote data-da="Folk husker ikke deres score fra den første runde. De husker om de havde det sjovt med dig.">People don&rsquo;t remember their score from the first round. They remember whether they had fun with you.</blockquote>
+
+      <h2 data-da="Hold det billigt at prøve">Keep it cheap to try</h2>
+      <p><span data-da="Golf har et ry for at være dyrt, og det rygte skal du ikke bekræfte på dag ét. Der er masser af billige indgange: en par-3-bane, en pay-and-play hvor man bare betaler for runden uden medlemskab, eller en kort 9-hullers. Lån vennen et par køller fra din egen taske i stedet for at sende dem ud at købe et helt sæt, og spring den dyre handske og de mærkede bolde over. Hvis du vil have flere konkrete idéer til hvad man egentlig har brug for til at komme i gang, har vi samlet dem i">Golf has a reputation for being expensive, and that is not the reputation you want to confirm on day one. There are plenty of cheap ways in: a par-3 course, a pay-and-play where you simply pay for the round with no membership, or a short nine holes. Lend your friend a few clubs from your own bag instead of sending them out to buy a full set, and skip the pricey glove and the branded balls. If you want concrete ideas on what you actually need to get started, we have gathered them in</span> <a href="golf-for-begyndere.html" data-da="vores guide til golf for begyndere">our guide to golf for beginners</a><span data-da=". Jo lavere indsatsen er for at prøve, jo nemmere er det at sige ja.">. The lower the cost of trying, the easier it is to say yes.</span></p>
+
+      <h2 data-da="Gør det socialt frem for præstation">Make it social, not a performance</h2>
+      <p data-da="Den nye spiller skal ikke føle at de er til eksamen. Ram det som en hyggelig eftermiddag med en aktivitet i, ikke som en træningssession. Snak om alt muligt andet end golf undervejs, og lad samværet være det bærende. De fleste falder for golf på grund af menneskene og stemningen, ikke på grund af et perfekt sving. Når den første oplevelse handler om selskab og ikke om tal, kommer de gerne igen.">The new player should not feel like they are sitting an exam. Frame it as a relaxed afternoon with an activity in it, not a training session. Talk about everything other than golf along the way, and let the company be the point. Most people fall for golf because of the people and the atmosphere, not because of a perfect swing. When the first experience is about the company and not the numbers, they come back happily.</p>
+
+      <h2 data-da="Fejr de små succeser">Celebrate the small wins</h2>
+      <p data-da="En nybegynder rammer ikke mange rene slag på en runde, så de gange det lykkes, skal de mærkes. Et drive der faktisk fløj, en put der gik i, en bunker de kom op af i første forsøg: giv dem en high five og mén det. De små sejre er det der får folk til at tænke det her kan jeg godt, og det er den følelse der trækker dem tilbage på banen. Hold øje med fremskridtene over tid i stedet for at sammenligne med din egen score, så bliver golf noget de bliver bedre til sammen med dig.">A beginner won&rsquo;t hit many clean shots in a round, so the times they pull one off need to land. A drive that actually flew, a putt that dropped, a bunker they got out of on the first try: give them a high five and mean it. The small wins are what make people think I can do this, and that feeling is what pulls them back onto the course. Track the progress over time instead of comparing it to your own score, and golf becomes something they get better at alongside you.</p>
+
+      <div class="callout">
+        <h3 data-da="Den gode første invitation">The good first invitation</h3>
+        <ul>
+          <li><strong data-da="Vælg det lette format:">Pick the easy format:</strong> <span data-da="driving range, simulator eller par-3, aldrig 18 huller på første tur.">driving range, simulator, or par-3, never 18 holes on the first outing.</span></li>
+          <li><strong data-da="Sæt forventningen:">Set the expectation:</strong> <span data-da="sig det er for sjov, ingen score, ingen pres, bare en god eftermiddag.">say it is for fun, no score, no pressure, just a good afternoon.</span></li>
+          <li><strong data-da="Sørg for udstyret:">Sort the gear:</strong> <span data-da="lov at låne dem køller, så de ikke skal købe noget for at prøve.">promise to lend them clubs so they do not have to buy anything to try.</span></li>
+          <li><strong data-da="Gør det socialt:">Make it social:</strong> <span data-da="tag en mere med eller spil på hold, så ingen står alene.">bring one more along or play as a team, so nobody is on their own.</span></li>
+        </ul>
+      </div>
+
+      <h2 data-da="Sådan hjælper Golfsocial jer med at holde fast">How Golfsocial helps you keep it going</h2>
+      <p data-da="Den svære del er ikke den første runde, det er den anden. Mange nye spillere kommer godt fra start og falder så fra fordi der ikke sker mere bagefter. Det er der appen kommer ind.">The hard part is not the first round, it is the second. A lot of new players get off to a good start and then drop away because nothing happens afterwards. That is where the app comes in.</p>
+      <ul>
+        <li><strong data-da="Spil som gruppe:">Play as a group:</strong> <span data-da="saml vennerne i en fælles gruppe, så det føles som et hold og ikke en individuel test.">gather your friends in a shared group, so it feels like a team and not a solo test.</span></li>
+        <li><strong data-da="Følg det sammen:">Follow it together:</strong> <span data-da="se hinandens runder, hep på fremgangen og hold gejsten oppe mellem runderne.">see each other&rsquo;s rounds, cheer on the progress, and keep the spark alive between rounds.</span></li>
+        <li><strong data-da="Hold det let:">Keep it light:</strong> <span data-da="del et højdepunkt eller en grineren fra dagen, så det handler om historierne og ikke kun om tallene.">share a highlight or a funny moment from the day, so it is about the stories and not just the numbers.</span></li>
+      </ul>
+
+      <h2 data-da="Til sidst">Final thoughts</h2>
+      <p data-da="Du behøver ikke gøre dine venner til golfere på én eftermiddag. Du skal bare give dem en god første oplevelse og en grund til at komme igen. Start let, drop reglerne i begyndelsen, hold det billigt og socialt, og fejr de små succeser undervejs. Gør du det, opdager de selv resten. Og når I først er flere der spiller, bliver golf den ting I ses om, ikke bare noget du gør alene.">You do not have to turn your friends into golfers in a single afternoon. You just have to give them a good first experience and a reason to come back. Start easy, drop the rules at the beginning, keep it cheap and social, and celebrate the small wins along the way. Do that, and they discover the rest on their own. And once there are a few of you playing, golf becomes the thing you meet up around, not just something you do alone.</p>
+
+      <!-- ╰────────────────────────── CONTENT END ──────────────────────────╯ -->
+    </div>
+
+    <!-- ── back link (do not edit) ── -->
+    <div class="article__foot">
+      <a class="article__back" href="index.html#blogs" data-da="Tilbage til alle artikler">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to all articles
+      </a>
+    </div>
+  </article>
+
+  <!-- ════════════════════ NEWSLETTER (reused from the homepage, do not edit) ════════════════════ -->
+  <section class="newsband">
+    <div class="news">
+      <img class="news__bg" src="images/news-bg.webp" alt="" />
+      <div class="news__inner">
+        <div class="news__text">
+          <h2 class="news__h" data-da="En hilsen fra banen.">The occasional note from the course.</h2>
+          <p class="news__sub" data-da="Ingen støj. Kun når vi har noget at fortælle.">No noise. Only the occasional read.</p>
+        </div>
+        <form class="news__form" data-ml-form="165875690760046481" novalidate>
+          <input class="news__email" type="email" name="fields[email]" placeholder="you@email.com" data-da="dig@email.com" aria-label="Email address" required />
+          <button class="news__btn" type="submit" data-da="Tilmeld">Subscribe</button>
+          <span class="news__confirm" aria-hidden="true">
+            <span class="news__confirm-check">
+              <svg viewBox="0 0 52 52" aria-hidden="true">
+                <circle class="news__confirm-circle" cx="26" cy="26" r="24" fill="none" />
+                <path class="news__confirm-tick" fill="none" d="M15 27 l7.5 7.5 L37.5 19" />
+              </svg>
+            </span>
+            <span class="news__confirm-text" data-da="Du er med. Vi ses på banen.">You&rsquo;re in. See you on the course.</span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ DOWNLOAD CTA + FOOTER (do not edit) ════════════════════ -->
+  <footer class="foot">
+    <hr class="foot__rule" />
+    <div class="foot__cta">
+      <h2 class="foot__headline" data-da="Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed.">Download Golfsocial. Because good friends never let friends golf in silence.</h2>
+      <div class="badges foot__badges">
+        <a href="https://apps.apple.com/dk/app/id6743446900" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#16221F"/><g fill="#FCFBF8"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#16221F"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FCFBF8"/></g><g fill="#FCFBF8"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <div class="foot__left">
+        <nav class="foot__links" aria-label="Footer">
+          <a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener">Linkedin</a>
+          <a href="https://x.com/golfsocialclub" target="_blank" rel="noopener">x.com</a>
+          <a href="mailto:hello@golfsocial.club" data-da="Kontakt">Contact</a>
+          <a href="privacy-policy.html" data-da="Privatlivspolitik">Privacy Policy</a>
+        </nav>
+        <p class="foot__copy" data-da="© 2026 Golfsocial. Alle rettigheder forbeholdes.">© 2026 Golfsocial. All rights reserved.</p>
+      </div>
+      <p class="foot__made" data-da="Bygget og designet i København">Built and designed in Copenhagen</p>
+    </div>
+  </footer>
+
+  <script src="article.js?v=5"></script>
+</body>
+</html>

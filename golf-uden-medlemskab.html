@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  GOLFSOCIAL — BLOG POST TEMPLATE                                  ║
+  ║                                                                  ║
+  ║  To publish a new blog post: copy this file, rename it to your   ║
+  ║  url slug (e.g. how-to-lower-your-handicap.html), then change    ║
+  ║  ONLY the things marked « EDIT ».  Everything else — the design, ║
+  ║  the header, the footer, the stylesheets — stays exactly as is.  ║
+  ║                                                                  ║
+  ║  The article text lives between the CONTENT START and CONTENT    ║
+  ║  END markers below. Inside it you only ever write plain          ║
+  ║  content tags; the design is applied automatically:              ║
+  ║                                                                  ║
+  ║    <p class="lead">…</p>   first / intro paragraph (bigger)      ║
+  ║    <p>…</p>                a normal paragraph                    ║
+  ║    <h2>…</h2>              a section heading                     ║
+  ║    <h3>…</h3>              a smaller sub-heading                 ║
+  ║    <ul><li>…</li></ul>     a bullet list (use <ol> for numbers)  ║
+  ║    <blockquote>…</blockquote>   a pull-quote                     ║
+  ║    <figure><img src="images/your-image.webp" alt="…">           ║
+  ║      <figcaption>…</figcaption></figure>   an image             ║
+  ║    <hr>                    a divider line                        ║
+  ║    <strong>…</strong> / <em>…</em> / <a href="…">…</a>          ║
+  ║                                                                  ║
+  ║  Never add inline styles, <style> tags or new classes.          ║
+  ║  See BLOG-GUIDE.md for the full guide + a ready-made prompt.     ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#123f36" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEBPZS1TT2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XEBPZS1TT2');
+  </script>
+
+  <!-- « EDIT » page title + description for search engines / social -->
+  <title>Golf uden medlemskab: sådan kommer du i gang · Golfsocial</title>
+  <meta name="description" content="Du behøver ikke et dyrt klubmedlemskab for at spille golf. Her er vejene ind: pay-and-play, greenfee, golfsimulatorer, par-3-baner og hvad du faktisk skal bruge for at starte." />
+
+  <link rel="canonical" href="https://golfsocial.club/golf-uden-medlemskab" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Golfsocial" />
+  <meta property="og:locale" content="da_DK" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="Golf uden medlemskab: sådan kommer du i gang · Golfsocial" />
+  <meta property="og:description" content="Du behøver ikke et dyrt klubmedlemskab for at spille golf. Her er vejene ind: pay-and-play, greenfee, golfsimulatorer, par-3-baner og hvad du faktisk skal bruge for at starte." />
+  <meta property="og:url" content="https://golfsocial.club/golf-uden-medlemskab" />
+  <meta property="og:image" content="https://golfsocial.club/images/og-home.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Golf uden medlemskab: sådan kommer du i gang · Golfsocial" />
+  <meta name="twitter:description" content="Du behøver ikke et dyrt klubmedlemskab for at spille golf. Her er vejene ind: pay-and-play, greenfee, golfsimulatorer, par-3-baner og hvad du faktisk skal bruge for at starte." />
+  <meta name="twitter:image" content="https://golfsocial.club/images/og-home.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://golfsocial.club/golf-uden-medlemskab",
+    "headline": "Golf uden medlemskab: sådan kommer du i gang",
+    "description": "Du behøver ikke et dyrt klubmedlemskab for at spille golf. Her er vejene ind: pay-and-play, greenfee, golfsimulatorer, par-3-baner og hvad du faktisk skal bruge for at starte.",
+    "image": "https://golfsocial.club/images/og-home.png",
+    "inLanguage": "da-DK",
+    "dateModified": "2026-06-14",
+    "author": { "@type": "Organization", "name": "Golfsocial" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Golfsocial",
+      "logo": { "@type": "ImageObject", "url": "https://golfsocial.club/images/logo.svg" }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://golfsocial.club/" },
+      { "@type": "ListItem", "position": 2, "name": "Golf uden medlemskab: sådan kommer du i gang", "item": "https://golfsocial.club/golf-uden-medlemskab" }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=12-42" />
+  <link rel="stylesheet" href="article.css?v=12" />
+</head>
+<body>
+
+  <!-- ════════════════════ HEADER (do not edit) ════════════════════ -->
+  <header class="masthead">
+    <a class="masthead__brand" href="index.html" aria-label="Golfsocial">
+      <img class="masthead__logo" src="images/logo.svg" alt="Golfsocial" />
+    </a>
+    <nav class="masthead__nav" aria-label="Top">
+      <a class="masthead__social" href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="17" cy="7" r="1.05" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M7.4 10.6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="7.4" cy="7.9" r="0.6" fill="currentColor"/>
+          <path d="M11.1 16.6v-6m0 2.5c0-1.6 1-2.5 2.3-2.5 1.2 0 2.1.9 2.1 2.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social masthead__social--x" href="https://x.com/golfsocialclub" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+      <div class="lang" role="group" aria-label="Language">
+        <span class="lang__opt is-active">EN</span><span class="lang__opt">DA</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ════════════════════ ARTICLE ════════════════════ -->
+  <article class="article">
+
+    <!-- ── header : « EDIT » title + meta + side photo (swap the image url) ── -->
+    <header class="article__head">
+      <div class="article__head-text">
+        <h1 class="article__title" data-da="Golf uden medlemskab: sådan kommer du i gang">Golf without membership: how to start</h1>
+        <p class="article__meta" data-da="~6 min læsning">~6 min read</p>
+      </div>
+      <figure class="article__media">
+        <span class="article__media-img" style="background-image:url('images/article-beginners.webp')"></span>
+      </figure>
+    </header>
+
+    <div class="article__body">
+      <!-- ╭───────────────────────── CONTENT START ─────────────────────────╮ -->
+
+      <p class="lead" data-da="Mange tror, at golf starter med et dyrt klubmedlemskab og et regelsæt så langt som en par-5. Men sådan behøver det ikke at være. Du kan slå dine første bolde af sted i denne uge, uden at melde dig ind nogen steder. Der er flere veje ind i sporten, og de fleste af dem koster ikke en formue.">A lot of people think golf starts with an expensive club membership and a rulebook as long as a par-5. It does not have to be that way. You can hit your first balls this week without joining anything. There are several ways into the sport, and most of them do not cost a fortune.</p>
+
+      <p data-da="Her er de mest oplagte måder at komme i gang på uden medlemskab, og hvad du reelt skal bruge for at komme af sted.">Here are the most obvious ways to get started without a membership, and what you actually need to bring along.</p>
+
+      <h2 data-da="Driving range: det letteste sted at starte">The driving range: the easiest place to begin</h2>
+      <p data-da="En driving range er en stor mark, hvor du står på en måtte og slår bold efter bold ned mod nogle afstandsmarkeringer. Det er det nemmeste sted at starte, fordi der typisk ikke er nogen krav: ikke noget handicap, ikke noget golfkørekort, ofte ikke engang en tidsbestilling. Du køber en bøtte bolde, finder en plads og går i gang. De fleste ranges udlejer eller udlåner desuden køller, så du kan prøve det af, før du selv investerer. Det er her, du bygger den første fornemmelse for svinget, og det er svært at gøre noget forkert.">A driving range is a big open field where you stand on a mat and hit ball after ball toward some distance markers. It is the easiest place to start because there are usually no requirements: no handicap, no golf licence, often not even a booking. You buy a bucket of balls, find a bay, and get going. Most ranges also rent or lend clubs, so you can try it out before you buy your own. This is where you build that first feel for the swing, and it is hard to do anything wrong.</p>
+
+      <h2 data-da="Golfsimulatorer og indendørs golf">Golf simulators and indoor golf</h2>
+      <p data-da="Indendørs golf og golfsimulatorer er vokset hurtigt i Danmark de seneste år, og det er let at forstå hvorfor. Du booker en bane time for time, slår ind i et lærred, og en skærm viser dig hvor langt og hvor lige bolden fløj. Det kræver hverken handicap eller medlemskab, og det er især godt om vinteren, hvor de almindelige baner er våde, kolde eller helt lukkede. En simulator er også et behageligt sted at tage venner med, der aldrig har prøvet golf: der er varmt, der er som regel noget at drikke, og ingen kan se hvis din første bold går i en mærkelig retning. Mange bruger det som en helt afslappet indgang, før de overhovedet sætter fod på en rigtig bane.">Indoor golf and golf simulators have grown fast in Denmark over the last few years, and it is easy to see why. You book a bay by the hour, hit into a screen, and a display shows you how far and how straight the ball went. It needs no handicap and no membership, and it is especially good in winter, when the regular courses are wet, cold, or closed altogether. A simulator is also a comfortable place to bring friends who have never tried golf: it is warm, there is usually something to drink, and nobody can see if your first ball heads off in a strange direction. Plenty of people use it as a relaxed way in before they ever set foot on a real course.</p>
+
+      <h2 data-da="Par-3- og korthulsbaner">Par-3 and short courses</h2>
+      <p data-da="Når du har lyst til at komme ud i det grønne, men ikke er klar til 18 fulde huller, er en par-3-bane eller en korthulsbane et oplagt næste skridt. Hullerne er kortere, runden er hurtigere, og presset er mindre. Det er den perfekte øvebane for det korte spil, altså chip, pitch og putt, som faktisk er der hvor de fleste slag i en runde bliver brugt. Mange par-3-baner kan spilles uden medlemskab og uden formelle krav, men kravene varierer fra sted til sted, så det er en god vane at ringe eller tjekke banens hjemmeside, inden du kører.">When you feel like getting out in the green but are not ready for a full 18 holes, a par-3 or short course is an obvious next step. The holes are shorter, the round is quicker, and the pressure is lower. It is the perfect practice ground for the short game, that is chipping, pitching, and putting, which is actually where most of the shots in a round get spent. Many par-3 courses can be played without a membership and without formal requirements, but the rules vary from place to place, so it is a good habit to call or check the course website before you drive out.</p>
+
+      <h2 data-da="Pay-and-play- og greenfee-baner">Pay-and-play and greenfee courses</h2>
+      <p data-da="En pay-and-play-bane er præcis hvad navnet siger: du betaler for en runde og spiller, uden at være medlem. Greenfee er det samme princip på de fleste almindelige klubbaner, hvor du som gæst betaler for at spille en enkelt runde. Her bliver det vigtigt at være ærlig om de danske regler. På de fleste 18-hullers klubbaner vil de typisk bede om et golfkørekort, altså en banetilladelse der viser at du kan spille sikkert og kender etiketten, og ofte også et officielt WHS-handicap. Det er ikke for at gøre det besværligt, men fordi en fuld bane kræver et vist niveau af både spil og banehensyn. Til gengæld findes der pay-and-play-baner og enklere anlæg, hvor kravene er lempeligere eller helt fraværende. Reglerne er ikke ens over hele landet, så tjek den enkelte banes betingelser i stedet for at gå ud fra noget.">A pay-and-play course is exactly what the name says: you pay for a round and play, without being a member. Greenfee is the same principle on most ordinary club courses, where you pay as a guest to play a single round. This is where it matters to be honest about the Danish rules. On most 18-hole club courses they will typically ask for a golf licence, that is a course permit showing you can play safely and know the etiquette, and often an official WHS handicap as well. It is not there to make things difficult, but because a full course asks for a certain level of both play and course care. On the other hand, there are pay-and-play courses and simpler facilities where the requirements are lighter or absent entirely. The rules are not the same across the whole country, so check the individual course conditions rather than assuming.</p>
+
+      <h2 data-da="Hvad du faktisk skal bruge for at komme i gang">What you actually need to get started</h2>
+      <p data-da="Det korte svar: mindre end du tror. Du behøver ikke et fuldt sæt blanke køller eller dyrt tøj for at slå dine første bolde. Et lånt eller brugt halvt sæt er rigeligt i starten, og på range og simulator kan du som regel bruge husets udstyr. Et par flade sko og noget tøj du kan bevæge dig i, så er du klar. Golfkørekortet og handicappet kommer først ind i billedet, når du vil spille de store baner, og det er noget du sagtens kan tage senere, når du har fundet ud af om sporten er noget for dig.">The short answer: less than you think. You do not need a full set of shiny clubs or expensive clothes to hit your first balls. A borrowed or second-hand half set is plenty to begin with, and on the range and simulator you can usually use the house gear. A pair of flat shoes and something you can move in, and you are ready. The golf licence and the handicap only come into the picture when you want to play the full courses, and that is something you can easily take later, once you have worked out whether the sport is for you.</p>
+
+      <div class="callout">
+        <h3 data-da="Veje ind uden medlemskab">Ways in without a membership</h3>
+        <ul>
+          <li><strong data-da="Driving range:">Driving range:</strong> <span data-da="ingen krav, lej en bøtte bolde og slå løs. Det letteste første skridt.">no requirements, rent a bucket of balls, and start hitting. The easiest first step.</span></li>
+          <li><strong data-da="Golfsimulator:">Golf simulator:</strong> <span data-da="book en time, indendørs og godt om vinteren, intet handicap nødvendigt.">book by the hour, indoors and good for winter, no handicap needed.</span></li>
+          <li><strong data-da="Par-3-bane:">Par-3 course:</strong> <span data-da="korte huller og hurtige runder, ofte uden formelle krav. Ring og tjek.">short holes and quick rounds, often without formal requirements. Call and check.</span></li>
+          <li><strong data-da="Pay-and-play og greenfee:">Pay-and-play and greenfee:</strong> <span data-da="betal og spil. Større baner vil tit bede om golfkørekort og WHS-handicap, så tjek den enkelte bane.">pay and play. Larger courses will often ask for a golf licence and a WHS handicap, so check the individual course.</span></li>
+        </ul>
+      </div>
+
+      <h2 data-da="Prøv det først, meld dig ind senere">Try it first, join later</h2>
+      <p data-da="Pointen er enkel: du behøver ikke beslutte dig for et helt år i en klub, før du overhovedet ved om du kan lide at slå til en golfbold. Start på range, prøv en simulator med et par venner, tag en runde på en par-3. Hvis du bider på, kommer medlemskabet, golfkørekortet og handicappet helt naturligt bagefter, og så giver det også mere mening at betale for. Mange klubber har desuden begynderforløb der pakker det hele ind: regler, banetilladelse, de første runder og nye mennesker at spille med. Men det er et skridt to, ikke et skridt et.">The point is simple: you do not need to commit to a whole year at a club before you even know whether you enjoy hitting a golf ball. Start on the range, try a simulator with a couple of friends, play a round on a par-3. If you take to it, the membership, the licence, and the handicap follow naturally afterwards, and then they make more sense to pay for too. Many clubs also run beginner programmes that wrap it all up: the rules, the course permit, the first rounds, and new people to play with. But that is a step two, not a step one.</p>
+
+      <h2 data-da="Sådan passer Golfsocial ind">Where Golfsocial fits in</h2>
+      <p><span data-da="Uanset hvor du starter, på range, i en simulator eller på din første par-3, kan du spille og følge runder med">Wherever you start, on the range, in a simulator, or on your first par-3, you can play and follow rounds with</span> <a href="index.html">Golfsocial</a><span data-da=". Du behøver ikke vente på et medlemskab eller et officielt handicap for at dele dine øjeblikke, holde styr på fremgangen eller følge med i hvad vennerne har gang i. Det sociale lag er der fra første slag, og det er tit netop det, der gør at man kommer ud igen næste weekend. Golf bliver sjovere, når du ikke står med det helt alene.">. You do not need to wait for a membership or an official handicap to share your moments, keep an eye on your progress, or follow what your friends are up to. The social layer is there from the very first shot, and that is often exactly what gets you out again next weekend. Golf gets more fun when you are not doing it entirely on your own.</span></p>
+
+      <!-- ╰────────────────────────── CONTENT END ──────────────────────────╯ -->
+    </div>
+
+    <!-- ── back link (do not edit) ── -->
+    <div class="article__foot">
+      <a class="article__back" href="index.html#blogs" data-da="Tilbage til alle artikler">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to all articles
+      </a>
+    </div>
+  </article>
+
+  <!-- ════════════════════ NEWSLETTER (reused from the homepage, do not edit) ════════════════════ -->
+  <section class="newsband">
+    <div class="news">
+      <img class="news__bg" src="images/news-bg.webp" alt="" />
+      <div class="news__inner">
+        <div class="news__text">
+          <h2 class="news__h" data-da="En hilsen fra banen.">The occasional note from the course.</h2>
+          <p class="news__sub" data-da="Ingen støj. Kun når vi har noget at fortælle.">No noise. Only the occasional read.</p>
+        </div>
+        <form class="news__form" data-ml-form="165875690760046481" novalidate>
+          <input class="news__email" type="email" name="fields[email]" placeholder="you@email.com" data-da="dig@email.com" aria-label="Email address" required />
+          <button class="news__btn" type="submit" data-da="Tilmeld">Subscribe</button>
+          <span class="news__confirm" aria-hidden="true">
+            <span class="news__confirm-check">
+              <svg viewBox="0 0 52 52" aria-hidden="true">
+                <circle class="news__confirm-circle" cx="26" cy="26" r="24" fill="none" />
+                <path class="news__confirm-tick" fill="none" d="M15 27 l7.5 7.5 L37.5 19" />
+              </svg>
+            </span>
+            <span class="news__confirm-text" data-da="Du er med. Vi ses på banen.">You&rsquo;re in. See you on the course.</span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ DOWNLOAD CTA + FOOTER (do not edit) ════════════════════ -->
+  <footer class="foot">
+    <hr class="foot__rule" />
+    <div class="foot__cta">
+      <h2 class="foot__headline" data-da="Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed.">Download Golfsocial. Because good friends never let friends golf in silence.</h2>
+      <div class="badges foot__badges">
+        <a href="https://apps.apple.com/dk/app/id6743446900" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#16221F"/><g fill="#FCFBF8"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#16221F"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FCFBF8"/></g><g fill="#FCFBF8"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <div class="foot__left">
+        <nav class="foot__links" aria-label="Footer">
+          <a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener">Linkedin</a>
+          <a href="https://x.com/golfsocialclub" target="_blank" rel="noopener">x.com</a>
+          <a href="mailto:hello@golfsocial.club" data-da="Kontakt">Contact</a>
+          <a href="privacy-policy.html" data-da="Privatlivspolitik">Privacy Policy</a>
+        </nav>
+        <p class="foot__copy" data-da="© 2026 Golfsocial. Alle rettigheder forbeholdes.">© 2026 Golfsocial. All rights reserved.</p>
+      </div>
+      <p class="foot__made" data-da="Bygget og designet i København">Built and designed in Copenhagen</p>
+    </div>
+  </footer>
+
+  <script src="article.js?v=5"></script>
+</body>
+</html>
