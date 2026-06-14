@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  GOLFSOCIAL — BLOG POST TEMPLATE                                  ║
+  ║                                                                  ║
+  ║  To publish a new blog post: copy this file, rename it to your   ║
+  ║  url slug (e.g. how-to-lower-your-handicap.html), then change    ║
+  ║  ONLY the things marked « EDIT ».  Everything else — the design, ║
+  ║  the header, the footer, the stylesheets — stays exactly as is.  ║
+  ║                                                                  ║
+  ║  The article text lives between the CONTENT START and CONTENT    ║
+  ║  END markers below. Inside it you only ever write plain          ║
+  ║  content tags; the design is applied automatically:              ║
+  ║                                                                  ║
+  ║    <p class="lead">…</p>   first / intro paragraph (bigger)      ║
+  ║    <p>…</p>                a normal paragraph                    ║
+  ║    <h2>…</h2>              a section heading                     ║
+  ║    <h3>…</h3>              a smaller sub-heading                 ║
+  ║    <ul><li>…</li></ul>     a bullet list (use <ol> for numbers)  ║
+  ║    <blockquote>…</blockquote>   a pull-quote                     ║
+  ║    <figure><img src="images/your-image.webp" alt="…">           ║
+  ║      <figcaption>…</figcaption></figure>   an image             ║
+  ║    <hr>                    a divider line                        ║
+  ║    <strong>…</strong> / <em>…</em> / <a href="…">…</a>          ║
+  ║                                                                  ║
+  ║  Never add inline styles, <style> tags or new classes.          ║
+  ║  See BLOG-GUIDE.md for the full guide + a ready-made prompt.     ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#123f36" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- « EDIT » page title + description for search engines / social -->
+  <title>Sådan sænker du dit golfhandicap · Golfsocial</title>
+  <meta name="description" content="Konkrete, gennemprøvede måder at sænke dit golfhandicap på: det korte spil, course management, øvelse med mening, og hvordan du følger fremgangen." />
+
+  <link rel="canonical" href="https://golfsocial.club/saadan-saenker-du-dit-golfhandicap" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Golfsocial" />
+  <meta property="og:locale" content="da_DK" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="Sådan sænker du dit golfhandicap · Golfsocial" />
+  <meta property="og:description" content="Konkrete, gennemprøvede måder at sænke dit golfhandicap på: det korte spil, course management, øvelse med mening, og hvordan du følger fremgangen." />
+  <meta property="og:url" content="https://golfsocial.club/saadan-saenker-du-dit-golfhandicap" />
+  <meta property="og:image" content="https://golfsocial.club/images/og-lower-handicap.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sådan sænker du dit golfhandicap · Golfsocial" />
+  <meta name="twitter:description" content="Konkrete, gennemprøvede måder at sænke dit golfhandicap på: det korte spil, course management, øvelse med mening, og hvordan du følger fremgangen." />
+  <meta name="twitter:image" content="https://golfsocial.club/images/og-lower-handicap.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://golfsocial.club/saadan-saenker-du-dit-golfhandicap",
+    "headline": "Sådan sænker du dit golfhandicap",
+    "description": "Konkrete, gennemprøvede måder at sænke dit golfhandicap på: det korte spil, course management, øvelse med mening, og hvordan du følger fremgangen.",
+    "image": "https://golfsocial.club/images/og-lower-handicap.png",
+    "inLanguage": "da-DK",
+    "dateModified": "2026-06-14",
+    "author": { "@type": "Organization", "name": "Golfsocial" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Golfsocial",
+      "logo": { "@type": "ImageObject", "url": "https://golfsocial.club/images/logo.svg" }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://golfsocial.club/" },
+      { "@type": "ListItem", "position": 2, "name": "Sådan sænker du dit golfhandicap", "item": "https://golfsocial.club/saadan-saenker-du-dit-golfhandicap" }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=12-42" />
+  <link rel="stylesheet" href="article.css?v=12" />
+</head>
+<body>
+
+  <!-- ════════════════════ HEADER (do not edit) ════════════════════ -->
+  <header class="masthead">
+    <a class="masthead__brand" href="index.html" aria-label="Golfsocial">
+      <img class="masthead__logo" src="images/logo.svg" alt="Golfsocial" />
+    </a>
+    <nav class="masthead__nav" aria-label="Top">
+      <a class="masthead__social" href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="17" cy="7" r="1.05" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M7.4 10.6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="7.4" cy="7.9" r="0.6" fill="currentColor"/>
+          <path d="M11.1 16.6v-6m0 2.5c0-1.6 1-2.5 2.3-2.5 1.2 0 2.1.9 2.1 2.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social masthead__social--x" href="https://x.com/golfsocialclub" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+      <div class="lang" role="group" aria-label="Language">
+        <span class="lang__opt is-active">EN</span><span class="lang__opt">DA</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ════════════════════ ARTICLE ════════════════════ -->
+  <article class="article">
+
+    <!-- ── header : « EDIT » title + meta + side photo (swap the image url) ── -->
+    <header class="article__head">
+      <div class="article__head-text">
+        <h1 class="article__title" data-da="Sådan sænker du dit golfhandicap">How to lower your golf handicap</h1>
+        <p class="article__meta" data-da="~6 min læsning">~6 min read</p>
+      </div>
+      <figure class="article__media">
+        <span class="article__media-img" style="background-image:url('images/article-lower-handicap.webp')"></span>
+      </figure>
+    </header>
+
+    <div class="article__body">
+      <!-- ╭───────────────────────── CONTENT START ─────────────────────────╮ -->
+
+      <p class="lead" data-da="Et lavere handicap kommer sjældent fra et længere drive. Det kommer fra konsistens: færre dårlige huller, færre tabte slag og bedre beslutninger ude på banen. Den gode nyhed er, at de fleste af de slag du leder efter, allerede ligger inden for rækkevidde. Du skal bare vide hvor de gemmer sig, og hvordan du holder øje med dem.">A lower handicap rarely comes from a longer drive. It comes from consistency: fewer blow-up holes, fewer wasted shots, and better decisions out on the course. The good news is that most of the strokes you are looking for are already within reach. You just need to know where they hide and how to keep track of them.</p>
+
+      <h2 data-da="De fleste slag gemmer sig tæt på green">Most of your shots hide near the green</h2>
+      <p data-da="De fleste golfere bruger deres tid på driving rangen og slår bold efter bold med driveren. Men runden afgøres sjældent på tee-stedet. Den afgøres på og omkring green. Hvis du tæller efter på din næste runde, vil du opdage hvor mange slag der forsvinder inden for de sidste hundrede meter: en pitch der ruller for langt, en chip der bliver liggende i kanten, tre putts hvor to var nok.">Most golfers spend their time on the driving range, hitting ball after ball with the driver. But a round is rarely decided on the tee. It is decided on and around the green. If you count carefully on your next round, you will notice how many strokes disappear inside the final hundred metres: a pitch that rolls too far, a chip left in the fringe, three putts where two would have done.</p>
+      <p data-da="Det korte spil er der hvor amatører taber mest til bedre spillere, og det er samtidig den nemmeste del at forbedre, fordi det handler mere om følelse og kontrol end om ren styrke. Brug halvdelen af din øvetid inden for halvtreds meter fra green, og du vil mærke forskellen på scorekortet hurtigere end ved noget andet.">The short game is where amateurs lose the most ground to better players, and it is also the easiest part to improve, because it relies more on feel and control than on raw power. Spend half of your practice time inside fifty metres of the green and you will see the difference on your scorecard faster than with anything else.</p>
+
+      <h2 data-da="Putting er det billigste sted at hente slag">Putting is the cheapest place to find strokes</h2>
+      <p data-da="Putting fylder ofte næsten halvdelen af dine slag på en runde, men får sjældent halvdelen af din opmærksomhed. Du behøver ikke en perfekt stroke for at blive en bedre putter. Du skal først og fremmest blive god til afstandskontrol, så du undgår de lange første putts der ender tre meter forbi hullet. Et solidt mål er at gøre tre putts til en sjældenhed.">Putting often makes up almost half of your shots in a round, yet it rarely gets half of your attention. You do not need a perfect stroke to become a better putter. Above all you need good distance control, so you avoid the long first putts that finish three metres past the hole. A solid goal is to make three-putts a rarity.</p>
+      <p data-da="Træn lag-putting med simple øvelser: læg tre bolde i forskellige afstande og prøv at lægge dem alle inden for en putterlængde af hullet. Det handler ikke om at hole alt fra ti meter. Det handler om at efterlade dig selv en nem nummer to. Når de korte putts holder op med at gøre nas, falder dit handicap nærmest af sig selv.">Practise lag putting with simple drills: place three balls at different distances and try to leave them all within a putter length of the hole. It is not about holing everything from ten metres. It is about leaving yourself an easy second putt. When the short ones stop hurting, your handicap drops almost on its own.</p>
+
+      <div class="callout">
+        <h3 data-da="De største løftestænger">The biggest levers</h3>
+        <ul>
+          <li><strong data-da="Det korte spil:">The short game:</strong> <span data-da="øv pitch, chip og bunkerslag inden for halvtreds meter, det er der flest slag forsvinder.">practise pitching, chipping and bunker play inside fifty metres, where the most shots leak away.</span></li>
+          <li><strong data-da="Afstandskontrol på green:">Distance control on the green:</strong> <span data-da="undgå tre putts ved at lægge den første tæt på, ikke ved at jagte hole-outs.">avoid three-putts by leaving the first one close, not by chasing hole-outs.</span></li>
+          <li><strong data-da="Smartere beslutninger:">Smarter decisions:</strong> <span data-da="sigt mod midten af green og dræb dobbeltbogeyen, før den opstår.">aim for the middle of the green and kill the double bogey before it happens.</span></li>
+          <li><strong data-da="Øvelse med mening:">Practice with purpose:</strong> <span data-da="træn det du er dårligst til, ikke det der føles rart.">work on your weakest part, not the part that feels good.</span></li>
+        </ul>
+      </div>
+
+      <h2 data-da="Course management: spil til dine styrker">Course management: play to your strengths</h2>
+      <p data-da="Mange tabte slag handler slet ikke om teknik. De handler om dårlige valg. Den ærefulde, men dumme linje over vandet, driveren på et smalt hul hvor en jernkølle ville have holdt dig i spil, flaget bag bunkeren du jagter i stedet for at sigte mod midten af green. God course management betyder at spille den runde du faktisk har, ikke den du drømmer om.">A lot of lost strokes have nothing to do with technique. They come from poor choices: the heroic but foolish line over the water, the driver on a tight hole where an iron would have kept you in play, the flag tucked behind the bunker you chase instead of aiming for the middle of the green. Good course management means playing the round you actually have, not the one you dream about.</p>
+      <p data-da="Den enkleste regel er at undgå dobbeltbogeys for enhver pris. En bogey er sjældent et problem, men en dobbeltbogey eller værre sætter en hel runde af sporet. Tag det sikre slag når du er i knibe, læg bolden tilbage i spil i stedet for at gå efter mirakelslaget, og sigt efter den brede del af green. Du vil overraskes over hvor mange slag du sparer ved bare at holde op med at lave de store fejl.">The simplest rule is to avoid double bogeys at all costs. A bogey is rarely a problem, but a double bogey or worse can derail an entire round. Take the safe shot when you are in trouble, punch the ball back into play instead of going for the miracle, and aim for the wide part of the green. You will be surprised how many strokes you save simply by no longer making the big mistakes.</p>
+
+      <blockquote data-da="Du sænker ikke dit handicap ved at slå flere fantastiske slag. Du gør det ved at slå færre dårlige.">You do not lower your handicap by hitting more great shots. You do it by hitting fewer bad ones.</blockquote>
+
+      <h2 data-da="Øvelse med mening, ikke bare en spand bolde">Practice with purpose, not just a bucket of balls</h2>
+      <p data-da="At slå hundrede driver-bolde i træk på rangen føles produktivt, men ligner intet ude på banen, hvor hvert slag tæller og du aldrig får det samme to gange i streg. Øvelse med mening handler om at gøre træningen mere som rigtig golf. Skift kølle for hvert slag, vælg et mål for hver eneste bold, og gå efter at ramme bestemte afstande i stedet for bare at slå hårdt.">Hitting a hundred driver balls in a row on the range feels productive, but it looks nothing like the course, where every shot counts and you never get the same one twice in a row. Practice with purpose is about making your training more like real golf. Change clubs between shots, pick a target for every single ball, and aim to hit specific distances rather than simply swinging hard.</p>
+      <p data-da="Spild ikke al din tid på det du allerede er god til. Hvis du rammer green på par 3-huller men hader bunkerslag, så øv bunkerslag. De fleste finder hurtigt deres svage punkt ved at se ærligt på, hvor slagene faktisk forsvinder. Den ærlighed er hele forskellen mellem at træne flittigt og træne klogt.">Do not spend all your time on what you are already good at. If you hit greens on par 3s but dread bunker shots, then practise bunker shots. Most people find their weak spot quickly by looking honestly at where the strokes actually go. That honesty is the whole difference between practising hard and practising smart.</p>
+
+      <h2 data-da="Følg dine runder, så du ved hvad der koster slag">Track your rounds, so you know what costs you strokes</h2>
+      <p><span data-da="Du kan ikke forbedre det du ikke måler. De fleste golfere har en mavefornemmelse af hvor det går galt, men mavefornemmelser tager fejl. Måske tror du, at driveren er problemet, mens tallene afslører, at det er dine tre putts og dårlige chips der koster runden. Når du følger dine runder over tid, holder du op med at gætte og begynder at vide. Det er præcis her">You cannot improve what you do not measure. Most golfers have a gut feeling about where things go wrong, but gut feelings lie. You might think the driver is the problem when the numbers reveal it is your three-putts and loose chips that cost you the round. When you track your rounds over time, you stop guessing and start knowing. This is exactly where</span> <a href="index.html">Golfsocial</a> <span data-da="kommer ind: når du følger dine runder og din statistik ét sted, ser du sort på hvidt hvor slagene faktisk forsvinder, om det er greens i regulation, antallet af putts eller de korte slag. Så bliver din næste træning målrettet i stedet for tilfældig, fordi du øver det tallene peger på, ikke det der bare føles rart. Og fordi din score betyder mere når den tæller officielt, synkroniserer Golfsocial dit officielle WHS-handicap gennem samarbejdet med">comes in: when you follow your rounds and your stats in one place, you can see in black and white where the strokes really leak away, whether it is greens in regulation, your putt count, or the shots around the green. That makes your next practice session targeted instead of random, because you work on what the numbers point to, not what simply feels good. And because your score means more when it counts officially, Golfsocial syncs your official WHS-handicap through the collaboration with the</span> <a href="dgu-collaboration.html" data-da="Dansk Golf Union">Danish Golf Union</a><span data-da=". Golfsocial udsteder ikke selv handicap, det gør Dansk Golf Union, men din fremgang lever ét sted, hvor du kan følge den.">. Golfsocial does not issue handicaps itself, the Danish Golf Union does that, but your progress lives in one place where you can watch it move.</span></p>
+
+      <h2 data-da="Til sidst">Final thoughts</h2>
+      <p data-da="At sænke sit handicap er ingen genvej, men det er heller ingen gåde. Brug mere tid tæt på green, undgå de store fejl med klogere beslutninger, øv det du er dårligst til, og hold øje med hvad der faktisk koster dig slag. Gør du det konsekvent, falder tallet. Og når du følger runderne sammen med dine venner i stedet for alene, bliver det både sjovere at blive bedre og lettere at holde fast i.">Lowering your handicap is no shortcut, but it is no mystery either. Spend more time close to the green, avoid the big mistakes with smarter decisions, practise your weakest part, and keep an eye on what actually costs you strokes. Do that consistently and the number comes down. And when you follow your rounds alongside your friends instead of alone, getting better becomes both more fun and easier to stick with.</p>
+
+      <!-- ╰────────────────────────── CONTENT END ──────────────────────────╯ -->
+    </div>
+
+    <!-- ── back link (do not edit) ── -->
+    <div class="article__foot">
+      <a class="article__back" href="index.html#blogs" data-da="Tilbage til alle artikler">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to all articles
+      </a>
+    </div>
+  </article>
+
+  <!-- ════════════════════ NEWSLETTER (reused from the homepage, do not edit) ════════════════════ -->
+  <section class="newsband">
+    <div class="news">
+      <img class="news__bg" src="images/news-bg.webp" alt="" />
+      <div class="news__inner">
+        <div class="news__text">
+          <h2 class="news__h" data-da="En hilsen fra banen.">The occasional note from the course.</h2>
+          <p class="news__sub" data-da="Ingen støj. Kun når vi har noget at fortælle.">No noise. Only the occasional read.</p>
+        </div>
+        <form class="news__form" data-ml-form="165875690760046481" novalidate>
+          <input class="news__email" type="email" name="fields[email]" placeholder="you@email.com" data-da="dig@email.com" aria-label="Email address" required />
+          <button class="news__btn" type="submit" data-da="Tilmeld">Subscribe</button>
+          <span class="news__confirm" aria-hidden="true">
+            <span class="news__confirm-check">
+              <svg viewBox="0 0 52 52" aria-hidden="true">
+                <circle class="news__confirm-circle" cx="26" cy="26" r="24" fill="none" />
+                <path class="news__confirm-tick" fill="none" d="M15 27 l7.5 7.5 L37.5 19" />
+              </svg>
+            </span>
+            <span class="news__confirm-text" data-da="Du er med. Vi ses på banen.">You&rsquo;re in. See you on the course.</span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ DOWNLOAD CTA + FOOTER (do not edit) ════════════════════ -->
+  <footer class="foot">
+    <hr class="foot__rule" />
+    <div class="foot__cta">
+      <h2 class="foot__headline" data-da="Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed.">Download Golfsocial. Because good friends never let friends golf in silence.</h2>
+      <div class="badges foot__badges">
+        <a href="https://apps.apple.com/dk/app/id6743446900" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#16221F"/><g fill="#FCFBF8"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#16221F"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FCFBF8"/></g><g fill="#FCFBF8"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <div class="foot__left">
+        <nav class="foot__links" aria-label="Footer">
+          <a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener">Linkedin</a>
+          <a href="https://x.com/golfsocialclub" target="_blank" rel="noopener">x.com</a>
+          <a href="mailto:hello@golfsocial.club" data-da="Kontakt">Contact</a>
+          <a href="privacy-policy.html" data-da="Privatlivspolitik">Privacy Policy</a>
+        </nav>
+        <p class="foot__copy" data-da="© 2026 Golfsocial. Alle rettigheder forbeholdes.">© 2026 Golfsocial. All rights reserved.</p>
+      </div>
+      <p class="foot__made" data-da="Bygget og designet i København">Built and designed in Copenhagen</p>
+    </div>
+  </footer>
+
+  <script src="article.js?v=5"></script>
+</body>
+</html>
