@@ -313,3 +313,63 @@
   .story-hero__title { font-size: 3.6rem; line-height: 4rem; letter-spacing: -0.08rem; }
   .story-hero__byline { font-size: 1.6rem; margin-top: 2.4rem; }
 }
+
+/* ════════════════════════════════════════════════════════════
+   TEXT template: no cover image, typography-led opener.
+   Add class="article article--text" on the <article>, drop the
+   .article__media figure, and put an .article__eyebrow above the
+   title. The body below reuses the exact prose system above.
+   ════════════════════════════════════════════════════════════ */
+.article--text { margin-top: 4.4rem; }
+
+/* header collapses to a single bold type column, closed by a hairline
+   that does the structural job the side photo used to do */
+.article--text .article__head {
+  display: block;
+  padding-bottom: 5.4rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.12);
+}
+.article--text .article__head-text { max-width: 100%; }
+.article--text .article__eyebrow { font-size: 2rem; margin-bottom: 3rem; }
+.article--text .article__title {
+  font-size: 10.4rem;
+  line-height: 9.6rem;
+  letter-spacing: -0.34rem;
+  max-width: 128rem;
+}
+.article--text .article__meta { margin-top: 3.2rem; }
+
+/* a larger lead, opened by an editorial drop-cap initial in brand green */
+.article--text .article__body { margin-top: 4.6rem; }
+.article--text .article__body p.lead {
+  font-size: 2.9rem;
+  line-height: 4.3rem;
+  letter-spacing: -0.035rem;
+}
+.article--text .article__body p.lead::first-letter {
+  float: left;
+  margin: 0.8rem 1.2rem 0 0;
+  font-size: 8.8rem;
+  line-height: 6.4rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+@media (max-width: 1024px) {
+  .article--text { margin-top: 6rem; }
+  .article--text .article__head { padding-bottom: 4.4rem; }
+  .article--text .article__title { font-size: 7.4rem; line-height: 7.2rem; letter-spacing: -0.22rem; }
+  .article--text .article__body p.lead { font-size: 2.6rem; line-height: 3.9rem; }
+  .article--text .article__body p.lead::first-letter { font-size: 7.2rem; line-height: 5.2rem; }
+}
+
+@media (max-width: 600px) {
+  .article--text { margin-top: 4rem; }
+  .article--text .article__eyebrow { font-size: 1.6rem; margin-bottom: 1.8rem; }
+  .article--text .article__head { padding-bottom: 3.2rem; }
+  .article--text .article__title { font-size: 4.6rem; line-height: 4.8rem; letter-spacing: -0.12rem; }
+  .article--text .article__meta { margin-top: 2.2rem; }
+  .article--text .article__body { margin-top: 3.4rem; }
+  .article--text .article__body p.lead { font-size: 2.1rem; line-height: 3.1rem; }
+  .article--text .article__body p.lead::first-letter { font-size: 5rem; line-height: 3.6rem; margin: 0.6rem 0.9rem 0 0; }
+}

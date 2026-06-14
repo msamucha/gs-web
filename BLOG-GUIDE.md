@@ -3,11 +3,12 @@
 The design is locked. You only ever write **content**, never styling. Follow
 the three steps below and the page will always match the rest of the site.
 
-There is one template:
+There are two templates:
 
 | Template | File to copy | Use it for |
 | --- | --- | --- |
-| **Article** | `5-surprising-social-benefits-of-playing-golf.html` | Any article: news, how-tos, opinions, features, partnerships |
+| **Article (with cover)** | `5-surprising-social-benefits-of-playing-golf.html` | Any article with a cover photo |
+| **Article (text only)** | `strokes-gained-forklaret.html` | A typography-led article with no cover image |
 
 ---
 
@@ -82,6 +83,20 @@ applied automatically, so you never need a class except where noted.
   </ul>
 </div>
 ```
+
+### Optional: a text-only article (no cover image)
+
+For a typography-led post with no photo, copy `strokes-gained-forklaret.html`
+instead. The only difference is the header:
+
+- the `<article>` opens with `class="article article--text"`,
+- there is no `<figure class="article__media">` cover,
+- a short kicker sits above the title:
+  `<p class="article__eyebrow" data-da="Dansk kicker">English kicker</p>`.
+
+Everything else (title, meta, the CONTENT block, all the tags above) is
+identical. The first letter of the `lead` paragraph becomes a large green
+drop-cap automatically.
 
 ---
 
