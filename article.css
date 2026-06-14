@@ -373,3 +373,52 @@
   .article--text .article__body p.lead { font-size: 2.1rem; line-height: 3.1rem; }
   .article--text .article__body p.lead::first-letter { font-size: 5rem; line-height: 3.6rem; margin: 0.6rem 0.9rem 0 0; }
 }
+
+/* ════════════════════════════════════════════════════════════
+   In-article "get Golfsocial" card. Drop a .article__cta block
+   anywhere inside .article__body (mid-text or at the end). Uses
+   the white app-store badges so they read on the green card.
+   ════════════════════════════════════════════════════════════ */
+.article__body .article__cta {
+  margin-top: 6rem;
+  background: var(--green-card);
+  color: var(--white);
+  border-radius: 2.8rem;
+  padding: 4.8rem 5rem;
+}
+.article__body .article__cta-kicker {
+  margin: 0 0 1.8rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: -0.01rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.article__body .article__cta h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 3.4rem;
+  line-height: 3.9rem;
+  letter-spacing: -0.06rem;
+  color: var(--white);
+  max-width: 44rem;
+}
+.article__body .article__cta p {
+  margin-top: 2rem;
+  font-size: 1.9rem;
+  line-height: 2.9rem;
+  letter-spacing: -0.01rem;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 46rem;
+}
+.article__body .article__cta .badges {
+  margin-top: 3.2rem;
+  flex-wrap: wrap;
+}
+.article__body .article__cta .badge svg { height: 4.4rem; }
+
+@media (max-width: 600px) {
+  .article__body .article__cta { margin-top: 4.6rem; padding: 3.2rem 2.6rem; border-radius: 2rem; }
+  .article__body .article__cta h2 { font-size: 2.6rem; line-height: 3.1rem; }
+  .article__body .article__cta p { font-size: 1.8rem; line-height: 2.7rem; }
+  .article__body .article__cta .badge svg { height: 4rem; }
+}
