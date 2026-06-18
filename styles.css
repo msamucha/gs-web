@@ -670,13 +670,30 @@ a { color: inherit; text-decoration: none; }
   background-repeat: no-repeat;
 }
 .bcard__img--tall {
-  aspect-ratio: 380 / 479;
+  aspect-ratio: 380 / 290;
   border-radius: 2.5rem;
 }
-.bcard__img--tall .bcard__img-bg { background-position: center bottom; }
+.bcard__img--tall .bcard__img-bg { background-position: center 40%; }
 .bcard__img--wide {
   aspect-ratio: 422 / 454;
   border-radius: 2rem;
+}
+
+/* stacked column: two blog cards in one row slot, split by a divider */
+.bcol {
+  flex: 0 0 auto;
+  width: 38rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+.bcol .bcard { width: 100%; }
+.bcard__div {
+  width: 100%;
+  height: 0.1rem;
+  margin: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.12);
 }
 
 /* threads card */
@@ -1090,7 +1107,8 @@ a { color: inherit; text-decoration: none; }
   .blogs__row { flex-direction: column; gap: 7rem; }
   .blogs__div { display: none; }
   .bcard { width: 100%; max-width: 60rem; }
-  .bcard__img--tall { height: auto; aspect-ratio: 380 / 479; }
+  .bcol { width: 100%; max-width: 60rem; }
+  .bcard__img--tall { height: auto; aspect-ratio: 380 / 340; }
   .bthreads { height: auto; aspect-ratio: 380 / 620; }
   .bthreads__phone { position: relative; left: auto; top: auto; transform: none; margin: 2.7rem auto 0; }
 
