@@ -57,7 +57,13 @@
 
   var saved;
   try { saved = localStorage.getItem('gs-lang'); } catch (e) {}
-  setLang(saved === 'en' ? 'en' : 'da');   // Danish is the default
+  var urlLang = null;
+  try { urlLang = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+  if (urlLang === 'en' || urlLang === 'da') {
+    setLang(urlLang);                        // ?lang=en|da in the URL wins (shareable language links)
+  } else {
+    setLang(saved === 'en' ? 'en' : 'da');   // Danish is the default
+  }
 })();
 
 /* newsletter sign-up → MailerLite, with a custom confirmation (same as the homepage) */
