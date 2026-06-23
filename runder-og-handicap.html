@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  GOLFSOCIAL — BLOG POST TEMPLATE                                  ║
+  ║                                                                  ║
+  ║  To publish a new blog post: copy this file, rename it to your   ║
+  ║  url slug (e.g. how-to-lower-your-handicap.html), then change    ║
+  ║  ONLY the things marked « EDIT ».  Everything else — the design, ║
+  ║  the header, the footer, the stylesheets — stays exactly as is.  ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png?v=2" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=2" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#123f36" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEBPZS1TT2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XEBPZS1TT2');
+  </script>
+
+  <!-- « EDIT » page title + description -->
+  <title>Officielt golfhandicap, gratis i appen · Golfsocial</title>
+  <meta name="description" content="Registrer din runde, få den bekræftet af din markør, og se dit officielle WHS-handicap rette sig. Gratis og koblet til DGU. Velkommen til dit golfhjem." />
+
+  <link rel="canonical" href="https://golfsocial.club/runder-og-handicap" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Golfsocial" />
+  <meta property="og:locale" content="da_DK" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="Officielt golfhandicap, gratis i appen" />
+  <meta property="og:description" content="Registrer din runde, få den bekræftet af din markør, og se dit officielle WHS-handicap rette sig. Gratis og koblet til DGU. Velkommen til dit golfhjem." />
+  <meta property="og:url" content="https://golfsocial.club/runder-og-handicap" />
+  <meta property="og:image" content="https://golfsocial.club/images/og-official-handicap.png" /><!-- «EDIT» replace with bespoke OG image -->
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Officielt golfhandicap, gratis i appen" />
+  <meta name="twitter:description" content="Registrer din runde, få den bekræftet af din markør, og se dit officielle WHS-handicap rette sig. Gratis og koblet til DGU. Velkommen til dit golfhjem." />
+  <meta name="twitter:image" content="https://golfsocial.club/images/og-official-handicap.png" /><!-- «EDIT» replace with bespoke OG image -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": "https://golfsocial.club/runder-og-handicap",
+    "headline": "Officielt golfhandicap, gratis i appen",
+    "description": "Registrer din runde, få den bekræftet af din markør, og se dit officielle WHS-handicap rette sig. Gratis og koblet til DGU. Velkommen til dit golfhjem.",
+    "image": "https://golfsocial.club/images/og-official-handicap.png",
+    "inLanguage": "da-DK",
+    "dateModified": "2026-06-23",
+    "author": { "@type": "Organization", "name": "Golfsocial" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Golfsocial",
+      "logo": { "@type": "ImageObject", "url": "https://golfsocial.club/images/logo.svg" }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://golfsocial.club/" },
+      { "@type": "ListItem", "position": 2, "name": "Runder og handicap", "item": "https://golfsocial.club/runder-og-handicap" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "da-DK",
+    "mainEntity": [
+      { "@type": "Question", "name": "Er handicappet officielt?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Fordi det kommer via DGU, er det samme score som tæller til dit officielle handicap, ikke en genindtastning eller en parallel udgave." } },
+      { "@type": "Question", "name": "Hvad er en markør?", "acceptedAnswer": { "@type": "Answer", "text": "En medspiller der gennemgår og bekræfter din score, så runden tæller som en tællende runde." } },
+      { "@type": "Question", "name": "Hvordan udregnes mit handicap?", "acceptedAnswer": { "@type": "Answer", "text": "Under World Handicap System er det gennemsnittet af dine bedste 8 runder ud af dine seneste 20 tællende runder. Golfsocial laver regnestykket for dig." } },
+      { "@type": "Question", "name": "Virker det med min hjemmeklub?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Fordi Golfsocial er koblet via DGU, er den runde der tæller i din klub, den samme som i appen." } },
+      { "@type": "Question", "name": "Koster det noget?", "acceptedAnswer": { "@type": "Answer", "text": "Nej. Golfsocial er gratis på iPhone og Android." } }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=12-42" />
+  <link rel="stylesheet" href="article.css?v=12" />
+</head>
+<body>
+
+  <!-- ════════════════════ HEADER (do not edit) ════════════════════ -->
+  <header class="masthead">
+    <a class="masthead__brand" href="index.html" aria-label="Golfsocial">
+      <img class="masthead__logo" src="images/logo.svg" alt="Golfsocial" />
+    </a>
+    <nav class="masthead__nav" aria-label="Top">
+      <a class="masthead__social" href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="17" cy="7" r="1.05" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M7.4 10.6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="7.4" cy="7.9" r="0.6" fill="currentColor"/>
+          <path d="M11.1 16.6v-6m0 2.5c0-1.6 1-2.5 2.3-2.5 1.2 0 2.1.9 2.1 2.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social masthead__social--x" href="https://x.com/golfsocialclub" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+      <div class="lang" role="group" aria-label="Language">
+        <span class="lang__opt is-active">EN</span><span class="lang__opt">DA</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ════════════════════ ARTICLE ════════════════════ -->
+  <article class="article article--text">
+
+    <!-- ── header : « EDIT » eyebrow + title + meta (text-led hero, no image) ── -->
+    <header class="article__head">
+      <div class="article__head-text">
+        <p class="article__eyebrow" data-da="Runder og handicap">Rounds and handicap</p>
+        <h1 class="article__title" data-da="Registrér runden. Få dit officielle handicap.">Log the round. Get your official handicap.</h1>
+        <p class="article__meta" data-da="~3 min læsning">~3 min read</p>
+      </div>
+    </header>
+
+    <div class="article__body">
+      <!-- ╭───────────────────────── CONTENT START ─────────────────────────╮ -->
+
+      <p class="lead" data-da="Dit handicap skal ikke bo i et regneark eller en app du har glemt koden til. I Golfsocial spiller du din runde, din markør bekræfter den, og dit officielle WHS-handicap opdaterer sig selv. Det er det rigtige tal, det der tæller i klubben og i matchen mod vennerne, og det ligger lige ved siden af dem du spillede med. Ingen dobbelt-indtastning, ingen parallel udgave, intet bøvl.">Your handicap should not live in a spreadsheet or an app you forget the password to. In Golfsocial you play your round, your marker confirms it, and your official WHS handicap updates itself. It is the real number, the one that counts at the club and in the match against your mates, and it sits right next to the people you played with. No double entry, no parallel version, no admin.</p>
+
+      <h2 data-da="Tre trin, intet regneark">Three steps, no spreadsheet</h2>
+      <ol>
+        <li data-da="Registrér runden. Slå dine scores ind hul for hul mens I spiller, eller udfyld den bagefter. Vælg banen, teestedet, og så er du i gang.">Log the round. Enter your scores hole by hole as you play, or fill it in afterwards. Pick the course, the tee, and you are away.</li>
+        <li data-da="Din markør bekræfter. En medspiller gennemgår kortet og godkender det, samme kontrol der gør en runde tællende i din klub.">Your marker confirms it. A playing partner reviews the card and approves it, the same check that makes a round count at your club.</li>
+        <li data-da="Handicappet opdaterer sig. Regnestykket klares for dig, og dit officielle WHS-handicap rykker, runde for runde.">Your handicap updates. The maths is done for you, and your official WHS handicap moves, round by round.</li>
+      </ol>
+
+      <h2 data-da="Hvad der faktisk tæller">What actually counts</h2>
+      <p><span data-da="Ikke hvert sving tæller til dit handicap, og det er meningen. En ">Not every swing counts toward your handicap, and that is the point. A </span><a href="saadan-registrerer-du-en-taellende-runde.html" data-da="tællende runde">counting round</a><span data-da=" kræver en markør, en medspiller der verificerer din score, så tallet forbliver ærligt. Under "> needs a marker, a playing partner who verifies your score so the number stays honest. Under the </span><a href="saadan-fungerer-whs-handicap.html" data-da="World Handicap System">World Handicap System</a><span data-da=" bygges dit handicap på et gennemsnit af dine bedste 8 runder ud af de seneste 20, så én dårlig dag ikke ødelægger det, og én heldig dag ikke pynter på det. Golfsocial klarer det hele stille i baggrunden."> your handicap is built from an average of your best 8 rounds out of the last 20, so one bad day will not wreck it and one lucky day will not flatter it. Golfsocial handles all of that quietly in the background.</span></p>
+
+      <h2 data-da="Officielt, ikke cirka">Official, not roughly official</h2>
+      <p><span data-da="Masser af apps vil tracke et tal for dig. Forskellen er, om det betyder noget. Golfsocial er koblet til dansk golf gennem DGU, så det handicap du ser, er det ægte, samme tal der afgør dit teested i en klubturnering og afslutter diskussionen på første hul. Læs ">Plenty of apps will track a number for you. The difference is whether it means anything. Golfsocial is connected to Danish golf through DGU, so the handicap you see is the genuine one, the same figure that decides your tee in a club competition and settles the argument on the first hole. Read </span><a href="officielt-handicap-i-danmark.html" data-da="sådan får du et officielt handicap i Danmark">how to get an official handicap in Denmark</a><span data-da=". Din golf får lov at være social uden nogensinde at være mindre end officiel.">. Your golf gets to be social without ever being less than official.</span></p>
+
+      <h2 data-da="Se det rykke">Watch it move</h2>
+      <p><span data-da="Et handicap er sjovere når du kan mærke det bevæge sig et sted hen. Hver tællende runde rykker det, og fordi runden ligger lige der i Golfsocial, er fremgangen noget du følger med i, ikke noget du slår op to gange om året. Registrér en god en, del den med din gruppe, og lad ">A handicap is more fun when you can feel it heading somewhere. Every counting round nudges it, and because the round is right there in Golfsocial, the progress is something you follow rather than something you look up twice a year. Log a good one, share it with your group, and let </span><a href="de-tal-der-saenker-dit-handicap.html" data-da="de tal der sænker dit handicap">the numbers that lower your handicap</a><span data-da=" fortælle historien sammen med dig."> tell the story alongside you.</span></p>
+
+      <div class="callout">
+        <h3 data-da="Hvad du får">What you get</h3>
+        <ul>
+          <li><strong data-da="Officielt WHS-handicap:">Official WHS handicap:</strong> <span data-da="det rigtige tal, opdateret for dig.">the real number, updated for you.</span></li>
+          <li><strong data-da="Bekræftede runder:">Verified rounds:</strong> <span data-da="din markør godkender, så det tæller.">your marker confirms, so it counts.</span></li>
+          <li><strong data-da="Bedste 8 af 20, klaret for dig:">Best 8 of 20, done for you:</strong> <span data-da="WHS-regnestykket håndteret i baggrunden.">the WHS maths handled in the background.</span></li>
+          <li><strong data-da="Koblet til DGU:">Connected to DGU:</strong> <span data-da="ingen dobbelt-indtastning, ingen parallel udgave.">no double entry, no parallel version.</span></li>
+          <li><strong data-da="Gratis, hele vejen:">Free, all the way:</strong> <span data-da="intet abonnement foran dit eget handicap.">no subscription in front of your own handicap.</span></li>
+        </ul>
+      </div>
+
+      <blockquote data-da="Et tal du kan stole på, og endelig et sted det er værd at have det.">A number you can trust, and finally somewhere worth keeping it.</blockquote>
+
+      <h2 data-da="Ofte stillede spørgsmål">Common questions</h2>
+
+      <h3 data-da="Er handicappet officielt?">Is the handicap official?</h3>
+      <p data-da="Ja. Fordi det kommer via DGU, er det samme score som tæller til dit officielle handicap, ikke en genindtastning eller en parallel udgave.">Yes. Because it comes through DGU, it is the same score that counts toward your official handicap, not a re-entry or a parallel version.</p>
+
+      <h3 data-da="Hvad er en markør?">What is a marker?</h3>
+      <p data-da="En medspiller der gennemgår og bekræfter din score, så runden tæller som en tællende runde.">A playing partner who reviews and confirms your score, so the round counts as a qualifying round.</p>
+
+      <h3 data-da="Hvordan udregnes mit handicap?">How is my handicap calculated?</h3>
+      <p data-da="Under World Handicap System er det gennemsnittet af dine bedste 8 runder ud af dine seneste 20 tællende runder. Golfsocial laver regnestykket for dig.">Under the World Handicap System it is the average of your best 8 rounds out of your last 20 counting rounds. Golfsocial does the maths for you.</p>
+
+      <h3 data-da="Virker det med min hjemmeklub?">Does it work with my home club?</h3>
+      <p data-da="Ja. Fordi Golfsocial er koblet via DGU, er den runde der tæller i din klub, den samme som i appen.">Yes. Because Golfsocial connects through DGU, the round that counts at your club is the same one in the app.</p>
+
+      <h3 data-da="Koster det noget?">Does it cost anything?</h3>
+      <p data-da="Nej. Golfsocial er gratis på iPhone og Android.">No. Golfsocial is free on iPhone and Android.</p>
+
+      <!-- « EDIT » closing download banner (Figma node 249:324) -->
+      <div class="appbanner">
+        <img class="appbanner__bg" src="images/app-banner.webp" alt="" />
+        <img class="appbanner__logo" src="images/logo.svg" alt="Golfsocial" />
+        <div class="badges appbanner__badges">
+          <a href="https://apps.apple.com/dk/app/id6743446900" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store"><svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#FFFFFF"/><g fill="#16221F"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg></a>
+          <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play"><svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#FFFFFF"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#16221F"/></g><g fill="#16221F"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg></a>
+        </div>
+      </div>
+
+      <div class="article__related">
+        <p class="article__related-label" data-da="Læs også">Read next</p>
+        <ul>
+          <li><a href="officielt-handicap-i-danmark.html" data-da="Sådan får du et officielt handicap i Danmark">How to get an official handicap in Denmark</a></li>
+          <li><a href="saadan-fungerer-whs-handicap.html" data-da="Sådan fungerer WHS-handicap">How the WHS handicap works</a></li>
+          <li><a href="saadan-registrerer-du-en-taellende-runde.html" data-da="Sådan registrerer du en tællende runde">How to register a counting round</a></li>
+          <li><a href="hvad-er-et-godt-golfhandicap.html" data-da="Hvad er et godt golfhandicap?">What is a good golf handicap?</a></li>
+          <li><a href="golfsocial-sync-dgu.html" data-da="Din runde, synket fra DGU">Your round, synced from DGU</a></li>
+        </ul>
+      </div>
+
+      <!-- ╰────────────────────────── CONTENT END ──────────────────────────╯ -->
+    </div>
+
+    <!-- ── back link (do not edit) ── -->
+    <div class="article__foot">
+      <a class="article__back" href="alle-artikler.html" data-da="Tilbage til alle artikler">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to all articles
+      </a>
+    </div>
+  </article>
+
+  <!-- ════════════════════ NEWSLETTER (reused from the homepage, do not edit) ════════════════════ -->
+  <section class="newsband">
+    <div class="news">
+      <img class="news__bg" src="images/news-bg.webp" alt="" />
+      <div class="news__inner">
+        <div class="news__text">
+          <h2 class="news__h" data-da="En hilsen fra banen.">The occasional note from the course.</h2>
+          <p class="news__sub" data-da="Ingen støj. Kun når vi har noget at fortælle.">No noise. Only the occasional read.</p>
+        </div>
+        <form class="news__form" data-ml-form="165875690760046481" novalidate>
+          <input class="news__email" type="email" name="fields[email]" placeholder="you@email.com" data-da="dig@email.com" aria-label="Email address" required />
+          <button class="news__btn" type="submit" data-da="Tilmeld">Subscribe</button>
+          <span class="news__confirm" aria-hidden="true">
+            <span class="news__confirm-check">
+              <svg viewBox="0 0 52 52" aria-hidden="true">
+                <circle class="news__confirm-circle" cx="26" cy="26" r="24" fill="none" />
+                <path class="news__confirm-tick" fill="none" d="M15 27 l7.5 7.5 L37.5 19" />
+              </svg>
+            </span>
+            <span class="news__confirm-text" data-da="Du er med. Vi ses på banen.">You&rsquo;re in. See you on the course.</span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ DOWNLOAD CTA + FOOTER (do not edit) ════════════════════ -->
+  <footer class="foot">
+    <hr class="foot__rule" />
+    <div class="foot__cta">
+      <h2 class="foot__headline" data-da="Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed.">Download Golfsocial. Because good friends never let friends golf in silence.</h2>
+      <div class="badges foot__badges">
+        <a href="https://apps.apple.com/dk/app/id6743446900" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#16221F"/><g fill="#FCFBF8"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#16221F"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FCFBF8"/></g><g fill="#FCFBF8"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <div class="foot__left">
+        <nav class="foot__links" aria-label="Footer">
+          <a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener">Linkedin</a>
+          <a href="https://x.com/golfsocialclub" target="_blank" rel="noopener">x.com</a>
+          <a href="mailto:hello@golfsocial.club" data-da="Kontakt">Contact</a>
+          <a href="privacy-policy.html" data-da="Privatlivspolitik">Privacy Policy</a>
+        </nav>
+        <p class="foot__copy" data-da="© 2026 Golfsocial. Alle rettigheder forbeholdes.">© 2026 Golfsocial. All rights reserved.</p>
+      </div>
+      <p class="foot__made" data-da="Bygget og designet i København">Built and designed in Copenhagen</p>
+    </div>
+  </footer>
+
+  <script src="article.js?v=5"></script>
+</body>
+</html>

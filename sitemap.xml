@@ -196,6 +196,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://golfsocial.club/grupper</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://golfsocial.club/runder-og-handicap</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://golfsocial.club/del-dine-runder</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://golfsocial.club/live-scoring</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://golfsocial.club/turneringer</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://golfsocial.club/privacy-policy</loc>
     <lastmod>2026-06-13</lastmod>
     <priority>0.3</priority>
