@@ -51,9 +51,34 @@
   <script>
     (function () {
       var params = new URLSearchParams(location.search);
-      var c = (params.get('c') || 'web_smartlink').replace(/[^a-zA-Z0-9_\-]/g, '').slice(0, 40) || 'web_smartlink';
+      function clean(v) { return (v || '').replace(/[^a-zA-Z0-9_\-]/g, '').slice(0, 40); }
+      var c = clean(params.get('c')) || 'web_smartlink';
+      var lc = c.toLowerCase();
+
+      // Derive the channel from the campaign code so Google Play attribution is
+      // honest (a boost shows as paid, not "newsletter"). Explicit ?m= / ?s=
+      // override if ever needed. Convention: put the intent in the code, e.g.
+      // ig_boost (paid), ig_post (organic social), nl_juli (email).
+      var medium = clean(params.get('m'));
+      if (!medium) {
+        if (/(boost|paid|promo|ads?)/.test(lc)) medium = 'paid';
+        else if (/(^nl|mail|email|newsletter)/.test(lc)) medium = 'email';
+        else if (/(post|bio|story|reel|organic|social)/.test(lc)) medium = 'social';
+        else medium = 'referral';
+      }
+      var source = clean(params.get('s'));
+      if (!source) {
+        if (/^ig|instagram/.test(lc)) source = 'instagram';
+        else if (/^fb|facebook/.test(lc)) source = 'facebook';
+        else if (/^tt|tiktok/.test(lc)) source = 'tiktok';
+        else if (/^li|linkedin/.test(lc)) source = 'linkedin';
+        else if (/^nl/.test(lc)) source = 'newsletter';
+        else source = 'golfsocial.club';
+      }
+
+      var referrer = 'utm_source=' + source + '&utm_medium=' + medium + '&utm_campaign=' + c;
       var ios = 'https://apps.apple.com/app/apple-store/id6743446900?pt=125766814&ct=' + encodeURIComponent(c) + '&mt=8';
-      var android = 'https://play.google.com/store/apps/details?id=com.golfsocialapp.production&referrer=' + encodeURIComponent('utm_source=golfsocial.club&utm_medium=newsletter&utm_campaign=' + c);
+      var android = 'https://play.google.com/store/apps/details?id=com.golfsocialapp.production&referrer=' + encodeURIComponent(referrer);
       var iosEl = document.getElementById('ios-badge'); if (iosEl) iosEl.href = ios;
       var andEl = document.getElementById('android-badge'); if (andEl) andEl.href = android;
       var ua = navigator.userAgent || navigator.vendor || '';
@@ -71,6 +96,8 @@
       gtag('event', 'smartlink_landing', {
         smartlink_code: c,
         smartlink_platform: platform,
+        smartlink_source: source,
+        smartlink_medium: medium,
         transport_type: 'beacon',
         event_callback: go
       });
