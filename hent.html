@@ -6,6 +6,16 @@
   <meta name="robots" content="noindex,nofollow">
   <title>Hent Golfsocial</title>
   <link rel="icon" href="/favicon.ico">
+  <!-- GA4 — same property as the rest of golfsocial.club. On this router page the
+       landing must be logged BEFORE the redirect fires, so the hit is sent with
+       transport:beacon and the redirect waits on the event callback (see script). -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEBPZS1TT2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XEBPZS1TT2', { transport_type: 'beacon' });
+  </script>
   <style>
     html,body{margin:0;height:100%;}
     body{
@@ -49,8 +59,22 @@
       var ua = navigator.userAgent || navigator.vendor || '';
       var isAndroid = /android/i.test(ua);
       var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-      if (isAndroid) { location.replace(android); }
-      else if (isIOS) { location.replace(ios); }
+      var platform = isAndroid ? 'android' : (isIOS ? 'ios' : 'desktop');
+      var dest = isAndroid ? android : (isIOS ? ios : null);
+
+      // Log the landing (campaign code + platform) before bouncing to the store.
+      // transport:beacon lets the hit survive the unload; we redirect from the
+      // event callback so the beacon is queued first, with a timeout fallback in
+      // case analytics is blocked and the callback never fires.
+      var gone = false;
+      function go() { if (gone || !dest) return; gone = true; location.replace(dest); }
+      gtag('event', 'smartlink_landing', {
+        smartlink_code: c,
+        smartlink_platform: platform,
+        transport_type: 'beacon',
+        event_callback: go
+      });
+      if (dest) { setTimeout(go, 900); } // fallback: don't strand the user if GA is blocked
     })();
   </script>
 </body>
