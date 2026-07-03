@@ -23,10 +23,16 @@ content (blog posts, stories, copy fixes) can be added without touching design.
   - Article template: `5-surprising-social-benefits-of-playing-golf.html`
   - Full instructions + allowed tags: `BLOG-GUIDE.md` (read it before writing)
 - Fix typos or update copy in existing articles (inside the content markers).
-- Add a new card to the homepage blog row: duplicate an existing
-  `<a class="bcard">...</a>` block inside `<div class="blogs__row">` in
-  `index.html` and change ONLY its `href`, title text, meta text, and the
-  `background-image` url. Change nothing else in `index.html`.
+- Every new blog post MUST also get a card on the "All articles" page, in
+  the same PR as the article itself: in `alle-artikler.html`, duplicate an
+  existing text-only `<a class="bcard">...</a>` block (title + meta, no
+  image div) at the top of the first `<div class="bcol">` list, and change
+  ONLY its `href`, the English title and `data-da` Danish title, and the
+  read time.
+- Homepage blog row (`index.html`): ONLY when Michel explicitly asks for it.
+  Duplicate an existing `<a class="bcard">...</a>` block inside
+  `<div class="blogs__row">` and change ONLY its `href`, title text, meta
+  text, and the `background-image` url. Change nothing else in `index.html`.
 - Add images: export as `.webp`, put them in `images/`, reference them
   relatively (`images/your-image.webp`), always with `alt` text.
 
