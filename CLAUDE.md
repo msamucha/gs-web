@@ -30,6 +30,22 @@ content (blog posts, stories, copy fixes) can be added without touching design.
 - Add images: export as `.webp`, put them in `images/`, reference them
   relatively (`images/your-image.webp`), always with `alt` text.
 
+## Handing off finished content
+
+When content is ready, open a pull request against `main`. The pull request
+IS the handoff: it notifies Michel in Slack, and he reviews and merges from it.
+
+1. Work on a branch named for the content,
+   e.g. `post/how-to-lower-your-handicap`.
+2. Push the branch and open a PR. Fill in every section of the PR template
+   (`.github/PULL_REQUEST_TEMPLATE.md`). Do not replace it with an
+   auto-generated body.
+3. Vercel comments on the PR with a preview link within a couple of minutes.
+   Open it, check the page, then paste the link into the Preview section of
+   the PR description.
+4. Content is not delivered until the PR is open, the checklist is complete,
+   and the preview link works.
+
 ## House style
 
 - Sentence case for headings and labels. No ALL CAPS.
