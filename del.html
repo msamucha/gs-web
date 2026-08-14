@@ -63,9 +63,6 @@
 
     <div class="actions">
       <button id="native" class="btn btn--primary is-hidden" type="button">Del</button>
-      <a id="whatsapp" class="btn" href="#" rel="noopener">Del på WhatsApp</a>
-      <a id="sms" class="btn" href="#">Send som sms</a>
-      <a id="mail" class="btn" href="#">Send som mail</a>
     </div>
 
     <div class="link-row">
@@ -90,25 +87,21 @@
 
       var url = 'https://golfsocial.club/hent?c=' + encodeURIComponent(code);
       var text = 'Jeg spiller golf i Golfsocial. Du behøver hverken handicap eller klub for at være med.';
-      var shareText = text + ' ' + url;
 
       document.getElementById('link-text').textContent = 'golfsocial.club/hent?c=' + code;
-      document.getElementById('whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent(shareText);
-      document.getElementById('sms').href = 'sms:?&body=' + encodeURIComponent(shareText);
-      document.getElementById('mail').href = 'mailto:?subject=' + encodeURIComponent('Kom med på en runde')
-        + '&body=' + encodeURIComponent(text + '\n\n' + url + '\n\nVi ses derude.');
 
       function track(method) {
         gtag('event', 'share_action', { share_method: method, share_code: code, share_from: from || 'direct' });
       }
-      ['whatsapp', 'sms', 'mail'].forEach(function (id) {
-        document.getElementById(id).addEventListener('click', function () { track(id); });
-      });
 
       // Native share sheet: iMessage, WhatsApp, Messenger, Instagram, whatever the
-      // phone has. Only shown when the browser actually supports it.
+      // phone has. One button instead of a list of platforms. Only shown when the
+      // browser actually supports it; the copy row carries the rest.
       var nativeBtn = document.getElementById('native');
-      if (navigator.share) {
+      if (!navigator.share) {
+        // No share sheet on this browser, so the copy row is the whole action.
+        nativeBtn.parentNode.classList.add('is-hidden');
+      } else {
         nativeBtn.classList.remove('is-hidden');
         nativeBtn.addEventListener('click', function () {
           navigator.share({ title: 'Golfsocial', text: text, url: url })
