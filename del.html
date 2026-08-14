@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Del Golfsocial</title>
+  <link rel="icon" href="/favicon.ico">
+  <!-- GA4 — same property as the rest of golfsocial.club. This page does not
+       redirect, so a normal pageview plus a share_action event per tap is enough. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEBPZS1TT2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XEBPZS1TT2');
+  </script>
+  <style>
+    html,body{margin:0;min-height:100%;}
+    body{
+      background:#f3f1ec;
+      font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      color:#141414;
+      display:flex;align-items:center;justify-content:center;
+      text-align:center;padding:32px 24px;box-sizing:border-box;
+    }
+    .wrap{max-width:420px;width:100%;}
+    .mark{font-size:22px;font-weight:700;letter-spacing:-0.5px;margin:0 0 18px;color:#13402e;}
+    h1{font-size:24px;line-height:1.25;font-weight:700;letter-spacing:-0.5px;margin:0 0 10px;}
+    .lead{font-size:16px;line-height:1.55;color:#4a4a4a;margin:0 0 26px;}
+    .actions{display:flex;flex-direction:column;gap:10px;margin:0 0 20px;}
+    .btn{
+      display:block;width:100%;box-sizing:border-box;
+      font-family:inherit;font-size:16px;font-weight:600;letter-spacing:-0.2px;
+      padding:15px 20px;border-radius:100px;border:1px solid #13402e;
+      background:#fff;color:#13402e;text-decoration:none;cursor:pointer;
+      -webkit-appearance:none;appearance:none;
+    }
+    .btn--primary{background:#13402e;color:#fcfbf8;}
+    .btn:active{opacity:.85;}
+    .hint{font-size:14px;line-height:1.5;color:#7a7a7a;margin:0;}
+    .link-row{
+      display:flex;align-items:center;gap:8px;
+      background:#fff;border:1px solid #e2ded4;border-radius:12px;
+      padding:12px 14px;margin:0 0 20px;text-align:left;
+    }
+    .link-row span{
+      flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+      font-size:14px;color:#4a4a4a;
+    }
+    .link-row button{
+      flex:none;font-family:inherit;font-size:14px;font-weight:600;color:#13402e;
+      background:none;border:0;padding:0;cursor:pointer;
+    }
+    .is-hidden{display:none;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="mark">Golfsocial</p>
+    <h1>Del Golfsocial med makkeren</h1>
+    <p class="lead">Send linket videre. Der skal hverken handicap eller klub til for at komme i gang.</p>
+
+    <div class="actions">
+      <button id="native" class="btn btn--primary is-hidden" type="button">Del</button>
+      <a id="whatsapp" class="btn" href="#" rel="noopener">Del på WhatsApp</a>
+      <a id="sms" class="btn" href="#">Send som sms</a>
+      <a id="mail" class="btn" href="#">Send som mail</a>
+    </div>
+
+    <div class="link-row">
+      <span id="link-text">golfsocial.club/hent</span>
+      <button id="copy" type="button">Kopiér</button>
+    </div>
+
+    <p class="hint">Makkeren lander direkte i app-butikken.</p>
+  </div>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(location.search);
+      function clean(v) { return (v || '').replace(/[^a-zA-Z0-9_\-]/g, '').slice(0, 40); }
+
+      // Where the sharer came from, e.g. /del?c=nl_makker_aug26. The outgoing link
+      // gets a "ven_" prefix so the friend's install reads as a person to person
+      // referral in hent.html's channel derivation, while still tracing back to the
+      // surface that produced the share.
+      var from = clean(params.get('c'));
+      var code = ('ven' + (from ? '_' + from : '')).slice(0, 40);
+
+      var url = 'https://golfsocial.club/hent?c=' + encodeURIComponent(code);
+      var text = 'Jeg spiller golf i Golfsocial. Du behøver hverken handicap eller klub for at være med.';
+      var shareText = text + ' ' + url;
+
+      document.getElementById('link-text').textContent = 'golfsocial.club/hent?c=' + code;
+      document.getElementById('whatsapp').href = 'https://wa.me/?text=' + encodeURIComponent(shareText);
+      document.getElementById('sms').href = 'sms:?&body=' + encodeURIComponent(shareText);
+      document.getElementById('mail').href = 'mailto:?subject=' + encodeURIComponent('Kom med på en runde')
+        + '&body=' + encodeURIComponent(text + '\n\n' + url + '\n\nVi ses derude.');
+
+      function track(method) {
+        gtag('event', 'share_action', { share_method: method, share_code: code, share_from: from || 'direct' });
+      }
+      ['whatsapp', 'sms', 'mail'].forEach(function (id) {
+        document.getElementById(id).addEventListener('click', function () { track(id); });
+      });
+
+      // Native share sheet: iMessage, WhatsApp, Messenger, Instagram, whatever the
+      // phone has. Only shown when the browser actually supports it.
+      var nativeBtn = document.getElementById('native');
+      if (navigator.share) {
+        nativeBtn.classList.remove('is-hidden');
+        nativeBtn.addEventListener('click', function () {
+          navigator.share({ title: 'Golfsocial', text: text, url: url })
+            .then(function () { track('native'); })
+            .catch(function () {});
+        });
+      }
+
+      var copyBtn = document.getElementById('copy');
+      copyBtn.addEventListener('click', function () {
+        function done() {
+          copyBtn.textContent = 'Kopieret';
+          track('copy');
+          setTimeout(function () { copyBtn.textContent = 'Kopiér'; }, 2000);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(url).then(done, fallback);
+        } else {
+          fallback();
+        }
+        function fallback() {
+          var t = document.createElement('textarea');
+          t.value = url;
+          t.setAttribute('readonly', '');
+          t.style.position = 'absolute';
+          t.style.left = '-9999px';
+          document.body.appendChild(t);
+          t.select();
+          try { document.execCommand('copy'); done(); } catch (e) {}
+          document.body.removeChild(t);
+        }
+      });
+
+      gtag('event', 'share_page_view', { share_code: code, share_from: from || 'direct' });
+    })();
+  </script>
+</body>
+</html>
