@@ -25,16 +25,24 @@
     els.forEach(function (el) { io.observe(el); });
   }
 
-  /* ── language toggle (EN / DA) — swaps every [data-da] element ── */
+  /* ── language (EN / DA) — swaps every [data-da] element ──
+     Two generations of page share this file:
+       A. the three English stories: English is the element's own text, Danish
+          sits in data-da, and the .lang__opt switcher is in the masthead;
+       B. every Danish page: Danish is the element's own text so that is what
+          Google is served, English sits in data-en, and there is no switcher.
+     The switcher only runs where it exists. ?lang=en|da is honoured on both,
+     which is what the in-app webview and shared links point at. */
   var opts = document.querySelectorAll('.lang__opt');
-  if (!opts.length) return;
   var nodes = document.querySelectorAll('[data-da]');
+  if (!nodes.length) return;
 
   nodes.forEach(function (el) {
+    if (el.hasAttribute('data-en')) return;  // generation B already ships both languages
     el.setAttribute('data-en', el.tagName === 'INPUT' ? (el.getAttribute('placeholder') || '') : el.textContent);
   });
 
-  function setLang(lang) {
+  function setLang(lang, remember) {
     if (lang !== 'da') lang = 'en';
     var html = document.documentElement;
     html.setAttribute('lang', lang);
@@ -48,22 +56,25 @@
     opts.forEach(function (o) {
       o.classList.toggle('is-active', o.textContent.trim().toLowerCase() === lang);
     });
-    try { localStorage.setItem('gs-lang', lang); } catch (e) {}
+    if (remember) { try { localStorage.setItem('gs-lang', lang); } catch (e) {} }
   }
 
   opts.forEach(function (o) {
-    o.addEventListener('click', function () { setLang(o.textContent.trim().toLowerCase()); });
+    o.addEventListener('click', function () { setLang(o.textContent.trim().toLowerCase(), true); });
   });
 
-  var saved;
-  try { saved = localStorage.getItem('gs-lang'); } catch (e) {}
   var urlLang = null;
   try { urlLang = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+
   if (urlLang === 'en' || urlLang === 'da') {
-    setLang(urlLang);                        // ?lang=en|da in the URL wins (shareable language links)
-  } else {
-    setLang(saved === 'en' ? 'en' : 'da');   // Danish is the default
+    setLang(urlLang, opts.length > 0);       // ?lang=en|da in the URL wins
+  } else if (opts.length) {
+    var saved;
+    try { saved = localStorage.getItem('gs-lang'); } catch (e) {}
+    setLang(saved === 'en' ? 'en' : 'da', false);   // Danish is the default
   }
+  /* No switcher and no ?lang: the page is left exactly as it was served, so a
+     Danish page stays Danish for the crawler and for everyone else. */
 })();
 
 /* newsletter sign-up → MailerLite, with a custom confirmation (same as the homepage) */
