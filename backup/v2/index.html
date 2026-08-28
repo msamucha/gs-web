@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golfsocial — Den sociale side af golf</title>
+  <meta name="description" data-en="Track your rounds, follow your friends, and turn every game into a story worth telling." data-da="Følg dine runder, hold øje med dine venner, og gør hver runde til en historie." content="Track your rounds, follow your friends, and turn every game into a story worth telling." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="nav" data-nav>
+    <div class="nav__inner container">
+      <a href="/" class="nav__brand" aria-label="Golfsocial">
+        <span class="nav__brand-mark" aria-hidden="true">GS</span>
+        <span class="nav__brand-word">Golfsocial</span>
+      </a>
+
+      <div class="nav__links">
+        <a href="#features" class="nav__link" data-en="Features" data-da="Funktioner">Features</a>
+        <a href="#app" class="nav__link" data-en="The App" data-da="Appen">The App</a>
+        <a href="#download" class="nav__link" data-en="Download" data-da="Hent">Download</a>
+      </div>
+
+      <div class="nav__actions">
+        <button class="nav__lang" data-lang-toggle aria-label="Switch language" type="button">
+          <span class="nav__lang-en" aria-current="true">EN</span>
+          <span class="nav__lang-sep" aria-hidden="true">·</span>
+          <span class="nav__lang-da">DA</span>
+        </button>
+        <a href="#download" class="btn btn--primary btn--sm" data-en="Get the app" data-da="Hent appen">Get the app</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO ────────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <img src="../images/hero.jpg" alt="Four golfers at the tee in late summer light" class="hero__image" />
+    <div class="hero__scrim" aria-hidden="true"></div>
+
+    <div class="hero__meta container">
+      <span class="hero__issue">No. 01</span>
+      <span class="hero__sep" aria-hidden="true"></span>
+      <span class="hero__date" data-en="Summer 2026" data-da="Sommer 2026">Summer 2026</span>
+    </div>
+
+    <div class="hero__body container">
+      <h1 class="hero__headline">
+        <span data-en="The social" data-da="Den sociale">The social</span><br/>
+        <span data-en="side of golf." data-da="side af golf.">side of golf.</span>
+      </h1>
+      <p class="hero__lede" data-en="A round is rarely played alone. Golfsocial is the app for the people you tee off with — scores, groups, conversations, all in one place." data-da="En runde spilles sjældent alene. Golfsocial er appen til dem du tee'er ud med — scores, grupper, samtaler, ét sted.">A round is rarely played alone. Golfsocial is the app for the people you tee off with — scores, groups, conversations, all in one place.</p>
+
+      <div class="hero__cta">
+        <a href="#" class="badge badge--apple" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="120" height="40" rx="6.5" ry="6.5" fill="#000"/>
+            <g fill="#fff">
+              <path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/>
+              <text x="38" y="17" font-family="Helvetica, Arial, sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text>
+              <text x="38" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text>
+            </g>
+          </svg>
+        </a>
+        <a href="#" class="badge badge--google" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="135" height="40" rx="6.5" ry="6.5" fill="#000"/>
+            <g transform="translate(10,8)">
+              <path d="M0 .8v22.5c0 .5.2.9.5 1.2L13 12 .5 -.4C.2 -.1 0 .3 0 .8z" fill="#5BC9F4"/>
+              <path d="M17.7 8.1L13.5 5.7 .5 -.4 13 12 17.7 8.1z" fill="#FFD202"/>
+              <path d="M.5 24.5c.1 0 .2 0 .4-.1l13-7.5L17.7 16 13 12 .5 24.5z" fill="#EA4335"/>
+              <path d="M17.7 8.1L23 11.2c.6.3 1 .8 1 1.3 0 .5-.4 1-1 1.3l-5.3 3-4.7-4.8 4.7-3.9z" fill="#1AAB66"/>
+            </g>
+            <g fill="#fff">
+              <text x="40" y="17" font-family="Helvetica, Arial, sans-serif" font-size="7" font-weight="400" letter-spacing="0.5">GET IT ON</text>
+              <text x="40" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE APP — single intro panel, image + copy ────────────────────────── -->
+  <section id="app" class="app reveal" data-reveal>
+    <div class="container app__grid">
+      <figure class="app__media">
+        <img src="../images/app-fairway.png" alt="The Golfsocial app on a fairway" />
+      </figure>
+      <div class="app__copy">
+        <p class="kicker" data-en="The app" data-da="Appen">The app</p>
+        <h2 class="display" data-en="Made for the people who already take the game seriously." data-da="Bygget til dem der allerede tager spillet seriøst.">Made for the people who already take the game seriously.</h2>
+        <p class="lede" data-en="Free on iOS and Android. Scorecards, friends, stats — in an app that finally feels like it was built for golf, not bolted on after." data-da="Gratis på iOS og Android. Scorecards, venner, statistik — i en app der endelig føles som om den blev bygget til golf, ikke skruet på bagefter.">Free on iOS and Android. Scorecards, friends, stats — in an app that finally feels like it was built for golf, not bolted on after.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES ──────────────────────────────────────────────────────────── -->
+  <section id="features" class="features">
+
+    <article class="feature reveal" data-reveal>
+      <div class="container feature__grid">
+        <div class="feature__copy">
+          <span class="feature__index">01</span>
+          <h3 class="feature__title" data-en="Every round, tracked properly." data-da="Hver runde, tracket ordentligt.">Every round, tracked properly.</h3>
+          <p class="feature__body" data-en="Scorecards that finish themselves. Shot-by-shot detail when you want it. A full history that travels with you, course to course." data-da="Scorecards der færdiggør sig selv. Shot-by-shot, når du vil have det. En historik der følger dig fra bane til bane.">Scorecards that finish themselves. Shot-by-shot detail when you want it. A full history that travels with you, course to course.</p>
+          <dl class="feature__list">
+            <div><dt data-en="Scoring" data-da="Scoring">Scoring</dt><dd data-en="Stroke, Stableford, match play" data-da="Slag, stableford, hulspil">Stroke, Stableford, match play</dd></div>
+            <div><dt data-en="History" data-da="Historik">History</dt><dd data-en="Every round, searchable" data-da="Alle runder, søgbare">Every round, searchable</dd></div>
+            <div><dt data-en="Detail" data-da="Detalje">Detail</dt><dd data-en="Tee, club, shot, lie" data-da="Tee, kølle, slag, lie">Tee, club, shot, lie</dd></div>
+          </dl>
+        </div>
+        <figure class="feature__media">
+          <img src="../images/feature-track.jpg" alt="A golfer at the top of the backswing" />
+          <figcaption class="feature__caption" data-en="No. 01 — Tracking" data-da="No. 01 — Tracking">No. 01 — Tracking</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="feature feature--reverse reveal" data-reveal>
+      <div class="container feature__grid">
+        <div class="feature__copy">
+          <span class="feature__index">02</span>
+          <h3 class="feature__title" data-en="Your golf circle, in one place." data-da="Din golfkreds, ét sted.">Your golf circle, in one place.</h3>
+          <p class="feature__body" data-en="Friends, groups, threads. The conversation that used to live in three different chats now lives where the rounds do." data-da="Venner, grupper, tråde. Samtalen der før lå i tre forskellige chats lever nu det samme sted som runderne.">Friends, groups, threads. The conversation that used to live in three different chats now lives where the rounds do.</p>
+          <dl class="feature__list">
+            <div><dt data-en="Groups" data-da="Grupper">Groups</dt><dd data-en="Your regular flight, private" data-da="Din faste flight, privat">Your regular flight, private</dd></div>
+            <div><dt data-en="Threads" data-da="Tråde">Threads</dt><dd data-en="One round, one conversation" data-da="Én runde, én samtale">One round, one conversation</dd></div>
+            <div><dt data-en="Feed" data-da="Feed">Feed</dt><dd data-en="Friends' latest rounds" data-da="Vennernes seneste runder">Friends' latest rounds</dd></div>
+          </dl>
+        </div>
+        <figure class="feature__media">
+          <img src="../images/feature-connect.jpg" alt="Two golfers looking at a phone on the fairway in evening light" />
+          <figcaption class="feature__caption" data-en="No. 02 — Circle" data-da="No. 02 — Kreds">No. 02 — Circle</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="feature reveal" data-reveal>
+      <div class="container feature__grid">
+        <div class="feature__copy">
+          <span class="feature__index">03</span>
+          <h3 class="feature__title" data-en="See where the strokes actually go." data-da="Se hvor slagene faktisk går.">See where the strokes actually go.</h3>
+          <p class="feature__body" data-en="Stats that mean something. Strokes gained, putting average, greens in regulation. Improvement you can see across a season, not just one round." data-da="Statistik der betyder noget. Strokes gained, putting-gennemsnit, greens i regulation. Forbedring du kan se hen over en sæson, ikke bare én runde.">Stats that mean something. Strokes gained, putting average, greens in regulation. Improvement you can see across a season, not just one round.</p>
+          <dl class="feature__list">
+            <div><dt data-en="Strokes gained" data-da="Strokes gained">Strokes gained</dt><dd data-en="By category, by round" data-da="Per kategori, per runde">By category, by round</dd></div>
+            <div><dt data-en="Putting" data-da="Putting">Putting</dt><dd data-en="Average length, three-putts" data-da="Snitlængde, three-putts">Average length, three-putts</dd></div>
+            <div><dt data-en="Trend" data-da="Trend">Trend</dt><dd data-en="30-round rolling, not noise" data-da="30 runder rolling, ikke støj">30-round rolling, not noise</dd></div>
+          </dl>
+        </div>
+        <figure class="feature__media">
+          <img src="../images/feature-insight.jpg" alt="A golfer reviewing stats on a phone in golden hour light" />
+          <figcaption class="feature__caption" data-en="No. 03 — Insight" data-da="No. 03 — Indsigt">No. 03 — Insight</figcaption>
+        </figure>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- DOWNLOAD CTA ──────────────────────────────────────────────────────── -->
+  <section id="download" class="cta reveal" data-reveal>
+    <div class="container cta__inner">
+      <p class="kicker kicker--inverted" data-en="Get the app" data-da="Hent appen">Get the app</p>
+      <h2 class="cta__headline">
+        <span data-en="Ready when" data-da="Klar når">Ready when</span><br/>
+        <span data-en="you are." data-da="du er.">you are.</span>
+      </h2>
+      <p class="cta__sub" data-en="Free on iOS and Android. No ads, no tricks. Just the app you wish you'd had since you started playing." data-da="Gratis på iOS og Android. Ingen reklamer, ingen tricks. Bare appen du ville ønske du havde haft fra starten.">Free on iOS and Android. No ads, no tricks. Just the app you wish you'd had since you started playing.</p>
+      <div class="cta__buttons">
+        <a href="#" class="badge badge--apple" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="120" height="40" rx="6.5" ry="6.5" fill="#000"/>
+            <g fill="#fff">
+              <path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/>
+              <text x="38" y="17" font-family="Helvetica, Arial, sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text>
+              <text x="38" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text>
+            </g>
+          </svg>
+        </a>
+        <a href="#" class="badge badge--google" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="135" height="40" rx="6.5" ry="6.5" fill="#000"/>
+            <g transform="translate(10,8)">
+              <path d="M0 .8v22.5c0 .5.2.9.5 1.2L13 12 .5 -.4C.2 -.1 0 .3 0 .8z" fill="#5BC9F4"/>
+              <path d="M17.7 8.1L13.5 5.7 .5 -.4 13 12 17.7 8.1z" fill="#FFD202"/>
+              <path d="M.5 24.5c.1 0 .2 0 .4-.1l13-7.5L17.7 16 13 12 .5 24.5z" fill="#EA4335"/>
+              <path d="M17.7 8.1L23 11.2c.6.3 1 .8 1 1.3 0 .5-.4 1-1 1.3l-5.3 3-4.7-4.8 4.7-3.9z" fill="#1AAB66"/>
+            </g>
+            <g fill="#fff">
+              <text x="40" y="17" font-family="Helvetica, Arial, sans-serif" font-size="7" font-weight="400" letter-spacing="0.5">GET IT ON</text>
+              <text x="40" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER ────────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="/" class="footer__logo">Golfsocial</a>
+        <p class="footer__tag" data-en="The social side of golf." data-da="Den sociale side af golf.">The social side of golf.</p>
+      </div>
+
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h4 data-en="Product" data-da="Produkt">Product</h4>
+          <ul>
+            <li><a href="#features" data-en="Features" data-da="Funktioner">Features</a></li>
+            <li><a href="#app" data-en="The App" data-da="Appen">The App</a></li>
+            <li><a href="#download" data-en="Download" data-da="Hent">Download</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-en="Company" data-da="Selskab">Company</h4>
+          <ul>
+            <li><a href="#" data-en="About" data-da="Om">About</a></li>
+            <li><a href="#" data-en="Support" data-da="Support">Support</a></li>
+            <li><a href="#" data-en="Privacy" data-da="Privatliv">Privacy</a></li>
+            <li><a href="#" data-en="Terms" data-da="Vilkår">Terms</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-en="Elsewhere" data-da="Andre steder">Elsewhere</h4>
+          <ul>
+            <li><a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:hello@golfsocial.app">Email</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Golfsocial</span>
+        <span data-en="Built for golfers." data-da="Bygget til golfere.">Built for golfers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

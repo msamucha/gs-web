@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golfsocial — The social side of golf</title>
+  <meta name="description" content="Track your rounds, follow your friends' progress, and turn every game into a story worth telling." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────────────────────── -->
+  <nav class="nav" data-nav>
+    <div class="nav__inner container">
+      <a href="/" class="nav__brand">
+        <span class="nav__brand-mark" aria-hidden="true">GS</span>
+        <span class="nav__brand-word">Golfsocial</span>
+      </a>
+      <div class="nav__links">
+        <a href="#features" class="nav__link"><span class="nav__link-num">01</span><span class="nav__link-label">Features</span></a>
+        <a href="#stories" class="nav__link"><span class="nav__link-num">02</span><span class="nav__link-label">Stories</span></a>
+        <a href="#download" class="nav__link"><span class="nav__link-num">03</span><span class="nav__link-label">Download</span></a>
+      </div>
+      <div class="nav__actions">
+        <a href="#" class="nav__lang" aria-label="Switch language">
+          <span class="nav__lang-active">EN</span>
+          <span class="nav__lang-sep">/</span>
+          <span class="nav__lang-other">DA</span>
+        </a>
+        <a href="#download" class="btn btn--primary btn--sm">Get the app</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <img src="images/hero.jpg" alt="Golfers on a fairway in late afternoon light" class="hero__image" />
+    <div class="hero__overlay"></div>
+    <span class="hero__issue">No. 01 · 2026</span>
+    <div class="hero__content container">
+      <span class="hero__eyebrow">The Golfsocial app · iOS &amp; Android</span>
+      <h1 class="hero__headline">The social side<br/>of golf.</h1>
+      <p class="hero__sub">Track your rounds, follow your friends, and turn every game into a story worth telling.</p>
+      <div class="hero__cta">
+        <!-- Apple App Store badge (official-spec) -->
+        <a href="#" class="badge badge--apple" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="120" height="40" rx="6.5" ry="6.5" fill="#000"/>
+            <g fill="#fff">
+              <path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/>
+              <text x="38" y="17" font-family="Helvetica, Arial, sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text>
+              <text x="38" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text>
+            </g>
+          </svg>
+        </a>
+        <!-- Google Play badge (official-spec) -->
+        <a href="#" class="badge badge--google" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="135" height="40" rx="6.5" ry="6.5" fill="#000"/>
+            <g transform="translate(10,8)">
+              <path d="M0 .8v22.5c0 .5.2.9.5 1.2L13 12 .5 -.4C.2 -.1 0 .3 0 .8z" fill="#5BC9F4"/>
+              <path d="M17.7 8.1L13.5 5.7 .5 -.4 13 12 17.7 8.1z" fill="#FFD202"/>
+              <path d="M.5 24.5c.1 0 .2 0 .4-.1l13-7.5L17.7 16 13 12 .5 24.5z" fill="#EA4335"/>
+              <path d="M17.7 8.1L23 11.2c.6.3 1 .8 1 1.3 0 .5-.4 1-1 1.3l-5.3 3-4.7-4.8 4.7-3.9z" fill="#1AAB66"/>
+            </g>
+            <g fill="#fff">
+              <text x="40" y="17" font-family="Helvetica, Arial, sans-serif" font-size="7" font-weight="400" letter-spacing="0.5">GET IT ON</text>
+              <text x="40" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── INTRO / FEATURES HEADER ─────────────────────────────────────── -->
+  <section id="features" class="section section--intro">
+    <div class="container intro__inner">
+      <div class="intro__copy">
+        <span class="eyebrow">Inside the app</span>
+        <h2 class="big-headline">Built for golfers<br/>who care about<br/>their game.</h2>
+        <p class="intro__lead">Free on iOS and Android. Your scorecards, your friends, your stats — in one app that finally feels like it was made for golf.</p>
+      </div>
+      <figure class="intro__media">
+        <img src="images/app-fairway.png" alt="Golfsocial app shown in hand on a fairway" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- ─── FEATURE 1 — TRACK ───────────────────────────────────────────── -->
+  <section class="feature">
+    <div class="container feature__inner feature__inner--image-right">
+      <div class="feature__copy">
+        <span class="feature__num">01</span>
+        <span class="eyebrow">Track</span>
+        <h3 class="feature__headline">Every round,<br/>perfectly tracked.</h3>
+        <p class="feature__lead">Score, stats, shot-by-shot detail — built for the player who wants to know exactly where the strokes are going.</p>
+        <ul class="feature__bullets">
+          <li>Scorecards that finish themselves</li>
+          <li>Course-aware shot tracking</li>
+          <li>Full round history in your pocket</li>
+        </ul>
+      </div>
+      <figure class="feature__media">
+        <img src="images/feature-track.jpg" alt="A hand gripping a putter in late afternoon light" />
+        <figcaption class="feature__caption">No. 01 — Track</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ─── FEATURE 2 — CONNECT ─────────────────────────────────────────── -->
+  <section class="feature feature--alt">
+    <div class="container feature__inner feature__inner--image-right">
+      <div class="feature__copy">
+        <span class="feature__num">02</span>
+        <span class="eyebrow">Connect</span>
+        <h3 class="feature__headline">Your golf circle,<br/>always in one place.</h3>
+        <p class="feature__lead">Follow friends, join groups, never lose touch with the people you tee off with — wherever they're playing.</p>
+        <ul class="feature__bullets">
+          <li>Friend feeds with their latest rounds</li>
+          <li>Private groups for your regular flight</li>
+          <li>Plan the next round, together</li>
+        </ul>
+      </div>
+      <figure class="feature__media">
+        <img src="images/feature-connect.jpg" alt="Two golfers in conversation on a fairway" />
+        <figcaption class="feature__caption">No. 02 — Connect</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ─── FEATURE 3 — INSIGHT ─────────────────────────────────────────── -->
+  <section class="feature">
+    <div class="container feature__inner feature__inner--image-right">
+      <div class="feature__copy">
+        <span class="feature__num">03</span>
+        <span class="eyebrow">Insight</span>
+        <h3 class="feature__headline">See where<br/>the strokes go.</h3>
+        <p class="feature__lead">Stats that mean something — strokes gained, putting average, GIR%. Improvement you can actually see, round after round.</p>
+        <ul class="feature__bullets">
+          <li>Strokes-gained breakdown by category</li>
+          <li>Putting and approach analysis</li>
+          <li>Long-term trends, not just scores</li>
+        </ul>
+      </div>
+      <figure class="feature__media">
+        <img src="images/feature-insight.jpg" alt="A golfer standing alone at sunset" />
+        <figcaption class="feature__caption">No. 03 — Insight</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ─── STORIES / BLOG ──────────────────────────────────────────────── -->
+  <section id="stories" class="section section--stories">
+    <div class="container">
+      <div class="section__header">
+        <div>
+          <span class="eyebrow">Stories from the course</span>
+          <h2 class="big-headline">Read what<br/>our community<br/>is up to.</h2>
+        </div>
+        <a href="#" class="link-arrow">View all stories →</a>
+      </div>
+
+      <div class="story-grid">
+        <article class="story-card">
+          <span class="story-card__num">No. 01</span>
+          <h3>Your first 1,000 rounds tracked.</h3>
+          <div class="story-card__meta">
+            <span class="story-card__category">Field notes</span>
+            <time>5 min</time>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <span class="story-card__num">No. 02</span>
+          <h3>From 18 to 7 — how one player rebuilt their game.</h3>
+          <div class="story-card__meta">
+            <span class="story-card__category">Player profile</span>
+            <time>7 min</time>
+          </div>
+        </article>
+
+        <article class="story-card">
+          <span class="story-card__num">No. 03</span>
+          <h3>Why we believe golf is a social game.</h3>
+          <div class="story-card__meta">
+            <span class="story-card__category">Behind the app</span>
+            <time>4 min</time>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DOWNLOAD CTA ────────────────────────────────────────────────── -->
+  <section id="download" class="cta">
+    <div class="container cta__inner">
+      <span class="eyebrow eyebrow--on-dark">Get the app</span>
+      <h2 class="cta__headline">Ready when<br/>you are.</h2>
+      <p class="cta__sub">Free on iOS and Android. No ads, no upsell tricks. Just the app you wish you'd had since you started playing.</p>
+      <div class="cta__buttons">
+        <a href="#" class="badge badge--apple" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="120" height="40" rx="6.5" ry="6.5" fill="#000"/>
+            <g fill="#fff">
+              <path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/>
+              <text x="38" y="17" font-family="Helvetica, Arial, sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text>
+              <text x="38" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text>
+            </g>
+          </svg>
+        </a>
+        <a href="#" class="badge badge--google" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="135" height="40" rx="6.5" ry="6.5" fill="#000"/>
+            <g transform="translate(10,8)">
+              <path d="M0 .8v22.5c0 .5.2.9.5 1.2L13 12 .5 -.4C.2 -.1 0 .3 0 .8z" fill="#5BC9F4"/>
+              <path d="M17.7 8.1L13.5 5.7 .5 -.4 13 12 17.7 8.1z" fill="#FFD202"/>
+              <path d="M.5 24.5c.1 0 .2 0 .4-.1l13-7.5L17.7 16 13 12 .5 24.5z" fill="#EA4335"/>
+              <path d="M17.7 8.1L23 11.2c.6.3 1 .8 1 1.3 0 .5-.4 1-1 1.3l-5.3 3-4.7-4.8 4.7-3.9z" fill="#1AAB66"/>
+            </g>
+            <g fill="#fff">
+              <text x="40" y="17" font-family="Helvetica, Arial, sans-serif" font-size="7" font-weight="400" letter-spacing="0.5">GET IT ON</text>
+              <text x="40" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ──────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="/" class="footer__logo">Golfsocial</a>
+          <p>The social side of golf. Built for the player who wants to track better, play more, and never lose touch with the people they tee off with.</p>
+          <div class="footer__social">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#stories">Stories</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Golfsocial. All rights reserved.</span>
+        <span>Made for golfers who care.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── Scroll-aware nav state ──────────────────────────────────────── -->
+  <script>
+    (function() {
+      const nav = document.querySelector('[data-nav]');
+      if (!nav) return;
+      const onScroll = () => {
+        if (window.scrollY > 40) nav.classList.add('is-scrolled');
+        else nav.classList.remove('is-scrolled');
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+</body>
+</html>
