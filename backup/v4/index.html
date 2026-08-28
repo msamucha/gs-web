@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golfsocial — The members' app for people who play together</title>
+  <meta name="description" data-en="Golfsocial is the app for the golf you already play together. Rounds, scores, groups, conversations — in one club." data-da="Golfsocial er appen til den golf I allerede spiller sammen. Runder, scores, grupper, samtaler — i én klub." content="Golfsocial is the app for the golf you already play together. Rounds, scores, groups, conversations — in one club." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       NAV — masthead-thin
+       ════════════════════════════════════════════════════════════════════ -->
+  <nav class="masthead" data-nav>
+    <div class="masthead__inner">
+
+      <a href="/" class="masthead__brand" aria-label="Golfsocial">
+        <object data="logo-darkgreen.svg" type="image/svg+xml" class="masthead__logo" aria-hidden="true"></object>
+        <span class="masthead__brand-fallback">Golfsocial</span>
+      </a>
+
+      <div class="masthead__nav-links">
+        <a href="#bulletin" class="masthead__link" data-en="The Bulletin" data-da="Bulletinen">The Bulletin</a>
+        <a href="#inside" class="masthead__link" data-en="The App" data-da="Appen">The App</a>
+        <a href="#partners" class="masthead__link" data-en="Partners" data-da="Partnere">Partners</a>
+        <a href="#join" class="masthead__link" data-en="Join" data-da="Bliv medlem">Join</a>
+      </div>
+
+      <div class="masthead__actions">
+        <button class="masthead__lang" data-lang-toggle aria-label="Switch language" type="button">
+          <span class="masthead__lang-en" aria-current="true">EN</span>
+          <span class="masthead__lang-sep" aria-hidden="true">/</span>
+          <span class="masthead__lang-da">DA</span>
+        </button>
+        <a href="#join" class="masthead__cta" data-en="Get the app" data-da="Hent appen">Get the app</a>
+        <button class="masthead__burger" data-burger aria-label="Open menu" aria-expanded="false" type="button">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="drawer" data-drawer aria-hidden="true">
+    <a href="#bulletin" data-en="The Bulletin" data-da="Bulletinen">The Bulletin</a>
+    <a href="#inside" data-en="The App" data-da="Appen">The App</a>
+    <a href="#partners" data-en="Partners" data-da="Partnere">Partners</a>
+    <a href="#journal" data-en="Journal" data-da="Journalen">Journal</a>
+    <a href="#join" data-en="Join" data-da="Bliv medlem">Join</a>
+    <a href="#join" class="drawer__cta" data-en="Get the app" data-da="Hent appen">Get the app</a>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       HERO — asymmetric: editorial wordmark + phone mock with live feed
+       data-hero arms the choreographed entrance; fires one rAF after
+       data-js paints the opacity-0 starting state.
+       ════════════════════════════════════════════════════════════════════ -->
+  <section class="hero" data-hero>
+
+    <header class="hero__masthead">
+      <div class="hero__masthead-row">
+        <span class="hero__masthead-issue">Volume I · Issue No. 04</span>
+        <span class="hero__masthead-dot" aria-hidden="true"></span>
+        <span class="hero__masthead-date" data-en="Summer 2026 — Copenhagen" data-da="Sommer 2026 — København">Summer 2026 — Copenhagen</span>
+        <span class="hero__masthead-dot" aria-hidden="true"></span>
+        <span class="hero__masthead-site">golfsocial.club</span>
+      </div>
+      <div class="hero__masthead-rule" aria-hidden="true"></div>
+    </header>
+
+    <div class="hero__grid">
+
+      <!-- Left: editorial copy block -->
+      <div class="hero__copy">
+        <p class="eyebrow eyebrow--ink" data-en="A members' app" data-da="En medlemsapp">A members' app</p>
+        <h1 class="hero__headline">
+          <span class="hero__headline-line-1" data-en="The golf" data-da="Den golf">The golf</span>
+          <span class="hero__headline-line-2"><em data-en="you already" data-da="I allerede">you already</em></span>
+          <span class="hero__headline-line-3" data-en="play together." data-da="spiller sammen.">play together.</span>
+        </h1>
+        <p class="hero__lede" data-en="Scores. Friends. Groups. Threads. The conversation that used to live in four chats now lives where the rounds do. Free on iOS and Android." data-da="Scores. Venner. Grupper. Tråde. Samtalen der før lå i fire chats lever nu det samme sted som runderne. Gratis på iOS og Android.">Scores. Friends. Groups. Threads. The conversation that used to live in four chats now lives where the rounds do. Free on iOS and Android.</p>
+
+        <div class="hero__cta">
+          <a href="#join" class="store-badge store-badge--apple" aria-label="Download on the App Store">
+            <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="120" height="40" rx="6" ry="6" fill="#000000"/>
+              <g fill="#FFFFFF">
+                <path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/>
+                <text x="38" y="17" font-family="Helvetica, Arial, sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text>
+                <text x="38" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text>
+              </g>
+            </svg>
+          </a>
+          <a href="#join" class="store-badge store-badge--google" aria-label="Get it on Google Play">
+            <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="135" height="40" rx="6" ry="6" fill="#000000"/>
+              <g transform="translate(10,9)" fill="#FFFFFF">
+                <path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FFFFFF"/>
+              </g>
+              <g fill="#FFFFFF">
+                <text x="36" y="17" font-family="Helvetica, Arial, sans-serif" font-size="7" font-weight="400" letter-spacing="0.5">GET IT ON</text>
+                <text x="36" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text>
+              </g>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Avatar row — "members already inside" -->
+        <div class="hero__members">
+          <div class="hero__avatars" aria-hidden="true">
+            <img src="images/avatar-mikkel.png" alt="" />
+            <img src="images/avatar-rasmus.png" alt="" />
+            <img src="images/avatar-poul.png" alt="" />
+            <img src="images/avatar-frank.png" alt="" />
+            <img src="images/avatar-mike.png" alt="" />
+          </div>
+          <p class="hero__members-text" data-en="Already inside — Mikkel, Rasmus, Poul and 2,847 others." data-da="Allerede med — Mikkel, Rasmus, Poul og 2.847 andre.">Already inside — Mikkel, Rasmus, Poul and 2,847 others.</p>
+        </div>
+      </div>
+
+      <!-- Right: phone mock with real-feeling feed -->
+      <div class="hero__phone-wrap" data-parallax="0.06">
+        <div class="phone" aria-hidden="true" data-phone-tilt>
+          <div class="phone__shell">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+
+              <!-- iOS status bar -->
+              <div class="ios-status">
+                <span class="ios-status__time">9:41</span>
+                <span class="ios-status__icons">
+                  <svg viewBox="0 0 18 12" width="18" height="12" aria-hidden="true"><rect x="0" y="6" width="3" height="6" rx="0.5" fill="currentColor"/><rect x="5" y="4" width="3" height="8" rx="0.5" fill="currentColor"/><rect x="10" y="2" width="3" height="10" rx="0.5" fill="currentColor"/><rect x="15" y="0" width="3" height="12" rx="0.5" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><path d="M8 9.5a1 1 0 100 2 1 1 0 000-2zm0-3.2c1.3 0 2.4.5 3.3 1.4l.7-.8a5.2 5.2 0 00-8 0l.7.8c.9-.9 2-1.4 3.3-1.4zm0-3.2c2.1 0 4.1.8 5.5 2.3l.7-.8A8.4 8.4 0 008 2a8.4 8.4 0 00-6.2 2.6l.7.8C3.9 3.9 5.9 3.1 8 3.1z" fill="currentColor"/></svg>
+                  <svg viewBox="0 0 27 12" width="27" height="12" aria-hidden="true"><rect x="0.5" y="1.5" width="22" height="9" rx="2" fill="none" stroke="currentColor" stroke-width="1"/><rect x="2" y="3" width="17" height="6" rx="1" fill="currentColor"/><rect x="24" y="4" width="2" height="4" rx="0.5" fill="currentColor"/></svg>
+                </span>
+              </div>
+
+              <!-- App header: Feed tab -->
+              <div class="app-header">
+                <div class="app-header__title">Feed</div>
+                <div class="app-header__avatar">
+                  <img src="images/avatar-mike.png" alt="" />
+                </div>
+              </div>
+
+              <!-- Stories / groups row -->
+              <div class="app-groups">
+                <div class="app-groups__chip app-groups__chip--active">
+                  <span data-en="Alle" data-da="Alle">Alle</span>
+                </div>
+                <div class="app-groups__chip">
+                  <img src="images/avatar-rasmus.png" alt="" />
+                  <span>Furesø Onsdag</span>
+                </div>
+                <div class="app-groups__chip">
+                  <img src="images/avatar-poul.png" alt="" />
+                  <span>Søndag-flighten</span>
+                </div>
+              </div>
+
+              <!-- Post card 1 — round w/ photo + score grid -->
+              <article class="post-card">
+                <header class="post-card__head">
+                  <img src="images/avatar-rasmus.png" alt="" class="post-card__avatar" />
+                  <div class="post-card__meta">
+                    <div class="post-card__name">Rasmus K.</div>
+                    <div class="post-card__sub" data-en="Furesø Golfklub · 2h ago" data-da="Furesø Golfklub · 2 t siden">Furesø Golfklub · 2h ago</div>
+                  </div>
+                  <button class="post-card__more" aria-label="More" type="button">
+                    <span></span><span></span><span></span>
+                  </button>
+                </header>
+                <div class="post-card__photo" style="background-image: url('images/golf-photo-1.jpg');"></div>
+                <div class="post-card__score">
+                  <div class="score-cell">
+                    <span class="score-cell__num">79</span>
+                    <span class="score-cell__label">Score</span>
+                  </div>
+                  <div class="score-cell score-cell--mid">
+                    <span class="score-cell__num">+7</span>
+                    <span class="score-cell__label" data-en="To par" data-da="Til par">To par</span>
+                  </div>
+                  <div class="score-cell">
+                    <span class="score-cell__num">3</span>
+                    <span class="score-cell__label" data-en="Birdies" data-da="Birdies">Birdies</span>
+                  </div>
+                </div>
+                <footer class="post-card__actions">
+                  <span class="post-card__action"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z"/></svg>14</span>
+                  <span class="post-card__action"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>4</span>
+                  <span class="post-card__action post-card__action--right"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg></span>
+                </footer>
+              </article>
+
+              <!-- Post card 2 — round w/o photo -->
+              <article class="post-card post-card--compact">
+                <header class="post-card__head">
+                  <img src="images/avatar-mikkel.png" alt="" class="post-card__avatar" />
+                  <div class="post-card__meta">
+                    <div class="post-card__name">Mikkel B.</div>
+                    <div class="post-card__sub" data-en="Broke 80 — first time · yesterday" data-da="Broke 80 — første gang · i går">Broke 80 — first time · yesterday</div>
+                  </div>
+                </header>
+                <div class="post-card__score post-card__score--compact">
+                  <div class="score-cell">
+                    <span class="score-cell__num">78</span>
+                    <span class="score-cell__label">Score</span>
+                  </div>
+                  <div class="score-cell score-cell--mid">
+                    <span class="score-cell__num">+6</span>
+                    <span class="score-cell__label" data-en="To par" data-da="Til par">To par</span>
+                  </div>
+                  <div class="score-cell">
+                    <span class="score-cell__num">17.2</span>
+                    <span class="score-cell__label">HCP</span>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+            <!-- iOS home indicator -->
+            <div class="phone__home"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer rule + scroll hint -->
+    <div class="hero__foot">
+      <span class="hero__foot-cue" data-en="Continue" data-da="Læs videre">Continue</span>
+      <span class="hero__foot-arrow" aria-hidden="true">↓</span>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       SECTION 01 — THE LEDGER (numbers strip)
+       ════════════════════════════════════════════════════════════════════ -->
+  <section class="ledger" data-reveal>
+    <div class="ledger__inner">
+      <p class="eyebrow" data-en="§01 — The Ledger" data-da="§01 — Hovedbogen">§01 — The Ledger</p>
+      <div class="ledger__grid" data-stagger>
+        <div class="ledger__cell" data-stagger-item>
+          <span class="ledger__num" data-countup data-value="2,847">2,847</span>
+          <span class="ledger__label" data-en="Members in the club" data-da="Medlemmer i klubben">Members in the club</span>
+        </div>
+        <div class="ledger__cell" data-stagger-item>
+          <span class="ledger__num" data-countup data-value="41,206">41,206</span>
+          <span class="ledger__label" data-en="Rounds played and logged" data-da="Runder spillet og logget">Rounds played and logged</span>
+        </div>
+        <div class="ledger__cell" data-stagger-item>
+          <span class="ledger__num" data-countup data-value="312">312</span>
+          <span class="ledger__label" data-en="Private groups, no one else inside" data-da="Private grupper, ingen andre med">Private groups, no one else inside</span>
+        </div>
+        <div class="ledger__cell" data-stagger-item>
+          <span class="ledger__num" data-countup data-value="79.4">79.4</span>
+          <span class="ledger__label" data-en="Average score last weekend" data-da="Gennemsnit sidste weekend">Average score last weekend</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       SECTION 02 — THE BULLETIN (huge editorial display + image)
+       ════════════════════════════════════════════════════════════════════ -->
+  <section class="bulletin" id="bulletin" data-reveal>
+    <div class="bulletin__inner">
+
+      <header class="bulletin__head">
+        <p class="eyebrow" data-en="§02 — The Bulletin" data-da="§02 — Bulletinen">§02 — The Bulletin</p>
+      </header>
+
+      <div class="bulletin__grid">
+        <h2 class="bulletin__display">
+          <span data-en="A round is" data-da="En runde er">A round is</span>
+          <span data-en="rarely played" data-da="sjældent en">rarely played</span>
+          <span class="bulletin__display-em"><em data-en="alone." data-da="solotur.">alone.</em></span>
+        </h2>
+        <figure class="bulletin__media">
+          <img src="images/hero.jpg" alt="Four golfers at the tee, late summer light" loading="lazy" />
+          <figcaption class="bulletin__caption" data-en="Four-ball, late summer, Sealand." data-da="Fourball, sensommer, Sjælland.">Four-ball, late summer, Sealand.</figcaption>
+        </figure>
+      </div>
+
+      <p class="bulletin__lede" data-en="So the app shouldn't act like it is. Golfsocial is the place where the people you play with — your weekend flight, your Wednesday group, your travel four-ball — already are. Free on iOS and Android. No ads. No tricks. Just the app you wish you'd had since you started playing." data-da="Så appen skal heller ikke opføre sig som det. Golfsocial er stedet hvor dem du spiller med — din weekend-flight, din onsdagsgruppe, din rejse-fourball — allerede er. Gratis på iOS og Android. Ingen reklamer. Ingen tricks. Bare appen du ville ønske du havde haft fra starten.">So the app shouldn't act like it is. Golfsocial is the place where the people you play with — your weekend flight, your Wednesday group, your travel four-ball — already are. Free on iOS and Android. No ads. No tricks. Just the app you wish you'd had since you started playing.</p>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       SECTION 03 — INSIDE THE APP (three pointers + screenshots)
+       Replaces former Directory. Three columns with real app shots.
+       ════════════════════════════════════════════════════════════════════ -->
+  <section class="inside" id="inside" data-reveal>
+    <div class="inside__inner">
+
+      <header class="inside__head">
+        <p class="eyebrow" data-en="§03 — Inside the App" data-da="§03 — Inde i appen">§03 — Inside the App</p>
+        <h2 class="inside__title">
+          <span data-en="Three rooms" data-da="Tre rum">Three rooms</span>
+          <span class="inside__title-em"><em data-en="of the club." data-da="i klubben.">of the club.</em></span>
+        </h2>
+      </header>
+
+      <div class="inside__grid">
+
+        <article class="room">
+          <div class="room__phone">
+            <img src="images/app/feed.png" alt="" loading="lazy" />
+          </div>
+          <div class="room__meta">
+            <span class="room__num">01</span>
+            <h3 class="room__name" data-en="The Feed" data-da="Feedet">The Feed</h3>
+          </div>
+          <p class="room__body" data-en="Your people, their rounds, their photos. The Wednesday flight, the home-club regulars, the travel four-ball — all in one room, no strangers." data-da="Dine folk, deres runder, deres billeder. Onsdags-flighten, hjemmebanens faste, rejse-fourballen — i ét rum, ingen fremmede.">Your people, their rounds, their photos. The Wednesday flight, the home-club regulars, the travel four-ball — all in one room, no strangers.</p>
+        </article>
+
+        <article class="room">
+          <div class="room__phone">
+            <img src="images/app/scorecard.png" alt="" loading="lazy" />
+          </div>
+          <div class="room__meta">
+            <span class="room__num">02</span>
+            <h3 class="room__name" data-en="The Scorecard" data-da="Scorekortet">The Scorecard</h3>
+          </div>
+          <p class="room__body" data-en="Front nine, back nine, finished. Stroke, Stableford, match play. Pars become birdies become a trend you can actually read." data-da="Front nine, back nine, færdig. Slag, stableford, hulspil. Pars bliver til birdies bliver til en trend du faktisk kan læse.">Front nine, back nine, finished. Stroke, Stableford, match play. Pars become birdies become a trend you can actually read.</p>
+        </article>
+
+        <article class="room">
+          <div class="room__phone">
+            <img src="images/app/leaderboard.png" alt="" loading="lazy" />
+          </div>
+          <div class="room__meta">
+            <span class="room__num">03</span>
+            <h3 class="room__name" data-en="The Leaderboard" data-da="Leaderboardet">The Leaderboard</h3>
+          </div>
+          <p class="room__body" data-en="Tournaments, your weekend flight, the year-long club championship. Live scores, team standings, a real reason to play the back nine harder." data-da="Turneringer, weekend-flighten, året igennem klubmesterskab. Live scores, holdstillinger, en grund til at spille back nine hårdere.">Tournaments, your weekend flight, the year-long club championship. Live scores, team standings, a real reason to play the back nine harder.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       SECTION 04 — THE TROPHY CASE (drenched dark, 3 large badges)
+       ════════════════════════════════════════════════════════════════════ -->
+  <section class="board" data-reveal>
+    <div class="board__inner">
+
+      <header class="board__head">
+        <p class="eyebrow eyebrow--inverted" data-en="§04 — In-app awards" data-da="§04 — Bedrifter i appen">§04 — In-app awards</p>
+        <h2 class="board__title">
+          <span data-en="The rounds worth" data-da="Runderne der er">The rounds worth</span><br/>
+          <span data-en="remembering." data-da="værd at huske.">remembering.</span>
+        </h2>
+        <p class="board__sub" data-en="Inside the app, certain rounds quietly earn a mark — a private record of the moments worth keeping. Three of them, picked out below. There are more, but you have to play for them." data-da="Inde i appen optjener visse runder stille et mærke — en privat optegnelse af de øjeblikke der er værd at gemme. Tre af dem, plukket ud her. Der er flere, men dem skal du spille for.">Inside the app, certain rounds quietly earn a mark — a private record of the moments worth keeping. Three of them, picked out below. There are more, but you have to play for them.</p>
+      </header>
+
+      <div class="board__records">
+
+        <article class="record">
+          <div class="record__stage">
+            <img src="images/broke80.png" alt="Broke 80 — Sub-Eighty Club award badge" class="record__badge" loading="lazy" />
+          </div>
+          <h3 class="record__name" data-en="The Sub-Eighty Club" data-da="Sub-firs-klubben">The Sub-Eighty Club</h3>
+          <p class="record__cite" data-en="The first time the card finishes in the seventies. Once you're in, you're in for life." data-da="Første gang scoren slutter i halvfjerdserne. Når du først er med, er du med for altid.">The first time the card finishes in the seventies. Once you're in, you're in for life.</p>
+        </article>
+
+        <article class="record">
+          <div class="record__stage">
+            <img src="images/birdiestreak.png" alt="Birdie Streak award badge" class="record__badge" loading="lazy" />
+          </div>
+          <h3 class="record__name" data-en="The Birdie Streak" data-da="Birdie-stimen">The Birdie Streak</h3>
+          <p class="record__cite" data-en="Three birdies in a row on the same round. Brief, rare, mostly remembered out loud." data-da="Tre birdies i træk på samme runde. Kort, sjælden, oftest husket højlydt.">Three birdies in a row on the same round. Brief, rare, mostly remembered out loud.</p>
+        </article>
+
+        <article class="record">
+          <div class="record__stage">
+            <img src="images/parmachine.png" alt="Par Machine award badge" class="record__badge" loading="lazy" />
+          </div>
+          <h3 class="record__name" data-en="The Par Machine" data-da="Par-maskinen">The Par Machine</h3>
+          <p class="record__cite" data-en="Nine pars on an eighteen. Quiet precision. The card that didn't need fireworks." data-da="Ni pars på atten huller. Stille præcision. Kortet der ikke behøvede fyrværkeri.">Nine pars on an eighteen. Quiet precision. The card that didn't need fireworks.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       SECTION 06 — PARTNERS (DGU lead, integration strip)
+       Vignelli logo wall: small, equal, monochrome, anchored by DGU lead.
+       ════════════════════════════════════════════════════════════════════ -->
+  <section class="partners" id="partners" data-reveal>
+    <div class="partners__inner">
+
+      <header class="partners__head">
+        <p class="eyebrow" data-en="§05 — Partners" data-da="§05 — Partnere">§05 — Partners</p>
+        <h2 class="partners__title">
+          <span data-en="In partnership with" data-da="I samarbejde med">In partnership with</span>
+          <span class="partners__title-em"><em data-en="Dansk Golf Union." data-da="Dansk Golf Union.">Dansk Golf Union.</em></span>
+        </h2>
+      </header>
+
+      <!-- Editorial banner — sign-in-with-DGU close-up.
+           data-parallax on the img: scroll-driven Y offset so the picture
+           feels anchored deeper than the masked frame. Figure handles the
+           clip mask reveal; img handles the parallax glide. -->
+      <figure class="partners__banner">
+        <img src="images/dgu/dgu-signin.png" alt="Sign in with Dansk Golf Union — Golfsocial app login screen" loading="lazy" data-parallax="0.05" />
+      </figure>
+
+      <!-- Article-style two-column body -->
+      <div class="partners__body">
+        <div class="partners__body-copy">
+          <p class="partners__lede" data-en="Your handicap, synced after every approved round." data-da="Dit handicap, synkroniseret efter hver godkendt runde.">Your handicap, synced after every approved round.</p>
+          <p class="partners__copy" data-en="Connect once with your DGU number. Golfsocial pulls your last twenty rounds automatically and keeps the official handicap up to date as you play. Scores submit themselves. Marker approvals come through the app. No double-entry, no exporting, no spreadsheets — just the round, played and counted." data-da="Forbind én gang med dit DGU-nummer. Golfsocial henter dine sidste tyve runder automatisk og holder det officielle handicap opdateret mens du spiller. Scores indberettes selv. Markør-godkendelser kommer gennem appen. Ingen dobbelt-indtastning, ingen eksport, ingen regneark — bare runden, spillet og talt med.">Connect once with your DGU number. Golfsocial pulls your last twenty rounds automatically and keeps the official handicap up to date as you play. Scores submit themselves. Marker approvals come through the app. No double-entry, no exporting, no spreadsheets — just the round, played and counted.</p>
+          <a href="https://www.golf-social.com/dgu-collaboration" target="_blank" rel="noopener" class="partners__link" data-en="Read the partnership story" data-da="Læs om samarbejdet">Read the partnership story <span aria-hidden="true">→</span></a>
+        </div>
+
+        <aside class="partners__aside">
+          <div class="partners__stat">
+            <span class="partners__stat-num"><span data-countup data-value="98">98</span><span class="partners__stat-pct">%</span></span>
+            <span class="partners__stat-lbl" data-en="of members synced with DGU" data-da="af medlemmer synkroniseret med DGU">of members synced with DGU</span>
+          </div>
+          <dl class="partners__facts">
+            <div class="partners__fact">
+              <dt data-en="Scores" data-da="Scores">Scores</dt>
+              <dd data-en="Submitted to DGU automatically" data-da="Indberettes til DGU automatisk">Submitted to DGU automatically</dd>
+            </div>
+            <div class="partners__fact">
+              <dt data-en="Handicap" data-da="Handicap">Handicap</dt>
+              <dd data-en="Official, updated round by round" data-da="Officielt, opdateret runde for runde">Official, updated round by round</dd>
+            </div>
+            <div class="partners__fact">
+              <dt data-en="Marker approval" data-da="Markør-godkendelse">Marker approval</dt>
+              <dd data-en="Inside the app, end-to-end" data-da="Inde i appen, ende-til-ende">Inside the app, end-to-end</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       SECTION 06 — THE JOURNAL (blog cards, typographic magazine index)
+       ════════════════════════════════════════════════════════════════════ -->
+  <section class="journal" id="journal" data-reveal>
+    <div class="journal__inner">
+
+      <header class="journal__head">
+        <div>
+          <p class="eyebrow" data-en="§06 — The Journal" data-da="§06 — Journalen">§06 — The Journal</p>
+          <h2 class="journal__title" data-en="Notes from the season." data-da="Noter fra sæsonen.">Notes from the season.</h2>
+        </div>
+        <a href="#" class="journal__all" data-en="All entries →" data-da="Alle indlæg →">All entries →</a>
+      </header>
+
+      <ol class="journal__list">
+
+        <li class="entry">
+          <a class="entry__link" href="https://www.golf-social.com/5-surprising-social-benefits-of-playing-golf" target="_blank" rel="noopener">
+            <span class="entry__num">N°01</span>
+            <div class="entry__body">
+              <span class="entry__cat" data-en="Field Notes" data-da="Felt-noter">Field Notes</span>
+              <h3 class="entry__title" data-en="5 surprising social benefits of playing golf." data-da="5 overraskende sociale fordele ved at spille golf.">5 surprising social benefits of playing golf.</h3>
+              <p class="entry__meta">
+                <span data-en="By Dan Chessa" data-da="Af Dan Chessa">By Dan Chessa</span>
+                <span class="entry__sep" aria-hidden="true">·</span>
+                <span data-en="4 min read" data-da="4 min læsning">4 min read</span>
+              </p>
+            </div>
+            <figure class="entry__thumb" aria-hidden="true">
+              <img src="images/journal/social-benefits.jpg" alt="" loading="lazy" />
+            </figure>
+          </a>
+        </li>
+
+        <li class="entry">
+          <a class="entry__link" href="https://www.golf-social.com/the-future-of-golf-how-tech-is-changing-the-game" target="_blank" rel="noopener">
+            <span class="entry__num">N°02</span>
+            <div class="entry__body">
+              <span class="entry__cat" data-en="On Technology" data-da="Om teknologi">On Technology</span>
+              <h3 class="entry__title" data-en="The future of golf — how tech is changing the game." data-da="Golf-spillets fremtid — hvordan teknologi ændrer spillet.">The future of golf — how tech is changing the game.</h3>
+              <p class="entry__meta">
+                <span data-en="By Dan Chessa" data-da="Af Dan Chessa">By Dan Chessa</span>
+                <span class="entry__sep" aria-hidden="true">·</span>
+                <span data-en="4 min read" data-da="4 min læsning">4 min read</span>
+              </p>
+            </div>
+            <figure class="entry__thumb" aria-hidden="true">
+              <img src="images/journal/future-of-golf.jpg" alt="" loading="lazy" />
+            </figure>
+          </a>
+        </li>
+
+        <li class="entry">
+          <a class="entry__link" href="https://www.golf-social.com/dgu-collaboration" target="_blank" rel="noopener">
+            <span class="entry__num">N°03</span>
+            <div class="entry__body">
+              <span class="entry__cat" data-en="Partnership" data-da="Samarbejde">Partnership</span>
+              <h3 class="entry__title" data-en="The Golfsocial and DGU partnership — shaping the future of a connected golf." data-da="Golfsocial og DGU-samarbejdet — fremtiden for en mere forbundet golfsport.">The Golfsocial and DGU partnership — shaping the future of a connected golf.</h3>
+              <p class="entry__meta">
+                <span data-en="By Dan Chessa" data-da="Af Dan Chessa">By Dan Chessa</span>
+                <span class="entry__sep" aria-hidden="true">·</span>
+                <span data-en="5 min read" data-da="5 min læsning">5 min read</span>
+              </p>
+            </div>
+            <figure class="entry__thumb" aria-hidden="true">
+              <img src="images/dgu/dgu-signin.png" alt="" loading="lazy" />
+            </figure>
+          </a>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       SECTION 09 — A QUIET PORTRAIT (single-asset breather)
+       ════════════════════════════════════════════════════════════════════ -->
+  <section class="portrait" data-reveal>
+    <figure class="portrait__fig">
+      <img src="images/golf-photo-3.jpg" alt="A golfer with an iron, late afternoon light" loading="lazy" />
+      <figcaption class="portrait__cap">
+        <span class="portrait__cap-num">§07</span>
+        <span class="portrait__cap-text" data-en="Late afternoon. Nicolai. Holbæk Golf Klub — sometime after the 14th." data-da="Sen eftermiddag. Nicolai. Holbæk Golf Klub — engang efter 14. hul.">Late afternoon. Nicolai. Holbæk Golf Klub — sometime after the 14th.</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       SECTION 10 — MEMBERSHIP / JOIN (drenched dark + phone-in-hand right)
+       data-reveal arms the word-by-word display reveal + phone settle.
+       ════════════════════════════════════════════════════════════════════ -->
+  <section class="join" id="join" data-reveal>
+    <div class="join__inner">
+
+      <div class="join__copy">
+        <p class="eyebrow eyebrow--inverted" data-en="§08 — Membership" data-da="§08 — Medlemskab">§08 — Membership</p>
+
+        <h2 class="join__display">
+          <span data-en="Free to" data-da="Gratis at">Free to</span>
+          <span class="join__display-em"><em data-en="join." data-da="være med.">join.</em></span>
+          <span data-en="Always" data-da="Altid">Always</span>
+          <span data-en="will be." data-da="vil det være.">will be.</span>
+        </h2>
+
+        <p class="join__sub" data-en="Golfsocial is free on iOS and Android. No ads. No data resale. No upsell. The members are the product to no one." data-da="Golfsocial er gratis på iOS og Android. Ingen reklamer. Intet datasalg. Intet mersalg. Medlemmerne er ikke nogens produkt.">Golfsocial is free on iOS and Android. No ads. No data resale. No upsell. The members are the product to no one.</p>
+
+        <div class="join__cta">
+          <a href="#" class="store-badge store-badge--apple store-badge--lg" aria-label="Download on the App Store">
+            <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="120" height="40" rx="6" ry="6" fill="#000000"/>
+              <g fill="#FFFFFF">
+                <path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/>
+                <text x="38" y="17" font-family="Helvetica, Arial, sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text>
+                <text x="38" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text>
+              </g>
+            </svg>
+          </a>
+          <a href="#" class="store-badge store-badge--google store-badge--lg" aria-label="Get it on Google Play">
+            <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="135" height="40" rx="6" ry="6" fill="#000000"/>
+              <g transform="translate(10,9)" fill="#FFFFFF">
+                <path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FFFFFF"/>
+              </g>
+              <g fill="#FFFFFF">
+                <text x="36" y="17" font-family="Helvetica, Arial, sans-serif" font-size="7" font-weight="400" letter-spacing="0.5">GET IT ON</text>
+                <text x="36" y="30" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Photo-realistic phone in hand, right side -->
+      <div class="join__phone" aria-hidden="true">
+        <img src="images/phone-in-hand.png" alt="" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+       FOOTER — masthead echo
+       ════════════════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+
+      <div class="footer__top">
+        <div class="footer__brand">
+          <object data="logo-darkgreen.svg" type="image/svg+xml" class="footer__logo" aria-hidden="true"></object>
+          <span class="footer__tag" data-en="The members' app for the golf you already play together." data-da="Medlemsappen til den golf I allerede spiller sammen.">The members' app for the golf you already play together.</span>
+        </div>
+        <div class="footer__domain">golfsocial.club</div>
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4 data-en="The App" data-da="Appen">The App</h4>
+          <ul>
+            <li><a href="#bulletin" data-en="The Bulletin" data-da="Bulletinen">The Bulletin</a></li>
+            <li><a href="#inside" data-en="Inside" data-da="Inde i appen">Inside</a></li>
+            <li><a href="#partners" data-en="Partners" data-da="Partnere">Partners</a></li>
+            <li><a href="#journal" data-en="Journal" data-da="Journalen">Journal</a></li>
+            <li><a href="#join" data-en="Join" data-da="Bliv medlem">Join</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-en="The Club" data-da="Klubben">The Club</h4>
+          <ul>
+            <li><a href="#" data-en="About" data-da="Om">About</a></li>
+            <li><a href="#" data-en="Support" data-da="Support">Support</a></li>
+            <li><a href="#" data-en="Privacy" data-da="Privatliv">Privacy</a></li>
+            <li><a href="#" data-en="Terms" data-da="Vilkår">Terms</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-en="Elsewhere" data-da="Andre steder">Elsewhere</h4>
+          <ul>
+            <li><a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:hello@golfsocial.club">hello@golfsocial.club</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Golfsocial Club</span>
+        <span data-en="Built for golfers, in Copenhagen." data-da="Bygget til golfere, i København.">Built for golfers, in Copenhagen.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
