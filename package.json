@@ -1,0 +1,12 @@
+{
+  "name": "gs-web",
+  "private": true,
+  "description": "golfsocial.club — static site. npm is only here for the tests.",
+  "scripts": {
+    "serve": "node tests/server.js",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
