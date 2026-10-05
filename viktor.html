@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Viktor Fræhr Mikkelsen · Golfsocial</title>
+  <link rel="icon" href="/favicon.ico">
+  <!-- Bro fra nyhedsbrevet til Viktors profil i appen (Michel 5/10-2026).
+       Standalone som hent.html: mails kan ikke linke direkte til appens
+       com.golfsocialapp://-adresse, så linket går hertil først.
+       iOS: knappen åbner profilen direkte (skemaet er registreret bredt).
+       Android: appen tager kun imod værterne review-login og group-invite,
+       så her kan vi kun åbne appen. Lægger Oliver et intent-filter på
+       host "profile", kan Android bruge samme adresse som iOS. -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Golfsocial">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:title" content="Viktor Fræhr Mikkelsen på Golfsocial">
+  <meta property="og:description" content="Handicap 0,2 · Værløse Golfklub. Følg Viktor på Golfsocial.">
+  <meta property="og:url" content="https://golfsocial.club/viktor">
+  <meta property="og:image" content="https://golfsocial.club/images/viktor.webp">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEBPZS1TT2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XEBPZS1TT2', { transport_type: 'beacon' });
+  </script>
+  <style>
+    html,body{margin:0;min-height:100%;}
+    body{
+      background:#f3f3f3;
+      font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      color:#000;
+      display:flex;align-items:center;justify-content:center;
+      text-align:center;padding:24px 16px;box-sizing:border-box;min-height:100vh;
+    }
+    .card{background:#fff;border-radius:14px;max-width:420px;width:100%;padding:36px 28px 32px;box-sizing:border-box;}
+    .mark{font-size:20px;font-weight:700;letter-spacing:-0.5px;margin:0 0 28px;}
+    .face{width:96px;height:96px;border-radius:48px;display:block;margin:0 auto 16px;}
+    h1{font-size:24px;line-height:1.2;font-weight:500;letter-spacing:-0.5px;margin:0 0 4px;color:#1E322D;}
+    .line{font-size:15px;color:#909090;margin:0 0 20px;}
+    .lead{font-size:16px;line-height:1.55;color:#1E322D;margin:0 0 26px;}
+    .btn{display:block;background:#1E322D;color:#fff;text-decoration:none;font-size:16px;font-weight:500;
+         padding:15px 20px;border-radius:12px;margin:0 0 12px;}
+    .hint{font-size:14px;line-height:1.5;color:#555;margin:0 0 18px;}
+    .ghost{display:inline-block;font-size:15px;color:#18a138;text-decoration:none;padding:6px 0;}
+    [hidden]{display:none !important;}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <p class="mark">Golfsocial.</p>
+    <img class="face" src="/images/viktor.webp" alt="Viktor Fræhr Mikkelsen" width="96" height="96">
+    <h1>Viktor Fræhr Mikkelsen</h1>
+    <p class="line">Handicap 0,2 · Værløse Golfklub</p>
+    <p class="lead">Følg Viktor på Golfsocial og se hans runder.</p>
+
+    <a id="open" class="btn" href="/hent">Åbn Viktors profil</a>
+    <p id="hint" class="hint" hidden>Søg efter Viktor Fræhr Mikkelsen under Venner, når appen er åben.</p>
+    <a id="get" class="ghost" href="/hent">Har du ikke appen? Hent Golfsocial</a>
+  </div>
+  <script>
+    (function () {
+      // Viktors bruger-id i appen (ikke playerId fra rundeeksporten). Tom = appen
+      // åbnes på forsiden i stedet for på profilen.
+      var USER_ID = '';
+
+      var params = new URLSearchParams(location.search);
+      var c = (params.get('c') || 'viktor_profil').replace(/[^a-zA-Z0-9_\-]/g, '').slice(0, 40);
+      var ua = navigator.userAgent || '';
+      var isAndroid = /android/i.test(ua);
+      var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      var platform = isAndroid ? 'android' : (isIOS ? 'ios' : 'desktop');
+
+      var hent = '/hent?c=' + encodeURIComponent(c);
+      var open = document.getElementById('open');
+      var get = document.getElementById('get');
+      var hint = document.getElementById('hint');
+      get.href = hent;
+
+      if (isIOS) {
+        open.href = USER_ID ? 'com.golfsocialapp://profile/user/' + encodeURIComponent(USER_ID) : 'com.golfsocialapp://';
+        if (!USER_ID) { open.textContent = 'Åbn Golfsocial'; hint.hidden = false; }
+      } else if (isAndroid) {
+        // Åbner appen via pakkenavnet. Uden appen sender Chrome videre til /hent.
+        var fallback = encodeURIComponent(location.origin + hent);
+        open.href = 'intent://#Intent;package=com.golfsocialapp.production;action=android.intent.action.MAIN;' +
+                    'category=android.intent.category.LAUNCHER;S.browser_fallback_url=' + fallback + ';end';
+        open.textContent = 'Åbn Golfsocial';
+        hint.hidden = false;
+      } else {
+        // Computer: ingen app at åbne. Vis kun vejen til telefonen.
+        open.hidden = true;
+        hint.textContent = 'Åbn linket på din telefon for at se Viktors profil i appen.';
+        hint.hidden = false;
+      }
+
+      gtag('event', 'profile_bridge_view', { profile: 'viktor', bridge_code: c, bridge_platform: platform });
+      open.addEventListener('click', function () {
+        gtag('event', 'profile_bridge_open', { profile: 'viktor', bridge_code: c, bridge_platform: platform, transport_type: 'beacon' });
+      });
+      get.addEventListener('click', function () {
+        gtag('event', 'profile_bridge_get_app', { profile: 'viktor', bridge_code: c, bridge_platform: platform, transport_type: 'beacon' });
+      });
+    })();
+  </script>
+</body>
+</html>
