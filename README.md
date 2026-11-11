@@ -43,3 +43,29 @@ python3 -m http.server 8080
 
 Open http://localhost:8080. Preview over localhost (not file://) so the
 newsletter form works.
+
+## Tests
+
+```
+npm ci
+npx playwright install chromium
+npm test
+```
+
+The tests serve this repo on localhost and run against it, so they need no
+deploy and no Vercel preview (previews sit behind SSO, which CI cannot log in
+to). They run on every pull request.
+
+What they hold in place is the EN/DA contract, which has two sides that pull
+against each other:
+
+- the app opens `/terms-of-use?lang=en` and `/privacy-policy?lang=en` in its
+  webview and must get English text under `lang="en"`, remembering nothing
+  between loads;
+- every Danish page must still be served, and stay, Danish under `lang="da"`
+  when there is no `?lang`, which is what Google indexes;
+- the three English stories keep their masthead switcher;
+- `article.js` must never overwrite a `data-en` string that a page ships.
+
+`tests/pages.js` reads the page list off disk, so a new page is covered without
+anyone adding it to a list.
