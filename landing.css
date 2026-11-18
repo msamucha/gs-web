@@ -478,6 +478,35 @@
 .lp-check__grid { top: 8rem; left: 30rem; width: 34rem; }
 .lp-check__grid .lp-float__in { border-radius: 3rem; }
 
+/* ════════════════════ PAGE : your rounds and your development ════════════════════ */
+/* hero: four pieces of the Udvikling tab, laid out like a desk */
+.lp-stage--udv { height: 76rem; }
+.lp-udv__curve { top: 0; left: 0; width: 44rem; }
+.lp-udv__round { top: 16rem; left: 26rem; width: 40rem; }
+.lp-udv__rank { top: 45rem; left: 0; width: 34rem; }
+.lp-udv__nums { top: 63rem; left: 35rem; width: 31rem; }
+.lp-udv__curve .lp-float__in, .lp-udv__round .lp-float__in { border-radius: 2.2rem; }
+.lp-udv__round { z-index: 1; }
+.js .lp-udv__curve { animation: lpRise 0.9s var(--ease-out) 0.1s both; }
+.js .lp-udv__round { animation: lpLand 0.7s var(--ease-out) 0.55s both; }
+.js .lp-udv__rank { animation: lpLand 0.7s var(--ease-out) 0.85s both; }
+.js .lp-udv__nums { animation: lpLand 0.7s var(--ease-out) 1.1s both; }
+
+/* your development: the profile with the Udvikling tab */
+.lp-moment__visual--profile { height: 74rem; }
+.lp-profile__screen { top: 0; left: 11rem; width: 42rem; height: 74rem; --lp-fade: 72%; }
+
+/* how many rounds: the latest round, and the three numbers */
+.lp-moment__visual--count { height: 49rem; }
+.lp-count__round { top: 0; left: 4rem; width: 38rem; }
+.lp-count__nums { top: 39.4rem; left: 27rem; width: 37rem; }
+.lp-count__round .lp-float__in { border-radius: 2.2rem; }
+
+/* measure yourself against your friends: two of the lists */
+.lp-group__visual--lists { flex: 0 0 56rem; height: 55rem; margin-bottom: 9rem; }
+.lp-lists__a { top: 0; left: 0; width: 35rem; }
+.lp-lists__b { top: 24rem; left: 21rem; width: 35rem; }
+
 /* ════════════════════ TABLET & DOWN : one column ════════════════════ */
 @media (max-width: 1024px) {
   .lp-hero { flex-direction: column; align-items: flex-start; gap: 7rem; margin-top: 6rem; }
@@ -505,6 +534,9 @@
 
   .lp-photo { left: 18rem; }
   .lp-ph__curve { left: 36rem; }
+  .lp-udv__round { left: 24rem; }
+  .lp-udv__nums { left: 33rem; }
+  .lp-group__visual--lists { margin-bottom: 7rem; }
   .lp-trio { margin-top: 11rem; }
   .lp-trio__title { padding: 0; }
   .lp-trio__row { grid-template-columns: 1fr; }
@@ -635,6 +667,24 @@
   .lp-check__grid { top: 6rem; left: auto; right: 0; width: 24.5rem; }
   .lp-abroad__list .lp-float__in, .lp-check__grid .lp-float__in { border-radius: 2.2rem; }
 
+  .lp-stage--udv { height: 63rem; }
+  .lp-udv__curve { width: 30rem; }
+  .lp-udv__round { top: 11rem; left: auto; right: 0; width: 27rem; }
+  .lp-udv__rank { top: 35rem; width: 24rem; }
+  .lp-udv__nums { top: 56.4rem; left: auto; right: 0; width: 28rem; }
+  .lp-udv__curve .lp-float__in, .lp-udv__round .lp-float__in, .lp-count__round .lp-float__in { border-radius: 1.6rem; }
+
+  .lp-moment__visual--profile { height: 52rem; }
+  .lp-profile__screen { left: auto; right: 0; width: 30rem; height: 52rem; }
+
+  .lp-moment__visual--count { height: 37rem; }
+  .lp-count__round { left: 0; width: 27rem; }
+  .lp-count__nums { top: 29.8rem; left: auto; right: 0; width: 28rem; }
+
+  .lp-group__visual--lists { flex: 0 0 auto; width: 30.6rem; height: 42rem; margin-bottom: 5rem; }
+  .lp-lists__a { width: 24rem; }
+  .lp-lists__b { top: 19rem; left: auto; right: 0; width: 24rem; }
+
   .lp-related { margin-top: 6rem; }
   .lp-related ul { flex-direction: column; gap: 1.6rem; }
   .lp-related a { font-size: 1.9rem; }
@@ -645,6 +695,7 @@
   .js .lp-hcp__sheet, .js .lp-hcp__ask, .js .lp-hcp__curve,
   .js .lp-lv__hole, .js .lp-lv__format, .js .lp-lv__board,
   .js .lp-photo, .js .lp-ph__note, .js .lp-ph__board, .js .lp-ph__curve,
-  .js .lp-scan__cam, .js .lp-scan__grid { animation: none; }
+  .js .lp-scan__cam, .js .lp-scan__grid,
+  .js .lp-udv__curve, .js .lp-udv__round, .js .lp-udv__rank, .js .lp-udv__nums { animation: none; }
   .lp-pill, .lp-pill svg { transition: none; }
 }
