@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--
+  GOLFSOCIAL — LANDING PAGE  (landing.css)
+  A question as the headline, the app answering it beside it, then one point per plane.
+-->
+<html lang="da" data-lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png?v=2" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=2" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#123f36" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEBPZS1TT2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XEBPZS1TT2');
+  </script>
+
+  <!-- page title + description for search engines / social -->
+  <title>Kan jeg se mine runder og min udvikling samlet i en app? · Golfsocial</title>
+  <meta name="description" content="Ja. I Golfsocial ligger dine runder samlet på din profil, og under Udvikling ser du dit handicap runde for runde og kan måle dig mod dine venner. Sådan gør du, trin for trin, og svar på de mest stillede spørgsmål." />
+
+  <link rel="canonical" href="https://golfsocial.club/se-dine-runder-og-din-udvikling" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Golfsocial" />
+  <meta property="og:locale" content="da_DK" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="Kan jeg se mine runder og min udvikling samlet i en app? · Golfsocial" />
+  <meta property="og:description" content="Ja. I Golfsocial ligger dine runder samlet på din profil, og under Udvikling ser du dit handicap runde for runde og kan måle dig mod dine venner. Sådan gør du, trin for trin, og svar på de mest stillede spørgsmål." />
+  <meta property="og:url" content="https://golfsocial.club/se-dine-runder-og-din-udvikling" />
+  <meta property="og:image" content="https://golfsocial.club/images/og-lower-handicap.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kan jeg se mine runder og min udvikling samlet i en app? · Golfsocial" />
+  <meta name="twitter:description" content="Ja. I Golfsocial ligger dine runder samlet på din profil, og under Udvikling ser du dit handicap runde for runde og kan måle dig mod dine venner. Sådan gør du, trin for trin, og svar på de mest stillede spørgsmål." />
+  <meta name="twitter:image" content="https://golfsocial.club/images/og-lower-handicap.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://golfsocial.club/se-dine-runder-og-din-udvikling",
+    "headline": "Kan jeg se mine runder og min udvikling samlet i en app?",
+    "description": "Ja. I Golfsocial ligger dine runder samlet på din profil, og under Udvikling ser du dit handicap runde for runde og kan måle dig mod dine venner. Sådan gør du, trin for trin, og svar på de mest stillede spørgsmål.",
+    "image": "https://golfsocial.club/images/og-lower-handicap.png",
+    "inLanguage": "da-DK",
+    "datePublished": "2026-11-18",
+    "dateModified": "2026-11-18",
+    "author": { "@type": "Organization", "name": "Golfsocial" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Golfsocial",
+      "logo": { "@type": "ImageObject", "url": "https://golfsocial.club/images/logo.svg" }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://golfsocial.club/" },
+      { "@type": "ListItem", "position": 2, "name": "Kan jeg se mine runder og min udvikling samlet i en app?", "item": "https://golfsocial.club/se-dine-runder-og-din-udvikling" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Hvilken golf-app holder styr på mine runder og min udvikling?", "acceptedAnswer": {"@type": "Answer", "text": "Golfsocial. Dine runder ligger samlet på din profil, og under Udvikling ser du dit handicap runde for runde."}},
+      {"@type": "Question", "name": "Hvordan kan jeg sammenligne min golfstatistik med mine venners?", "acceptedAnswer": {"@type": "Answer", "text": "Åbn din profil i Golfsocial, og tryk på Udvikling. Nederst ser du, hvem af jer der har rykket sit handicap mest, hvem der har årets bedste score, og hvem der har flest birdies og flest par."}},
+      {"@type": "Question", "name": "Hvor mange runder har jeg spillet?", "acceptedAnswer": {"@type": "Answer", "text": "Det står på din profil. Under Udvikling ser du også, hvor mange runder du har spillet i år."}},
+      {"@type": "Question", "name": "Hvad viser Udvikling?", "acceptedAnswer": {"@type": "Answer", "text": "Dit handicap runde for runde, hvilke runder der tæller med, og dine seneste runder med point, huller og hvad de gjorde ved handicappet. Nederst kan du måle dig mod vennerne."}},
+      {"@type": "Question", "name": "Skal jeg taste ekstra statistik ind?", "acceptedAnswer": {"@type": "Answer", "text": "Nej. Udviklingen bygger på de runder, du allerede har registreret i Golfsocial."}},
+      {"@type": "Question", "name": "Hvilke runder tæller med i mit handicap?", "acceptedAnswer": {"@type": "Answer", "text": "Under Udvikling kan du se, hvilke af dine runder der tæller med i dit handicap. Det er DGU, der beregner handicappet."}},
+      {"@type": "Question", "name": "Er handicappet i appen mit officielle handicap?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Det er Dansk Golf Union, der udsteder og forvalter dit handicap. Golfsocial viser det og din udvikling fra runde til runde."}},
+      {"@type": "Question", "name": "Hvad betyder greens in regulation?", "acceptedAnswer": {"@type": "Answer", "text": "Greens in regulation, forkortet GIR, betyder, at din bold ligger på green, når du har to slag tilbage til hullets par. På et par 4-hul skal bolden altså ligge på green efter to slag."}},
+      {"@type": "Question", "name": "Kan mine venner se mine runder?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Dine runder kommer i feedet, hvor dine venner kan se scoren og skrive en kommentar."}},
+      {"@type": "Question", "name": "Hvad koster det?", "acceptedAnswer": {"@type": "Answer", "text": "Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet."}},
+      {"@type": "Question", "name": "Hvor mange bruger Golfsocial?", "acceptedAnswer": {"@type": "Answer", "text": "Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026)."}}
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=12-42" />
+  <link rel="stylesheet" href="landing.css?v=6" />
+</head>
+<body>
+
+  <!-- ════════════════════ HEADER (do not edit) ════════════════════ -->
+  <header class="masthead">
+    <a class="masthead__brand" href="/" aria-label="Golfsocial">
+      <img class="masthead__logo" src="images/logo.svg" alt="Golfsocial" />
+    </a>
+    <nav class="masthead__nav" aria-label="Top">
+      <a class="masthead__social" href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="17" cy="7" r="1.05" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.facebook.com/1107518079119264" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M12.3 16.6V10.2c0-1.3.8-2.1 2.1-2.1h.5M10.1 11.8h4.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M7.4 10.6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="7.4" cy="7.9" r="0.6" fill="currentColor"/>
+          <path d="M11.1 16.6v-6m0 2.5c0-1.6 1-2.5 2.3-2.5 1.2 0 2.1.9 2.1 2.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social masthead__social--x" href="https://x.com/golfsocialclub" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main class="lp">
+  <!-- ════════════════════ 1 · HERO : the question, and the app answering it ════════════════════ -->
+  <section class="lp-hero">
+    <div class="lp-hero__text">
+      <p class="lp-eyebrow" data-da="Runder og udvikling" data-en="Rounds and development">Runder og udvikling</p>
+      <h1 class="lp-hero__title" data-da="Kan jeg se mine runder og min udvikling samlet i en app?" data-en="Can I see my rounds and my development in one app?">Kan jeg se mine runder og min udvikling samlet i en app?</h1>
+      <p class="lp-hero__lead" data-da="Ja. I Golfsocial ligger dine runder samlet på din profil, og under Udvikling ser du dit handicap runde for runde. Nederst kan du måle dig mod dine venner." data-en="Yes. In Golfsocial your rounds are gathered on your profile, and under Udvikling (development) you see your handicap round by round. At the bottom you can measure yourself against your friends.">Ja. I Golfsocial ligger dine runder samlet på din profil, og under Udvikling ser du dit handicap runde for runde. Nederst kan du måle dig mod dine venner.</p>
+      <div class="lp-hero__cta">
+        <a class="lp-pill" href="/hent?c=web_udvikling"><span data-da="Hent Golfsocial" data-en="Get Golfsocial">Hent Golfsocial</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="lp-link" href="#saadan" data-da="Se, hvordan det virker" data-en="See how it works">Se, hvordan det virker</a>
+      </div>
+    </div>
+    <div class="lp-stage lp-stage--udv">
+      <figure class="lp-float lp-udv__curve">
+          <span class="lp-float__in"><img fetchpriority="high" src="images/lp-udv-kurve.webp" width="1162" height="568" alt="The handicap card in Golfsocial: a curve over the latest rounds ending at handicap 13.1, down 1.2" /></span>
+        </figure>
+      <figure class="lp-float lp-float--near lp-udv__round">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-udv-runde.webp" width="1162" height="1252" alt="The latest round in Golfsocial: 39 points over 18 holes, the handicap going from 13.8 to 13.1, and a chart of the latest 20 rounds" /></span>
+        </figure>
+      <figure class="lp-float lp-float--near lp-udv__rank">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-udv-hcp.webp" width="1044" height="909" alt="HCP udvikling in Golfsocial: a list of friends ranked by how much they have lowered their handicap, with you first on 2.5" /></span>
+        </figure>
+      <figure class="lp-float lp-float--near lp-udv__nums">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-udv-tal.webp" width="1290" height="279" alt="Three numbers in Golfsocial: average 91 over the latest 20 rounds, best round 82 this year, and 20 rounds in 2026" /></span>
+        </figure>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 2 · STEPS : the deep green plane ════════════════════ -->
+  <section class="lp-steps" id="saadan">
+    <div class="lp-steps__head">
+      <h2 class="lp-steps__title" data-da="Sådan ser du dine runder og din udvikling i Golfsocial" data-en="How to see your rounds and your development in Golfsocial">Sådan ser du dine runder og din udvikling i Golfsocial</h2>
+      <p class="lp-steps__lead" data-da="Fra din første runde, til du kan følge kurven." data-en="From your first round to following the curve.">Fra din første runde, til du kan følge kurven.</p>
+    </div>
+    <ol class="lp-steps__list">
+      <li data-da="Hent Golfsocial i App Store, og opret dig." data-en="Download Golfsocial from the App Store and create your profile.">Hent Golfsocial i App Store, og opret dig.</li>
+      <li data-da="Forbind din konto med DGU, så dit handicap og dine runder følger med." data-en="Connect your account to DGU, so your handicap and your rounds come along.">Forbind din konto med DGU, så dit handicap og dine runder følger med.</li>
+      <li data-da="Registrér dine runder: før scoren live under runden, eller tag et billede af scorekortet bagefter." data-en="Register your rounds: keep score live during the round, or take a photo of the scorecard afterwards.">Registrér dine runder: før scoren live under runden, eller tag et billede af scorekortet bagefter.</li>
+      <li data-da="Åbn din profil, og tryk på Udvikling." data-en="Open your profile and tap Udvikling (development).">Åbn din profil, og tryk på Udvikling.</li>
+      <li data-da="Se dit handicap runde for runde, og hvilke runder der tæller med. Under grafen ligger dine seneste runder med point, huller og hvad de gjorde ved handicappet." data-en="See your handicap round by round, and which rounds count. Below the chart are your latest rounds with points, holes and what they did to your handicap.">Se dit handicap runde for runde, og hvilke runder der tæller med. Under grafen ligger dine seneste runder med point, huller og hvad de gjorde ved handicappet.</li>
+      <li data-da="Rul ned, og mål dig mod vennerne: hvem har rykket sit handicap mest, hvem har årets bedste score, flest birdies og flest par." data-en="Scroll down and measure yourself against your friends: who has moved their handicap the most, who has the best score of the year, the most birdies and the most pars.">Rul ned, og mål dig mod vennerne: hvem har rykket sit handicap mest, hvem har årets bedste score, flest birdies og flest par.</li>
+    </ol>
+  </section>
+
+  <!-- ════════════════════ 3 · MOMENTS : one point at a time, in the white ════════════════════ -->
+  <section class="lp-moment">
+    <div class="lp-moment__text">
+      <h2 class="lp-moment__title" data-da="Hvordan følger jeg min udvikling?" data-en="How do I follow my development?">Hvordan følger jeg min udvikling?</h2>
+      <p class="lp-moment__p" data-da="Åbn din profil, og tryk på Udvikling. Der ser du dit handicap runde for runde, hvilke runder der tæller med, og om kurven peger den rigtige vej. Under grafen ligger dine seneste runder med point, huller og hvad de gjorde ved handicappet." data-en="Open your profile and tap Udvikling. There you see your handicap round by round, which rounds count, and whether the curve is pointing the right way. Below the chart are your latest rounds with points, holes and what they did to your handicap.">Åbn din profil, og tryk på Udvikling. Der ser du dit handicap runde for runde, hvilke runder der tæller med, og om kurven peger den rigtige vej. Under grafen ligger dine seneste runder med point, huller og hvad de gjorde ved handicappet.</p>
+    </div>
+    <div class="lp-moment__visual lp-moment__visual--profile">
+      <figure class="lp-float lp-float--fade lp-profile__screen">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-udv-profil.webp" width="1290" height="2724" alt="A profile in Golfsocial with 87 rounds, 42 friends and handicap 13.1, the Udvikling tab open with the handicap curve and the latest round" /></span>
+        </figure>
+    </div>
+  </section>
+
+  <section class="lp-moment lp-moment--flip">
+    <div class="lp-moment__text">
+      <h2 class="lp-moment__title" data-da="Hvor mange runder har jeg spillet?" data-en="How many rounds have I played?">Hvor mange runder har jeg spillet?</h2>
+      <p class="lp-moment__p" data-da="På din profil står, hvor mange runder du har spillet i alt. Under Udvikling ser du også, hvor mange runder du har spillet i år, dit snit for de seneste runder og din bedste runde i år." data-en="Your profile shows how many rounds you have played in total. Under Udvikling you also see how many rounds you have played this year, your average for the latest rounds and your best round this year.">På din profil står, hvor mange runder du har spillet i alt. Under Udvikling ser du også, hvor mange runder du har spillet i år, dit snit for de seneste runder og din bedste runde i år.</p>
+    </div>
+    <div class="lp-moment__visual lp-moment__visual--count">
+      <figure class="lp-float lp-count__round">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-udv-runde.webp" width="1162" height="1252" alt="The latest round in Golfsocial with points, holes, the handicap before and after, and a chart of the latest 20 rounds" /></span>
+        </figure>
+      <figure class="lp-float lp-float--near lp-count__nums">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-udv-tal.webp" width="1290" height="279" alt="Three numbers in Golfsocial: average over the latest 20 rounds, best round this year, and rounds played this year" /></span>
+        </figure>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 4 · AGAINST YOUR FRIENDS : the paper plane ════════════════════ -->
+  <section class="lp-group">
+    <div class="lp-moment__text">
+      <h2 class="lp-moment__title" data-da="Mål dig mod vennerne" data-en="Measure yourself against your friends">Mål dig mod vennerne</h2>
+      <p class="lp-moment__p" data-da="Nederst under Udvikling kan du måle dig mod vennerne: hvem har rykket sit handicap mest, hvem har årets bedste score, og hvem har flest birdies og flest par. Jo flere runder du og vennerne registrerer, jo mere er der at se." data-en="At the bottom of Udvikling you can measure yourself against your friends: who has moved their handicap the most, who has the best score of the year, and who has the most birdies and the most pars. The more rounds you and your friends register, the more there is to see.">Nederst under Udvikling kan du måle dig mod vennerne: hvem har rykket sit handicap mest, hvem har årets bedste score, og hvem har flest birdies og flest par. Jo flere runder du og vennerne registrerer, jo mere er der at se.</p>
+    </div>
+    <div class="lp-group__visual lp-group__visual--lists">
+      <figure class="lp-float lp-float--near lp-lists__a">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-udv-hcp.webp" width="1044" height="909" alt="HCP udvikling in Golfsocial: friends ranked by how much they have lowered their handicap" /></span>
+        </figure>
+      <figure class="lp-float lp-float--near lp-lists__b">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-udv-birdies.webp" width="1044" height="909" alt="Flest birdies i år in Golfsocial: friends ranked by the number of birdies this year" /></span>
+        </figure>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 5 · PROOF : a photo, and the one number ════════════════════ -->
+  <section class="lp-proof">
+    <figure class="lp-proof__photo">
+      <img loading="lazy" decoding="async" src="images/lp-udv-foto.webp" width="1400" height="1750" alt="A golfer walking across a green towards the flag, with a friend further ahead and mountains in the distance" />
+    </figure>
+    <div class="lp-proof__text">
+      <h2 class="lp-proof__title" data-da="Omkring 600 golfere har logget næsten 800 runder i Golfsocial." data-en="About 600 golfers have logged almost 800 rounds in Golfsocial.">Omkring 600 golfere har logget næsten 800 runder i Golfsocial.</h2>
+      <p class="lp-proof__p" data-da="Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet." data-en="Golfsocial is free to play with your friends: live score, the game formats, the groups and the feed.">Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet.</p>
+      <div class="lp-proof__cta">
+        <a class="lp-pill" href="/hent?c=web_udvikling"><span data-da="Hent Golfsocial" data-en="Get Golfsocial">Hent Golfsocial</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="lp-link" href="https://apps.apple.com/app/apple-store/id6743446900?pt=125766814&ct=web_udvikling&mt=8" target="_blank" rel="noopener" data-da="Hent i App Store" data-en="Get it on the App Store">Hent i App Store</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 6 · QUESTIONS AND ANSWERS (the v12 FAQ block) ════════════════════ -->
+  <section class="faq" id="faq">
+    <div class="faq__head">
+      <h2 class="faq__title" data-da="Spørgsmål og svar" data-en="Questions and answers">Spørgsmål og svar</h2>
+    </div>
+    <div class="faq__list">
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvilken golf-app holder styr på mine runder og min udvikling?" data-en="Which golf app keeps track of my rounds and my development?">Hvilken golf-app holder styr på mine runder og min udvikling?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Golfsocial. Dine runder ligger samlet på din profil, og under Udvikling ser du dit handicap runde for runde." data-en="Golfsocial. Your rounds are gathered on your profile, and under Udvikling you see your handicap round by round.">Golfsocial. Dine runder ligger samlet på din profil, og under Udvikling ser du dit handicap runde for runde.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvordan kan jeg sammenligne min golfstatistik med mine venners?" data-en="How can I compare my golf statistics with my friends’?">Hvordan kan jeg sammenligne min golfstatistik med mine venners?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Åbn din profil i Golfsocial, og tryk på Udvikling. Nederst ser du, hvem af jer der har rykket sit handicap mest, hvem der har årets bedste score, og hvem der har flest birdies og flest par." data-en="Open your profile in Golfsocial and tap Udvikling. At the bottom you see which of you has moved their handicap the most, who has the best score of the year, and who has the most birdies and the most pars.">Åbn din profil i Golfsocial, og tryk på Udvikling. Nederst ser du, hvem af jer der har rykket sit handicap mest, hvem der har årets bedste score, og hvem der har flest birdies og flest par.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvor mange runder har jeg spillet?" data-en="How many rounds have I played?">Hvor mange runder har jeg spillet?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Det står på din profil. Under Udvikling ser du også, hvor mange runder du har spillet i år." data-en="It is shown on your profile. Under Udvikling you also see how many rounds you have played this year.">Det står på din profil. Under Udvikling ser du også, hvor mange runder du har spillet i år.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvad viser Udvikling?" data-en="What does Udvikling show?">Hvad viser Udvikling?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Dit handicap runde for runde, hvilke runder der tæller med, og dine seneste runder med point, huller og hvad de gjorde ved handicappet. Nederst kan du måle dig mod vennerne." data-en="Your handicap round by round, which rounds count, and your latest rounds with points, holes and what they did to your handicap. At the bottom you can measure yourself against your friends.">Dit handicap runde for runde, hvilke runder der tæller med, og dine seneste runder med point, huller og hvad de gjorde ved handicappet. Nederst kan du måle dig mod vennerne.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Skal jeg taste ekstra statistik ind?" data-en="Do I have to enter extra statistics?">Skal jeg taste ekstra statistik ind?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Nej. Udviklingen bygger på de runder, du allerede har registreret i Golfsocial." data-en="No. Your development is built on the rounds you have already registered in Golfsocial.">Nej. Udviklingen bygger på de runder, du allerede har registreret i Golfsocial.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvilke runder tæller med i mit handicap?" data-en="Which rounds count towards my handicap?">Hvilke runder tæller med i mit handicap?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Under Udvikling kan du se, hvilke af dine runder der tæller med i dit handicap. Det er DGU, der beregner handicappet." data-en="Under Udvikling you can see which of your rounds count towards your handicap. DGU calculates the handicap.">Under Udvikling kan du se, hvilke af dine runder der tæller med i dit handicap. Det er DGU, der beregner handicappet.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Er handicappet i appen mit officielle handicap?" data-en="Is the handicap in the app my official handicap?">Er handicappet i appen mit officielle handicap?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Ja. Det er Dansk Golf Union, der udsteder og forvalter dit handicap. Golfsocial viser det og din udvikling fra runde til runde." data-en="Yes. The Danish Golf Union issues and manages your handicap. Golfsocial shows it and your development from round to round.">Ja. Det er Dansk Golf Union, der udsteder og forvalter dit handicap. Golfsocial viser det og din udvikling fra runde til runde.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvad betyder greens in regulation?" data-en="What does greens in regulation mean?">Hvad betyder greens in regulation?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Greens in regulation, forkortet GIR, betyder, at din bold ligger på green, når du har to slag tilbage til hullets par. På et par 4-hul skal bolden altså ligge på green efter to slag." data-en="Greens in regulation, GIR for short, means that your ball is on the green when you have two strokes left to the par of the hole. On a par 4 the ball must therefore be on the green after two strokes.">Greens in regulation, forkortet GIR, betyder, at din bold ligger på green, når du har to slag tilbage til hullets par. På et par 4-hul skal bolden altså ligge på green efter to slag.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Kan mine venner se mine runder?" data-en="Can my friends see my rounds?">Kan mine venner se mine runder?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Ja. Dine runder kommer i feedet, hvor dine venner kan se scoren og skrive en kommentar." data-en="Yes. Your rounds land in the feed, where your friends can see the score and leave a comment.">Ja. Dine runder kommer i feedet, hvor dine venner kan se scoren og skrive en kommentar.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvad koster det?" data-en="What does it cost?">Hvad koster det?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet." data-en="Golfsocial is free to play with your friends: live score, the game formats, the groups and the feed.">Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvor mange bruger Golfsocial?" data-en="How many people use Golfsocial?">Hvor mange bruger Golfsocial?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026)." data-en="About 600 golfers have logged almost 800 rounds in Golfsocial (November 2026).">Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026).</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 7 · READ NEXT ════════════════════ -->
+  <nav class="lp-related" aria-label="Læs også">
+    <p class="lp-related__label" data-da="Læs også" data-en="Read next">Læs også</p>
+    <ul>
+      <li><a href="/greens-in-regulation" data-da="Greens in regulation: nøgletallet de fleste overser" data-en="Greens in regulation: the key number most people overlook">Greens in regulation: nøgletallet de fleste overser</a></li>
+      <li><a href="/de-tal-der-saenker-dit-handicap" data-da="De tal der faktisk sænker dit handicap" data-en="The numbers that actually lower your handicap">De tal der faktisk sænker dit handicap</a></li>
+      <li><a href="/saadan-fungerer-whs-handicap" data-da="Sådan fungerer WHS-handicap" data-en="How the WHS handicap works">Sådan fungerer WHS-handicap</a></li>
+      <li><a href="/registrer-din-runde-til-dgu-handicappet" data-da="Kan jeg registrere min runde til DGU-handicappet i en app?" data-en="Can I register my round to my DGU handicap in an app?">Kan jeg registrere min runde til DGU-handicappet i en app?</a></li>
+      <li><a href="/scan-dit-scorekort" data-da="Kan jeg scanne mit scorekort i stedet for at taste det?" data-en="Can I scan my scorecard instead of typing it in?">Kan jeg scanne mit scorekort i stedet for at taste det?</a></li>
+    </ul>
+  </nav>
+  </main>
+
+  <!-- ════════════════════ NEWSLETTER (reused from the homepage, do not edit) ════════════════════ -->
+  <section class="newsband">
+    <div class="news">
+      <img class="news__bg" src="images/news-bg.webp" alt="" />
+      <div class="news__inner">
+        <div class="news__text">
+          <h2 class="news__h" data-da="En hilsen fra banen." data-en="The occasional note from the course.">En hilsen fra banen.</h2>
+          <p class="news__sub" data-da="Ingen støj. Kun når vi har noget at fortælle." data-en="No noise. Only the occasional read.">Ingen støj. Kun når vi har noget at fortælle.</p>
+        </div>
+        <form class="news__form" data-ml-form="165875690760046481" novalidate>
+          <input class="news__email" type="email" name="fields[email]" placeholder="you@email.com" data-da="dig@email.com" aria-label="Email address" required />
+          <button class="news__btn" type="submit" data-da="Tilmeld" data-en="Subscribe">Tilmeld</button>
+          <span class="news__confirm" aria-hidden="true">
+            <span class="news__confirm-check">
+              <svg viewBox="0 0 52 52" aria-hidden="true">
+                <circle class="news__confirm-circle" cx="26" cy="26" r="24" fill="none" />
+                <path class="news__confirm-tick" fill="none" d="M15 27 l7.5 7.5 L37.5 19" />
+              </svg>
+            </span>
+            <span class="news__confirm-text" data-da="Du er med. Vi ses på banen." data-en="You’re in. See you on the course.">Du er med. Vi ses på banen.</span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ DOWNLOAD CTA + FOOTER (do not edit) ════════════════════ -->
+  <footer class="foot">
+    <hr class="foot__rule" />
+    <div class="foot__cta">
+      <h2 class="foot__headline" data-da="Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed." data-en="Download Golfsocial. Because good friends never let friends golf in silence.">Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed.</h2>
+      <div class="badges foot__badges">
+        <a href="https://apps.apple.com/app/apple-store/id6743446900?pt=125766814&ct=web_download&mt=8" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#16221F"/><g fill="#FCFBF8"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production&referrer=utm_source%3Dgolfsocial.club%26utm_medium%3Dwebsite%26utm_campaign%3Dweb_download" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#16221F"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FCFBF8"/></g><g fill="#FCFBF8"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <div class="foot__left">
+        <nav class="foot__links" aria-label="Footer">
+          <a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/1107518079119264" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener">Linkedin</a>
+          <a href="https://x.com/golfsocialclub" target="_blank" rel="noopener">x.com</a>
+          <a href="mailto:hello@golfsocial.club" data-da="Kontakt" data-en="Contact">Kontakt</a>
+          <a href="/privacy-policy" data-da="Privatlivspolitik" data-en="Privacy Policy">Privatlivspolitik</a>
+        </nav>
+        <p class="foot__copy" data-da="© 2026 Golfsocial. Alle rettigheder forbeholdes." data-en="© 2026 Golfsocial. All rights reserved.">© 2026 Golfsocial. Alle rettigheder forbeholdes.</p>
+      </div>
+      <p class="foot__made" data-da="Bygget og designet i København" data-en="Built and designed in Copenhagen">Bygget og designet i København</p>
+    </div>
+  </footer>
+
+  <script src="article.js?v=5"></script>
+</body>
+</html>
