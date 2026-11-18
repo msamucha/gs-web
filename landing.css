@@ -333,6 +333,31 @@
 }
 .lp-related a:hover { text-decoration-color: var(--black); }
 
+/* ════════════════════ PAGE : register your round to the DGU handicap ════════════════════ */
+/* hero: the marker is asked, approves the scorecard, and the handicap curve moves */
+.lp-stage--hcp { height: 84rem; }
+.lp-hcp__sheet { top: 7.6rem; right: 0; width: 42rem; }
+.lp-hcp__ask { top: -1.4rem; left: 0; width: 37rem; }
+.lp-hcp__curve { top: 44.4rem; left: 1.4rem; width: 33rem; }
+.js .lp-hcp__sheet { animation: lpRise 0.95s var(--ease-out) 0.1s both; }
+.js .lp-hcp__ask { animation: lpLand 0.7s var(--ease-out) 0.75s both; }
+.js .lp-hcp__curve { animation: lpLand 0.7s var(--ease-out) 1.05s both; }
+
+/* keeping score: pick the tee, then the hole you are on */
+.lp-moment__visual--score { height: 80rem; }
+.lp-score__tee { top: 0; left: 0; width: 30rem; }
+.lp-score__hole { top: 22rem; left: 26rem; width: 38rem; height: 58rem; --lp-fade: 76%; }
+
+/* the marker: the round is over, pick who approves it */
+.lp-moment__visual--marker { height: 81rem; }
+.lp-marker__end { top: 0; left: 0; width: 38rem; height: 56rem; --lp-fade: 60%; }
+.lp-marker__pick { top: 35rem; left: 30rem; width: 34rem; }
+.lp-marker__pick .lp-float__in { border-radius: 3rem; }
+
+/* two ways out under the number: the smart link, and the App Store */
+.lp-proof__cta { display: flex; align-items: center; flex-wrap: wrap; gap: 2rem 3.4rem; margin-top: 4.4rem; }
+.lp-proof .lp-proof__cta .lp-pill { margin-top: 0; }
+
 /* ════════════════════ TABLET & DOWN : one column ════════════════════ */
 @media (max-width: 1024px) {
   .lp-hero { flex-direction: column; align-items: flex-start; gap: 7rem; margin-top: 6rem; }
@@ -407,12 +432,29 @@
   .lp-proof__p { margin-top: 2.2rem; font-size: 1.9rem; line-height: 2.9rem; }
   .lp-proof .lp-pill { margin-top: 3rem; }
 
+  .lp-stage--hcp { height: 58rem; }
+  .lp-hcp__sheet { top: 6rem; width: 28.4rem; }
+  .lp-hcp__ask { top: -1.6rem; width: 27rem; }
+  .lp-hcp__curve { top: 31rem; left: 0; width: 22rem; }
+
+  .lp-moment__visual--score { height: 57rem; }
+  .lp-score__tee { width: 20rem; }
+  .lp-score__hole { top: 20rem; left: auto; right: 0; width: 26.5rem; height: 37rem; }
+
+  .lp-moment__visual--marker { height: 63rem; }
+  .lp-marker__end { width: 26rem; height: 37rem; }
+  .lp-marker__pick { top: 29.6rem; left: auto; right: 0; width: 25rem; }
+  .lp-marker__pick .lp-float__in { border-radius: 2.2rem; }
+
+  .lp-proof__cta { margin-top: 3rem; gap: 1.8rem 2.6rem; }
+
   .lp-related { margin-top: 6rem; }
   .lp-related ul { flex-direction: column; gap: 1.6rem; }
   .lp-related a { font-size: 1.9rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .js .lp-stage__feed, .js .lp-stage__follow, .js .lp-stage__profile { animation: none; }
+  .js .lp-stage__feed, .js .lp-stage__follow, .js .lp-stage__profile,
+  .js .lp-hcp__sheet, .js .lp-hcp__ask, .js .lp-hcp__curve { animation: none; }
   .lp-pill, .lp-pill svg { transition: none; }
 }
