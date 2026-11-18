@@ -183,6 +183,25 @@
 }
 .article__body figure.bleed figcaption { margin-top: 2rem; }
 
+/* steps with free-standing icons beside them (added 2026-11-18, approved by
+   Michel): wrap an <ol> and a <figure> in <div class="steps">. Text on the
+   left in a slightly narrower measure, icons on the right; stacked below
+   1024px. */
+.article__body .steps {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  width: calc(100vw - 2 * var(--gut-wide));
+  max-width: 116rem;
+}
+.article__body .steps ol { flex: 0 1 58rem; }
+.article__body .steps figure { flex: 0 1 36rem; margin-top: 2.8rem; }
+.article__body .steps figure img { border-radius: 0; }
+@media (max-width: 1024px) {
+  .article__body .steps { display: block; width: 100%; max-width: 100%; }
+  .article__body .steps figure { max-width: 34rem; margin: 4rem auto 0; }
+}
+
 .article__body hr {
   margin-top: 5rem;
   border: 0;
