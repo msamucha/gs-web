@@ -457,6 +457,27 @@
 .lp-facts__row dt { font-weight: 500; font-size: 1.9rem; letter-spacing: -0.02rem; color: var(--lp-deep); }
 .lp-facts__row dd { margin: 0; font-size: 2.3rem; line-height: 3.3rem; letter-spacing: -0.02rem; color: #1a1a1a; }
 
+/* ════════════════════ PAGE : scan your scorecard ════════════════════ */
+/* hero: the camera on a real card, and the strokes filled in */
+.lp-stage--scan { height: 80rem; }
+.lp-scan__cam { top: 0; right: 0; width: 33.4rem; }
+.lp-scan__cam .lp-float__in { background: #101312; }
+.lp-scan__grid { top: 30rem; left: 0; width: 39rem; height: 49rem; z-index: 2; --lp-fade: 75%; }
+.js .lp-scan__cam { animation: lpRise 0.95s var(--ease-out) 0.1s both; }
+.js .lp-scan__grid { animation: lpLand 0.8s var(--ease-out) 0.8s both; }
+
+/* abroad: the round on a course you found or added yourself */
+.lp-moment__visual--abroad { height: 63rem; }
+.lp-abroad__round { top: 0; left: 0; width: 40rem; }
+.lp-abroad__list { top: 25rem; left: 30rem; width: 34rem; }
+.lp-abroad__list .lp-float__in { border-radius: 3rem; }
+
+/* checking: the course data, and the fields the scanner could not read */
+.lp-moment__visual--check { height: 73rem; }
+.lp-check__data { top: 0; left: 0; width: 38rem; height: 64rem; --lp-fade: 62%; }
+.lp-check__grid { top: 8rem; left: 30rem; width: 34rem; }
+.lp-check__grid .lp-float__in { border-radius: 3rem; }
+
 /* ════════════════════ TABLET & DOWN : one column ════════════════════ */
 @media (max-width: 1024px) {
   .lp-hero { flex-direction: column; align-items: flex-start; gap: 7rem; margin-top: 6rem; }
@@ -601,6 +622,19 @@
   .lp-facts__row dt { font-size: 1.6rem; }
   .lp-facts__row dd { font-size: 1.9rem; line-height: 2.8rem; }
 
+  .lp-stage--scan { height: 60rem; }
+  .lp-scan__cam { top: 0; width: 24rem; }
+  .lp-scan__grid { top: 22rem; left: 0; width: 25rem; height: 36rem; }
+
+  .lp-moment__visual--abroad { height: 46rem; }
+  .lp-abroad__round { width: 27rem; }
+  .lp-abroad__list { top: 20rem; left: auto; right: 0; width: 25rem; }
+
+  .lp-moment__visual--check { height: 53rem; }
+  .lp-check__data { width: 26rem; height: 42rem; }
+  .lp-check__grid { top: 6rem; left: auto; right: 0; width: 24.5rem; }
+  .lp-abroad__list .lp-float__in, .lp-check__grid .lp-float__in { border-radius: 2.2rem; }
+
   .lp-related { margin-top: 6rem; }
   .lp-related ul { flex-direction: column; gap: 1.6rem; }
   .lp-related a { font-size: 1.9rem; }
@@ -610,6 +644,7 @@
   .js .lp-stage__feed, .js .lp-stage__follow, .js .lp-stage__profile,
   .js .lp-hcp__sheet, .js .lp-hcp__ask, .js .lp-hcp__curve,
   .js .lp-lv__hole, .js .lp-lv__format, .js .lp-lv__board,
-  .js .lp-photo, .js .lp-ph__note, .js .lp-ph__board, .js .lp-ph__curve { animation: none; }
+  .js .lp-photo, .js .lp-ph__note, .js .lp-ph__board, .js .lp-ph__curve,
+  .js .lp-scan__cam, .js .lp-scan__grid { animation: none; }
   .lp-pill, .lp-pill svg { transition: none; }
 }
