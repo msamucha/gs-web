@@ -1,0 +1,418 @@
+/* ════════════════════════════════════════════════════════════
+   Golfsocial — landing pages  (added 2026-11-18)
+
+   One stylesheet for the "question" landing pages. Loaded AFTER
+   styles.css, so it reuses the v12 tokens (--gut, --gut-wide,
+   --font, --ease, --ease-out), the masthead, the FAQ, the
+   newsletter and the footer. rem = px ÷ 10 at 1507px, as in v12.
+
+   The idea: a white universe where the app stands free. Real app
+   screens float without a phone around them and fade out before
+   they reach an edge. One point per plane; the planes alternate
+   white, deep green, paper and photo.
+   ════════════════════════════════════════════════════════════ */
+
+.lp {
+  --lp-ink: #16221f;
+  --lp-deep: #123f36;
+  --lp-paper: #f1f5f3;
+  --lp-soft: rgba(0, 0, 0, 0.62);
+  --lp-shadow: 0 0 0 0.1rem rgba(16, 36, 31, 0.07), 0 3.4rem 7rem rgba(16, 36, 31, 0.13), 0 0.6rem 1.8rem rgba(16, 36, 31, 0.05);
+  --lp-shadow-near: 0 0 0 0.1rem rgba(16, 36, 31, 0.08), 0 2.6rem 5.4rem rgba(16, 36, 31, 0.2), 0 0.6rem 1.6rem rgba(16, 36, 31, 0.08);
+  display: block;
+}
+
+/* ─────────────── shared pieces ─────────────── */
+
+/* a real app screen standing free: rounded, soft shadow, no phone.
+   The figure places it; the inner span is the screen itself. */
+.lp-float { position: absolute; margin: 0; }
+.lp-float__in {
+  position: relative;
+  display: block;
+  height: 100%;
+  background: var(--white);
+  border-radius: 3rem;
+  box-shadow: var(--lp-shadow);
+  overflow: hidden;
+}
+.lp-float__in img { display: block; width: 100%; height: auto; }
+/* a tall screen that fades out before it reaches an edge. The shadow is a
+   drop-shadow on the figure, so it fades together with the screen. */
+.lp-float--fade { filter: drop-shadow(0 3rem 4.4rem rgba(16, 36, 31, 0.13)) drop-shadow(0 0.5rem 1.2rem rgba(16, 36, 31, 0.05)); }
+.lp-float--fade .lp-float__in {
+  box-shadow: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 var(--lp-fade, 66%), rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 var(--lp-fade, 66%), rgba(0, 0, 0, 0) 100%);
+}
+.lp-float--fade .lp-float__in::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 0.1rem rgba(16, 36, 31, 0.08);
+  pointer-events: none;
+}
+/* a small piece lying on top of a screen */
+.lp-float--near { z-index: 2; }
+.lp-float--near .lp-float__in { border-radius: 2.2rem; box-shadow: var(--lp-shadow-near); }
+
+.lp-eyebrow {
+  font-weight: 500;
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.02rem;
+  color: var(--lp-deep);
+}
+
+.lp-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  height: 5.8rem;
+  padding: 0 3rem;
+  border-radius: 99rem;
+  background: var(--lp-ink);
+  color: #fcfbf8;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: -0.02rem;
+  white-space: nowrap;
+  transition: background-color 0.25s var(--ease), transform 0.25s var(--ease-out);
+}
+.lp-pill:hover { background: var(--lp-deep); transform: translateY(-0.1rem); }
+.lp-pill svg { width: 1.8rem; height: 1.8rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.25s var(--ease-out); }
+.lp-pill:hover svg { transform: translateX(0.3rem); }
+
+.lp-link {
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: -0.02rem;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 0.45rem;
+  text-decoration-thickness: 0.08rem;
+  white-space: nowrap;
+  transition: text-underline-offset 0.2s var(--ease);
+}
+.lp-link:hover { text-underline-offset: 0.7rem; }
+
+.lp :focus-visible { outline: 0.2rem solid var(--lp-deep); outline-offset: 0.4rem; border-radius: 0.6rem; }
+
+/* ════════════════════ 1 · HERO : the question, and the app answering it ════════════════════ */
+.lp-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+  margin-top: 7rem;
+  padding: 0 var(--gut-wide);
+}
+.lp-hero__text {
+  flex: 0 1 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.lp-hero__title {
+  margin-top: 2.6rem;
+  font-weight: 500;
+  font-size: 7.4rem;
+  line-height: 7.5rem;
+  letter-spacing: -0.26rem;
+  color: var(--black);
+  text-wrap: balance;
+}
+.lp-hero__lead {
+  margin-top: 3.6rem;
+  max-width: 54rem;
+  font-weight: 400;
+  font-size: 2.3rem;
+  line-height: 3.3rem;
+  letter-spacing: -0.02rem;
+  color: #1a1a1a;
+  text-wrap: pretty;
+}
+.lp-hero__cta {
+  display: flex;
+  align-items: center;
+  gap: 3.4rem;
+  margin-top: 4.6rem;
+}
+
+/* the stage: a friend's round in the feed, someone following you, the Følg button */
+.lp-stage {
+  position: relative;
+  flex: 0 0 66rem;
+  height: 86rem;
+}
+.lp-stage__feed { top: 0; right: 0; width: 44rem; height: 86rem; }
+.lp-stage__follow { top: -2.6rem; left: 2.4rem; width: 36rem; }
+.lp-stage__profile { top: 33rem; left: 0; width: 36rem; }
+
+/* one calm entrance, then everything stands still */
+@keyframes lpRise { from { opacity: 0; transform: translateY(3.2rem); } to { opacity: 1; transform: none; } }
+@keyframes lpLand { from { opacity: 0; transform: translateY(2rem) scale(0.96); } to { opacity: 1; transform: none; } }
+.js .lp-stage__feed { animation: lpRise 0.95s var(--ease-out) 0.1s both; }
+.js .lp-stage__follow { animation: lpLand 0.7s var(--ease-out) 0.75s both; }
+.js .lp-stage__profile { animation: lpLand 0.7s var(--ease-out) 1.05s both; }
+
+/* ════════════════════ 2 · STEPS : the deep green plane ════════════════════ */
+.lp-steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8rem;
+  margin: 9rem var(--gut) 0;
+  padding: 11rem 9.4rem 10rem;
+  border-radius: 3rem;
+  background: var(--lp-deep);
+  color: var(--white);
+}
+.lp-steps__head { flex: 0 1 46rem; position: sticky; top: 6rem; }
+.lp-steps__title {
+  font-weight: 500;
+  font-size: 5.6rem;
+  line-height: 5.9rem;
+  letter-spacing: -0.17rem;
+  text-wrap: balance;
+}
+.lp-steps__lead {
+  margin-top: 3rem;
+  max-width: 38rem;
+  font-size: 2.2rem;
+  line-height: 3.1rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+.lp-steps__list {
+  flex: 0 1 68rem;
+  list-style: none;
+  counter-reset: lpstep;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.18);
+}
+.lp-steps__list li {
+  counter-increment: lpstep;
+  display: grid;
+  grid-template-columns: 8.4rem 1fr;
+  align-items: baseline;
+  padding: 3rem 0 3.2rem;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.18);
+  font-size: 2.3rem;
+  line-height: 3.3rem;
+  letter-spacing: -0.02rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+.lp-steps__list li::before {
+  content: counter(lpstep, decimal-leading-zero);
+  font-weight: 500;
+  font-size: 2.3rem;
+  font-variant-numeric: tabular-nums;
+  color: rgba(255, 255, 255, 0.46);
+}
+
+/* ════════════════════ 3 · MOMENTS : one feature at a time, in the white ════════════════════ */
+.lp-moment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+  margin-top: 17rem;
+  padding: 0 var(--gut-wide);
+}
+.lp-moment--flip { flex-direction: row-reverse; }
+.lp-moment__text { flex: 0 1 52rem; }
+.lp-moment__title {
+  font-weight: 500;
+  font-size: 5.2rem;
+  line-height: 5.6rem;
+  letter-spacing: -0.15rem;
+  color: var(--black);
+  text-wrap: balance;
+}
+.lp-moment__p {
+  margin-top: 3rem;
+  font-size: 2.3rem;
+  line-height: 3.4rem;
+  letter-spacing: -0.02rem;
+  color: #1a1a1a;
+  text-wrap: pretty;
+}
+.lp-moment__visual { position: relative; flex: 0 0 64rem; }
+
+/* a friend's round, and a friend asking about it */
+.lp-moment__visual--round { height: 84rem; }
+.lp-round__card { top: 0; left: 15rem; width: 42rem; height: 84rem; --lp-fade: 72%; }
+.lp-round__comment { top: 38rem; left: 0; width: 37rem; }
+
+/* live score: the hole you are on, and the standings on top */
+.lp-moment__visual--live { height: 76rem; }
+.lp-live__hole { top: 0; left: 0; width: 42rem; height: 64rem; }
+.lp-live__board { top: 34rem; left: 21rem; width: 43rem; }
+.lp-live__board .lp-float__in { border-radius: 3rem; }
+
+/* ════════════════════ 4 · GROUP : the paper plane ════════════════════ */
+.lp-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+  margin: 17rem var(--gut) 0;
+  padding: 10rem 9.4rem 0 4.9rem;
+  border-radius: 3rem;
+  background: var(--lp-paper);
+  overflow: hidden;
+}
+.lp-group .lp-moment__text { padding-bottom: 10rem; padding-left: 4.5rem; }
+.lp-group__visual { position: relative; flex: 0 0 46rem; height: 74rem; }
+.lp-group__feed { position: relative; width: 46rem; height: 74rem; }
+.lp-group__feed { --lp-fade: 72%; }
+
+/* ════════════════════ 5 · PROOF : a photo, and the one number ════════════════════ */
+.lp-proof {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  margin-top: 17rem;
+  padding: 0 var(--gut-wide);
+}
+.lp-proof__photo {
+  flex: 0 0 52rem;
+  margin: 0;
+  aspect-ratio: 4 / 5;
+  border-radius: 3rem;
+  overflow: hidden;
+  background: var(--green-card);
+}
+.lp-proof__photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.lp-proof__text { flex: 1 1 0; display: flex; flex-direction: column; align-items: flex-start; }
+.lp-proof__title {
+  font-weight: 500;
+  font-size: 6.8rem;
+  line-height: 7rem;
+  letter-spacing: -0.23rem;
+  color: var(--black);
+  text-wrap: balance;
+}
+.lp-proof__p {
+  margin-top: 3.4rem;
+  max-width: 50rem;
+  font-size: 2.3rem;
+  line-height: 3.4rem;
+  letter-spacing: -0.02rem;
+  color: #1a1a1a;
+}
+.lp-proof .lp-pill { margin-top: 4.4rem; }
+
+/* ════════════════════ 7 · READ NEXT : quiet links under the questions ════════════════════ */
+.lp-related {
+  display: flex;
+  align-items: baseline;
+  gap: 5rem;
+  margin-top: 9rem;
+  padding: 0 var(--gut);
+}
+.lp-related__label {
+  flex: 0 0 auto;
+  font-weight: 500;
+  font-size: 1.9rem;
+  color: var(--lp-deep);
+}
+.lp-related ul { list-style: none; display: flex; flex-wrap: wrap; gap: 1.4rem 4rem; }
+.lp-related a {
+  font-weight: 500;
+  font-size: 2.1rem;
+  letter-spacing: -0.02rem;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 0.45rem;
+  text-decoration-thickness: 0.08rem;
+  text-decoration-color: rgba(0, 0, 0, 0.3);
+  transition: text-decoration-color 0.2s var(--ease);
+}
+.lp-related a:hover { text-decoration-color: var(--black); }
+
+/* ════════════════════ TABLET & DOWN : one column ════════════════════ */
+@media (max-width: 1024px) {
+  .lp-hero { flex-direction: column; align-items: flex-start; gap: 7rem; margin-top: 6rem; }
+  .lp-hero__text { flex: 0 0 auto; max-width: 66rem; }
+  .lp-hero__title { font-size: 7rem; line-height: 7.1rem; }
+  .lp-stage { flex: 0 0 auto; width: 64rem; max-width: 100%; height: 84rem; align-self: center; }
+  .lp-stage__feed { height: 84rem; }
+
+  .lp-steps { flex-direction: column; gap: 6rem; padding: 8rem 6rem 7rem; }
+  .lp-steps__head { position: static; flex: 0 0 auto; max-width: 60rem; }
+  .lp-steps__list { flex: 0 0 auto; width: 100%; }
+
+  .lp-moment, .lp-moment--flip { flex-direction: column; align-items: flex-start; gap: 7rem; margin-top: 13rem; }
+  .lp-moment__text { flex: 0 0 auto; max-width: 64rem; }
+  .lp-moment__visual { flex: 0 0 auto; width: 64rem; max-width: 100%; align-self: center; }
+
+  .lp-group { flex-direction: column; align-items: flex-start; gap: 6rem; margin-top: 13rem; padding: 8rem 6rem 0; }
+  .lp-group .lp-moment__text { padding: 0; }
+  .lp-group__visual { flex: 0 0 auto; align-self: center; }
+
+  .lp-proof { flex-direction: column; align-items: flex-start; gap: 6rem; margin-top: 13rem; }
+  .lp-proof__photo { flex: 0 0 auto; width: 100%; max-width: 60rem; }
+
+  .lp-related { flex-direction: column; gap: 2.4rem; }
+}
+
+/* ════════════════════ MOBILE ════════════════════ */
+@media (max-width: 600px) {
+  .lp-eyebrow { font-size: 1.6rem; }
+  .lp-pill { height: 5.2rem; padding: 0 2.4rem; font-size: 1.8rem; }
+  .lp-link { font-size: 1.8rem; }
+
+  .lp-hero { margin-top: 4.4rem; gap: 5.4rem; }
+  .lp-hero__title { margin-top: 1.8rem; font-size: 4.3rem; line-height: 4.5rem; letter-spacing: -0.13rem; }
+  .lp-hero__lead { margin-top: 2.4rem; font-size: 1.9rem; line-height: 2.8rem; }
+  .lp-hero__cta { margin-top: 3.2rem; gap: 1.8rem 2.6rem; flex-wrap: wrap; }
+
+  .lp-float__in { border-radius: 2.2rem; }
+  .lp-float--near .lp-float__in { border-radius: 1.6rem; }
+
+  .lp-stage { width: 100%; height: 60rem; margin-top: 1rem; }
+  .lp-stage__feed { width: 29.5rem; height: 60rem; }
+  .lp-stage__follow { top: -2.2rem; left: 0; width: 28rem; }
+  .lp-stage__profile { top: 23rem; left: 0; width: 26rem; }
+
+  .lp-steps { margin-top: 6rem; padding: 5.4rem 3rem 4.6rem; gap: 4.4rem; border-radius: 2.2rem; }
+  .lp-steps__title { font-size: 3.4rem; line-height: 3.7rem; letter-spacing: -0.09rem; }
+  .lp-steps__lead { margin-top: 2rem; font-size: 1.8rem; line-height: 2.6rem; }
+  .lp-steps__list li { grid-template-columns: 4.6rem 1fr; padding: 2.2rem 0 2.4rem; font-size: 1.8rem; line-height: 2.7rem; }
+  .lp-steps__list li::before { font-size: 1.6rem; }
+
+  .lp-moment, .lp-moment--flip { margin-top: 9rem; gap: 5rem; }
+  .lp-moment__title { font-size: 3.4rem; line-height: 3.7rem; letter-spacing: -0.09rem; }
+  .lp-moment__p { margin-top: 2rem; font-size: 1.9rem; line-height: 2.9rem; }
+  .lp-moment__visual { width: 100%; }
+
+  .lp-moment__visual--round { height: 54rem; }
+  .lp-round__card { left: auto; right: 0; width: 29rem; height: 54rem; }
+  .lp-round__comment { top: 26rem; width: 25rem; }
+
+  .lp-moment__visual--live { height: 55rem; }
+  .lp-live__hole { width: 27rem; height: 44rem; }
+  .lp-live__board { top: 24rem; left: auto; right: 0; width: 28rem; }
+  .lp-live__board .lp-float__in { border-radius: 2.2rem; }
+
+  .lp-group { margin-top: 9rem; padding: 5.4rem 3rem 0; gap: 4.4rem; border-radius: 2.2rem; }
+  .lp-group__visual, .lp-group__feed { width: 30.6rem; height: 50rem; }
+
+  .lp-proof { margin-top: 9rem; gap: 4.4rem; }
+  .lp-proof__photo { border-radius: 2.2rem; }
+  .lp-proof__title { font-size: 3.9rem; line-height: 4.1rem; letter-spacing: -0.12rem; }
+  .lp-proof__p { margin-top: 2.2rem; font-size: 1.9rem; line-height: 2.9rem; }
+  .lp-proof .lp-pill { margin-top: 3rem; }
+
+  .lp-related { margin-top: 6rem; }
+  .lp-related ul { flex-direction: column; gap: 1.6rem; }
+  .lp-related a { font-size: 1.9rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .lp-stage__feed, .js .lp-stage__follow, .js .lp-stage__profile { animation: none; }
+  .lp-pill, .lp-pill svg { transition: none; }
+}
