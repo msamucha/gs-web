@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  GOLFSOCIAL — BLOG POST TEMPLATE                                  ║
+  ║                                                                  ║
+  ║  To publish a new blog post: copy this file, rename it to your   ║
+  ║  url slug (e.g. how-to-lower-your-handicap.html), then change    ║
+  ║  ONLY the things marked « EDIT ».  Everything else — the design, ║
+  ║  the header, the footer, the stylesheets — stays exactly as is.  ║
+  ║                                                                  ║
+  ║  The article text lives between the CONTENT START and CONTENT    ║
+  ║  END markers below. Inside it you only ever write plain          ║
+  ║  content tags; the design is applied automatically:              ║
+  ║                                                                  ║
+  ║    <p class="lead">…</p>   first / intro paragraph (bigger)      ║
+  ║    <p>…</p>                a normal paragraph                    ║
+  ║    <h2>…</h2>              a section heading                     ║
+  ║    <h3>…</h3>              a smaller sub-heading                 ║
+  ║    <ul><li>…</li></ul>     a bullet list (use <ol> for numbers)  ║
+  ║    <blockquote>…</blockquote>   a pull-quote                     ║
+  ║    <figure><img src="images/your-image.webp" alt="…">           ║
+  ║      <figcaption>…</figcaption></figure>   an image             ║
+  ║    <hr>                    a divider line                        ║
+  ║    <strong>…</strong> / <em>…</em> / <a href="…">…</a>          ║
+  ║                                                                  ║
+  ║  Never add inline styles, <style> tags or new classes.          ║
+  ║  See BLOG-GUIDE.md for the full guide + a ready-made prompt.     ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="da" data-lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png?v=2" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=2" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#123f36" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEBPZS1TT2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XEBPZS1TT2');
+  </script>
+
+  <!-- « EDIT » page title + description for search engines / social -->
+  <title>Kan jeg følge mine venners golfrunder, gratis? · Golfsocial</title>
+  <meta name="description" content="Ja. I Golfsocial følger du dine venners golfrunder i et feed, kommenterer og skriver sammen i grupper. Sådan gør du, trin for trin, og svar på de mest stillede spørgsmål." />
+
+  <link rel="canonical" href="https://golfsocial.club/foelg-dine-venners-golfrunder" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Golfsocial" />
+  <meta property="og:locale" content="da_DK" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="Kan jeg følge mine venners golfrunder, gratis? · Golfsocial" />
+  <meta property="og:description" content="Ja. I Golfsocial følger du dine venners golfrunder i et feed, kommenterer og skriver sammen i grupper. Sådan gør du, trin for trin, og svar på de mest stillede spørgsmål." />
+  <meta property="og:url" content="https://golfsocial.club/foelg-dine-venners-golfrunder" />
+  <meta property="og:image" content="https://golfsocial.club/images/og-social-benefits.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kan jeg følge mine venners golfrunder, gratis? · Golfsocial" />
+  <meta name="twitter:description" content="Ja. I Golfsocial følger du dine venners golfrunder i et feed, kommenterer og skriver sammen i grupper. Sådan gør du, trin for trin, og svar på de mest stillede spørgsmål." />
+  <meta name="twitter:image" content="https://golfsocial.club/images/og-social-benefits.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://golfsocial.club/foelg-dine-venners-golfrunder",
+    "headline": "Kan jeg følge mine venners golfrunder, gratis?",
+    "description": "Ja. I Golfsocial følger du dine venners golfrunder i et feed, kommenterer og skriver sammen i grupper. Sådan gør du, trin for trin, og svar på de mest stillede spørgsmål.",
+    "image": "https://golfsocial.club/images/og-social-benefits.png",
+    "inLanguage": "da-DK",
+    "datePublished": "2026-11-18",
+    "dateModified": "2026-11-18",
+    "author": { "@type": "Organization", "name": "Golfsocial" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Golfsocial",
+      "logo": { "@type": "ImageObject", "url": "https://golfsocial.club/images/logo.svg" }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://golfsocial.club/" },
+      { "@type": "ListItem", "position": 2, "name": "Kan jeg følge mine venners golfrunder, gratis?", "item": "https://golfsocial.club/foelg-dine-venners-golfrunder" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Hvilken app kan jeg bruge til at føre scorekort og dele runder med mine venner?", "acceptedAnswer": { "@type": "Answer", "text": "Golfsocial. Du fører scoren live under runden, og bagefter kommer runden i feedet, hvor dine venner kan se den og kommentere. Det er gratis at spille med vennerne." } },
+      { "@type": "Question", "name": "Hvordan ser jeg, hvad mine venner har spillet?", "acceptedAnswer": { "@type": "Answer", "text": "Åbn feedet i Golfsocial. Her ligger dine venners runder med bane og score, og du kan åbne hver runde og se scorekortet hul for hul." } },
+      { "@type": "Question", "name": "Kan man kommentere på hinandens golfrunder?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Du kan skrive en kommentar på en vens runde i feedet, og i en gruppe kan I skrive sammen i tråde, for eksempel når I skal aftale næste runde." } },
+      { "@type": "Question", "name": "Hvordan holder vi styr på scoren, når vi spiller sammen?", "acceptedAnswer": { "@type": "Answer", "text": "Før scoren live i Golfsocial. I kan spille stableford eller slagspil, appen viser stillingen undervejs, og slutstillingen ligger klar, når I er færdige." } },
+      { "@type": "Question", "name": "Kan mine runder med vennerne tælle til mit DGU-handicap?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Vælg en medspiller som markør, når runden er slut. Når markøren har godkendt runden, tæller den med i dit DGU-handicap, så længe I har spillet en HCP-reguleret bane." } },
+      { "@type": "Question", "name": "Er Golfsocial lavet til golfere i Danmark?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Golfsocial er en dansk golf-app, og dine runder bliver registreret til dit handicap gennem DGU." } },
+      { "@type": "Question", "name": "Hvad er en social golf-app?", "acceptedAnswer": { "@type": "Answer", "text": "En golf-app, hvor vennerne er en del af spillet. I Golfsocial fører du scoren, følger dine venners runder i et feed og skriver sammen i grupper." } },
+      { "@type": "Question", "name": "Hvad koster det?", "acceptedAnswer": { "@type": "Answer", "text": "Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet." } },
+      { "@type": "Question", "name": "Hvor mange bruger Golfsocial?", "acceptedAnswer": { "@type": "Answer", "text": "Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026)." } }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=12-42" />
+  <link rel="stylesheet" href="article.css?v=12" />
+</head>
+<body>
+
+  <!-- ════════════════════ HEADER (do not edit) ════════════════════ -->
+  <header class="masthead">
+    <a class="masthead__brand" href="/" aria-label="Golfsocial">
+      <img class="masthead__logo" src="images/logo.svg" alt="Golfsocial" />
+    </a>
+    <nav class="masthead__nav" aria-label="Top">
+      <a class="masthead__social" href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="17" cy="7" r="1.05" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.facebook.com/1107518079119264" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M12.3 16.6V10.2c0-1.3.8-2.1 2.1-2.1h.5M10.1 11.8h4.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M7.4 10.6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="7.4" cy="7.9" r="0.6" fill="currentColor"/>
+          <path d="M11.1 16.6v-6m0 2.5c0-1.6 1-2.5 2.3-2.5 1.2 0 2.1.9 2.1 2.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social masthead__social--x" href="https://x.com/golfsocialclub" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <!-- ════════════════════ ARTICLE ════════════════════ -->
+  <article class="article article--text">
+
+    <!-- ── header : « EDIT » eyebrow + title + meta (text-led hero, no image) ── -->
+    <header class="article__head">
+      <div class="article__head-text">
+        <p class="article__eyebrow" data-da="Golf med vennerne" data-en="Golf with friends">Golf med vennerne</p>
+        <h1 class="article__title" data-da="Kan jeg følge mine venners golfrunder, gratis?" data-en="Can I follow my friends’ golf rounds, for free?">Kan jeg følge mine venners golfrunder, gratis?</h1>
+        <p class="article__meta" data-da="~4 min læsning" data-en="~4 min read">~4 min læsning</p>
+      </div>
+    </header>
+
+    <div class="article__body">
+      <!-- ╭───────────────────────── CONTENT START ─────────────────────────╮ -->
+
+      <p class="lead" data-da="Ja. I Golfsocial følger du dine venners golfrunder i et feed, hvor I kan kommentere på hinandens runder, og I kan skrive sammen i grupper. Golfsocial er en dansk social golf-app, og den er gratis at spille med vennerne." data-en="Yes. In Golfsocial you follow your friends’ golf rounds in a feed, where you can comment on each other’s rounds, and you can chat together in groups. Golfsocial is a Danish social golf app, and it is free to play with your friends.">Ja. I Golfsocial følger du dine venners golfrunder i et feed, hvor I kan kommentere på hinandens runder, og I kan skrive sammen i grupper. Golfsocial er en dansk social golf-app, og den er gratis at spille med vennerne.</p>
+
+      <p data-da="Her er, hvordan det virker, trin for trin, fra du henter appen, til din første runde ligger i feedet." data-en="Here is how it works, step by step, from downloading the app to your first round in the feed.">Her er, hvordan det virker, trin for trin, fra du henter appen, til din første runde ligger i feedet.</p>
+
+      <!-- « EDIT » full-bleed image: two friends on the fairway -->
+      <figure class="bleed">
+        <img src="images/venner-fairway.webp" alt="Two golfers pulling their trolleys across a fairway on a sunny day, one watching his shot" />
+      </figure>
+
+      <h2 data-da="Sådan følger du dine venners runder i Golfsocial" data-en="How to follow your friends’ rounds in Golfsocial">Sådan følger du dine venners runder i Golfsocial</h2>
+      <ol>
+        <li data-da="Hent Golfsocial i App Store, og opret dig." data-en="Download Golfsocial from the App Store and create your profile.">Hent Golfsocial i App Store, og opret dig.</li>
+        <li data-da="Har du et DGU-handicap, forbinder du din konto med DGU, så dine runder kan tælle med i dit handicap." data-en="If you have a DGU handicap, connect your account to the Danish Golf Union, so your rounds can count towards your handicap.">Har du et DGU-handicap, forbinder du din konto med DGU, så dine runder kan tælle med i dit handicap.</li>
+        <li data-da="Find dine venner i appen, eller saml dem i en gruppe. Når nogen i gruppen lægger en runde op, ser resten af gruppen den." data-en="Find your friends in the app, or gather them in a group. When someone in the group posts a round, the rest of the group sees it.">Find dine venner i appen, eller saml dem i en gruppe. Når nogen i gruppen lægger en runde op, ser resten af gruppen den.</li>
+        <li data-da="Start en runde, og før scoren live, hul for hul. I kan spille stableford eller slagspil, og alle i bolden kan se stillingen undervejs." data-en="Start a round and keep score live, hole by hole. You can play Stableford or stroke play, and everyone in the group can see the standings as you go.">Start en runde, og før scoren live, hul for hul. I kan spille stableford eller slagspil, og alle i bolden kan se stillingen undervejs.</li>
+        <li data-da="Når runden er slut, vælger du en af dine medspillere som markør. Når markøren har godkendt runden, tæller den med i dit DGU-handicap." data-en="When the round is over, pick one of your playing partners as your marker. Once the marker has approved the round, it counts towards your DGU handicap.">Når runden er slut, vælger du en af dine medspillere som markør. Når markøren har godkendt runden, tæller den med i dit DGU-handicap.</li>
+        <li data-da="Runden kommer i feedet, hvor dine venner kan se scoren og skrive en kommentar. Du kan også lægge runden i en af dine grupper." data-en="The round lands in the feed, where your friends can see the score and leave a comment. You can also post the round to one of your groups.">Runden kommer i feedet, hvor dine venner kan se scoren og skrive en kommentar. Du kan også lægge runden i en af dine grupper.</li>
+      </ol>
+
+      <!-- « EDIT » full-bleed image: a friend’s round with comments -->
+      <figure class="bleed">
+        <img src="images/golfkoerekort-inside.webp" alt="A round in Golfsocial with likes and comments, the scorecard for all 18 holes, a breakdown of birdies, pars and bogeys, the players in the group and a field to add a comment" />
+      </figure>
+
+      <h2 data-da="Hvad ser du, når en ven har spillet?" data-en="What do you see when a friend has played?">Hvad ser du, når en ven har spillet?</h2>
+      <p data-da="I feedet ser du dine venners runder med bane og score. Du kan åbne en runde og se scorekortet hul for hul, og du kan skrive en kommentar. Har I spillet sammen, ser du også, hvordan det gik for de andre i bolden." data-en="In the feed you see your friends’ rounds with the course and the score. You can open a round to see the scorecard hole by hole, and you can leave a comment. If you played together, you also see how it went for the others in the group.">I feedet ser du dine venners runder med bane og score. Du kan åbne en runde og se scorekortet hul for hul, og du kan skrive en kommentar. Har I spillet sammen, ser du også, hvordan det gik for de andre i bolden.</p>
+
+      <h2 data-da="Hvordan holder I styr på scoren, når I spiller sammen?" data-en="How do you keep track of the score when you play together?">Hvordan holder I styr på scoren, når I spiller sammen?</h2>
+      <p data-da="I fører scoren live i Golfsocial, hul for hul, og appen holder styr på stillingen for jer. Spiller I stableford, regner appen pointene ud fra jeres handicap, så I kan spille mod hinanden, selvom I ikke har samme handicap. Når runden er slut, ligger slutstillingen klar." data-en="You keep score live in Golfsocial, hole by hole, and the app keeps track of the standings for you. If you play Stableford, the app works out the points from your handicaps, so you can play each other even if your handicaps differ. When the round is over, the final standings are ready.">I fører scoren live i Golfsocial, hul for hul, og appen holder styr på stillingen for jer. Spiller I stableford, regner appen pointene ud fra jeres handicap, så I kan spille mod hinanden, selvom I ikke har samme handicap. Når runden er slut, ligger slutstillingen klar.</p>
+      <!-- « EDIT » full-bleed image: live score with friends -->
+      <figure class="bleed">
+        <img src="images/stableford-live-score.webp" alt="Three Golfsocial screens from a Stableford round at Værløse Golfklub: scores and points per player on hole 3, the live standings after hole 18, and the final standings" />
+      </figure>
+
+      <h2 data-da="Saml de faste i en gruppe" data-en="Gather your regulars in a group">Saml de faste i en gruppe</h2>
+      <p data-da="Mange golfere spiller i faste socialgrupper i klubben eller med de samme venner hver uge. I Golfsocial kan I samle gruppen ét sted: runderne kommer i gruppens feed, og I kan skrive sammen, når I skal aftale næste runde." data-en="Many golfers play in regular social groups at their club, or with the same friends every week. In Golfsocial you can gather the group in one place: the rounds land in the group’s feed, and you can chat when you plan the next round.">Mange golfere spiller i faste socialgrupper i klubben eller med de samme venner hver uge. I Golfsocial kan I samle gruppen ét sted: runderne kommer i gruppens feed, og I kan skrive sammen, når I skal aftale næste runde.</p>
+      <!-- « EDIT » full-bleed image: a group feed -->
+      <figure class="bleed">
+        <img src="images/social-group-feed.webp" alt="A Golfsocial group called Tuesday Golfers: the group feed with a post asking who is up for a Saturday round, reactions and replies from friends, and a post about a hole in one" />
+      </figure>
+
+      <p data-da="Omkring 600 golfere har logget næsten 800 runder i Golfsocial." data-en="About 600 golfers have logged almost 800 rounds in Golfsocial.">Omkring 600 golfere har logget næsten 800 runder i Golfsocial.</p>
+      <p><a href="https://apps.apple.com/app/apple-store/id6743446900?pt=125766814&ct=web_foelg_venner&mt=8" target="_blank" rel="noopener" data-da="Hent Golfsocial i App Store" data-en="Get Golfsocial on the App Store">Hent Golfsocial i App Store</a></p>
+
+      <!-- « EDIT » full-bleed image: friends waiting on the course -->
+      <figure class="bleed">
+        <img src="images/venner-trae.webp" alt="Two golfers with their trolleys waiting by the edge of the fairway, next to a large tree and long grass" />
+      </figure>
+
+      <h2 data-da="Spørgsmål og svar" data-en="Questions and answers">Spørgsmål og svar</h2>
+
+      <h3 data-da="Hvilken app kan jeg bruge til at føre scorekort og dele runder med mine venner?" data-en="Which app can I use to keep a scorecard and share rounds with my friends?">Hvilken app kan jeg bruge til at føre scorekort og dele runder med mine venner?</h3>
+      <p data-da="Golfsocial. Du fører scoren live under runden, og bagefter kommer runden i feedet, hvor dine venner kan se den og kommentere. Det er gratis at spille med vennerne." data-en="Golfsocial. You keep score live during the round, and afterwards the round lands in the feed, where your friends can see it and comment. It is free to play with your friends.">Golfsocial. Du fører scoren live under runden, og bagefter kommer runden i feedet, hvor dine venner kan se den og kommentere. Det er gratis at spille med vennerne.</p>
+
+      <h3 data-da="Hvordan ser jeg, hvad mine venner har spillet?" data-en="How do I see what my friends have played?">Hvordan ser jeg, hvad mine venner har spillet?</h3>
+      <p data-da="Åbn feedet i Golfsocial. Her ligger dine venners runder med bane og score, og du kan åbne hver runde og se scorekortet hul for hul." data-en="Open the feed in Golfsocial. Your friends’ rounds are there with the course and the score, and you can open each round to see the scorecard hole by hole.">Åbn feedet i Golfsocial. Her ligger dine venners runder med bane og score, og du kan åbne hver runde og se scorekortet hul for hul.</p>
+
+      <h3 data-da="Kan man kommentere på hinandens golfrunder?" data-en="Can you comment on each other’s golf rounds?">Kan man kommentere på hinandens golfrunder?</h3>
+      <p data-da="Ja. Du kan skrive en kommentar på en vens runde i feedet, og i en gruppe kan I skrive sammen i tråde, for eksempel når I skal aftale næste runde." data-en="Yes. You can comment on a friend’s round in the feed, and in a group you can chat in threads, for example when you plan the next round.">Ja. Du kan skrive en kommentar på en vens runde i feedet, og i en gruppe kan I skrive sammen i tråde, for eksempel når I skal aftale næste runde.</p>
+
+      <h3 data-da="Hvordan holder vi styr på scoren, når vi spiller sammen?" data-en="How do we keep track of the score when we play together?">Hvordan holder vi styr på scoren, når vi spiller sammen?</h3>
+      <p data-da="Før scoren live i Golfsocial. I kan spille stableford eller slagspil, appen viser stillingen undervejs, og slutstillingen ligger klar, når I er færdige." data-en="Keep score live in Golfsocial. You can play Stableford or stroke play, the app shows the standings as you go, and the final standings are ready when you finish.">Før scoren live i Golfsocial. I kan spille stableford eller slagspil, appen viser stillingen undervejs, og slutstillingen ligger klar, når I er færdige.</p>
+
+      <h3 data-da="Kan mine runder med vennerne tælle til mit DGU-handicap?" data-en="Can my rounds with friends count towards my DGU handicap?">Kan mine runder med vennerne tælle til mit DGU-handicap?</h3>
+      <p data-da="Ja. Vælg en medspiller som markør, når runden er slut. Når markøren har godkendt runden, tæller den med i dit DGU-handicap, så længe I har spillet en HCP-reguleret bane." data-en="Yes. Pick a playing partner as your marker when the round is over. Once the marker has approved it, the round counts towards your DGU handicap, as long as you played a handicap-rated course.">Ja. Vælg en medspiller som markør, når runden er slut. Når markøren har godkendt runden, tæller den med i dit DGU-handicap, så længe I har spillet en HCP-reguleret bane.</p>
+
+      <h3 data-da="Er Golfsocial lavet til golfere i Danmark?" data-en="Is Golfsocial made for golfers in Denmark?">Er Golfsocial lavet til golfere i Danmark?</h3>
+      <p data-da="Ja. Golfsocial er en dansk golf-app, og dine runder bliver registreret til dit handicap gennem DGU." data-en="Yes. Golfsocial is a Danish golf app, and your rounds are registered to your handicap through the Danish Golf Union.">Ja. Golfsocial er en dansk golf-app, og dine runder bliver registreret til dit handicap gennem DGU.</p>
+
+      <h3 data-da="Hvad er en social golf-app?" data-en="What is a social golf app?">Hvad er en social golf-app?</h3>
+      <p data-da="En golf-app, hvor vennerne er en del af spillet. I Golfsocial fører du scoren, følger dine venners runder i et feed og skriver sammen i grupper." data-en="A golf app where your friends are part of the game. In Golfsocial you keep score, follow your friends’ rounds in a feed and chat in groups.">En golf-app, hvor vennerne er en del af spillet. I Golfsocial fører du scoren, følger dine venners runder i et feed og skriver sammen i grupper.</p>
+
+      <h3 data-da="Hvad koster det?" data-en="What does it cost?">Hvad koster det?</h3>
+      <p data-da="Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet." data-en="Golfsocial is free to play with your friends: live score, the game formats, the groups and the feed.">Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet.</p>
+
+      <h3 data-da="Hvor mange bruger Golfsocial?" data-en="How many people use Golfsocial?">Hvor mange bruger Golfsocial?</h3>
+      <p data-da="Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026)." data-en="About 600 golfers have logged almost 800 rounds in Golfsocial (November 2026).">Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026).</p>
+
+
+      <div class="article__cta">
+        <p class="article__cta-kicker" data-da="Golfsocial-appen" data-en="The Golfsocial app">Golfsocial-appen</p>
+        <h2 data-da="Dit golfhjem" data-en="Your golf home">Dit golfhjem</h2>
+        <p data-da="Registrér dine runder til dit DGU-handicap, følg din udvikling, og se vennernes runder i feedet. Gratis at spille med vennerne, på iPhone og Android." data-en="Register your rounds to your DGU handicap, follow your progress, and see your friends’ rounds in the feed. Free to play with your friends, on iPhone and Android.">Registrér dine runder til dit DGU-handicap, følg din udvikling, og se vennernes runder i feedet. Gratis at spille med vennerne, på iPhone og Android.</p>
+        <div class="badges article__cta-badges">
+          <a href="https://apps.apple.com/app/apple-store/id6743446900?pt=125766814&ct=web_download&mt=8" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store"><svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#FFFFFF"/><g fill="#16221F"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg></a>
+          <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production&referrer=utm_source%3Dgolfsocial.club%26utm_medium%3Dwebsite%26utm_campaign%3Dweb_download" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play"><svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#FFFFFF"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#16221F"/></g><g fill="#16221F"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg></a>
+        </div>
+      </div>
+
+      <!-- « EDIT » closing download banner (Figma node 249:324) -->
+      <div class="appbanner">
+        <img loading="lazy" decoding="async" class="appbanner__bg" src="images/app-banner.webp" alt="" />
+        <img loading="lazy" decoding="async" class="appbanner__logo" src="images/logo.svg" alt="Golfsocial" />
+        <div class="badges appbanner__badges">
+          <a href="https://apps.apple.com/app/apple-store/id6743446900?pt=125766814&ct=web_download&mt=8" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store"><svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#FFFFFF"/><g fill="#16221F"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg></a>
+          <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production&referrer=utm_source%3Dgolfsocial.club%26utm_medium%3Dwebsite%26utm_campaign%3Dweb_download" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play"><svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#FFFFFF"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#16221F"/></g><g fill="#16221F"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg></a>
+        </div>
+      <div class="article__related">
+        <p class="article__related-label" data-da="Læs også" data-en="Read next">Læs også</p>
+        <ul>
+          <li><a href="/grupper" data-da="Golf med gruppen, samlet ét sted" data-en="Golf with your group, in one place">Golf med gruppen, samlet ét sted</a></li>
+          <li><a href="/del-dine-runder" data-da="Del din runde" data-en="Share your round">Del din runde</a></li>
+          <li><a href="/stableford-forklaret" data-da="Stableford forklaret" data-en="Stableford explained">Stableford forklaret</a></li>
+          <li><a href="/saadan-registrerer-du-en-taellende-runde" data-da="Sådan registrerer du en tællende runde" data-en="How to register a counting round">Sådan registrerer du en tællende runde</a></li>
+          <li><a href="/5-surprising-social-benefits-of-playing-golf" data-da="5 overraskende sociale fordele ved at spille golf" data-en="5 surprising social benefits of playing golf">5 overraskende sociale fordele ved at spille golf</a></li>
+        </ul>
+      </div>
+
+      <!-- ╰────────────────────────── CONTENT END ──────────────────────────╯ -->
+    </div>
+
+    <!-- ── back link (do not edit) ── -->
+    <div class="article__foot">
+      <a class="article__back" href="/alle-artikler" data-da="Tilbage til alle artikler" data-en="
+        
+        Back to all articles
+      ">Tilbage til alle artikler</a>
+    </div>
+  </article>
+
+  <!-- ════════════════════ NEWSLETTER (reused from the homepage, do not edit) ════════════════════ -->
+  <section class="newsband">
+    <div class="news">
+      <img class="news__bg" src="images/news-bg.webp" alt="" />
+      <div class="news__inner">
+        <div class="news__text">
+          <h2 class="news__h" data-da="En hilsen fra banen." data-en="The occasional note from the course.">En hilsen fra banen.</h2>
+          <p class="news__sub" data-da="Ingen støj. Kun når vi har noget at fortælle." data-en="No noise. Only the occasional read.">Ingen støj. Kun når vi har noget at fortælle.</p>
+        </div>
+        <form class="news__form" data-ml-form="165875690760046481" novalidate>
+          <input class="news__email" type="email" name="fields[email]" placeholder="you@email.com" data-da="dig@email.com" aria-label="Email address" required />
+          <button class="news__btn" type="submit" data-da="Tilmeld" data-en="Subscribe">Tilmeld</button>
+          <span class="news__confirm" aria-hidden="true">
+            <span class="news__confirm-check">
+              <svg viewBox="0 0 52 52" aria-hidden="true">
+                <circle class="news__confirm-circle" cx="26" cy="26" r="24" fill="none" />
+                <path class="news__confirm-tick" fill="none" d="M15 27 l7.5 7.5 L37.5 19" />
+              </svg>
+            </span>
+            <span class="news__confirm-text" data-da="Du er med. Vi ses på banen." data-en="You’re in. See you on the course.">Du er med. Vi ses på banen.</span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ DOWNLOAD CTA + FOOTER (do not edit) ════════════════════ -->
+  <footer class="foot">
+    <hr class="foot__rule" />
+    <div class="foot__cta">
+      <h2 class="foot__headline" data-da="Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed." data-en="Download Golfsocial. Because good friends never let friends golf in silence.">Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed.</h2>
+      <div class="badges foot__badges">
+        <a href="https://apps.apple.com/app/apple-store/id6743446900?pt=125766814&ct=web_download&mt=8" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#16221F"/><g fill="#FCFBF8"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production&referrer=utm_source%3Dgolfsocial.club%26utm_medium%3Dwebsite%26utm_campaign%3Dweb_download" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#16221F"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FCFBF8"/></g><g fill="#FCFBF8"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <div class="foot__left">
+        <nav class="foot__links" aria-label="Footer">
+          <a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/1107518079119264" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener">Linkedin</a>
+          <a href="https://x.com/golfsocialclub" target="_blank" rel="noopener">x.com</a>
+          <a href="mailto:hello@golfsocial.club" data-da="Kontakt" data-en="Contact">Kontakt</a>
+          <a href="/privacy-policy" data-da="Privatlivspolitik" data-en="Privacy Policy">Privatlivspolitik</a>
+        </nav>
+        <p class="foot__copy" data-da="© 2026 Golfsocial. Alle rettigheder forbeholdes." data-en="© 2026 Golfsocial. All rights reserved.">© 2026 Golfsocial. Alle rettigheder forbeholdes.</p>
+      </div>
+      <p class="foot__made" data-da="Bygget og designet i København" data-en="Built and designed in Copenhagen">Bygget og designet i København</p>
+    </div>
+  </footer>
+
+  <script src="article.js?v=5"></script>
+</body>
+</html>
