@@ -1,0 +1,35 @@
+# Golfsocial
+
+> Golfsocial er en gratis dansk golf-app til dig og dine venner. Du fører scoren live i stableford og slagspil, registrerer dine runder til dit DGU-handicap, scanner dit scorekort og følger dine venners runder i et feed. Appen findes til iPhone og Android og er bygget i København.
+
+Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet. Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026). Det er Dansk Golf Union (DGU), der udsteder og forvalter spillerens handicap. Golfsocial sender den godkendte runde til DGU og viser handicappet i appen.
+
+## Det kan appen
+
+- [Gratis dansk golf-app til dig og dine venner](https://golfsocial.club/gratis-dansk-golf-app): overblik over, hvad appen kan, og hvordan man kommer i gang.
+- [Live score og leaderboard](https://golfsocial.club/live-score-og-leaderboard): før scoren live, hul for hul, i stableford eller slagspil, og se stillingen undervejs.
+- [Registrér din runde til DGU-handicappet](https://golfsocial.club/registrer-din-runde-til-dgu-handicappet): vælg en medspiller som markør; når markøren har godkendt runden, tæller den med i DGU-handicappet.
+- [Scan dit scorekort](https://golfsocial.club/scan-dit-scorekort): tag et billede af scorekortet, så udfylder appen slagene. Virker på danske baner og på baner i udlandet.
+- [Se dine runder og din udvikling](https://golfsocial.club/se-dine-runder-og-din-udvikling): handicappet runde for runde, og mål dig mod vennerne.
+- [Følg dine venners golfrunder](https://golfsocial.club/foelg-dine-venners-golfrunder): et feed med vennernes runder, kommentarer og grupper.
+
+## Guides om golf
+
+- [Stableford forklaret](https://golfsocial.club/stableford-forklaret): regler og point.
+- [Hvilke spilleformer findes der i golf?](https://golfsocial.club/golf-spilleformer): slagspil, stableford, hulspil, foursome, greensome, fourball og scramble.
+- [Sådan fungerer WHS-handicap](https://golfsocial.club/saadan-fungerer-whs-handicap)
+- [Hvad er spillehandicap i golf?](https://golfsocial.club/hvad-er-spillehandicap)
+- [Hvad er et godt golfhandicap?](https://golfsocial.club/hvad-er-et-godt-golfhandicap)
+- [Sådan får du et officielt handicap i Danmark](https://golfsocial.club/officielt-handicap-i-danmark)
+- [Hvad er et DGU-nummer, og hvor finder jeg mit?](https://golfsocial.club/hvad-er-et-dgu-nummer)
+- [Golfkørekort: vejen ind og hvad det koster](https://golfsocial.club/golfkoerekort)
+- [Hvad er greenfee?](https://golfsocial.club/hvad-er-greenfee)
+- [Golf uden medlemskab](https://golfsocial.club/golf-uden-medlemskab)
+- [Golfregler for begyndere](https://golfsocial.club/golfregler-for-begyndere)
+- [Greens in regulation](https://golfsocial.club/greens-in-regulation)
+- [Alle artikler](https://golfsocial.club/alle-artikler)
+
+## Hent og kontakt
+
+- Hent appen: https://golfsocial.club/hent
+- Kontakt: hello@golfsocial.club
