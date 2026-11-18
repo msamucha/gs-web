@@ -358,6 +358,29 @@
 .lp-proof__cta { display: flex; align-items: center; flex-wrap: wrap; gap: 2rem 3.4rem; margin-top: 4.4rem; }
 .lp-proof .lp-proof__cta .lp-pill { margin-top: 0; }
 
+/* ════════════════════ PAGE : live score and leaderboard ════════════════════ */
+/* hero: pick the format, key in the strokes, and the standings rise over the hole */
+.lp-stage--live { height: 83rem; }
+.lp-lv__hole { top: 2rem; right: 0; width: 42rem; height: 66rem; --lp-fade: 62%; }
+.lp-lv__format { top: -2.4rem; left: 0; width: 32rem; }
+.lp-lv__board { top: 39.6rem; left: 2rem; width: 46rem; }
+.lp-lv__board .lp-float__in { border-radius: 3rem; }
+.js .lp-lv__hole { animation: lpRise 0.95s var(--ease-out) 0.1s both; }
+.js .lp-lv__format { animation: lpLand 0.7s var(--ease-out) 0.75s both; }
+.js .lp-lv__board { animation: lpLand 0.7s var(--ease-out) 1.05s both; }
+
+/* the standings: one player's card opened, and the same round as stroke play */
+.lp-moment__visual--board { height: 70rem; }
+.lp-board__card { top: 0; left: 20rem; width: 44rem; }
+.lp-board__stroke { top: 31.8rem; left: 0; width: 30rem; }
+.lp-board__stroke .lp-float__in { border-radius: 3rem; }
+
+/* setting up: who is playing, and ready to start */
+.lp-moment__visual--setup { height: 68rem; }
+.lp-setup__players { top: 0; left: 0; width: 40rem; height: 66rem; --lp-fade: 64%; }
+.lp-setup__ready { top: 26rem; left: 28rem; width: 36rem; }
+.lp-setup__ready .lp-float__in { border-radius: 3rem; }
+
 /* ════════════════════ TABLET & DOWN : one column ════════════════════ */
 @media (max-width: 1024px) {
   .lp-hero { flex-direction: column; align-items: flex-start; gap: 7rem; margin-top: 6rem; }
@@ -448,6 +471,20 @@
 
   .lp-proof__cta { margin-top: 3rem; gap: 1.8rem 2.6rem; }
 
+  .lp-stage--live { height: 58rem; }
+  .lp-lv__hole { top: 3rem; width: 27rem; height: 43rem; }
+  .lp-lv__format { top: -1.6rem; width: 19.5rem; }
+  .lp-lv__board { top: 27rem; left: 0; width: 31rem; }
+  .lp-lv__board .lp-float__in, .lp-board__stroke .lp-float__in, .lp-setup__ready .lp-float__in { border-radius: 2.2rem; }
+
+  .lp-moment__visual--board { height: 64rem; }
+  .lp-board__card { left: auto; right: 0; width: 26.5rem; }
+  .lp-board__stroke { top: 40.4rem; width: 25rem; }
+
+  .lp-moment__visual--setup { height: 46rem; }
+  .lp-setup__players { width: 26rem; height: 42rem; }
+  .lp-setup__ready { top: 18rem; left: auto; right: 0; width: 24rem; }
+
   .lp-related { margin-top: 6rem; }
   .lp-related ul { flex-direction: column; gap: 1.6rem; }
   .lp-related a { font-size: 1.9rem; }
@@ -455,6 +492,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .js .lp-stage__feed, .js .lp-stage__follow, .js .lp-stage__profile,
-  .js .lp-hcp__sheet, .js .lp-hcp__ask, .js .lp-hcp__curve { animation: none; }
+  .js .lp-hcp__sheet, .js .lp-hcp__ask, .js .lp-hcp__curve,
+  .js .lp-lv__hole, .js .lp-lv__format, .js .lp-lv__board { animation: none; }
   .lp-pill, .lp-pill svg { transition: none; }
 }
