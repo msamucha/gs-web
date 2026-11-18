@@ -197,6 +197,9 @@
 .article__body .steps ol { flex: 0 1 58rem; }
 .article__body .steps figure { flex: 0 1 36rem; margin-top: 2.8rem; }
 .article__body .steps figure img { border-radius: 0; }
+/* the same layout for prose (added 2026-11-18): wrap the paragraphs in a plain
+   <div> instead of the <ol>; it keeps the reading measure of the article. */
+.article__body .steps > div { flex: 0 1 76rem; }
 @media (max-width: 1024px) {
   .article__body .steps { display: block; width: 100%; max-width: 100%; }
   .article__body .steps figure { max-width: 34rem; margin: 4rem auto 0; }
