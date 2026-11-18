@@ -1,31 +1,8 @@
 <!DOCTYPE html>
 <!--
-  ╔══════════════════════════════════════════════════════════════════╗
-  ║  GOLFSOCIAL — BLOG POST TEMPLATE                                  ║
-  ║                                                                  ║
-  ║  To publish a new blog post: copy this file, rename it to your   ║
-  ║  url slug (e.g. how-to-lower-your-handicap.html), then change    ║
-  ║  ONLY the things marked « EDIT ».  Everything else — the design, ║
-  ║  the header, the footer, the stylesheets — stays exactly as is.  ║
-  ║                                                                  ║
-  ║  The article text lives between the CONTENT START and CONTENT    ║
-  ║  END markers below. Inside it you only ever write plain          ║
-  ║  content tags; the design is applied automatically:              ║
-  ║                                                                  ║
-  ║    <p class="lead">…</p>   first / intro paragraph (bigger)      ║
-  ║    <p>…</p>                a normal paragraph                    ║
-  ║    <h2>…</h2>              a section heading                     ║
-  ║    <h3>…</h3>              a smaller sub-heading                 ║
-  ║    <ul><li>…</li></ul>     a bullet list (use <ol> for numbers)  ║
-  ║    <blockquote>…</blockquote>   a pull-quote                     ║
-  ║    <figure><img src="images/your-image.webp" alt="…">           ║
-  ║      <figcaption>…</figcaption></figure>   an image             ║
-  ║    <hr>                    a divider line                        ║
-  ║    <strong>…</strong> / <em>…</em> / <a href="…">…</a>          ║
-  ║                                                                  ║
-  ║  Never add inline styles, <style> tags or new classes.          ║
-  ║  See BLOG-GUIDE.md for the full guide + a ready-made prompt.     ║
-  ╚══════════════════════════════════════════════════════════════════╝
+  GOLFSOCIAL — LANDING PAGE  (landing.css)
+  A question as the headline, the app answering it beside it, then one point per plane.
+  The copy is the approved copy from the article version of this page.
 -->
 <html lang="da" data-lang="da">
 <head>
@@ -47,7 +24,7 @@
     gtag('config', 'G-XEBPZS1TT2');
   </script>
 
-  <!-- « EDIT » page title + description for search engines / social -->
+  <!-- page title + description for search engines / social -->
   <title>Kan jeg følge mine venners golfrunder, gratis? · Golfsocial</title>
   <meta name="description" content="Ja. I Golfsocial følger du dine venners golfrunder i et feed, kommenterer og skriver sammen i grupper. Sådan gør du, trin for trin, og svar på de mest stillede spørgsmål." />
 
@@ -117,7 +94,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
   <link rel="stylesheet" href="styles.css?v=12-42" />
-  <link rel="stylesheet" href="article.css?v=13" />
+  <link rel="stylesheet" href="landing.css?v=1" />
 </head>
 <body>
 
@@ -156,150 +133,164 @@
     </nav>
   </header>
 
-  <!-- ════════════════════ ARTICLE ════════════════════ -->
-  <article class="article article--text">
-
-    <!-- ── header : « EDIT » eyebrow + title + meta (text-led hero, no image) ── -->
-    <header class="article__head">
-      <div class="article__head-text">
-        <p class="article__eyebrow" data-da="Golf med vennerne" data-en="Golf with friends">Golf med vennerne</p>
-        <h1 class="article__title" data-da="Kan jeg følge mine venners golfrunder, gratis?" data-en="Can I follow my friends’ golf rounds, for free?">Kan jeg følge mine venners golfrunder, gratis?</h1>
-        <p class="article__meta" data-da="~4 min læsning" data-en="~4 min read">~4 min læsning</p>
+  <main class="lp">
+  <!-- ════════════════════ 1 · HERO : the question, and the app answering it ════════════════════ -->
+  <section class="lp-hero">
+    <div class="lp-hero__text">
+      <p class="lp-eyebrow" data-da="Golf med vennerne" data-en="Golf with friends">Golf med vennerne</p>
+      <h1 class="lp-hero__title" data-da="Kan jeg følge mine venners golfrunder, gratis?" data-en="Can I follow my friends’ golf rounds, for free?">Kan jeg følge mine venners golfrunder, gratis?</h1>
+      <p class="lp-hero__lead" data-da="Ja. I Golfsocial følger du dine venners golfrunder i et feed, hvor I kan kommentere på hinandens runder, og I kan skrive sammen i grupper. Golfsocial er en dansk social golf-app, og den er gratis at spille med vennerne." data-en="Yes. In Golfsocial you follow your friends’ golf rounds in a feed, where you can comment on each other’s rounds, and you can chat together in groups. Golfsocial is a Danish social golf app, and it is free to play with your friends.">Ja. I Golfsocial følger du dine venners golfrunder i et feed, hvor I kan kommentere på hinandens runder, og I kan skrive sammen i grupper. Golfsocial er en dansk social golf-app, og den er gratis at spille med vennerne.</p>
+      <div class="lp-hero__cta">
+        <a class="lp-pill" href="/hent?c=web_foelg_venner"><span data-da="Hent Golfsocial" data-en="Get Golfsocial">Hent Golfsocial</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="lp-link" href="#saadan" data-da="Se, hvordan det virker" data-en="See how it works">Se, hvordan det virker</a>
       </div>
-    </header>
-
-    <div class="article__body">
-      <!-- ╭───────────────────────── CONTENT START ─────────────────────────╮ -->
-
-      <p class="lead" data-da="Ja. I Golfsocial følger du dine venners golfrunder i et feed, hvor I kan kommentere på hinandens runder, og I kan skrive sammen i grupper. Golfsocial er en dansk social golf-app, og den er gratis at spille med vennerne." data-en="Yes. In Golfsocial you follow your friends’ golf rounds in a feed, where you can comment on each other’s rounds, and you can chat together in groups. Golfsocial is a Danish social golf app, and it is free to play with your friends.">Ja. I Golfsocial følger du dine venners golfrunder i et feed, hvor I kan kommentere på hinandens runder, og I kan skrive sammen i grupper. Golfsocial er en dansk social golf-app, og den er gratis at spille med vennerne.</p>
-
-      <!-- « EDIT » full-bleed image: friends in the app -->
-      <figure class="bleed">
-        <img src="images/venner-app.webp" alt="Three Golfsocial screens about friends: Find venner with suggested golfers and mutual friends, a friend's profile with the buttons Følg and Tilføj ven above his rounds, and notifications where someone started following you and a friend request was accepted" />
-      </figure>
-
-      <p data-da="Her er, hvordan det virker, trin for trin, fra du henter appen, til din første runde ligger i feedet." data-en="Here is how it works, step by step, from downloading the app to your first round in the feed.">Her er, hvordan det virker, trin for trin, fra du henter appen, til din første runde ligger i feedet.</p>
-
-      <h2 data-da="Sådan følger du dine venners runder i Golfsocial" data-en="How to follow your friends’ rounds in Golfsocial">Sådan følger du dine venners runder i Golfsocial</h2>
-      <div class="steps">
-        <ol>
-          <li data-da="Hent Golfsocial i App Store, og opret dig." data-en="Download Golfsocial from the App Store and create your profile.">Hent Golfsocial i App Store, og opret dig.</li>
-          <li data-da="Har du et DGU-handicap, forbinder du din konto med DGU, så dine runder kan tælle med i dit handicap." data-en="If you have a DGU handicap, connect your account to the Danish Golf Union, so your rounds can count towards your handicap.">Har du et DGU-handicap, forbinder du din konto med DGU, så dine runder kan tælle med i dit handicap.</li>
-          <li data-da="Find dine venner under Find venner, og tryk Tilføj ven eller Følg på deres profil. Så kommer deres runder i dit feed. Du kan også samle dem i en gruppe, hvor alle ser hinandens runder." data-en="Find your friends under Find venner, and tap Tilføj ven (add friend) or Følg (follow) on their profile. Their rounds then show up in your feed. You can also gather them in a group, where everyone sees each other’s rounds.">Find dine venner under Find venner, og tryk Tilføj ven eller Følg på deres profil. Så kommer deres runder i dit feed. Du kan også samle dem i en gruppe, hvor alle ser hinandens runder.</li>
-          <li data-da="Start en runde, og før scoren live, hul for hul. I kan spille stableford eller slagspil, og alle i bolden kan se stillingen undervejs." data-en="Start a round and keep score live, hole by hole. You can play Stableford or stroke play, and everyone in the group can see the standings as you go.">Start en runde, og før scoren live, hul for hul. I kan spille stableford eller slagspil, og alle i bolden kan se stillingen undervejs.</li>
-          <li data-da="Når runden er slut, vælger du en af dine medspillere som markør. Når markøren har godkendt runden, tæller den med i dit DGU-handicap." data-en="When the round is over, pick one of your playing partners as your marker. Once the marker has approved the round, it counts towards your DGU handicap.">Når runden er slut, vælger du en af dine medspillere som markør. Når markøren har godkendt runden, tæller den med i dit DGU-handicap.</li>
-          <li data-da="Runden kommer i feedet, hvor dine venner kan se scoren og skrive en kommentar. Du kan også lægge runden i en af dine grupper." data-en="The round lands in the feed, where your friends can see the score and leave a comment. You can also post the round to one of your groups.">Runden kommer i feedet, hvor dine venner kan se scoren og skrive en kommentar. Du kan også lægge runden i en af dine grupper.</li>
-        </ol>
-        <!-- « EDIT » icons beside the steps: connect to DGU, add friends, follow the rounds -->
-        <figure>
-          <img src="images/venner-trin-side.webp" alt="Three steps as icons: the Golfsocial logo linked to DGU (connect to DGU), a cluster of friends with an add-friend badge (add friends), and a round card with a score and a comment badge (follow the rounds)" />
+    </div>
+    <div class="lp-stage">
+      <figure class="lp-float lp-float--fade lp-stage__feed">
+          <span class="lp-float__in"><img src="images/lp-venner-feed.webp" width="1290" height="2880" fetchpriority="high" alt="The Golfsocial home feed: Nicolai Brandt’s round at Scandinavian Golf Club with 84 strokes, 26 points and handicap 12.4, a photo from the course, five reactions and comments from two friends, and below it the start of Mikkel Andersen’s round" /></span>
         </figure>
-      </div>
-
-      <!-- « EDIT » full-bleed image: a friend’s round with comments -->
-      <figure class="bleed">
-        <img src="images/golfkoerekort-inside.webp" alt="A round in Golfsocial with likes and comments, the scorecard for all 18 holes, a breakdown of birdies, pars and bogeys, the players in the group and a field to add a comment" />
-      </figure>
-
-      <h2 data-da="Hvad ser du, når en ven har spillet?" data-en="What do you see when a friend has played?">Hvad ser du, når en ven har spillet?</h2>
-      <p data-da="I feedet ser du dine venners runder med bane og score. Du kan åbne en runde og se scorekortet hul for hul, og du kan skrive en kommentar. Har I spillet sammen, ser du også, hvordan det gik for de andre i bolden." data-en="In the feed you see your friends’ rounds with the course and the score. You can open a round to see the scorecard hole by hole, and you can leave a comment. If you played together, you also see how it went for the others in the group.">I feedet ser du dine venners runder med bane og score. Du kan åbne en runde og se scorekortet hul for hul, og du kan skrive en kommentar. Har I spillet sammen, ser du også, hvordan det gik for de andre i bolden.</p>
-
-      <h2 data-da="Hvordan holder I styr på scoren, når I spiller sammen?" data-en="How do you keep track of the score when you play together?">Hvordan holder I styr på scoren, når I spiller sammen?</h2>
-      <p data-da="I fører scoren live i Golfsocial, hul for hul, og appen holder styr på stillingen for jer. Spiller I stableford, regner appen pointene ud fra jeres handicap, så I kan spille mod hinanden, selvom I ikke har samme handicap. Når runden er slut, ligger slutstillingen klar." data-en="You keep score live in Golfsocial, hole by hole, and the app keeps track of the standings for you. If you play Stableford, the app works out the points from your handicaps, so you can play each other even if your handicaps differ. When the round is over, the final standings are ready.">I fører scoren live i Golfsocial, hul for hul, og appen holder styr på stillingen for jer. Spiller I stableford, regner appen pointene ud fra jeres handicap, så I kan spille mod hinanden, selvom I ikke har samme handicap. Når runden er slut, ligger slutstillingen klar.</p>
-      <!-- « EDIT » full-bleed image: live score with friends -->
-      <figure class="bleed">
-        <img src="images/stableford-live-score.webp" alt="Three Golfsocial screens from a Stableford round at Værløse Golfklub: scores and points per player on hole 3, the live standings after hole 18, and the final standings" />
-      </figure>
-
-      <!-- « EDIT » full-bleed image: friends on the tee -->
-      <figure class="bleed">
-        <img src="images/venner-tee.webp" alt="Friends on a tee in the evening sun: one hits his drive while a friend points after the ball and a third waits with his club" />
-      </figure>
-
-      <h2 data-da="Saml de faste i en gruppe" data-en="Gather your regulars in a group">Saml de faste i en gruppe</h2>
-      <p data-da="Mange golfere spiller i faste socialgrupper i klubben eller med de samme venner hver uge. I Golfsocial kan I samle gruppen ét sted: runderne kommer i gruppens feed, og I kan skrive sammen, når I skal aftale næste runde." data-en="Many golfers play in regular social groups at their club, or with the same friends every week. In Golfsocial you can gather the group in one place: the rounds land in the group’s feed, and you can chat when you plan the next round.">Mange golfere spiller i faste socialgrupper i klubben eller med de samme venner hver uge. I Golfsocial kan I samle gruppen ét sted: runderne kommer i gruppens feed, og I kan skrive sammen, når I skal aftale næste runde.</p>
-      <!-- « EDIT » full-bleed image: a group feed -->
-      <figure class="bleed">
-        <img src="images/social-group-feed.webp" alt="A Golfsocial group called Tuesday Golfers: the group feed with a post asking who is up for a Saturday round, reactions and replies from friends, and a post about a hole in one" />
-      </figure>
-
-      <p data-da="Omkring 600 golfere har logget næsten 800 runder i Golfsocial." data-en="About 600 golfers have logged almost 800 rounds in Golfsocial.">Omkring 600 golfere har logget næsten 800 runder i Golfsocial.</p>
-      <p><a href="https://apps.apple.com/app/apple-store/id6743446900?pt=125766814&ct=web_foelg_venner&mt=8" target="_blank" rel="noopener" data-da="Hent Golfsocial i App Store" data-en="Get Golfsocial on the App Store">Hent Golfsocial i App Store</a></p>
-
-
-      <h2 data-da="Spørgsmål og svar" data-en="Questions and answers">Spørgsmål og svar</h2>
-
-      <h3 data-da="Hvilken app kan jeg bruge til at føre scorekort og dele runder med mine venner?" data-en="Which app can I use to keep a scorecard and share rounds with my friends?">Hvilken app kan jeg bruge til at føre scorekort og dele runder med mine venner?</h3>
-      <p data-da="Golfsocial. Du fører scoren live under runden, og bagefter kommer runden i feedet, hvor dine venner kan se den og kommentere. Det er gratis at spille med vennerne." data-en="Golfsocial. You keep score live during the round, and afterwards the round lands in the feed, where your friends can see it and comment. It is free to play with your friends.">Golfsocial. Du fører scoren live under runden, og bagefter kommer runden i feedet, hvor dine venner kan se den og kommentere. Det er gratis at spille med vennerne.</p>
-
-      <h3 data-da="Hvordan tilføjer jeg en ven i Golfsocial?" data-en="How do I add a friend in Golfsocial?">Hvordan tilføjer jeg en ven i Golfsocial?</h3>
-      <p data-da="Gå til Find venner, søg på navnet, og tryk Tilføj ven. Du kan også åbne en golfers profil og trykke Tilføj ven eller Følg. Når I er venner, ser du hinandens runder i feedet." data-en="Go to Find venner, search for the name and tap Tilføj ven (add friend). You can also open a golfer’s profile and tap Tilføj ven or Følg (follow). Once you are friends, you see each other’s rounds in the feed.">Gå til Find venner, søg på navnet, og tryk Tilføj ven. Du kan også åbne en golfers profil og trykke Tilføj ven eller Følg. Når I er venner, ser du hinandens runder i feedet.</p>
-
-      <h3 data-da="Hvordan ser jeg, hvad mine venner har spillet?" data-en="How do I see what my friends have played?">Hvordan ser jeg, hvad mine venner har spillet?</h3>
-      <p data-da="Åbn feedet i Golfsocial. Her ligger dine venners runder med bane og score, og du kan åbne hver runde og se scorekortet hul for hul." data-en="Open the feed in Golfsocial. Your friends’ rounds are there with the course and the score, and you can open each round to see the scorecard hole by hole.">Åbn feedet i Golfsocial. Her ligger dine venners runder med bane og score, og du kan åbne hver runde og se scorekortet hul for hul.</p>
-
-      <h3 data-da="Kan man kommentere på hinandens golfrunder?" data-en="Can you comment on each other’s golf rounds?">Kan man kommentere på hinandens golfrunder?</h3>
-      <p data-da="Ja. Du kan skrive en kommentar på en vens runde i feedet, og i en gruppe kan I skrive sammen i tråde, for eksempel når I skal aftale næste runde." data-en="Yes. You can comment on a friend’s round in the feed, and in a group you can chat in threads, for example when you plan the next round.">Ja. Du kan skrive en kommentar på en vens runde i feedet, og i en gruppe kan I skrive sammen i tråde, for eksempel når I skal aftale næste runde.</p>
-
-      <h3 data-da="Hvordan holder vi styr på scoren, når vi spiller sammen?" data-en="How do we keep track of the score when we play together?">Hvordan holder vi styr på scoren, når vi spiller sammen?</h3>
-      <p data-da="Før scoren live i Golfsocial. I kan spille stableford eller slagspil, appen viser stillingen undervejs, og slutstillingen ligger klar, når I er færdige." data-en="Keep score live in Golfsocial. You can play Stableford or stroke play, the app shows the standings as you go, and the final standings are ready when you finish.">Før scoren live i Golfsocial. I kan spille stableford eller slagspil, appen viser stillingen undervejs, og slutstillingen ligger klar, når I er færdige.</p>
-
-      <h3 data-da="Kan mine runder med vennerne tælle til mit DGU-handicap?" data-en="Can my rounds with friends count towards my DGU handicap?">Kan mine runder med vennerne tælle til mit DGU-handicap?</h3>
-      <p data-da="Ja. Vælg en medspiller som markør, når runden er slut. Når markøren har godkendt runden, tæller den med i dit DGU-handicap, så længe I har spillet en HCP-reguleret bane." data-en="Yes. Pick a playing partner as your marker when the round is over. Once the marker has approved it, the round counts towards your DGU handicap, as long as you played a handicap-rated course.">Ja. Vælg en medspiller som markør, når runden er slut. Når markøren har godkendt runden, tæller den med i dit DGU-handicap, så længe I har spillet en HCP-reguleret bane.</p>
-
-      <h3 data-da="Er Golfsocial lavet til golfere i Danmark?" data-en="Is Golfsocial made for golfers in Denmark?">Er Golfsocial lavet til golfere i Danmark?</h3>
-      <p data-da="Ja. Golfsocial er en dansk golf-app, og dine runder bliver registreret til dit handicap gennem DGU." data-en="Yes. Golfsocial is a Danish golf app, and your rounds are registered to your handicap through the Danish Golf Union.">Ja. Golfsocial er en dansk golf-app, og dine runder bliver registreret til dit handicap gennem DGU.</p>
-
-      <h3 data-da="Hvad er en social golf-app?" data-en="What is a social golf app?">Hvad er en social golf-app?</h3>
-      <p data-da="En golf-app, hvor vennerne er en del af spillet. I Golfsocial fører du scoren, følger dine venners runder i et feed og skriver sammen i grupper." data-en="A golf app where your friends are part of the game. In Golfsocial you keep score, follow your friends’ rounds in a feed and chat in groups.">En golf-app, hvor vennerne er en del af spillet. I Golfsocial fører du scoren, følger dine venners runder i et feed og skriver sammen i grupper.</p>
-
-      <h3 data-da="Hvad koster det?" data-en="What does it cost?">Hvad koster det?</h3>
-      <p data-da="Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet." data-en="Golfsocial is free to play with your friends: live score, the game formats, the groups and the feed.">Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet.</p>
-
-      <h3 data-da="Hvor mange bruger Golfsocial?" data-en="How many people use Golfsocial?">Hvor mange bruger Golfsocial?</h3>
-      <p data-da="Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026)." data-en="About 600 golfers have logged almost 800 rounds in Golfsocial (November 2026).">Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026).</p>
-
-
-      <div class="article__cta">
-        <p class="article__cta-kicker" data-da="Golfsocial-appen" data-en="The Golfsocial app">Golfsocial-appen</p>
-        <h2 data-da="Dit golfhjem" data-en="Your golf home">Dit golfhjem</h2>
-        <p data-da="Registrér dine runder til dit DGU-handicap, følg din udvikling, og se vennernes runder i feedet. Gratis at spille med vennerne, på iPhone og Android." data-en="Register your rounds to your DGU handicap, follow your progress, and see your friends’ rounds in the feed. Free to play with your friends, on iPhone and Android.">Registrér dine runder til dit DGU-handicap, følg din udvikling, og se vennernes runder i feedet. Gratis at spille med vennerne, på iPhone og Android.</p>
-        <div class="badges article__cta-badges">
-          <a href="https://apps.apple.com/app/apple-store/id6743446900?pt=125766814&ct=web_download&mt=8" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store"><svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#FFFFFF"/><g fill="#16221F"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg></a>
-          <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production&referrer=utm_source%3Dgolfsocial.club%26utm_medium%3Dwebsite%26utm_campaign%3Dweb_download" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play"><svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#FFFFFF"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#16221F"/></g><g fill="#16221F"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg></a>
-        </div>
-      </div>
-
-      <!-- « EDIT » closing download banner (Figma node 249:324) -->
-      <div class="appbanner">
-        <img loading="lazy" decoding="async" class="appbanner__bg" src="images/app-banner.webp" alt="" />
-        <img loading="lazy" decoding="async" class="appbanner__logo" src="images/logo.svg" alt="Golfsocial" />
-        <div class="badges appbanner__badges">
-          <a href="https://apps.apple.com/app/apple-store/id6743446900?pt=125766814&ct=web_download&mt=8" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store"><svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#FFFFFF"/><g fill="#16221F"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg></a>
-          <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production&referrer=utm_source%3Dgolfsocial.club%26utm_medium%3Dwebsite%26utm_campaign%3Dweb_download" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play"><svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#FFFFFF"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#16221F"/></g><g fill="#16221F"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg></a>
-        </div>
-      <div class="article__related">
-        <p class="article__related-label" data-da="Læs også" data-en="Read next">Læs også</p>
-        <ul>
-          <li><a href="/grupper" data-da="Golf med gruppen, samlet ét sted" data-en="Golf with your group, in one place">Golf med gruppen, samlet ét sted</a></li>
-          <li><a href="/del-dine-runder" data-da="Del din runde" data-en="Share your round">Del din runde</a></li>
-          <li><a href="/stableford-forklaret" data-da="Stableford forklaret" data-en="Stableford explained">Stableford forklaret</a></li>
-          <li><a href="/saadan-registrerer-du-en-taellende-runde" data-da="Sådan registrerer du en tællende runde" data-en="How to register a counting round">Sådan registrerer du en tællende runde</a></li>
-          <li><a href="/5-surprising-social-benefits-of-playing-golf" data-da="5 overraskende sociale fordele ved at spille golf" data-en="5 surprising social benefits of playing golf">5 overraskende sociale fordele ved at spille golf</a></li>
-        </ul>
-      </div>
-
-      <!-- ╰────────────────────────── CONTENT END ──────────────────────────╯ -->
+      <figure class="lp-float lp-float--near lp-stage__follow">
+          <span class="lp-float__in"><img src="images/lp-venner-foelger.webp" width="1290" height="219" alt="A notification in Golfsocial: Josh Williams started following you" /></span>
+        </figure>
+      <figure class="lp-float lp-float--near lp-stage__profile">
+          <span class="lp-float__in"><img src="images/lp-venner-profil.webp" width="1290" height="570" alt="A friend’s profile in Golfsocial with 87 rounds, 42 friends and handicap 12.4, and the buttons Følg and Tilføj ven" /></span>
+        </figure>
     </div>
+  </section>
 
-    <!-- ── back link (do not edit) ── -->
-    <div class="article__foot">
-      <a class="article__back" href="/alle-artikler" data-da="Tilbage til alle artikler" data-en="
-        
-        Back to all articles
-      ">Tilbage til alle artikler</a>
+  <!-- ════════════════════ 2 · STEPS : the deep green plane ════════════════════ -->
+  <section class="lp-steps" id="saadan">
+    <div class="lp-steps__head">
+      <h2 class="lp-steps__title" data-da="Sådan følger du dine venners runder i Golfsocial" data-en="How to follow your friends’ rounds in Golfsocial">Sådan følger du dine venners runder i Golfsocial</h2>
+      <p class="lp-steps__lead" data-da="Fra du henter appen, til din første runde ligger i feedet." data-en="From downloading the app to your first round landing in the feed.">Fra du henter appen, til din første runde ligger i feedet.</p>
     </div>
-  </article>
+    <ol class="lp-steps__list">
+      <li data-da="Hent Golfsocial i App Store, og opret dig." data-en="Download Golfsocial from the App Store and create your profile.">Hent Golfsocial i App Store, og opret dig.</li>
+      <li data-da="Har du et DGU-handicap, forbinder du din konto med DGU, så dine runder kan tælle med i dit handicap." data-en="If you have a DGU handicap, connect your account to the Danish Golf Union, so your rounds can count towards your handicap.">Har du et DGU-handicap, forbinder du din konto med DGU, så dine runder kan tælle med i dit handicap.</li>
+      <li data-da="Find dine venner under Find venner, og tryk Tilføj ven eller Følg på deres profil. Så kommer deres runder i dit feed. Du kan også samle dem i en gruppe, hvor alle ser hinandens runder." data-en="Find your friends under Find venner, and tap Tilføj ven (add friend) or Følg (follow) on their profile. Their rounds then show up in your feed. You can also gather them in a group, where everyone sees each other’s rounds.">Find dine venner under Find venner, og tryk Tilføj ven eller Følg på deres profil. Så kommer deres runder i dit feed. Du kan også samle dem i en gruppe, hvor alle ser hinandens runder.</li>
+      <li data-da="Start en runde, og før scoren live, hul for hul. I kan spille stableford eller slagspil, og alle i bolden kan se stillingen undervejs." data-en="Start a round and keep score live, hole by hole. You can play Stableford or stroke play, and everyone in the group can see the standings as you go.">Start en runde, og før scoren live, hul for hul. I kan spille stableford eller slagspil, og alle i bolden kan se stillingen undervejs.</li>
+      <li data-da="Når runden er slut, vælger du en af dine medspillere som markør. Når markøren har godkendt runden, tæller den med i dit DGU-handicap." data-en="When the round is over, pick one of your playing partners as your marker. Once the marker has approved the round, it counts towards your DGU handicap.">Når runden er slut, vælger du en af dine medspillere som markør. Når markøren har godkendt runden, tæller den med i dit DGU-handicap.</li>
+      <li data-da="Runden kommer i feedet, hvor dine venner kan se scoren og skrive en kommentar. Du kan også lægge runden i en af dine grupper." data-en="The round lands in the feed, where your friends can see the score and leave a comment. You can also post the round to one of your groups.">Runden kommer i feedet, hvor dine venner kan se scoren og skrive en kommentar. Du kan også lægge runden i en af dine grupper.</li>
+    </ol>
+  </section>
+
+  <!-- ════════════════════ 3 · MOMENTS : one feature at a time, in the white ════════════════════ -->
+  <section class="lp-moment">
+    <div class="lp-moment__text">
+      <h2 class="lp-moment__title" data-da="Hvad ser du, når en ven har spillet?" data-en="What do you see when a friend has played?">Hvad ser du, når en ven har spillet?</h2>
+      <p class="lp-moment__p" data-da="I feedet ser du dine venners runder med bane og score. Du kan åbne en runde og se scorekortet hul for hul, og du kan skrive en kommentar. Har I spillet sammen, ser du også, hvordan det gik for de andre i bolden." data-en="In the feed you see your friends’ rounds with the course and the score. You can open a round to see the scorecard hole by hole, and you can leave a comment. If you played together, you also see how it went for the others in the group.">I feedet ser du dine venners runder med bane og score. Du kan åbne en runde og se scorekortet hul for hul, og du kan skrive en kommentar. Har I spillet sammen, ser du også, hvordan det gik for de andre i bolden.</p>
+    </div>
+    <div class="lp-moment__visual lp-moment__visual--round">
+      <figure class="lp-float lp-float--fade lp-round__card">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-venner-runde.webp" width="1290" height="2958" alt="A friend’s round opened in Golfsocial: 84 strokes, 24 points and handicap 12.4, a photo from the course, 8 likes and 3 comments, and the scorecard for all 18 holes" /></span>
+        </figure>
+      <figure class="lp-float lp-float--near lp-round__comment">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-venner-kommentar.webp" width="1290" height="276" alt="A notification in Golfsocial: Mikkel Andersen writes “Stærk runde i går! Hvad spillede du på 7. hul?”" /></span>
+        </figure>
+    </div>
+  </section>
+
+  <section class="lp-moment lp-moment--flip">
+    <div class="lp-moment__text">
+      <h2 class="lp-moment__title" data-da="Hvordan holder I styr på scoren, når I spiller sammen?" data-en="How do you keep track of the score when you play together?">Hvordan holder I styr på scoren, når I spiller sammen?</h2>
+      <p class="lp-moment__p" data-da="I fører scoren live i Golfsocial, hul for hul, og appen holder styr på stillingen for jer. Spiller I stableford, regner appen pointene ud fra jeres handicap, så I kan spille mod hinanden, selvom I ikke har samme handicap. Når runden er slut, ligger slutstillingen klar." data-en="You keep score live in Golfsocial, hole by hole, and the app keeps track of the standings for you. If you play Stableford, the app works out the points from your handicaps, so you can play each other even if your handicaps differ. When the round is over, the final standings are ready.">I fører scoren live i Golfsocial, hul for hul, og appen holder styr på stillingen for jer. Spiller I stableford, regner appen pointene ud fra jeres handicap, så I kan spille mod hinanden, selvom I ikke har samme handicap. Når runden er slut, ligger slutstillingen klar.</p>
+    </div>
+    <div class="lp-moment__visual lp-moment__visual--live">
+      <figure class="lp-float lp-float--fade lp-live__hole">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-venner-live-hul.webp" width="1290" height="1990" alt="Score Live in Golfsocial on hole 3, a par 4: strokes and Stableford points for four players" /></span>
+        </figure>
+      <figure class="lp-float lp-float--near lp-live__board">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-venner-stilling.webp" width="1290" height="1215" alt="The standings in a Stableford round in Golfsocial: Mikkel Andersen leads with 8 points, ahead of Michel Samucha, Nicolai Brandt and Rasmus Jensen" /></span>
+        </figure>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 4 · GROUP : the paper plane ════════════════════ -->
+  <section class="lp-group">
+    <div class="lp-moment__text">
+      <h2 class="lp-moment__title" data-da="Saml de faste i en gruppe" data-en="Gather your regulars in a group">Saml de faste i en gruppe</h2>
+      <p class="lp-moment__p" data-da="Mange golfere spiller i faste socialgrupper i klubben eller med de samme venner hver uge. I Golfsocial kan I samle gruppen ét sted: runderne kommer i gruppens feed, og I kan skrive sammen, når I skal aftale næste runde." data-en="Many golfers play in regular social groups at their club, or with the same friends every week. In Golfsocial you can gather the group in one place: the rounds land in the group’s feed, and you can chat when you plan the next round.">Mange golfere spiller i faste socialgrupper i klubben eller med de samme venner hver uge. I Golfsocial kan I samle gruppen ét sted: runderne kommer i gruppens feed, og I kan skrive sammen, når I skal aftale næste runde.</p>
+    </div>
+    <div class="lp-group__visual">
+      <figure class="lp-float lp-float--fade lp-group__feed">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-venner-gruppe.webp" width="1290" height="2900" alt="The group Tirsdagsholdet in Golfsocial: the group feed with a thread asking who is up for a Saturday round, reactions and replies from friends, and a post about a hole in one" /></span>
+        </figure>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 5 · PROOF : a photo, and the one number ════════════════════ -->
+  <section class="lp-proof">
+    <figure class="lp-proof__photo">
+      <img loading="lazy" decoding="async" src="images/lp-venner-foto.webp" width="1400" height="1750" alt="Two friends walking out with their trolleys on a sunny morning, with flags, a lake and green hills behind them" />
+    </figure>
+    <div class="lp-proof__text">
+      <h2 class="lp-proof__title" data-da="Omkring 600 golfere har logget næsten 800 runder i Golfsocial." data-en="About 600 golfers have logged almost 800 rounds in Golfsocial.">Omkring 600 golfere har logget næsten 800 runder i Golfsocial.</h2>
+      <p class="lp-proof__p" data-da="Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet." data-en="Golfsocial is free to play with your friends: live score, the game formats, the groups and the feed.">Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet.</p>
+      <a class="lp-pill" href="/hent?c=web_foelg_venner"><span data-da="Hent Golfsocial" data-en="Get Golfsocial">Hent Golfsocial</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 6 · QUESTIONS AND ANSWERS (the v12 FAQ block) ════════════════════ -->
+  <section class="faq" id="faq">
+    <div class="faq__head">
+      <h2 class="faq__title" data-da="Spørgsmål og svar" data-en="Questions and answers">Spørgsmål og svar</h2>
+    </div>
+    <div class="faq__list">
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvilken app kan jeg bruge til at føre scorekort og dele runder med mine venner?" data-en="Which app can I use to keep a scorecard and share rounds with my friends?">Hvilken app kan jeg bruge til at føre scorekort og dele runder med mine venner?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Golfsocial. Du fører scoren live under runden, og bagefter kommer runden i feedet, hvor dine venner kan se den og kommentere. Det er gratis at spille med vennerne." data-en="Golfsocial. You keep score live during the round, and afterwards the round lands in the feed, where your friends can see it and comment. It is free to play with your friends.">Golfsocial. Du fører scoren live under runden, og bagefter kommer runden i feedet, hvor dine venner kan se den og kommentere. Det er gratis at spille med vennerne.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvordan tilføjer jeg en ven i Golfsocial?" data-en="How do I add a friend in Golfsocial?">Hvordan tilføjer jeg en ven i Golfsocial?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Gå til Find venner, søg på navnet, og tryk Tilføj ven. Du kan også åbne en golfers profil og trykke Tilføj ven eller Følg. Når I er venner, ser du hinandens runder i feedet." data-en="Go to Find venner, search for the name and tap Tilføj ven (add friend). You can also open a golfer’s profile and tap Tilføj ven or Følg (follow). Once you are friends, you see each other’s rounds in the feed.">Gå til Find venner, søg på navnet, og tryk Tilføj ven. Du kan også åbne en golfers profil og trykke Tilføj ven eller Følg. Når I er venner, ser du hinandens runder i feedet.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvordan ser jeg, hvad mine venner har spillet?" data-en="How do I see what my friends have played?">Hvordan ser jeg, hvad mine venner har spillet?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Åbn feedet i Golfsocial. Her ligger dine venners runder med bane og score, og du kan åbne hver runde og se scorekortet hul for hul." data-en="Open the feed in Golfsocial. Your friends’ rounds are there with the course and the score, and you can open each round to see the scorecard hole by hole.">Åbn feedet i Golfsocial. Her ligger dine venners runder med bane og score, og du kan åbne hver runde og se scorekortet hul for hul.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Kan man kommentere på hinandens golfrunder?" data-en="Can you comment on each other’s golf rounds?">Kan man kommentere på hinandens golfrunder?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Ja. Du kan skrive en kommentar på en vens runde i feedet, og i en gruppe kan I skrive sammen i tråde, for eksempel når I skal aftale næste runde." data-en="Yes. You can comment on a friend’s round in the feed, and in a group you can chat in threads, for example when you plan the next round.">Ja. Du kan skrive en kommentar på en vens runde i feedet, og i en gruppe kan I skrive sammen i tråde, for eksempel når I skal aftale næste runde.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvordan holder vi styr på scoren, når vi spiller sammen?" data-en="How do we keep track of the score when we play together?">Hvordan holder vi styr på scoren, når vi spiller sammen?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Før scoren live i Golfsocial. I kan spille stableford eller slagspil, appen viser stillingen undervejs, og slutstillingen ligger klar, når I er færdige." data-en="Keep score live in Golfsocial. You can play Stableford or stroke play, the app shows the standings as you go, and the final standings are ready when you finish.">Før scoren live i Golfsocial. I kan spille stableford eller slagspil, appen viser stillingen undervejs, og slutstillingen ligger klar, når I er færdige.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Kan mine runder med vennerne tælle til mit DGU-handicap?" data-en="Can my rounds with friends count towards my DGU handicap?">Kan mine runder med vennerne tælle til mit DGU-handicap?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Ja. Vælg en medspiller som markør, når runden er slut. Når markøren har godkendt runden, tæller den med i dit DGU-handicap, så længe I har spillet en HCP-reguleret bane." data-en="Yes. Pick a playing partner as your marker when the round is over. Once the marker has approved it, the round counts towards your DGU handicap, as long as you played a handicap-rated course.">Ja. Vælg en medspiller som markør, når runden er slut. Når markøren har godkendt runden, tæller den med i dit DGU-handicap, så længe I har spillet en HCP-reguleret bane.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Er Golfsocial lavet til golfere i Danmark?" data-en="Is Golfsocial made for golfers in Denmark?">Er Golfsocial lavet til golfere i Danmark?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Ja. Golfsocial er en dansk golf-app, og dine runder bliver registreret til dit handicap gennem DGU." data-en="Yes. Golfsocial is a Danish golf app, and your rounds are registered to your handicap through the Danish Golf Union.">Ja. Golfsocial er en dansk golf-app, og dine runder bliver registreret til dit handicap gennem DGU.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvad er en social golf-app?" data-en="What is a social golf app?">Hvad er en social golf-app?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="En golf-app, hvor vennerne er en del af spillet. I Golfsocial fører du scoren, følger dine venners runder i et feed og skriver sammen i grupper." data-en="A golf app where your friends are part of the game. In Golfsocial you keep score, follow your friends’ rounds in a feed and chat in groups.">En golf-app, hvor vennerne er en del af spillet. I Golfsocial fører du scoren, følger dine venners runder i et feed og skriver sammen i grupper.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvad koster det?" data-en="What does it cost?">Hvad koster det?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet." data-en="Golfsocial is free to play with your friends: live score, the game formats, the groups and the feed.">Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvor mange bruger Golfsocial?" data-en="How many people use Golfsocial?">Hvor mange bruger Golfsocial?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026)." data-en="About 600 golfers have logged almost 800 rounds in Golfsocial (November 2026).">Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026).</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 7 · READ NEXT ════════════════════ -->
+  <nav class="lp-related" aria-label="Læs også">
+    <p class="lp-related__label" data-da="Læs også" data-en="Read next">Læs også</p>
+    <ul>
+      <li><a href="/grupper" data-da="Golf med gruppen, samlet ét sted" data-en="Golf with your group, in one place">Golf med gruppen, samlet ét sted</a></li>
+      <li><a href="/del-dine-runder" data-da="Del din runde" data-en="Share your round">Del din runde</a></li>
+      <li><a href="/stableford-forklaret" data-da="Stableford forklaret" data-en="Stableford explained">Stableford forklaret</a></li>
+      <li><a href="/saadan-registrerer-du-en-taellende-runde" data-da="Sådan registrerer du en tællende runde" data-en="How to register a counting round">Sådan registrerer du en tællende runde</a></li>
+      <li><a href="/5-surprising-social-benefits-of-playing-golf" data-da="5 overraskende sociale fordele ved at spille golf" data-en="5 surprising social benefits of playing golf">5 overraskende sociale fordele ved at spille golf</a></li>
+    </ul>
+  </nav>
+  </main>
 
   <!-- ════════════════════ NEWSLETTER (reused from the homepage, do not edit) ════════════════════ -->
   <section class="newsband">
