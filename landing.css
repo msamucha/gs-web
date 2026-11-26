@@ -507,6 +507,112 @@
 .lp-lists__a { top: 0; left: 0; width: 35rem; }
 .lp-lists__b { top: 24rem; left: 21rem; width: 35rem; }
 
+/* ════════════════════ PAGE : rounds from the golf simulator ════════════════════ */
+/* hero: the dark bay, the rows read from its screen, and the round in the feed */
+.lp-stage--indoor { height: 90rem; }
+.lp-photo--indoor { top: 0; left: 16rem; width: 50rem; height: 68rem; }
+.lp-in__rows { top: 41rem; left: 0; width: 32rem; }
+.lp-in__post { top: 49rem; left: 32.5rem; width: 33.5rem; z-index: 3; }
+.lp-in__rows .lp-float__in, .lp-in__post .lp-float__in { border-radius: 2.6rem; }
+.js .lp-in__rows { animation: lpLand 0.7s var(--ease-out) 0.7s both; }
+.js .lp-in__post { animation: lpLand 0.7s var(--ease-out) 1s both; }
+
+/* your friends from the bay: the scorecard read from the screen, and the friends linked */
+.lp-moment__visual--mates { height: 68rem; }
+.lp-mates__card { top: 0; left: 0; width: 40rem; height: 64rem; --lp-fade: 62%; }
+.lp-mates__pick { top: 20rem; left: 24rem; width: 40rem; }
+
+/* nothing to type: centre, course and tee filled in */
+.lp-group__visual--bane { flex: 0 0 50rem; height: 44rem; margin-bottom: 9rem; }
+.lp-bane__fields { top: 2rem; left: 0; width: 50rem; }
+.lp-bane__fields .lp-float__in { border-radius: 3rem; }
+
+/* how the scanner reads the screen: the camera in the app, in a phone, held up to the simulator */
+.lp-read { display: flex; align-items: center; justify-content: space-between; gap: 5rem; margin: 17rem var(--gut) 0; padding: 8rem 6rem 8rem 9.4rem; border-radius: 3rem; background: var(--lp-paper); }
+.lp-read__text { flex: 0 1 50rem; }
+.lp-read__title { font-weight: 500; font-size: 5.6rem; line-height: 5.9rem; letter-spacing: -0.17rem; color: var(--black); text-wrap: balance; }
+.lp-read__lead { margin-top: 3rem; font-size: 2.3rem; line-height: 3.4rem; letter-spacing: -0.02rem; color: #1a1a1a; text-wrap: pretty; }
+.lp-read__list { list-style: none; margin-top: 2.8rem; border-bottom: 0.1rem solid rgba(0, 0, 0, 0.12); }
+.lp-read__list li { padding: 1.6rem 0 1.7rem; border-top: 0.1rem solid rgba(0, 0, 0, 0.12); font-weight: 500; font-size: 2.1rem; line-height: 3rem; letter-spacing: -0.02rem; color: var(--lp-ink); }
+.lp-read__note { margin-top: 3.4rem; font-size: 2rem; line-height: 3rem; color: var(--lp-soft); text-wrap: pretty; }
+.lp-read__phone { flex: 0 1 68rem; margin: 0 -2rem 0 0; }
+.lp-read__phone img { display: block; width: 100%; height: auto; }
+
+/* the scanner, animated: the camera moves closer to the simulator screen, the shutter is pressed, and the app reads the card.
+   One 10 s loop in CSS only. The phone lies sideways in 932 x 430 pt; --u is one pt of it. */
+.lp-cam { container-type: inline-size; }
+.lp-cam__phone {
+  --u: calc(100cqw / 932);
+  --green: #18a138;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 932 / 430;
+  border-radius: calc(var(--u) * 53);
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 1.8rem 6rem rgba(16, 36, 31, 0.26), 0 0.4rem 1.4rem rgba(16, 36, 31, 0.1);
+  isolation: isolate;
+}
+.lp-cam__phone > * { position: absolute; display: block; }
+.lp-cam__scene { left: calc(var(--u) * -462); top: calc(var(--u) * -200); width: calc(var(--u) * 1800); height: calc(var(--u) * 830); transform-origin: 50% 50%; }
+.lp-cam__scene img, .lp-cam__ui { width: 100%; height: auto; }
+.lp-cam__ui { left: 0; top: 0; }
+.lp-cam__press { left: calc(var(--u) * 842.5); top: calc(var(--u) * 185); width: calc(var(--u) * 60); height: calc(var(--u) * 60); border-radius: 50%; background: rgba(0, 0, 0, 0.28); opacity: 0; }
+.lp-cam__flash { inset: 0; background: #fff; opacity: 0; }
+.lp-cam__dark { inset: 0; background: rgba(8, 8, 6, 0.95); opacity: 0; }
+.lp-cam__photo { left: calc(var(--u) * 186); top: calc(var(--u) * 52); width: calc(var(--u) * 560); height: calc(var(--u) * 196); border-radius: calc(var(--u) * 12); overflow: hidden; opacity: 0; }
+.lp-cam__photo img { width: 100%; height: 100%; object-fit: cover; }
+.lp-cam__c { position: absolute; width: calc(var(--u) * 28); height: calc(var(--u) * 28); border: 0 solid var(--green); }
+.lp-cam__c--tl { left: 0; top: 0; border-top-width: calc(var(--u) * 3); border-left-width: calc(var(--u) * 3); border-top-left-radius: calc(var(--u) * 12); }
+.lp-cam__c--tr { right: 0; top: 0; border-top-width: calc(var(--u) * 3); border-right-width: calc(var(--u) * 3); border-top-right-radius: calc(var(--u) * 12); }
+.lp-cam__c--bl { left: 0; bottom: 0; border-bottom-width: calc(var(--u) * 3); border-left-width: calc(var(--u) * 3); border-bottom-left-radius: calc(var(--u) * 12); }
+.lp-cam__c--br { right: 0; bottom: 0; border-bottom-width: calc(var(--u) * 3); border-right-width: calc(var(--u) * 3); border-bottom-right-radius: calc(var(--u) * 12); }
+.lp-cam__sweep { position: absolute; top: 0; bottom: 0; left: 0; width: calc(var(--u) * 70); background: linear-gradient(90deg, rgba(24, 161, 56, 0), rgba(24, 161, 56, 0.28) 70%, rgba(120, 230, 140, 0.95) 97%, rgba(24, 161, 56, 0)); transform: translateX(calc(var(--u) * -80)); opacity: 0; }
+.lp-cam__load { left: 0; right: 0; top: calc(var(--u) * 274); display: flex; flex-direction: column; align-items: center; gap: max(calc(var(--u) * 14), 0.6rem); text-align: center; color: #fff; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500; font-size: max(calc(var(--u) * 17), 1.25rem); line-height: 1.2; opacity: 0; }
+.lp-cam__bar { display: block; width: calc(var(--u) * 300); height: max(calc(var(--u) * 4), 2px); border-radius: 99px; background: rgba(255, 255, 255, 0.2); overflow: hidden; }
+.lp-cam__bar i { display: block; width: 0; height: 100%; border-radius: inherit; background: var(--green); }
+.lp-cam__done { left: 0; right: 0; top: calc(var(--u) * 266); display: flex; flex-direction: column; align-items: center; gap: calc(var(--u) * 10); color: #fff; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700; font-size: max(calc(var(--u) * 18), 1.3rem); line-height: 1.2; opacity: 0; }
+.lp-cam__done svg { width: max(calc(var(--u) * 40), 2.2rem); height: max(calc(var(--u) * 40), 2.2rem); fill: none; stroke: var(--green); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.lp-cam__veil { inset: 0; background: #000; opacity: 0; }
+
+.lp-cam__scene  { animation: lpCamScene 10s infinite; }
+.lp-cam__ui     { animation: lpCamUi 10s infinite; }
+.lp-cam__press  { animation: lpCamPress 10s infinite; }
+.lp-cam__flash  { animation: lpCamFlash 10s infinite; }
+.lp-cam__dark   { animation: lpCamDark 10s infinite; }
+.lp-cam__photo  { animation: lpCamPhoto 10s infinite; }
+.lp-cam__sweep  { animation: lpCamSweep 10s infinite; }
+.lp-cam__load   { animation: lpCamStatus 10s infinite; }
+.lp-cam__bar i  { animation: lpCamBar 10s infinite; }
+.lp-cam__done   { animation: lpCamDone 10s infinite; }
+.lp-cam__veil   { animation: lpCamVeil 10s infinite; }
+
+/* 0-26 %: closer and into focus · 27-30 %: shutter and flash · 31-70 %: reading · 72-94 %: read · 95-100 %: back to the start */
+@keyframes lpCamScene {
+  0%   { transform: translate(calc(var(--u) * 14), calc(var(--u) * 8)) scale(0.62) rotate(-1.2deg); filter: blur(2.5px); animation-timing-function: cubic-bezier(0.45, 0, 0.2, 1); }
+  14%  { filter: blur(1px); }
+  26%  { transform: translate(0, 0) scale(1) rotate(0); filter: blur(0); }
+  100% { transform: translate(0, 0) scale(1) rotate(0); filter: blur(0); }
+}
+@keyframes lpCamUi { 0%, 29% { opacity: 1; } 32%, 100% { opacity: 0; } }
+@keyframes lpCamPress { 0%, 26.5% { opacity: 0; transform: scale(1); } 27.5% { opacity: 1; transform: scale(0.86); } 29.5%, 100% { opacity: 0; transform: scale(1); } }
+@keyframes lpCamFlash { 0%, 28% { opacity: 0; } 28.8% { opacity: 0.85; } 32%, 100% { opacity: 0; } }
+@keyframes lpCamDark { 0%, 29% { opacity: 0; } 32%, 95% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes lpCamPhoto { 0%, 30% { opacity: 0; transform: scale(0.9); } 32.5% { opacity: 1; transform: scale(1); } 95%, 100% { opacity: 1; transform: scale(1); } }
+@keyframes lpCamSweep {
+  0%, 34% { opacity: 0; transform: translateX(calc(var(--u) * -80)); }
+  35% { opacity: 1; }
+  52% { transform: translateX(calc(var(--u) * 570)); opacity: 1; }
+  52.1% { opacity: 0; transform: translateX(calc(var(--u) * -80)); }
+  53% { opacity: 1; }
+  68% { transform: translateX(calc(var(--u) * 570)); opacity: 1; }
+  68.1%, 100% { opacity: 0; }
+}
+@keyframes lpCamStatus { 0%, 33% { opacity: 0; } 35%, 69% { opacity: 1; } 71%, 100% { opacity: 0; } }
+@keyframes lpCamBar { 0%, 35% { width: 0; } 65% { width: 85%; } 68.5%, 100% { width: 100%; } }
+@keyframes lpCamDone { 0%, 70.5% { opacity: 0; transform: scale(0.6); } 72.5% { opacity: 1; transform: scale(1); } 95%, 100% { opacity: 1; transform: scale(1); } }
+@keyframes lpCamVeil { 0% { opacity: 1; } 3% { opacity: 0; } 94% { opacity: 0; } 98%, 100% { opacity: 1; } }
+
 /* ════════════════════ TABLET & DOWN : one column ════════════════════ */
 @media (max-width: 1024px) {
   .lp-hero { flex-direction: column; align-items: flex-start; gap: 7rem; margin-top: 6rem; }
@@ -533,6 +639,11 @@
   .lp-related { flex-direction: column; gap: 2.4rem; }
 
   .lp-photo { left: 18rem; }
+  .lp-photo--indoor { left: 14rem; }
+  .lp-group__visual--bane { width: 50rem; max-width: 100%; }
+  .lp-read { flex-direction: column; align-items: flex-start; gap: 5rem; margin-top: 13rem; padding: 8rem 6rem 7rem; }
+  .lp-read__text { flex: 0 0 auto; max-width: 64rem; }
+  .lp-read__phone { flex: 0 0 auto; width: 100%; max-width: 68rem; margin: 0; align-self: center; }
   .lp-ph__curve { left: 36rem; }
   .lp-udv__round { left: 24rem; }
   .lp-udv__nums { left: 33rem; }
@@ -685,6 +796,28 @@
   .lp-lists__a { width: 24rem; }
   .lp-lists__b { top: 19rem; left: auto; right: 0; width: 24rem; }
 
+  .lp-read { margin-top: 9rem; padding: 5.4rem 2.4rem 4rem; gap: 3.6rem; border-radius: 2.2rem; }
+  .lp-read__title { font-size: 3.4rem; line-height: 3.7rem; letter-spacing: -0.09rem; }
+  .lp-read__lead { margin-top: 2rem; font-size: 1.9rem; line-height: 2.9rem; }
+  .lp-read__list li { padding: 1.3rem 0 1.4rem; font-size: 1.8rem; line-height: 2.6rem; }
+  .lp-read__note { margin-top: 2.6rem; font-size: 1.7rem; line-height: 2.6rem; }
+  .lp-read__phone { width: calc(100% + 2rem); margin: 0 -1rem; }
+
+  .lp-stage--indoor { height: 62rem; }
+  .lp-photo--indoor { top: 0; left: auto; right: 0; width: 26rem; height: 35.4rem; border-radius: 2.2rem; }
+  .lp-in__rows { top: 24rem; width: 19rem; }
+  .lp-in__post { top: 34rem; left: auto; right: 0; width: 24.5rem; }
+  .lp-in__rows .lp-float__in, .lp-in__post .lp-float__in { border-radius: 1.8rem; }
+
+  .lp-moment__visual--mates { height: 50rem; }
+  .lp-mates__card { width: 26rem; height: 42rem; }
+  .lp-mates__pick { top: 16rem; left: auto; right: 0; width: 26rem; }
+  .lp-mates__pick .lp-float__in { border-radius: 2.2rem; }
+
+  .lp-group__visual--bane { width: 100%; height: 25rem; margin-bottom: 4rem; }
+  .lp-bane__fields { top: 0; left: 0; width: 100%; }
+  .lp-bane__fields .lp-float__in { border-radius: 2.2rem; }
+
   .lp-related { margin-top: 6rem; }
   .lp-related ul { flex-direction: column; gap: 1.6rem; }
   .lp-related a { font-size: 1.9rem; }
@@ -696,6 +829,9 @@
   .js .lp-lv__hole, .js .lp-lv__format, .js .lp-lv__board,
   .js .lp-photo, .js .lp-ph__note, .js .lp-ph__board, .js .lp-ph__curve,
   .js .lp-scan__cam, .js .lp-scan__grid,
-  .js .lp-udv__curve, .js .lp-udv__round, .js .lp-udv__rank, .js .lp-udv__nums { animation: none; }
+  .js .lp-udv__curve, .js .lp-udv__round, .js .lp-udv__rank, .js .lp-udv__nums,
+  .js .lp-in__rows, .js .lp-in__post { animation: none; }
+  .lp-cam__phone *, .lp-cam__scene { animation: none !important; }
+  .lp-cam__scene { transform: none; filter: none; }
   .lp-pill, .lp-pill svg { transition: none; }
 }

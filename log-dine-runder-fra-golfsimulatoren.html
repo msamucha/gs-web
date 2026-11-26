@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--
+  GOLFSOCIAL — LANDING PAGE  (landing.css)
+  A question as the headline, the app answering it beside it, then one point per plane.
+-->
+<html lang="da" data-lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png?v=2" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=2" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#123f36" />
+  <meta name="robots" content="noindex" />
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEBPZS1TT2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XEBPZS1TT2');
+  </script>
+
+  <!-- page title + description for search engines / social -->
+  <title>Kan jeg logge mine runder fra golfsimulatoren? · Golfsocial</title>
+  <meta name="description" content="Ja. I Golfsocial tager du et billede af skærmen i simulatoren, og appen læser banen og jeres slag. Runden kommer i feedet, og vennerne fra båsen kan få den med. Sådan gør du, trin for trin, og svar på de mest stillede spørgsmål." />
+
+  <link rel="canonical" href="https://golfsocial.club/log-dine-runder-fra-golfsimulatoren" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Golfsocial" />
+  <meta property="og:locale" content="da_DK" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="Kan jeg logge mine runder fra golfsimulatoren? · Golfsocial" />
+  <meta property="og:description" content="Ja. I Golfsocial tager du et billede af skærmen i simulatoren, og appen læser banen og jeres slag. Runden kommer i feedet, og vennerne fra båsen kan få den med. Sådan gør du, trin for trin, og svar på de mest stillede spørgsmål." />
+  <meta property="og:url" content="https://golfsocial.club/log-dine-runder-fra-golfsimulatoren" />
+  <meta property="og:image" content="https://golfsocial.club/images/og-indendoers.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kan jeg logge mine runder fra golfsimulatoren? · Golfsocial" />
+  <meta name="twitter:description" content="Ja. I Golfsocial tager du et billede af skærmen i simulatoren, og appen læser banen og jeres slag. Runden kommer i feedet, og vennerne fra båsen kan få den med. Sådan gør du, trin for trin, og svar på de mest stillede spørgsmål." />
+  <meta name="twitter:image" content="https://golfsocial.club/images/og-indendoers.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://golfsocial.club/log-dine-runder-fra-golfsimulatoren",
+    "headline": "Kan jeg logge mine runder fra golfsimulatoren?",
+    "description": "Ja. I Golfsocial tager du et billede af skærmen i simulatoren, og appen læser banen og jeres slag. Runden kommer i feedet, og vennerne fra båsen kan få den med. Sådan gør du, trin for trin, og svar på de mest stillede spørgsmål.",
+    "image": "https://golfsocial.club/images/og-indendoers.png",
+    "inLanguage": "da-DK",
+    "datePublished": "2026-11-18",
+    "dateModified": "2026-11-18",
+    "author": { "@type": "Organization", "name": "Golfsocial" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Golfsocial",
+      "logo": { "@type": "ImageObject", "url": "https://golfsocial.club/images/logo.svg" }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://golfsocial.club/" },
+      { "@type": "ListItem", "position": 2, "name": "Kan jeg logge mine runder fra golfsimulatoren?", "item": "https://golfsocial.club/log-dine-runder-fra-golfsimulatoren" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Kan jeg logge en simulatorrunde i en golf-app?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. I Golfsocial tager du et billede af skærmen i simulatoren, når runden er slut. Appen læser banen og jeres slag, og runden kommer i feedet."}},
+      {"@type": "Question", "name": "Hvilken golf-app kan gemme runder fra golfsimulatoren?", "acceptedAnswer": {"@type": "Answer", "text": "Golfsocial. Du logger runden med et billede af skærmen, og dine venner kan se den i feedet."}},
+      {"@type": "Question", "name": "Skal jeg taste scoren ind selv?", "acceptedAnswer": {"@type": "Answer", "text": "Nej. Appen udfylder slagene fra billedet. Passer et tal ikke, trykker du på det og retter det."}},
+      {"@type": "Question", "name": "Kan mine venner fra båsen få runden?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Vælg vennen bag hvert navn på skærmen, så ligger runden klar til dem. De skal ikke selv tage et billede."}},
+      {"@type": "Question", "name": "Hvad hvis mit navn er klippet på skærmen?", "acceptedAnswer": {"@type": "Answer", "text": "Det gør ikke noget. Du trykker selv på din række, og du vælger selv vennen bag de andre navne."}},
+      {"@type": "Question", "name": "Tæller en indendørs runde til mit DGU-handicap?", "acceptedAnswer": {"@type": "Answer", "text": "Nej. En runde fra simulatoren tæller ikke til dit DGU-handicap, og den skal ikke godkendes af en markør."}},
+      {"@type": "Question", "name": "Kommer indendørs runder med i min udvikling?", "acceptedAnswer": {"@type": "Answer", "text": "Nej. De står i feedet og på din profil som indendørs, men de holdes ude af din udvikling og dine sammenligninger med vennerne."}},
+      {"@type": "Question", "name": "Kan vennerne se, hvor vi spillede?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Centret står som sted, og banen fra simulatoren står på opslaget."}},
+      {"@type": "Question", "name": "Hvad koster det?", "acceptedAnswer": {"@type": "Answer", "text": "Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet."}},
+      {"@type": "Question", "name": "Hvor mange bruger Golfsocial?", "acceptedAnswer": {"@type": "Answer", "text": "Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026)."}}
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css?v=12-42" />
+  <link rel="stylesheet" href="landing.css?v=7" />
+</head>
+<body>
+
+  <!-- ════════════════════ HEADER (do not edit) ════════════════════ -->
+  <header class="masthead">
+    <a class="masthead__brand" href="/" aria-label="Golfsocial">
+      <img class="masthead__logo" src="images/logo.svg" alt="Golfsocial" />
+    </a>
+    <nav class="masthead__nav" aria-label="Top">
+      <a class="masthead__social" href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="17" cy="7" r="1.05" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.facebook.com/1107518079119264" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M12.3 16.6V10.2c0-1.3.8-2.1 2.1-2.1h.5M10.1 11.8h4.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social" href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="4" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M7.4 10.6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="7.4" cy="7.9" r="0.6" fill="currentColor"/>
+          <path d="M11.1 16.6v-6m0 2.5c0-1.6 1-2.5 2.3-2.5 1.2 0 2.1.9 2.1 2.6v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="masthead__social masthead__social--x" href="https://x.com/golfsocialclub" target="_blank" rel="noopener" aria-label="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main class="lp">
+  <!-- ════════════════════ 1 · HERO : the question, and the app answering it ════════════════════ -->
+  <section class="lp-hero">
+    <div class="lp-hero__text">
+      <p class="lp-eyebrow" data-da="Indendørs runder" data-en="Indoor rounds">Indendørs runder</p>
+      <h1 class="lp-hero__title" data-da="Kan jeg logge mine runder fra golfsimulatoren?" data-en="Can I log my rounds from the golf simulator?">Kan jeg logge mine runder fra golfsimulatoren?</h1>
+      <p class="lp-hero__lead" data-da="Ja. Tag et billede af skærmen, når I har spillet færdig, så læser Golfsocial banen og jeres slag. Runden kommer i feedet, og vennerne fra båsen kan få den med." data-en="Yes. Take a photo of the screen when you are done, and Golfsocial reads the course and your strokes. The round lands in the feed, and your friends from the bay can get it too.">Ja. Tag et billede af skærmen, når I har spillet færdig, så læser Golfsocial banen og jeres slag. Runden kommer i feedet, og vennerne fra båsen kan få den med.</p>
+      <div class="lp-hero__cta">
+        <a class="lp-pill" href="/hent?c=web_indendoers"><span data-da="Hent Golfsocial" data-en="Get Golfsocial">Hent Golfsocial</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="lp-link" href="#saadan" data-da="Se, hvordan det virker" data-en="See how it works">Se, hvordan det virker</a>
+      </div>
+    </div>
+    <div class="lp-stage lp-stage--indoor">
+      <figure class="lp-photo lp-photo--indoor">
+        <img fetchpriority="high" src="images/lp-in-foto.webp" width="1000" height="1360" alt="A golfer mid-swing in a dark simulator bay, with the shot data and a course on the big screen" />
+      </figure>
+      <figure class="lp-float lp-float--near lp-in__rows">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-in-raekker.webp" width="1290" height="1485" alt="After the photo of the simulator screen in Golfsocial: Hvilken række er dig?, Club de Golf Chapultepec, Individual Stableford, and one row per player with handicap, tee, points and strokes" /></span>
+        </figure>
+      <figure class="lp-float lp-float--near lp-in__post">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-in-opslag.webp" width="1224" height="1443" alt="An indoor round in the Golfsocial feed: Josh Williams spillede indendørs at Simgolf Amager, 88 strokes, 24 points, tee White, and a picture of Pebble Beach Golf Links" /></span>
+        </figure>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 2 · STEPS : the deep green plane ════════════════════ -->
+  <section class="lp-steps" id="saadan">
+    <div class="lp-steps__head">
+      <h2 class="lp-steps__title" data-da="Sådan logger du en runde fra simulatoren" data-en="How to log a round from the simulator">Sådan logger du en runde fra simulatoren</h2>
+      <p class="lp-steps__lead" data-da="Fra skærmen i båsen til runden i feedet." data-en="From the screen in the bay to the round in the feed.">Fra skærmen i båsen til runden i feedet.</p>
+    </div>
+    <ol class="lp-steps__list">
+      <li data-da="Hent Golfsocial i App Store, og opret dig." data-en="Download Golfsocial from the App Store and create your profile.">Hent Golfsocial i App Store, og opret dig.</li>
+      <li data-da="Tryk på bolden, og del en indendørs runde." data-en="Tap the ball and share an indoor round.">Tryk på bolden, og del en indendørs runde.</li>
+      <li data-da="Tryk Scan skærmen, og hold telefonen på tværs. Få hele scorekortet ind i rammen, og tag billedet." data-en="Tap Scan skærmen (scan the screen) and hold the phone sideways. Get the whole scorecard inside the frame and take the photo.">Tryk Scan skærmen, og hold telefonen på tværs. Få hele scorekortet ind i rammen, og tag billedet.</li>
+      <li data-da="Tryk på din række. Så har appen banen, din tee og dine slag." data-en="Tap your row. Then the app has the course, your tee and your strokes.">Tryk på din række. Så har appen banen, din tee og dine slag.</li>
+      <li data-da="Vælg vennen bag hvert af de andre navne, så får de også runden. Du kan også springe det over." data-en="Pick the friend behind each of the other names, and they get the round too. You can also skip it.">Vælg vennen bag hvert af de andre navne, så får de også runden. Du kan også springe det over.</li>
+      <li data-da="Vælg det center, I spillede i. Det skal du kun første gang." data-en="Pick the centre you played at. You only do that the first time.">Vælg det center, I spillede i. Det skal du kun første gang.</li>
+      <li data-da="Tjek tallene, og gem. Runden kommer i feedet." data-en="Check the numbers and save. The round lands in the feed.">Tjek tallene, og gem. Runden kommer i feedet.</li>
+    </ol>
+  </section>
+
+  <!-- ════════════════════ 3 · HOW THE SCANNER READS THE SCREEN : the paper plane ════════════════════ -->
+  <section class="lp-read" id="scanneren">
+    <div class="lp-read__text">
+      <h2 class="lp-read__title" data-da="Sådan læser appen skærmen" data-en="How the app reads the screen">Sådan læser appen skærmen</h2>
+      <p class="lp-read__lead" data-da="Når runden er slut, viser simulatoren scorekortet på skærmen. Hold telefonen på tværs, få hele kortet ind i rammen, og tag billedet. Så læser Golfsocial:" data-en="When the round is over, the simulator shows the scorecard on the screen. Hold the phone sideways, get the whole card inside the frame and take the photo. Then Golfsocial reads:">Når runden er slut, viser simulatoren scorekortet på skærmen. Hold telefonen på tværs, få hele kortet ind i rammen, og tag billedet. Så læser Golfsocial:</p>
+      <ul class="lp-read__list">
+        <li data-da="Banen" data-en="The course">Banen</li>
+        <li data-da="Spilleformen" data-en="The game format">Spilleformen</li>
+        <li data-da="Par og nøgle pr. hul" data-en="Par and stroke index per hole">Par og nøgle pr. hul</li>
+        <li data-da="Hver spillers række: navn, handicap og tee" data-en="Each player’s row: name, handicap and tee">Hver spillers række: navn, handicap og tee</li>
+        <li data-da="Slag pr. hul" data-en="Strokes per hole">Slag pr. hul</li>
+        <li data-da="Points og total" data-en="Points and total">Points og total</li>
+      </ul>
+      <p class="lp-read__note" data-da="Navnene på skærmen er tit klippet eller kaldenavne, så du trykker selv på din række." data-en="The names on the screen are often cut off or nicknames, so you tap your own row yourself.">Navnene på skærmen er tit klippet eller kaldenavne, så du trykker selv på din række.</p>
+    </div>
+    <figure class="lp-read__phone lp-cam" role="img" aria-label="Animation of the camera in Golfsocial held sideways at a golf simulator screen: it moves closer until the whole scorecard for Club de Golf Chapultepec is inside the frame, the shutter is pressed, and the app shows Læser scorekortet with a green progress bar and then Scorekortet er læst">
+      <div class="lp-cam__phone" aria-hidden="true">
+        <div class="lp-cam__scene"><img loading="lazy" decoding="async" src="images/lp-in-scene.webp" width="3600" height="1660" alt="" /></div>
+        <img class="lp-cam__ui" loading="lazy" decoding="async" src="images/lp-in-camui.webp" width="1864" height="860" alt="" />
+        <span class="lp-cam__press"></span>
+        <span class="lp-cam__flash"></span>
+        <span class="lp-cam__dark"></span>
+        <span class="lp-cam__photo"><img loading="lazy" decoding="async" src="images/lp-in-scanfoto.webp" width="1230" height="430" alt="" /><i class="lp-cam__sweep"></i><i class="lp-cam__c lp-cam__c--tl"></i><i class="lp-cam__c lp-cam__c--tr"></i><i class="lp-cam__c lp-cam__c--bl"></i><i class="lp-cam__c lp-cam__c--br"></i></span>
+        <span class="lp-cam__load"><span data-da="Læser scorekortet..." data-en="Reading the scorecard...">Læser scorekortet...</span><span class="lp-cam__bar"><i></i></span></span>
+        <span class="lp-cam__done"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17"/><path d="M13 20.5l4.6 4.6L27.5 15"/></svg><span data-da="Scorekortet er læst" data-en="Scorecard read">Scorekortet er læst</span></span>
+        <span class="lp-cam__veil"></span>
+      </div>
+    </figure>
+  </section>
+
+  <!-- ════════════════════ 4 · MOMENTS : one point at a time, in the white ════════════════════ -->
+  <section class="lp-moment">
+    <div class="lp-moment__text">
+      <h2 class="lp-moment__title" data-da="Vennerne fra båsen får også runden" data-en="Your friends from the bay get the round too">Vennerne fra båsen får også runden</h2>
+      <p class="lp-moment__p" data-da="Ét billede af skærmen er nok til jer alle. Vælg vennen bag hvert navn, så ligger runden klar til dem, og de skal ikke selv tage et billede." data-en="One photo of the screen is enough for all of you. Pick the friend behind each name, and the round is ready for them, without them taking a photo themselves.">Ét billede af skærmen er nok til jer alle. Vælg vennen bag hvert navn, så ligger runden klar til dem, og de skal ikke selv tage et billede.</p>
+    </div>
+    <div class="lp-moment__visual lp-moment__visual--mates">
+      <figure class="lp-float lp-float--fade lp-mates__card">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-in-kort.webp" width="1290" height="2113" alt="Tjek dit scorekort in Golfsocial: the strokes read from the simulator screen for the front nine, with par for each hole" /></span>
+        </figure>
+      <figure class="lp-float lp-float--near lp-mates__pick">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-in-makkere.webp" width="1290" height="1030" alt="Hvem spillede du med? in Golfsocial: the other rows from the screen, two of them linked to the friends Mikkel Andersen and Rasmus Jensen, one name that could not be read" /></span>
+        </figure>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 5 · NOTHING TO TYPE : the paper plane ════════════════════ -->
+  <section class="lp-group">
+    <div class="lp-moment__text">
+      <h2 class="lp-moment__title" data-da="Du taster ikke noget" data-en="You don’t type anything">Du taster ikke noget</h2>
+      <p class="lp-moment__p" data-da="Banen, din tee og dine slag kommer fra skærmen, og centret vælger du første gang. Passer et tal ikke, trykker du på det og retter det, før du gemmer." data-en="The course, your tee and your strokes come from the screen, and you pick the centre the first time. If a number is off, tap it and correct it before you save.">Banen, din tee og dine slag kommer fra skærmen, og centret vælger du første gang. Passer et tal ikke, trykker du på det og retter det, før du gemmer.</p>
+    </div>
+    <div class="lp-group__visual lp-group__visual--bane">
+      <figure class="lp-float lp-float--near lp-bane__fields">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-in-bane.webp" width="1290" height="1038" alt="The indoor round in Golfsocial filled in from the screen: the centre Simgolf København, the course Club de Golf Chapultepec, and the tee Blanca picked among the course's tees" /></span>
+        </figure>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 6 · THE FACTS : one per line ════════════════════ -->
+  <section class="lp-facts">
+    <div class="lp-facts__head">
+      <h2 class="lp-facts__title" data-da="Indendørs runder i Golfsocial" data-en="Indoor rounds in Golfsocial">Indendørs runder i Golfsocial</h2>
+    </div>
+    <dl class="lp-facts__list">
+      <div class="lp-facts__row"><dt data-da="Sådan" data-en="How">Sådan</dt><dd data-da="Et billede af skærmen, når I har spillet færdig" data-en="A photo of the screen when you are done">Et billede af skærmen, når I har spillet færdig</dd></div>
+      <div class="lp-facts__row"><dt data-da="Appen læser" data-en="The app reads">Appen læser</dt><dd data-da="Banen, par, din tee og dine slag" data-en="The course, par, your tee and your strokes">Banen, par, din tee og dine slag</dd></div>
+      <div class="lp-facts__row"><dt data-da="Vennerne" data-en="Friends">Vennerne</dt><dd data-da="Kobl navnene på skærmen til dine venner, så får de runden" data-en="Link the names on the screen to your friends, and they get the round">Kobl navnene på skærmen til dine venner, så får de runden</dd></div>
+      <div class="lp-facts__row"><dt data-da="I feedet" data-en="In the feed">I feedet</dt><dd data-da="Runden står som spillet indendørs, med centret som sted" data-en="The round shows as played indoors, with the centre as the place">Runden står som spillet indendørs, med centret som sted</dd></div>
+      <div class="lp-facts__row"><dt data-da="Handicap" data-en="Handicap">Handicap</dt><dd data-da="Tæller ikke til dit DGU-handicap" data-en="Does not count towards your DGU handicap">Tæller ikke til dit DGU-handicap</dd></div>
+      <div class="lp-facts__row"><dt data-da="Dine tal" data-en="Your stats">Dine tal</dt><dd data-da="Holdes ude af din udvikling og dine sammenligninger med vennerne" data-en="Kept out of your development and your comparisons with friends">Holdes ude af din udvikling og dine sammenligninger med vennerne</dd></div>
+      <div class="lp-facts__row"><dt data-da="Pris" data-en="Price">Pris</dt><dd data-da="Gratis" data-en="Free">Gratis</dd></div>
+    </dl>
+  </section>
+
+  <!-- ════════════════════ 5 · PROOF : a photo, and the one number ════════════════════ -->
+  <section class="lp-proof">
+    <figure class="lp-proof__photo">
+      <img loading="lazy" decoding="async" src="images/lp-in-telefon.webp" width="1400" height="1750" alt="A phone on a dark table with Golfsocial open on Hvad vil du dele?, where the last row is Indendørs: Simulatorrunde, scan skærmen i båsen" />
+    </figure>
+    <div class="lp-proof__text">
+      <h2 class="lp-proof__title" data-da="Omkring 600 golfere har logget næsten 800 runder i Golfsocial." data-en="About 600 golfers have logged almost 800 rounds in Golfsocial.">Omkring 600 golfere har logget næsten 800 runder i Golfsocial.</h2>
+      <p class="lp-proof__p" data-da="Golfsocial er gratis at spille med vennerne, ude på banen og inde i simulatoren." data-en="Golfsocial is free to play with your friends, out on the course and inside the simulator.">Golfsocial er gratis at spille med vennerne, ude på banen og inde i simulatoren.</p>
+      <div class="lp-proof__cta">
+        <a class="lp-pill" href="/hent?c=web_indendoers"><span data-da="Hent Golfsocial" data-en="Get Golfsocial">Hent Golfsocial</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="lp-link" href="https://apps.apple.com/app/apple-store/id6743446900?pt=125766814&ct=web_indendoers&mt=8" target="_blank" rel="noopener" data-da="Hent i App Store" data-en="Get it on the App Store">Hent i App Store</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 6 · QUESTIONS AND ANSWERS (the v12 FAQ block) ════════════════════ -->
+  <section class="faq" id="faq">
+    <div class="faq__head">
+      <h2 class="faq__title" data-da="Spørgsmål og svar" data-en="Questions and answers">Spørgsmål og svar</h2>
+    </div>
+    <div class="faq__list">
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Kan jeg logge en simulatorrunde i en golf-app?" data-en="Can I log a simulator round in a golf app?">Kan jeg logge en simulatorrunde i en golf-app?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Ja. I Golfsocial tager du et billede af skærmen i simulatoren, når runden er slut. Appen læser banen og jeres slag, og runden kommer i feedet." data-en="Yes. In Golfsocial you take a photo of the screen in the simulator when the round is over. The app reads the course and your strokes, and the round lands in the feed.">Ja. I Golfsocial tager du et billede af skærmen i simulatoren, når runden er slut. Appen læser banen og jeres slag, og runden kommer i feedet.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvilken golf-app kan gemme runder fra golfsimulatoren?" data-en="Which golf app can save rounds from the golf simulator?">Hvilken golf-app kan gemme runder fra golfsimulatoren?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Golfsocial. Du logger runden med et billede af skærmen, og dine venner kan se den i feedet." data-en="Golfsocial. You log the round with a photo of the screen, and your friends can see it in the feed.">Golfsocial. Du logger runden med et billede af skærmen, og dine venner kan se den i feedet.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Skal jeg taste scoren ind selv?" data-en="Do I have to type in the score myself?">Skal jeg taste scoren ind selv?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Nej. Appen udfylder slagene fra billedet. Passer et tal ikke, trykker du på det og retter det." data-en="No. The app fills in the strokes from the photo. If a number is off, tap it and correct it.">Nej. Appen udfylder slagene fra billedet. Passer et tal ikke, trykker du på det og retter det.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Kan mine venner fra båsen få runden?" data-en="Can my friends from the bay get the round?">Kan mine venner fra båsen få runden?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Ja. Vælg vennen bag hvert navn på skærmen, så ligger runden klar til dem. De skal ikke selv tage et billede." data-en="Yes. Pick the friend behind each name on the screen, and the round is ready for them. They don’t have to take a photo themselves.">Ja. Vælg vennen bag hvert navn på skærmen, så ligger runden klar til dem. De skal ikke selv tage et billede.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvad hvis mit navn er klippet på skærmen?" data-en="What if my name is cut off on the screen?">Hvad hvis mit navn er klippet på skærmen?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Det gør ikke noget. Du trykker selv på din række, og du vælger selv vennen bag de andre navne." data-en="That is fine. You tap your own row, and you pick the friend behind the other names yourself.">Det gør ikke noget. Du trykker selv på din række, og du vælger selv vennen bag de andre navne.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Tæller en indendørs runde til mit DGU-handicap?" data-en="Does an indoor round count towards my DGU handicap?">Tæller en indendørs runde til mit DGU-handicap?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Nej. En runde fra simulatoren tæller ikke til dit DGU-handicap, og den skal ikke godkendes af en markør." data-en="No. A round from the simulator does not count towards your DGU handicap, and it does not need a marker to approve it.">Nej. En runde fra simulatoren tæller ikke til dit DGU-handicap, og den skal ikke godkendes af en markør.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Kommer indendørs runder med i min udvikling?" data-en="Do indoor rounds count in my development?">Kommer indendørs runder med i min udvikling?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Nej. De står i feedet og på din profil som indendørs, men de holdes ude af din udvikling og dine sammenligninger med vennerne." data-en="No. They show in the feed and on your profile as indoor, but they are kept out of your development and your comparisons with friends.">Nej. De står i feedet og på din profil som indendørs, men de holdes ude af din udvikling og dine sammenligninger med vennerne.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Kan vennerne se, hvor vi spillede?" data-en="Can friends see where we played?">Kan vennerne se, hvor vi spillede?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Ja. Centret står som sted, og banen fra simulatoren står på opslaget." data-en="Yes. The centre shows as the place, and the course from the simulator is on the post.">Ja. Centret står som sted, og banen fra simulatoren står på opslaget.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvad koster det?" data-en="What does it cost?">Hvad koster det?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet." data-en="Golfsocial is free to play with your friends: live score, the game formats, the groups and the feed.">Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvor mange bruger Golfsocial?" data-en="How many people use Golfsocial?">Hvor mange bruger Golfsocial?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026)." data-en="About 600 golfers have logged almost 800 rounds in Golfsocial (November 2026).">Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026).</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 7 · READ NEXT ════════════════════ -->
+  <nav class="lp-related" aria-label="Læs også">
+    <p class="lp-related__label" data-da="Læs også" data-en="Read next">Læs også</p>
+    <ul>
+      <li><a href="/scan-dit-scorekort" data-da="Kan jeg scanne mit scorekort i stedet for at taste det?" data-en="Can I scan my scorecard instead of typing it in?">Kan jeg scanne mit scorekort i stedet for at taste det?</a></li>
+      <li><a href="/live-score-og-leaderboard" data-da="Kan vi få live score og leaderboard, når vi spiller golf sammen?" data-en="Can we get live scoring and a leaderboard when we play golf together?">Kan vi få live score og leaderboard, når vi spiller golf sammen?</a></li>
+      <li><a href="/gratis-dansk-golf-app" data-da="Findes der en gratis dansk golf-app til mig og mine venner?" data-en="Is there a free Danish golf app for me and my friends?">Findes der en gratis dansk golf-app til mig og mine venner?</a></li>
+      <li><a href="/foelg-dine-venners-golfrunder" data-da="Kan jeg følge mine venners golfrunder, gratis?" data-en="Can I follow my friends’ golf rounds, for free?">Kan jeg følge mine venners golfrunder, gratis?</a></li>
+      <li><a href="/se-dine-runder-og-din-udvikling" data-da="Kan jeg se mine runder og min udvikling samlet i en app?" data-en="Can I see my rounds and my development in one app?">Kan jeg se mine runder og min udvikling samlet i en app?</a></li>
+    </ul>
+  </nav>
+  </main>
+
+  <!-- ════════════════════ NEWSLETTER (reused from the homepage, do not edit) ════════════════════ -->
+  <section class="newsband">
+    <div class="news">
+      <img class="news__bg" src="images/news-bg.webp" alt="" />
+      <div class="news__inner">
+        <div class="news__text">
+          <h2 class="news__h" data-da="En hilsen fra banen." data-en="The occasional note from the course.">En hilsen fra banen.</h2>
+          <p class="news__sub" data-da="Ingen støj. Kun når vi har noget at fortælle." data-en="No noise. Only the occasional read.">Ingen støj. Kun når vi har noget at fortælle.</p>
+        </div>
+        <form class="news__form" data-ml-form="165875690760046481" novalidate>
+          <input class="news__email" type="email" name="fields[email]" placeholder="you@email.com" data-da="dig@email.com" aria-label="Email address" required />
+          <button class="news__btn" type="submit" data-da="Tilmeld" data-en="Subscribe">Tilmeld</button>
+          <span class="news__confirm" aria-hidden="true">
+            <span class="news__confirm-check">
+              <svg viewBox="0 0 52 52" aria-hidden="true">
+                <circle class="news__confirm-circle" cx="26" cy="26" r="24" fill="none" />
+                <path class="news__confirm-tick" fill="none" d="M15 27 l7.5 7.5 L37.5 19" />
+              </svg>
+            </span>
+            <span class="news__confirm-text" data-da="Du er med. Vi ses på banen." data-en="You’re in. See you on the course.">Du er med. Vi ses på banen.</span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ DOWNLOAD CTA + FOOTER (do not edit) ════════════════════ -->
+  <footer class="foot">
+    <hr class="foot__rule" />
+    <div class="foot__cta">
+      <h2 class="foot__headline" data-da="Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed." data-en="Download Golfsocial. Because good friends never let friends golf in silence.">Hent Golfsocial. Fordi gode venner aldrig lader venner golfe i stilhed.</h2>
+      <div class="badges foot__badges">
+        <a href="https://apps.apple.com/app/apple-store/id6743446900?pt=125766814&ct=web_download&mt=8" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store">
+          <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#16221F"/><g fill="#FCFBF8"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production&referrer=utm_source%3Dgolfsocial.club%26utm_medium%3Dwebsite%26utm_campaign%3Dweb_download" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play">
+          <svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#16221F"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#FCFBF8"/></g><g fill="#FCFBF8"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot__bar">
+      <div class="foot__left">
+        <nav class="foot__links" aria-label="Footer">
+          <a href="https://instagram.com/golfsocial_club" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/1107518079119264" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.linkedin.com/company/golfsocial" target="_blank" rel="noopener">Linkedin</a>
+          <a href="https://x.com/golfsocialclub" target="_blank" rel="noopener">x.com</a>
+          <a href="mailto:hello@golfsocial.club" data-da="Kontakt" data-en="Contact">Kontakt</a>
+          <a href="/privacy-policy" data-da="Privatlivspolitik" data-en="Privacy Policy">Privatlivspolitik</a>
+        </nav>
+        <p class="foot__copy" data-da="© 2026 Golfsocial. Alle rettigheder forbeholdes." data-en="© 2026 Golfsocial. All rights reserved.">© 2026 Golfsocial. Alle rettigheder forbeholdes.</p>
+      </div>
+      <p class="foot__made" data-da="Bygget og designet i København" data-en="Built and designed in Copenhagen">Bygget og designet i København</p>
+    </div>
+  </footer>
+
+  <script src="article.js?v=5"></script>
+</body>
+</html>
