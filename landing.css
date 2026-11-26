@@ -538,6 +538,81 @@
 .lp-read__phone { flex: 0 1 68rem; margin: 0 -2rem 0 0; }
 .lp-read__phone img { display: block; width: 100%; height: auto; }
 
+/* the scanner, animated: the camera moves closer to the simulator screen, the shutter is pressed, and the app reads the card.
+   One 10 s loop in CSS only. The phone lies sideways in 932 x 430 pt; --u is one pt of it. */
+.lp-cam { container-type: inline-size; }
+.lp-cam__phone {
+  --u: calc(100cqw / 932);
+  --green: #18a138;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 932 / 430;
+  border-radius: calc(var(--u) * 53);
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 1.8rem 6rem rgba(16, 36, 31, 0.26), 0 0.4rem 1.4rem rgba(16, 36, 31, 0.1);
+  isolation: isolate;
+}
+.lp-cam__phone > * { position: absolute; display: block; }
+.lp-cam__scene { left: calc(var(--u) * -462); top: calc(var(--u) * -200); width: calc(var(--u) * 1800); height: calc(var(--u) * 830); transform-origin: 50% 50%; }
+.lp-cam__scene img, .lp-cam__ui { width: 100%; height: auto; }
+.lp-cam__ui { left: 0; top: 0; }
+.lp-cam__press { left: calc(var(--u) * 842.5); top: calc(var(--u) * 185); width: calc(var(--u) * 60); height: calc(var(--u) * 60); border-radius: 50%; background: rgba(0, 0, 0, 0.28); opacity: 0; }
+.lp-cam__flash { inset: 0; background: #fff; opacity: 0; }
+.lp-cam__dark { inset: 0; background: rgba(8, 8, 6, 0.95); opacity: 0; }
+.lp-cam__photo { left: calc(var(--u) * 186); top: calc(var(--u) * 52); width: calc(var(--u) * 560); height: calc(var(--u) * 196); border-radius: calc(var(--u) * 12); overflow: hidden; opacity: 0; }
+.lp-cam__photo img { width: 100%; height: 100%; object-fit: cover; }
+.lp-cam__c { position: absolute; width: calc(var(--u) * 28); height: calc(var(--u) * 28); border: 0 solid var(--green); }
+.lp-cam__c--tl { left: 0; top: 0; border-top-width: calc(var(--u) * 3); border-left-width: calc(var(--u) * 3); border-top-left-radius: calc(var(--u) * 12); }
+.lp-cam__c--tr { right: 0; top: 0; border-top-width: calc(var(--u) * 3); border-right-width: calc(var(--u) * 3); border-top-right-radius: calc(var(--u) * 12); }
+.lp-cam__c--bl { left: 0; bottom: 0; border-bottom-width: calc(var(--u) * 3); border-left-width: calc(var(--u) * 3); border-bottom-left-radius: calc(var(--u) * 12); }
+.lp-cam__c--br { right: 0; bottom: 0; border-bottom-width: calc(var(--u) * 3); border-right-width: calc(var(--u) * 3); border-bottom-right-radius: calc(var(--u) * 12); }
+.lp-cam__sweep { position: absolute; top: 0; bottom: 0; left: 0; width: calc(var(--u) * 70); background: linear-gradient(90deg, rgba(24, 161, 56, 0), rgba(24, 161, 56, 0.28) 70%, rgba(120, 230, 140, 0.95) 97%, rgba(24, 161, 56, 0)); transform: translateX(calc(var(--u) * -80)); opacity: 0; }
+.lp-cam__load { left: 0; right: 0; top: calc(var(--u) * 274); display: flex; flex-direction: column; align-items: center; gap: max(calc(var(--u) * 14), 0.6rem); text-align: center; color: #fff; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500; font-size: max(calc(var(--u) * 17), 1.25rem); line-height: 1.2; opacity: 0; }
+.lp-cam__bar { display: block; width: calc(var(--u) * 300); height: max(calc(var(--u) * 4), 2px); border-radius: 99px; background: rgba(255, 255, 255, 0.2); overflow: hidden; }
+.lp-cam__bar i { display: block; width: 0; height: 100%; border-radius: inherit; background: var(--green); }
+.lp-cam__done { left: 0; right: 0; top: calc(var(--u) * 266); display: flex; flex-direction: column; align-items: center; gap: calc(var(--u) * 10); color: #fff; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700; font-size: max(calc(var(--u) * 18), 1.3rem); line-height: 1.2; opacity: 0; }
+.lp-cam__done svg { width: max(calc(var(--u) * 40), 2.2rem); height: max(calc(var(--u) * 40), 2.2rem); fill: none; stroke: var(--green); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.lp-cam__veil { inset: 0; background: #000; opacity: 0; }
+
+.lp-cam__scene  { animation: lpCamScene 10s infinite; }
+.lp-cam__ui     { animation: lpCamUi 10s infinite; }
+.lp-cam__press  { animation: lpCamPress 10s infinite; }
+.lp-cam__flash  { animation: lpCamFlash 10s infinite; }
+.lp-cam__dark   { animation: lpCamDark 10s infinite; }
+.lp-cam__photo  { animation: lpCamPhoto 10s infinite; }
+.lp-cam__sweep  { animation: lpCamSweep 10s infinite; }
+.lp-cam__load   { animation: lpCamStatus 10s infinite; }
+.lp-cam__bar i  { animation: lpCamBar 10s infinite; }
+.lp-cam__done   { animation: lpCamDone 10s infinite; }
+.lp-cam__veil   { animation: lpCamVeil 10s infinite; }
+
+/* 0-26 %: closer and into focus · 27-30 %: shutter and flash · 31-70 %: reading · 72-94 %: read · 95-100 %: back to the start */
+@keyframes lpCamScene {
+  0%   { transform: translate(calc(var(--u) * 14), calc(var(--u) * 8)) scale(0.62) rotate(-1.2deg); filter: blur(2.5px); animation-timing-function: cubic-bezier(0.45, 0, 0.2, 1); }
+  14%  { filter: blur(1px); }
+  26%  { transform: translate(0, 0) scale(1) rotate(0); filter: blur(0); }
+  100% { transform: translate(0, 0) scale(1) rotate(0); filter: blur(0); }
+}
+@keyframes lpCamUi { 0%, 29% { opacity: 1; } 32%, 100% { opacity: 0; } }
+@keyframes lpCamPress { 0%, 26.5% { opacity: 0; transform: scale(1); } 27.5% { opacity: 1; transform: scale(0.86); } 29.5%, 100% { opacity: 0; transform: scale(1); } }
+@keyframes lpCamFlash { 0%, 28% { opacity: 0; } 28.8% { opacity: 0.85; } 32%, 100% { opacity: 0; } }
+@keyframes lpCamDark { 0%, 29% { opacity: 0; } 32%, 95% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes lpCamPhoto { 0%, 30% { opacity: 0; transform: scale(0.9); } 32.5% { opacity: 1; transform: scale(1); } 95%, 100% { opacity: 1; transform: scale(1); } }
+@keyframes lpCamSweep {
+  0%, 34% { opacity: 0; transform: translateX(calc(var(--u) * -80)); }
+  35% { opacity: 1; }
+  52% { transform: translateX(calc(var(--u) * 570)); opacity: 1; }
+  52.1% { opacity: 0; transform: translateX(calc(var(--u) * -80)); }
+  53% { opacity: 1; }
+  68% { transform: translateX(calc(var(--u) * 570)); opacity: 1; }
+  68.1%, 100% { opacity: 0; }
+}
+@keyframes lpCamStatus { 0%, 33% { opacity: 0; } 35%, 69% { opacity: 1; } 71%, 100% { opacity: 0; } }
+@keyframes lpCamBar { 0%, 35% { width: 0; } 65% { width: 85%; } 68.5%, 100% { width: 100%; } }
+@keyframes lpCamDone { 0%, 70.5% { opacity: 0; transform: scale(0.6); } 72.5% { opacity: 1; transform: scale(1); } 95%, 100% { opacity: 1; transform: scale(1); } }
+@keyframes lpCamVeil { 0% { opacity: 1; } 3% { opacity: 0; } 94% { opacity: 0; } 98%, 100% { opacity: 1; } }
+
 /* ════════════════════ TABLET & DOWN : one column ════════════════════ */
 @media (max-width: 1024px) {
   .lp-hero { flex-direction: column; align-items: flex-start; gap: 7rem; margin-top: 6rem; }
@@ -756,5 +831,7 @@
   .js .lp-scan__cam, .js .lp-scan__grid,
   .js .lp-udv__curve, .js .lp-udv__round, .js .lp-udv__rank, .js .lp-udv__nums,
   .js .lp-in__rows, .js .lp-in__post { animation: none; }
+  .lp-cam__phone *, .lp-cam__scene { animation: none !important; }
+  .lp-cam__scene { transform: none; filter: none; }
   .lp-pill, .lp-pill svg { transition: none; }
 }

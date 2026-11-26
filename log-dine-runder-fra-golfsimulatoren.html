@@ -189,8 +189,18 @@
       </ul>
       <p class="lp-read__note" data-da="Navnene på skærmen er tit klippet eller kaldenavne, så du trykker selv på din række." data-en="The names on the screen are often cut off or nicknames, so you tap your own row yourself.">Navnene på skærmen er tit klippet eller kaldenavne, så du trykker selv på din række.</p>
     </div>
-    <figure class="lp-read__phone">
-      <img loading="lazy" decoding="async" src="images/lp-in-kamera.webp" width="2544" height="1324" alt="The camera in Golfsocial held sideways at a golf simulator screen: the whole scorecard for Club de Golf Chapultepec inside the frame, with the hint Hele scorekortet inden for rammen and the shutter button" />
+    <figure class="lp-read__phone lp-cam" role="img" aria-label="Animation of the camera in Golfsocial held sideways at a golf simulator screen: it moves closer until the whole scorecard for Club de Golf Chapultepec is inside the frame, the shutter is pressed, and the app shows Læser scorekortet with a green progress bar and then Scorekortet er læst">
+      <div class="lp-cam__phone" aria-hidden="true">
+        <div class="lp-cam__scene"><img loading="lazy" decoding="async" src="images/lp-in-scene.webp" width="3600" height="1660" alt="" /></div>
+        <img class="lp-cam__ui" loading="lazy" decoding="async" src="images/lp-in-camui.webp" width="1864" height="860" alt="" />
+        <span class="lp-cam__press"></span>
+        <span class="lp-cam__flash"></span>
+        <span class="lp-cam__dark"></span>
+        <span class="lp-cam__photo"><img loading="lazy" decoding="async" src="images/lp-in-scanfoto.webp" width="1230" height="430" alt="" /><i class="lp-cam__sweep"></i><i class="lp-cam__c lp-cam__c--tl"></i><i class="lp-cam__c lp-cam__c--tr"></i><i class="lp-cam__c lp-cam__c--bl"></i><i class="lp-cam__c lp-cam__c--br"></i></span>
+        <span class="lp-cam__load"><span data-da="Læser scorekortet..." data-en="Reading the scorecard...">Læser scorekortet...</span><span class="lp-cam__bar"><i></i></span></span>
+        <span class="lp-cam__done"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17"/><path d="M13 20.5l4.6 4.6L27.5 15"/></svg><span data-da="Scorekortet er læst" data-en="Scorecard read">Scorekortet er læst</span></span>
+        <span class="lp-cam__veil"></span>
+      </div>
     </figure>
   </section>
 
