@@ -527,39 +527,16 @@
 .lp-bane__fields { top: 2rem; left: 0; width: 50rem; }
 .lp-bane__fields .lp-float__in { border-radius: 3rem; }
 
-/* how the scanner reads the screen: the simulator's own scorecard, numbered */
-.lp-read { margin: 17rem var(--gut) 0; padding: 10rem 9.4rem 9rem; border-radius: 3rem; background: var(--lp-paper); }
-.lp-read__head { display: flex; align-items: flex-end; justify-content: space-between; gap: 8rem; }
-.lp-read__title { flex: 0 1 56rem; font-weight: 500; font-size: 5.6rem; line-height: 5.9rem; letter-spacing: -0.17rem; color: var(--black); text-wrap: balance; }
-.lp-read__lead { flex: 0 1 54rem; font-size: 2.3rem; line-height: 3.4rem; letter-spacing: -0.02rem; color: #1a1a1a; text-wrap: pretty; }
-.lp-read__shot { position: relative; margin: 6rem 0 0; border-radius: 2.4rem; overflow: hidden; background: #2a2a22; box-shadow: var(--lp-shadow); }
-.lp-read__shot img { display: block; width: 100%; height: auto; }
-.lp-read__pin {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 3.4rem;
-  height: 3.4rem;
-  margin: -1.7rem 0 0 -1.7rem;
-  border-radius: 50%;
-  background: var(--white);
-  color: var(--lp-ink);
-  font-weight: 600;
-  font-size: 1.7rem;
-  font-variant-numeric: tabular-nums;
-  box-shadow: 0 0 0 0.5rem rgba(255, 255, 255, 0.3), 0 0.6rem 1.6rem rgba(0, 0, 0, 0.35);
-}
-.lp-read__pin--1 { left: 25.6%; top: 13.5%; }
-.lp-read__pin--2 { left: 76.6%; top: 14.3%; }
-.lp-read__pin--3 { left: 1.9%; top: 34.2%; }
-.lp-read__pin--4 { left: 11.6%; top: 48.8%; }
-.lp-read__pin--5 { left: 37.4%; top: 45.3%; }
-.lp-read__pin--6 { left: 90.1%; top: 45.5%; }
-.lp-read__list { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.6rem 4rem; margin-top: 5rem; }
-.lp-read__list li { display: flex; align-items: flex-start; gap: 1.6rem; font-size: 2.1rem; line-height: 3rem; letter-spacing: -0.02rem; color: #1a1a1a; }
-.lp-read__n { flex: 0 0 3.2rem; display: inline-flex; align-items: center; justify-content: center; height: 3.2rem; margin-top: -0.1rem; border-radius: 50%; background: var(--lp-ink); color: var(--white); font-weight: 600; font-size: 1.5rem; }
-.lp-read__note { margin-top: 4.4rem; max-width: 64rem; font-size: 2rem; line-height: 3rem; color: var(--lp-soft); }
+/* how the scanner reads the screen: the camera in the app, in a phone, held up to the simulator */
+.lp-read { display: flex; align-items: center; justify-content: space-between; gap: 5rem; margin: 17rem var(--gut) 0; padding: 8rem 6rem 8rem 9.4rem; border-radius: 3rem; background: var(--lp-paper); }
+.lp-read__text { flex: 0 1 50rem; }
+.lp-read__title { font-weight: 500; font-size: 5.6rem; line-height: 5.9rem; letter-spacing: -0.17rem; color: var(--black); text-wrap: balance; }
+.lp-read__lead { margin-top: 3rem; font-size: 2.3rem; line-height: 3.4rem; letter-spacing: -0.02rem; color: #1a1a1a; text-wrap: pretty; }
+.lp-read__list { list-style: none; margin-top: 2.8rem; border-bottom: 0.1rem solid rgba(0, 0, 0, 0.12); }
+.lp-read__list li { padding: 1.6rem 0 1.7rem; border-top: 0.1rem solid rgba(0, 0, 0, 0.12); font-weight: 500; font-size: 2.1rem; line-height: 3rem; letter-spacing: -0.02rem; color: var(--lp-ink); }
+.lp-read__note { margin-top: 3.4rem; font-size: 2rem; line-height: 3rem; color: var(--lp-soft); text-wrap: pretty; }
+.lp-read__phone { flex: 0 1 68rem; margin: 0 -2rem 0 0; }
+.lp-read__phone img { display: block; width: 100%; height: auto; }
 
 /* ════════════════════ TABLET & DOWN : one column ════════════════════ */
 @media (max-width: 1024px) {
@@ -589,10 +566,9 @@
   .lp-photo { left: 18rem; }
   .lp-photo--indoor { left: 14rem; }
   .lp-group__visual--bane { width: 50rem; max-width: 100%; }
-  .lp-read { margin-top: 13rem; padding: 8rem 6rem 7rem; }
-  .lp-read__head { flex-direction: column; align-items: flex-start; gap: 3rem; }
-  .lp-read__title, .lp-read__lead { flex: 0 0 auto; }
-  .lp-read__list { grid-template-columns: repeat(2, 1fr); }
+  .lp-read { flex-direction: column; align-items: flex-start; gap: 5rem; margin-top: 13rem; padding: 8rem 6rem 7rem; }
+  .lp-read__text { flex: 0 0 auto; max-width: 64rem; }
+  .lp-read__phone { flex: 0 0 auto; width: 100%; max-width: 68rem; margin: 0; align-self: center; }
   .lp-ph__curve { left: 36rem; }
   .lp-udv__round { left: 24rem; }
   .lp-udv__nums { left: 33rem; }
@@ -745,15 +721,12 @@
   .lp-lists__a { width: 24rem; }
   .lp-lists__b { top: 19rem; left: auto; right: 0; width: 24rem; }
 
-  .lp-read { margin-top: 9rem; padding: 5.4rem 2.4rem 5rem; border-radius: 2.2rem; }
+  .lp-read { margin-top: 9rem; padding: 5.4rem 2.4rem 4rem; gap: 3.6rem; border-radius: 2.2rem; }
   .lp-read__title { font-size: 3.4rem; line-height: 3.7rem; letter-spacing: -0.09rem; }
-  .lp-read__lead { font-size: 1.9rem; line-height: 2.9rem; }
-  .lp-read__shot { margin-top: 3.6rem; border-radius: 1.4rem; }
-  .lp-read__pin { display: none; }   /* too small to point at anything on a phone; the list says it */
-  .lp-read__list { grid-template-columns: 1fr; gap: 1.8rem; margin-top: 3.6rem; }
-  .lp-read__list li { font-size: 1.8rem; line-height: 2.7rem; }
-  .lp-read__n { flex-basis: 2.8rem; height: 2.8rem; font-size: 1.3rem; }
-  .lp-read__note { margin-top: 3rem; font-size: 1.7rem; line-height: 2.6rem; }
+  .lp-read__lead { margin-top: 2rem; font-size: 1.9rem; line-height: 2.9rem; }
+  .lp-read__list li { padding: 1.3rem 0 1.4rem; font-size: 1.8rem; line-height: 2.6rem; }
+  .lp-read__note { margin-top: 2.6rem; font-size: 1.7rem; line-height: 2.6rem; }
+  .lp-read__phone { width: calc(100% + 2rem); margin: 0 -1rem; }
 
   .lp-stage--indoor { height: 62rem; }
   .lp-photo--indoor { top: 0; left: auto; right: 0; width: 26rem; height: 35.4rem; border-radius: 2.2rem; }
