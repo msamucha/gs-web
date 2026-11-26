@@ -1,31 +1,7 @@
 <!DOCTYPE html>
 <!--
-  ╔══════════════════════════════════════════════════════════════════╗
-  ║  GOLFSOCIAL — BLOG POST TEMPLATE                                  ║
-  ║                                                                  ║
-  ║  To publish a new blog post: copy this file, rename it to your   ║
-  ║  url slug (e.g. how-to-lower-your-handicap.html), then change    ║
-  ║  ONLY the things marked « EDIT ».  Everything else — the design, ║
-  ║  the header, the footer, the stylesheets — stays exactly as is.  ║
-  ║                                                                  ║
-  ║  The article text lives between the CONTENT START and CONTENT    ║
-  ║  END markers below. Inside it you only ever write plain          ║
-  ║  content tags; the design is applied automatically:              ║
-  ║                                                                  ║
-  ║    <p class="lead">…</p>   first / intro paragraph (bigger)      ║
-  ║    <p>…</p>                a normal paragraph                    ║
-  ║    <h2>…</h2>              a section heading                     ║
-  ║    <h3>…</h3>              a smaller sub-heading                 ║
-  ║    <ul><li>…</li></ul>     a bullet list (use <ol> for numbers)  ║
-  ║    <blockquote>…</blockquote>   a pull-quote                     ║
-  ║    <figure><img src="images/your-image.webp" alt="…">           ║
-  ║      <figcaption>…</figcaption></figure>   an image             ║
-  ║    <hr>                    a divider line                        ║
-  ║    <strong>…</strong> / <em>…</em> / <a href="…">…</a>          ║
-  ║                                                                  ║
-  ║  Never add inline styles, <style> tags or new classes.          ║
-  ║  See BLOG-GUIDE.md for the full guide + a ready-made prompt.     ║
-  ╚══════════════════════════════════════════════════════════════════╝
+  GOLFSOCIAL — LANDING PAGE  (landing.css)
+  A question as the headline, the app answering it beside it, then one point per plane.
 -->
 <html lang="da" data-lang="da">
 <head>
@@ -47,35 +23,36 @@
     gtag('config', 'G-XEBPZS1TT2');
   </script>
 
-  <!-- « EDIT » page title + description -->
-  <title>Samarbejdet mellem Golfsocial og DGU · Golfsocial</title>
-  <meta name="description" content="En officiel integration med Dansk Golf Union. Dit WHS-handicap synkroniseres efter hver registreret runde, uden dobbeltindtastning." />
+  <!-- page title + description for search engines / social -->
+  <title>Hvordan hænger Golfsocial sammen med DGU? · Golfsocial</title>
+  <meta name="description" content="Golfsocial har en officiel aftale med Dansk Golf Union. Forbind din DGU-konto én gang, så er dit handicap opdateret, dine runder fra DGU kommer ind med DGU Sync, og en tællende runde fra appen går til dit DGU-handicap." />
 
   <link rel="canonical" href="https://golfsocial.club/dgu-collaboration" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Golfsocial" />
   <meta property="og:locale" content="da_DK" />
   <meta property="og:locale:alternate" content="en_US" />
-  <meta property="og:title" content="Samarbejdet mellem Golfsocial og DGU · Golfsocial" />
-  <meta property="og:description" content="En officiel integration med Dansk Golf Union. Dit WHS-handicap synkroniseres efter hver registreret runde, uden dobbeltindtastning." />
+  <meta property="og:title" content="Hvordan hænger Golfsocial sammen med DGU? · Golfsocial" />
+  <meta property="og:description" content="Golfsocial har en officiel aftale med Dansk Golf Union. Forbind din DGU-konto én gang, så er dit handicap opdateret, dine runder fra DGU kommer ind med DGU Sync, og en tællende runde fra appen går til dit DGU-handicap." />
   <meta property="og:url" content="https://golfsocial.club/dgu-collaboration" />
-  <meta property="og:image" content="https://golfsocial.club/images/og-dgu.png" />
+  <meta property="og:image" content="https://golfsocial.club/images/og-dgu-samarbejde.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Samarbejdet mellem Golfsocial og DGU · Golfsocial" />
-  <meta name="twitter:description" content="En officiel integration med Dansk Golf Union. Dit WHS-handicap synkroniseres efter hver registreret runde, uden dobbeltindtastning." />
-  <meta name="twitter:image" content="https://golfsocial.club/images/og-dgu.png" />
+  <meta name="twitter:title" content="Hvordan hænger Golfsocial sammen med DGU? · Golfsocial" />
+  <meta name="twitter:description" content="Golfsocial har en officiel aftale med Dansk Golf Union. Forbind din DGU-konto én gang, så er dit handicap opdateret, dine runder fra DGU kommer ind med DGU Sync, og en tællende runde fra appen går til dit DGU-handicap." />
+  <meta name="twitter:image" content="https://golfsocial.club/images/og-dgu-samarbejde.png" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     "mainEntityOfPage": "https://golfsocial.club/dgu-collaboration",
-    "headline": "The Golfsocial and DGU partnership",
-    "description": "An official integration with the Danish Golf Union: handicaps synced after every approved round, and a modern social home for the rest of your golf.",
-    "image": "https://golfsocial.club/images/og-dgu.png",
+    "headline": "Hvordan hænger Golfsocial sammen med DGU?",
+    "description": "Golfsocial har en officiel aftale med Dansk Golf Union. Forbind din DGU-konto én gang, så er dit handicap opdateret, dine runder fra DGU kommer ind med DGU Sync, og en tællende runde fra appen går til dit DGU-handicap.",
+    "image": "https://golfsocial.club/images/og-dgu-samarbejde.png",
     "inLanguage": "da-DK",
-    "dateModified": "2026-06-13",
+    "datePublished": "2026-11-18",
+    "dateModified": "2026-11-18",
     "author": { "@type": "Organization", "name": "Golfsocial" },
     "publisher": {
       "@type": "Organization",
@@ -90,7 +67,23 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://golfsocial.club/" },
-      { "@type": "ListItem", "position": 2, "name": "The Golfsocial and DGU partnership", "item": "https://golfsocial.club/dgu-collaboration" }
+      { "@type": "ListItem", "position": 2, "name": "Hvordan hænger Golfsocial sammen med DGU?", "item": "https://golfsocial.club/dgu-collaboration" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Har Golfsocial en aftale med DGU?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Golfsocial har en officiel aftale med Dansk Golf Union. Derfor kan appen hente dit handicap og dine runder fra DGU."}},
+      {"@type": "Question", "name": "Hvordan forbinder jeg Golfsocial med DGU?", "acceptedAnswer": {"@type": "Answer", "text": "Tryk Forbind med DGU i appen, og log ind. Så henter appen dit handicap og dine runder."}},
+      {"@type": "Question", "name": "Er mit handicap i Golfsocial det samme som hos DGU?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Appen henter dit handicap fra DGU og holder det opdateret."}},
+      {"@type": "Question", "name": "Hvad er DGU Sync?", "acceptedAnswer": {"@type": "Answer", "text": "DGU Sync henter de runder, du har registreret hos DGU, ind i Golfsocial. De ligger klar under Del runde fra DGU. Tryk Del runde, så kommer runden i feedet med scorekortet."}},
+      {"@type": "Question", "name": "Tæller en runde dobbelt, hvis jeg deler den i Golfsocial?", "acceptedAnswer": {"@type": "Answer", "text": "Nej. Runden ligger allerede hos DGU. Når du deler den i Golfsocial, ser dine venner den, og den tæller stadig kun én gang til dit handicap."}},
+      {"@type": "Question", "name": "Kan jeg registrere en tællende runde i Golfsocial?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Vælg en medspiller som markør, og gem runden. Når markøren har godkendt, tæller runden med i dit DGU-handicap."}},
+      {"@type": "Question", "name": "Hvad koster det?", "acceptedAnswer": {"@type": "Answer", "text": "Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet."}},
+      {"@type": "Question", "name": "Hvor mange bruger Golfsocial?", "acceptedAnswer": {"@type": "Answer", "text": "Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026)."}}
     ]
   }
   </script>
@@ -98,7 +91,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" />
   <link rel="stylesheet" href="styles.css?v=12-42" />
-  <link rel="stylesheet" href="article.css?v=12" />
+  <link rel="stylesheet" href="landing.css?v=9" />
 </head>
 <body>
 
@@ -137,86 +130,156 @@
     </nav>
   </header>
 
-  <!-- ════════════════════ ARTICLE ════════════════════ -->
-  <article class="article">
-
-    <!-- ── header : « EDIT » title + meta + side photo (swap the image url) ── -->
-    <header class="article__head">
-      <div class="article__head-text">
-        <h1 class="article__title" data-da="Samarbejdet mellem Golfsocial og DGU. Vi former fremtiden for golf." data-en="The Golfsocial and DGU partnership. Shaping the future of connected golf.">Samarbejdet mellem Golfsocial og DGU. Vi former fremtiden for golf.</h1>
-        <p class="article__meta" data-da="~3 min læsning" data-en="~3 min read">~3 min læsning</p>
+  <main class="lp">
+  <!-- ════════════════════ 1 · HERO : the question, and the app answering it ════════════════════ -->
+  <section class="lp-hero">
+    <div class="lp-hero__text">
+      <p class="lp-eyebrow" data-da="Golfsocial og DGU" data-en="Golfsocial and DGU">Golfsocial og DGU</p>
+      <h1 class="lp-hero__title" data-da="Hvordan hænger Golfsocial sammen med DGU?" data-en="How is Golfsocial connected to DGU?">Hvordan hænger Golfsocial sammen med DGU?</h1>
+      <p class="lp-hero__lead" data-da="Golfsocial har en officiel aftale med Dansk Golf Union. Forbind din DGU-konto én gang. Så er dit handicap altid opdateret, dine runder fra DGU kommer ind med DGU Sync, og en tællende runde fra appen går til dit DGU-handicap." data-en="Golfsocial has an official agreement with the Danish Golf Union. Connect your DGU account once. Then your handicap is always up to date, your rounds from DGU come in with DGU Sync, and a counting round from the app goes to your DGU handicap.">Golfsocial har en officiel aftale med Dansk Golf Union. Forbind din DGU-konto én gang. Så er dit handicap altid opdateret, dine runder fra DGU kommer ind med DGU Sync, og en tællende runde fra appen går til dit DGU-handicap.</p>
+      <div class="lp-hero__cta">
+        <a class="lp-pill" href="/hent?c=web_dgu_samarbejde"><span data-da="Hent Golfsocial" data-en="Get Golfsocial">Hent Golfsocial</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="lp-link" href="#saadan" data-da="Se, hvordan det virker" data-en="See how it works">Se, hvordan det virker</a>
       </div>
-      <figure class="article__media">
-        <span class="article__media-img" style="background-image:url('images/dgu-article.webp')"></span>
-      </figure>
-    </header>
-
-    <div class="article__body">
-      <!-- ╭───────────────────────── CONTENT START ─────────────────────────╮ -->
-
-      <p class="lead" data-da="Golf har udviklet sig støt, med flere spillere, mere deltagelse og en voksende interesse for værktøjer der bringer bekvemmelighed og fællesskab ind i spillet. En af de mere betydningsfulde udviklinger bag kulisserne er det voksende samarbejde mellem Golfsocial og Dansk Golf Union, der har til formål at gøre det enklere for golfere at holde styr på scores, håndtere handicap og holde kontakten." data-en="Golf has been evolving steadily, with more players, more participation, and growing interest in tools that bring convenience and community into the game. One of the more meaningful developments happening behind the scenes is the growing collaboration between Golfsocial and the Danish Golf Union, aimed at simplifying how golfers track scores, manage handicaps, and stay connected.">Golf har udviklet sig støt, med flere spillere, mere deltagelse og en voksende interesse for værktøjer der bringer bekvemmelighed og fællesskab ind i spillet. En af de mere betydningsfulde udviklinger bag kulisserne er det voksende samarbejde mellem Golfsocial og Dansk Golf Union, der har til formål at gøre det enklere for golfere at holde styr på scores, håndtere handicap og holde kontakten.</p>
-
-      <h2 data-da="Hvorfor samarbejdet betyder noget" data-en="The significance of this partnership">Hvorfor samarbejdet betyder noget</h2>
-      <p data-da="I årtier har DGU spillet en central rolle i at organisere og udvikle dansk golf ved at støtte klubber, uddanne golfere og passe de handicap- og scoringssystemer der holder tingene fair og ensartede. Golfsocial træder ind i det billede med en mission der supplerer. Vi vil gøre golf mere forbundet, mere social og mere drevet af fællesskab. Kombinationen giver golfere det bedste fra begge verdener: adgang til officielle, pålidelige data parret med en moderne social oplevelse bygget op om de øjeblikke der gør golf sjovt." data-en="For decades, the DGU has played a central role in organising and developing golf by supporting clubs, educating golfers, and maintaining the handicap and scoring systems that keep things fair and consistent. Golfsocial enters that picture with a complementary mission. We want to make golf more connected, more conversational, and more community driven. Bringing the two together lets golfers enjoy the best of both worlds: access to official, reliable data, paired with a modern social experience built around the moments that make golf enjoyable.">I årtier har DGU spillet en central rolle i at organisere og udvikle dansk golf ved at støtte klubber, uddanne golfere og passe de handicap- og scoringssystemer der holder tingene fair og ensartede. Golfsocial træder ind i det billede med en mission der supplerer. Vi vil gøre golf mere forbundet, mere social og mere drevet af fællesskab. Kombinationen giver golfere det bedste fra begge verdener: adgang til officielle, pålidelige data parret med en moderne social oplevelse bygget op om de øjeblikke der gør golf sjovt.</p>
-
-      <h2 data-da="Hvad integrationen rent faktisk giver dig" data-en="What the integration actually enables">Hvad integrationen rent faktisk giver dig</h2>
-      <p data-da="I stedet for at jonglere flere systemer eller indsende resultater manuelt vil golfere snart se DGU-funktionalitet flettet naturligt ind i Golfsocial-appen." data-en="Instead of juggling multiple systems or manually submitting results, golfers will soon see DGU functionality blended naturally into the Golfsocial app.">I stedet for at jonglere flere systemer eller indsende resultater manuelt vil golfere snart se DGU-funktionalitet flettet naturligt ind i Golfsocial-appen.</p>
-
-      <div class="callout">
-        <h3 data-da="Hvad der ændrer sig for dig" data-en="What changes for you">Hvad der ændrer sig for dig</h3>
-        <ul>
-          <li><strong data-da="Enklere indsendelse af scores:" data-en="Simpler score submission:">Enklere indsendelse af scores:</strong> <span data-da="send runder til officiel handicapberegning direkte fra Golfsocial." data-en="send rounds for official handicap calculation directly from Golfsocial.">send runder til officiel handicapberegning direkte fra Golfsocial.</span></li>
-          <li><strong data-da="Handicap der altid er opdateret:" data-en="Handicaps that stay current:">Handicap der altid er opdateret:</strong> <span data-da="appen afspejler automatisk de ændringer der hentes fra DGU's system." data-en="the app automatically reflects changes pulled from the DGU’s system.">appen afspejler automatisk de ændringer der hentes fra DGU's system.</span></li>
-          <li><strong data-da="Fremgang der er nem at følge:" data-en="Progress that is easy to follow:">Fremgang der er nem at følge:</strong> <span data-da="hold en ren, sammenhængende historik over dine scores uden at skifte platform." data-en="keep a clean, connected history of your scores without switching platforms.">hold en ren, sammenhængende historik over dine scores uden at skifte platform.</span></li>
-        </ul>
-      </div>
-
-      <blockquote data-da="Intet af det ændrer på hvordan golfere spiller, men det ændrer hvor ubesværet de kan holde styr på deres spil." data-en="None of this changes how golfers play, but it does change how effortlessly they can stay on top of their game.">Intet af det ændrer på hvordan golfere spiller, men det ændrer hvor ubesværet de kan holde styr på deres spil.</blockquote>
-
-      <p><span data-da="Vil du vide hvordan tallet bag det hele beregnes, så har vi en enkel forklaring af" data-en="If you want to know how the number behind all this is worked out, we have a simple explanation of">Vil du vide hvordan tallet bag det hele beregnes, så har vi en enkel forklaring af</span> <a href="/saadan-fungerer-whs-handicap" data-da="hvordan WHS-handicappet fungerer" data-en="how the WHS handicap works">hvordan WHS-handicappet fungerer</a><span data-da=", og en guide til" data-en=", and a guide to">, og en guide til</span> <a href="/officielt-handicap-i-danmark" data-da="hvordan du får et officielt handicap i Danmark" data-en="how to get an official handicap in Denmark">hvordan du får et officielt handicap i Danmark</a><span data-da="." data-en=".">.</span></p>
-
-      <h2 data-da="Forstå hvordan golfere opfører sig i dag" data-en="Understanding how golfers behave today">Forstå hvordan golfere opfører sig i dag</h2>
-      <p data-da="De fleste golfere bruger allerede flere værktøjer uden at tænke over det. De tjekker måske handicap ét sted, registrerer statistik et andet, skriver med venner i en gruppechat og deler højdepunkter på en social platform. Det der mangler, er ét sted der samler de vaner på en enkel, naturlig måde. Den integration begynder at skabe det sted. Ved at parre officielle scoringsdata med et socialt miljø designet ud fra hvordan golfere rent faktisk opfører sig, bliver Golfsocial et samlingspunkt der afspejler det golfere har forsøgt at stykke sammen på egen hånd." data-en="Most golfers already use multiple tools without thinking about it. They might check handicaps in one place, track stats in another, message friends in a group chat, and share highlights on a social platform. What is missing is a single place that brings these behaviours together in a simple, natural way. This integration begins to create that space. By pairing official scoring data with a social environment designed around real golfer behaviour, Golfsocial becomes a hub that reflects what golfers have been trying to piece together on their own.">De fleste golfere bruger allerede flere værktøjer uden at tænke over det. De tjekker måske handicap ét sted, registrerer statistik et andet, skriver med venner i en gruppechat og deler højdepunkter på en social platform. Det der mangler, er ét sted der samler de vaner på en enkel, naturlig måde. Den integration begynder at skabe det sted. Ved at parre officielle scoringsdata med et socialt miljø designet ud fra hvordan golfere rent faktisk opfører sig, bliver Golfsocial et samlingspunkt der afspejler det golfere har forsøgt at stykke sammen på egen hånd.</p>
-
-      <h2 data-da="Teknologiens rolle i moderne golf" data-en="The role of technology in modern golf">Teknologiens rolle i moderne golf</h2>
-      <p data-da="Teknologien har altid skubbet spillet fremad, fra nyt udstyr til digitale afstandsmålere. Den næste bølge af fremskridt sker i softwaren. Golfere vil have værktøjer der føles lette, hjælpsomme og intuitive. Værktøjer der løfter runden uden at distrahere fra den, og som hjælper dig med at holde kontakten uden at det føles som arbejde. Golfsocials tilgang er at bygge teknologi der ligger stille i baggrunden, samtidig med at den muliggør rigere samspil, nemmere score-tracking og mere meningsfulde forbindelser." data-en="Technology has always moved the game forward, from equipment innovations to digital rangefinders. The next wave of progress is happening in software. Golfers want tools that feel light, supportive, and intuitive. Tools that enhance the round without distracting from it, and that help you stay connected without feeling like work. Golfsocial’s approach is to build technology that sits quietly in the background while enabling richer interactions, easier score tracking, and more meaningful connections.">Teknologien har altid skubbet spillet fremad, fra nyt udstyr til digitale afstandsmålere. Den næste bølge af fremskridt sker i softwaren. Golfere vil have værktøjer der føles lette, hjælpsomme og intuitive. Værktøjer der løfter runden uden at distrahere fra den, og som hjælper dig med at holde kontakten uden at det føles som arbejde. Golfsocials tilgang er at bygge teknologi der ligger stille i baggrunden, samtidig med at den muliggør rigere samspil, nemmere score-tracking og mere meningsfulde forbindelser.</p>
-
-      <h2 data-da="Vejen frem" data-en="Looking ahead">Vejen frem</h2>
-      <p data-da="Forholdet mellem Golfsocial og DGU er udtryk for et gradvist skifte mod et mere integreret golf-økosystem. Det peger mod en fremtid hvor teknologien støtter spillets flow i stedet for at afbryde det, og hvor fællesskabet bliver i centrum. Efterhånden som de funktioner rulles ud, kan golfere forvente en mere gnidningsfri digital oplevelse bygget på pålidelige data og designet ud fra de helt almindelige øjeblikke på banen. Golfsocial bliver ved med at udvikle sig, og det samarbejde er én brik i en bredere bevægelse mod en mere sammenhængende og forbundet fremtid for spillet." data-en="The Golfsocial and DGU relationship represents a gradual shift toward a more integrated golf ecosystem. It points to a future where technology supports the flow of the game instead of interrupting it, and where community stays at the centre. As these features roll out, golfers can expect a smoother digital experience built on reliable data and designed around real, everyday moments on the course. Golfsocial will keep evolving, and this collaboration is one piece of a broader movement toward a more cohesive and connected future for the game.">Forholdet mellem Golfsocial og DGU er udtryk for et gradvist skifte mod et mere integreret golf-økosystem. Det peger mod en fremtid hvor teknologien støtter spillets flow i stedet for at afbryde det, og hvor fællesskabet bliver i centrum. Efterhånden som de funktioner rulles ud, kan golfere forvente en mere gnidningsfri digital oplevelse bygget på pålidelige data og designet ud fra de helt almindelige øjeblikke på banen. Golfsocial bliver ved med at udvikle sig, og det samarbejde er én brik i en bredere bevægelse mod en mere sammenhængende og forbundet fremtid for spillet.</p>
-
-      <p><span data-da="Det mest håndgribelige af det hele er" data-en="The most tangible piece of all this is">Det mest håndgribelige af det hele er</span> <a href="/golfsocial-sync-dgu" data-da="Golfsocial Sync, hvor en tællende DGU-runde lander klar til at dele" data-en="Golfsocial Sync, where a counting DGU round lands ready to share">Golfsocial Sync, hvor en tællende DGU-runde lander klar til at dele</a><span data-da=". Og når runden er registreret, lever snakken om den videre i" data-en=". And once the round is recorded, the conversation about it lives on in">. Og når runden er registreret, lever snakken om den videre i</span> <a href="/we-made-threads-for-your-groups" data-da="Threads til dine grupper" data-en="Threads for your groups">Threads til dine grupper</a><span data-da="." data-en=".">.</span></p>
-
-      <!-- « EDIT » closing download banner (Figma node 249:324) -->
-      <div class="appbanner">
-        <img loading="lazy" decoding="async" class="appbanner__bg" src="images/app-banner.webp" alt="" />
-        <img loading="lazy" decoding="async" class="appbanner__logo" src="images/logo.svg" alt="Golfsocial" />
-        <div class="badges appbanner__badges">
-          <a href="https://apps.apple.com/app/apple-store/id6743446900?pt=125766814&ct=web_download&mt=8" target="_blank" rel="noopener" class="badge" aria-label="Download on the App Store"><svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="120" height="40" rx="7" fill="#FFFFFF"/><g fill="#16221F"><path d="M26.04 19.95c-.02-2.05.92-3.6 2.81-4.74-1.06-1.51-2.66-2.34-4.76-2.5-1.99-.16-4.17 1.16-4.97 1.16-.84 0-2.77-1.1-4.29-1.1-3.12.05-6.45 2.49-6.45 7.44 0 1.47.27 2.99.81 4.57.72 2.07 3.32 7.13 6.03 7.05 1.42-.04 2.42-1.01 4.26-1.01 1.79 0 2.71 1.01 4.29 1.01 2.73-.04 5.08-4.64 5.77-6.71-3.66-1.72-3.5-5.05-3.5-5.17zm-3.17-9.22c1.53-1.82 1.39-3.48 1.35-4.07-1.36.08-2.93.92-3.83 1.97-.98 1.11-1.56 2.49-1.44 4.04 1.47.11 2.81-.64 3.92-1.94z"/><text x="38" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.2">Download on the</text><text x="38" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">App Store</text></g></svg></a>
-          <a href="https://play.google.com/store/apps/details?id=com.golfsocialapp.production&referrer=utm_source%3Dgolfsocial.club%26utm_medium%3Dwebsite%26utm_campaign%3Dweb_download" target="_blank" rel="noopener" class="badge" aria-label="Get it on Google Play"><svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="135" height="40" rx="7" fill="#FFFFFF"/><g transform="translate(10,9)"><path d="M1.5 0.6 L17.8 11.5 L1.5 22.4 Z" fill="#16221F"/></g><g fill="#16221F"><text x="36" y="16" font-family="Helvetica,Arial,sans-serif" font-size="7" font-weight="400" letter-spacing="0.4">Get it on</text><text x="36" y="30" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="600" letter-spacing="-0.3">Google Play</text></g></svg></a>
-        </div>
-      </div>
-
-      <div class="article__related">
-        <p class="article__related-label" data-da="Læs også" data-en="Read next">Læs også</p>
-        <ul>
-          <li><a href="/golfsocial-sync-dgu" data-da="Golfsocial Sync: din DGU-runde klar til at dele" data-en="Golfsocial Sync: your DGU round, ready to share">Golfsocial Sync: din DGU-runde klar til at dele</a></li>
-          <li><a href="/saadan-fungerer-whs-handicap" data-da="Sådan fungerer WHS-handicap" data-en="How the WHS handicap works">Sådan fungerer WHS-handicap</a></li>
-          <li><a href="/officielt-handicap-i-danmark" data-da="Sådan får du et officielt handicap i Danmark" data-en="How to get an official handicap in Denmark">Sådan får du et officielt handicap i Danmark</a></li>
-          <li><a href="/saadan-registrerer-du-en-taellende-runde" data-da="Sådan registrerer du en tællende runde" data-en="How to register a counting round">Sådan registrerer du en tællende runde</a></li>
-          <li><a href="/we-made-threads-for-your-groups" data-da="Vi lavede Threads til dine grupper" data-en="We made Threads for your groups">Vi lavede Threads til dine grupper</a></li>
-        </ul>
-      </div>
-
-      <!-- ╰────────────────────────── CONTENT END ──────────────────────────╯ -->
     </div>
-
-    <div class="article__foot">
-      <a class="article__back" href="/alle-artikler" data-da="Tilbage til alle artikler" data-en="Back to all articles">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Tilbage til alle artikler
-      </a>
+    <div class="lp-stage lp-stage--dgu2">
+      <figure class="lp-float lp-phone lp-d2__phone">
+          <span class="lp-phone__body"><span class="lp-film lp-phone__screen"><img fetchpriority="high" src="images/lp-d2-forbind.webp" width="860" height="1864" alt="Forbind med Dansk Golf Union in Golfsocial: you approve the connection, the app connects, fetches your last 20 rounds and syncs your handicap, and ends on Du er forbundet med DGU" /><video class="lp-film__v" src="images/lp-d2-forbind.mp4" width="860" height="1864" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video></span></span>
+        </figure>
+      <figure class="lp-float lp-float--near lp-d2__share">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-d2-del.webp" width="1290" height="1178" alt="Hvad vil du dele? in Golfsocial: Del runde fra DGU at the top with the DGU mark and 3 nye, above Score Live and Runde" /></span>
+        </figure>
+      <figure class="lp-float lp-float--near lp-d2__hcp">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-dgu-kurve.webp" width="1162" height="566" alt="The handicap card in Golfsocial: a curve over the latest rounds ending at handicap 15.0, down 1.2" /></span>
+        </figure>
     </div>
-  </article>
+  </section>
+
+  <!-- ════════════════════ 2 · STEPS : the deep green plane ════════════════════ -->
+  <section class="lp-steps" id="saadan">
+    <div class="lp-steps__head">
+      <h2 class="lp-steps__title" data-da="Sådan bruger du Golfsocial med DGU" data-en="How to use Golfsocial with DGU">Sådan bruger du Golfsocial med DGU</h2>
+      <p class="lp-steps__lead" data-da="Én gang forbundet, så kører resten af sig selv." data-en="Connect once, and the rest runs by itself.">Én gang forbundet, så kører resten af sig selv.</p>
+    </div>
+    <ol class="lp-steps__list">
+      <li data-da="Hent Golfsocial i App Store, og opret dig." data-en="Download Golfsocial from the App Store and create your profile.">Hent Golfsocial i App Store, og opret dig.</li>
+      <li data-da="Tryk Forbind med DGU, og log ind. Så henter appen dit handicap og dine runder." data-en="Tap Forbind med DGU (connect with DGU) and log in. Then the app fetches your handicap and your rounds.">Tryk Forbind med DGU, og log ind. Så henter appen dit handicap og dine runder.</li>
+      <li data-da="Med DGU Sync kommer dine runder fra DGU ind i appen. Tryk på bolden, og vælg Del runde fra DGU." data-en="With DGU Sync your rounds from DGU come into the app. Tap the ball and pick Del runde fra DGU (share round from DGU).">Med DGU Sync kommer dine runder fra DGU ind i appen. Tryk på bolden, og vælg Del runde fra DGU.</li>
+      <li data-da="Fører du scoren i Golfsocial, vælger du en medspiller som markør. Når markøren har godkendt, tæller runden med i dit DGU-handicap." data-en="If you keep score in Golfsocial, pick a playing partner as your marker. Once the marker has approved, the round counts towards your DGU handicap.">Fører du scoren i Golfsocial, vælger du en medspiller som markør. Når markøren har godkendt, tæller runden med i dit DGU-handicap.</li>
+      <li data-da="Dit handicap opdateres fra DGU, og du følger det runde for runde under Udvikling." data-en="Your handicap updates from DGU, and you follow it round by round under Udvikling (development).">Dit handicap opdateres fra DGU, og du følger det runde for runde under Udvikling.</li>
+    </ol>
+  </section>
+
+  <!-- ════════════════════ 3 · ROUNDS FROM GOLFBOX : in the white ════════════════════ -->
+  <section class="lp-moment">
+    <div class="lp-moment__text">
+      <h2 class="lp-moment__title" data-da="DGU Sync: dine runder fra DGU er klar til at dele" data-en="DGU Sync: your rounds from DGU are ready to share">DGU Sync: dine runder fra DGU er klar til at dele</h2>
+      <p class="lp-moment__p" data-da="Runder, du har registreret hos DGU, kommer ind i Golfsocial med DGU Sync. Du ser scorekortet, trykker Post på Golfsocial, og vennerne kan følge med. Runden tæller ikke dobbelt, for den ligger allerede hos DGU." data-en="Rounds you registered at DGU come into Golfsocial with DGU Sync. You see the scorecard, tap Post på Golfsocial, and your friends can follow along. The round does not count twice, because it is already at DGU.">Runder, du har registreret hos DGU, kommer ind i Golfsocial med DGU Sync. Du ser scorekortet, trykker Post på Golfsocial, og vennerne kan følge med. Runden tæller ikke dobbelt, for den ligger allerede hos DGU.</p>
+    </div>
+    <div class="lp-moment__visual lp-moment__visual--sync">
+      <figure class="lp-float lp-float--fade lp-sync__sheet">
+          <span class="lp-float__in lp-film"><img loading="lazy" decoding="async" src="images/lp-d2-hent.webp" width="860" height="1490" alt="A round from DGU in Golfsocial: Godt spillet, Henrik, Henter din runde fra DGU fills up, and the round at Søllerød appears with 85 strokes, 24 points and the full scorecard, ready to share with friends" /><video class="lp-film__v" src="images/lp-d2-hent2.mp4" width="860" height="1490" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video></span>
+        </figure>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 4 · COUNTING ROUNDS : the paper plane ════════════════════ -->
+  <section class="lp-group">
+    <div class="lp-moment__text">
+      <h2 class="lp-moment__title" data-da="Tællende runder går den anden vej" data-en="Counting rounds go the other way">Tællende runder går den anden vej</h2>
+      <p class="lp-moment__p" data-da="Fører du scoren i Golfsocial, kan runden tælle med i dit DGU-handicap. Vælg en medspiller som markør. Når markøren har godkendt scorekortet, sendes runden til DGU." data-en="If you keep score in Golfsocial, the round can count towards your DGU handicap. Pick a playing partner as your marker. Once the marker has approved the scorecard, the round goes to DGU.">Fører du scoren i Golfsocial, kan runden tælle med i dit DGU-handicap. Vælg en medspiller som markør. Når markøren har godkendt scorekortet, sendes runden til DGU.</p>
+      <a class="lp-link lp-moment__link" href="/registrer-din-runde-til-dgu-handicappet" data-da="Sådan registrerer du en tællende runde" data-en="How to register a counting round">Sådan registrerer du en tællende runde</a>
+    </div>
+    <div class="lp-group__visual lp-group__visual--approve">
+      <figure class="lp-float lp-float--fade lp-approve__sheet">
+          <span class="lp-float__in"><img loading="lazy" decoding="async" src="images/lp-dgu-ark.webp" width="1290" height="2346" alt="Godkend score in Golfsocial: the marker sees the scorecard from Værløse Golfklub with 85 strokes and 38 points and approves it" /></span>
+        </figure>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 5 · THE FACTS : one per line ════════════════════ -->
+  <section class="lp-facts">
+    <div class="lp-facts__head">
+      <h2 class="lp-facts__title" data-da="Golfsocial og DGU" data-en="Golfsocial and DGU">Golfsocial og DGU</h2>
+    </div>
+    <dl class="lp-facts__list">
+      <div class="lp-facts__row"><dt data-da="Aftale" data-en="Agreement">Aftale</dt><dd data-da="Officiel aftale med Dansk Golf Union" data-en="Official agreement with the Danish Golf Union">Officiel aftale med Dansk Golf Union</dd></div>
+      <div class="lp-facts__row"><dt data-da="Handicap" data-en="Handicap">Handicap</dt><dd data-da="Hentes fra DGU og holdes opdateret" data-en="Fetched from DGU and kept up to date">Hentes fra DGU og holdes opdateret</dd></div>
+      <div class="lp-facts__row"><dt data-da="DGU Sync" data-en="DGU Sync">DGU Sync</dt><dd data-da="Dine runder fra DGU kommer ind i appen, klar til at dele" data-en="Your rounds from DGU come into the app, ready to share">Dine runder fra DGU kommer ind i appen, klar til at dele</dd></div>
+      <div class="lp-facts__row"><dt data-da="Tællende runder" data-en="Counting rounds">Tællende runder</dt><dd data-da="Sendes til DGU, når markøren har godkendt" data-en="Sent to DGU once the marker has approved">Sendes til DGU, når markøren har godkendt</dd></div>
+      <div class="lp-facts__row"><dt data-da="Tæller ikke dobbelt" data-en="No double counting">Tæller ikke dobbelt</dt><dd data-da="Deler du en runde i Golfsocial, tæller den kun én gang til dit handicap" data-en="When you share a round in Golfsocial, it counts only once towards your handicap">Deler du en runde i Golfsocial, tæller den kun én gang til dit handicap</dd></div>
+      <div class="lp-facts__row"><dt data-da="Pris" data-en="Price">Pris</dt><dd data-da="Gratis" data-en="Free">Gratis</dd></div>
+    </dl>
+  </section>
+
+  <!-- ════════════════════ 5 · PROOF : a photo, and the one number ════════════════════ -->
+  <section class="lp-proof">
+    <figure class="lp-proof__photo">
+      <img loading="lazy" decoding="async" src="images/lp-d2-makkere.webp" width="1400" height="1750" alt="Two friends on a tee box in the sun: one swings, the other waits with his driver, with a path and pine trees behind them" />
+    </figure>
+    <div class="lp-proof__text">
+      <h2 class="lp-proof__title" data-da="Omkring 600 golfere har logget næsten 800 runder i Golfsocial." data-en="About 600 golfers have logged almost 800 rounds in Golfsocial.">Omkring 600 golfere har logget næsten 800 runder i Golfsocial.</h2>
+      <p class="lp-proof__p" data-da="Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet." data-en="Golfsocial is free to play with your friends: live score, the game formats, the groups and the feed.">Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet.</p>
+      <div class="lp-proof__cta">
+        <a class="lp-pill" href="/hent?c=web_dgu_samarbejde"><span data-da="Hent Golfsocial" data-en="Get Golfsocial">Hent Golfsocial</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="lp-link" href="https://apps.apple.com/app/apple-store/id6743446900?pt=125766814&ct=web_dgu_samarbejde&mt=8" target="_blank" rel="noopener" data-da="Hent i App Store" data-en="Get it on the App Store">Hent i App Store</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 6 · QUESTIONS AND ANSWERS (the v12 FAQ block) ════════════════════ -->
+  <section class="faq" id="faq">
+    <div class="faq__head">
+      <h2 class="faq__title" data-da="Spørgsmål og svar" data-en="Questions and answers">Spørgsmål og svar</h2>
+    </div>
+    <div class="faq__list">
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Har Golfsocial en aftale med DGU?" data-en="Does Golfsocial have an agreement with DGU?">Har Golfsocial en aftale med DGU?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Ja. Golfsocial har en officiel aftale med Dansk Golf Union. Derfor kan appen hente dit handicap og dine runder fra DGU." data-en="Yes. Golfsocial has an official agreement with the Danish Golf Union. That is why the app can fetch your handicap and your rounds from DGU.">Ja. Golfsocial har en officiel aftale med Dansk Golf Union. Derfor kan appen hente dit handicap og dine runder fra DGU.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvordan forbinder jeg Golfsocial med DGU?" data-en="How do I connect Golfsocial with DGU?">Hvordan forbinder jeg Golfsocial med DGU?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Tryk Forbind med DGU i appen, og log ind. Så henter appen dit handicap og dine runder." data-en="Tap Forbind med DGU in the app and log in. Then the app fetches your handicap and your rounds.">Tryk Forbind med DGU i appen, og log ind. Så henter appen dit handicap og dine runder.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Er mit handicap i Golfsocial det samme som hos DGU?" data-en="Is my handicap in Golfsocial the same as at DGU?">Er mit handicap i Golfsocial det samme som hos DGU?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Ja. Appen henter dit handicap fra DGU og holder det opdateret." data-en="Yes. The app fetches your handicap from DGU and keeps it up to date.">Ja. Appen henter dit handicap fra DGU og holder det opdateret.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvad er DGU Sync?" data-en="What is DGU Sync?">Hvad er DGU Sync?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="DGU Sync henter de runder, du har registreret hos DGU, ind i Golfsocial. De ligger klar under Del runde fra DGU. Tryk Del runde, så kommer runden i feedet med scorekortet." data-en="DGU Sync brings the rounds you registered at DGU into Golfsocial. They are ready under Del runde fra DGU. Tap Del runde, and the round lands in the feed with the scorecard.">DGU Sync henter de runder, du har registreret hos DGU, ind i Golfsocial. De ligger klar under Del runde fra DGU. Tryk Del runde, så kommer runden i feedet med scorekortet.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Tæller en runde dobbelt, hvis jeg deler den i Golfsocial?" data-en="Does a round count twice if I share it in Golfsocial?">Tæller en runde dobbelt, hvis jeg deler den i Golfsocial?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Nej. Runden ligger allerede hos DGU. Når du deler den i Golfsocial, ser dine venner den, og den tæller stadig kun én gang til dit handicap." data-en="No. The round is already at DGU. When you share it in Golfsocial, your friends see it, and it still counts only once towards your handicap.">Nej. Runden ligger allerede hos DGU. Når du deler den i Golfsocial, ser dine venner den, og den tæller stadig kun én gang til dit handicap.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Kan jeg registrere en tællende runde i Golfsocial?" data-en="Can I register a counting round in Golfsocial?">Kan jeg registrere en tællende runde i Golfsocial?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Ja. Vælg en medspiller som markør, og gem runden. Når markøren har godkendt, tæller runden med i dit DGU-handicap." data-en="Yes. Pick a playing partner as your marker and save the round. Once the marker has approved, the round counts towards your DGU handicap.">Ja. Vælg en medspiller som markør, og gem runden. Når markøren har godkendt, tæller runden med i dit DGU-handicap.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvad koster det?" data-en="What does it cost?">Hvad koster det?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet." data-en="Golfsocial is free to play with your friends: live score, the game formats, the groups and the feed.">Golfsocial er gratis at spille med vennerne: live score, spilleformerne, grupperne og feedet.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q"><span class="faq__q-text" data-da="Hvor mange bruger Golfsocial?" data-en="How many people use Golfsocial?">Hvor mange bruger Golfsocial?</span><svg class="faq__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5l7 7 7-7"/></svg></summary>
+        <p class="faq__a" data-da="Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026)." data-en="About 600 golfers have logged almost 800 rounds in Golfsocial (November 2026).">Omkring 600 golfere har logget næsten 800 runder i Golfsocial (november 2026).</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ════════════════════ 7 · READ NEXT ════════════════════ -->
+  <nav class="lp-related" aria-label="Læs også">
+    <p class="lp-related__label" data-da="Læs også" data-en="Read next">Læs også</p>
+    <ul>
+      <li><a href="/registrer-din-runde-til-dgu-handicappet" data-da="Kan jeg registrere min runde til DGU-handicappet i en app?" data-en="Can I register my round to my DGU handicap in an app?">Kan jeg registrere min runde til DGU-handicappet i en app?</a></li>
+      <li><a href="/golfsocial-sync-dgu" data-da="Golfsocial Sync: din DGU-runde klar til at dele" data-en="Golfsocial Sync: your DGU round ready to share">Golfsocial Sync: din DGU-runde klar til at dele</a></li>
+      <li><a href="/se-dine-runder-og-din-udvikling" data-da="Kan jeg se mine runder og min udvikling samlet i en app?" data-en="Can I see my rounds and my development in one app?">Kan jeg se mine runder og min udvikling samlet i en app?</a></li>
+      <li><a href="/saadan-fungerer-whs-handicap" data-da="Sådan fungerer WHS-handicap" data-en="How the WHS handicap works">Sådan fungerer WHS-handicap</a></li>
+      <li><a href="/officielt-handicap-i-danmark" data-da="Sådan får du et officielt handicap i Danmark" data-en="How to get an official handicap in Denmark">Sådan får du et officielt handicap i Danmark</a></li>
+    </ul>
+  </nav>
+  </main>
 
   <!-- ════════════════════ NEWSLETTER (reused from the homepage, do not edit) ════════════════════ -->
   <section class="newsband">
@@ -228,7 +291,7 @@
           <p class="news__sub" data-da="Ingen støj. Kun når vi har noget at fortælle." data-en="No noise. Only the occasional read.">Ingen støj. Kun når vi har noget at fortælle.</p>
         </div>
         <form class="news__form" data-ml-form="165875690760046481" novalidate>
-          <input class="news__email" type="email" name="fields[email]" placeholder="dig@email.com" data-da="dig@email.com" data-en="you@email.com" aria-label="Email address" required />
+          <input class="news__email" type="email" name="fields[email]" placeholder="you@email.com" data-da="dig@email.com" aria-label="Email address" required />
           <button class="news__btn" type="submit" data-da="Tilmeld" data-en="Subscribe">Tilmeld</button>
           <span class="news__confirm" aria-hidden="true">
             <span class="news__confirm-check">

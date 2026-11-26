@@ -613,6 +613,46 @@
 @keyframes lpCamDone { 0%, 70.5% { opacity: 0; transform: scale(0.6); } 72.5% { opacity: 1; transform: scale(1); } 95%, 100% { opacity: 1; transform: scale(1); } }
 @keyframes lpCamVeil { 0% { opacity: 1; } 3% { opacity: 0; } 94% { opacity: 0; } 98%, 100% { opacity: 1; } }
 
+/* ════════════════════ PAGE : Golfsocial and DGU (dgu-collaboration) ════════════════════ */
+/* hero: the app connecting to DGU, filmed in the prototype and playing in a phone, with the DGU card
+   from the share menu and the handicap lying beside it */
+.lp-stage--dgu2 { height: 68rem; }
+.lp-d2__phone { top: 0; right: 3rem; width: 31rem; }
+.lp-d2__share { top: 38rem; left: 0; width: 33rem; z-index: 3; }
+.lp-d2__hcp { top: 7rem; left: 1rem; width: 27rem; }
+.lp-d2__share .lp-float__in { border-radius: 2.6rem; }
+.js .lp-d2__phone { animation: lpRise 0.95s var(--ease-out) 0.1s both; }
+.js .lp-d2__share { animation: lpLand 0.7s var(--ease-out) 0.7s both; }
+.js .lp-d2__hcp { animation: lpLand 0.7s var(--ease-out) 1s both; }
+
+/* a film from the prototype: the poster is the image underneath, the video plays on top of it */
+.lp-film { position: relative; display: block; }
+.lp-film img { display: block; width: 100%; height: auto; }
+.lp-film__v { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
+
+/* a phone, drawn in CSS around a 430 x 932 pt screen; --u is one pt of the phone (430 + 2 x 12 bezel) */
+.lp-phone { container-type: inline-size; }
+.lp-phone__body {
+  --u: calc(100cqw / 454);
+  position: relative;
+  display: block;
+  padding: calc(var(--u) * 12);
+  border-radius: calc(var(--u) * 67);
+  background: #121413;
+  box-shadow: 0 3rem 6rem rgba(16, 36, 31, 0.24), 0 0.6rem 1.6rem rgba(16, 36, 31, 0.1), inset 0 0 0 calc(var(--u) * 2) #2a2d2c;
+}
+.lp-phone__screen { border-radius: calc(var(--u) * 55); overflow: hidden; background: #1f3a30; isolation: isolate; }
+.lp-phone__body::after { content: ""; position: absolute; left: 50%; top: calc(var(--u) * 23); width: calc(var(--u) * 122); height: calc(var(--u) * 36); border-radius: 99rem; background: #000; transform: translateX(-50%); }
+
+/* a round from GolfBox, ready to share */
+.lp-moment__visual--sync { height: 74rem; }
+.lp-sync__sheet { top: 0; left: 11rem; width: 42rem; height: 72rem; --lp-fade: 70%; }
+
+/* counting rounds: the marker approves */
+.lp-group__visual--approve { height: 70rem; }
+.lp-approve__sheet { top: 0; left: 0; width: 46rem; height: 70rem; --lp-fade: 70%; }
+.lp-moment__link { display: inline-block; margin-top: 3rem; }
+
 /* ════════════════════ TABLET & DOWN : one column ════════════════════ */
 @media (max-width: 1024px) {
   .lp-hero { flex-direction: column; align-items: flex-start; gap: 7rem; margin-top: 6rem; }
@@ -640,6 +680,8 @@
 
   .lp-photo { left: 18rem; }
   .lp-photo--indoor { left: 14rem; }
+  .lp-group__visual--approve { width: 46rem; }
+  .lp-stage--dgu2 { height: 70rem; }
   .lp-group__visual--bane { width: 50rem; max-width: 100%; }
   .lp-read { flex-direction: column; align-items: flex-start; gap: 5rem; margin-top: 13rem; padding: 8rem 6rem 7rem; }
   .lp-read__text { flex: 0 0 auto; max-width: 64rem; }
@@ -796,6 +838,17 @@
   .lp-lists__a { width: 24rem; }
   .lp-lists__b { top: 19rem; left: auto; right: 0; width: 24rem; }
 
+  .lp-stage--dgu2 { height: 48rem; }
+  .lp-d2__phone { right: 0; width: 22rem; }
+  .lp-d2__share { top: 30rem; width: 21rem; }
+  .lp-d2__hcp { top: 3rem; left: 0; width: 16rem; }
+  .lp-d2__share .lp-float__in { border-radius: 1.8rem; }
+
+  .lp-moment__visual--sync { height: 50rem; }
+  .lp-sync__sheet { left: auto; right: 0; width: 29rem; height: 50rem; }
+  .lp-approve__sheet { width: 30.6rem; height: 50rem; }
+  .lp-moment__link { margin-top: 2.2rem; }
+
   .lp-read { margin-top: 9rem; padding: 5.4rem 2.4rem 4rem; gap: 3.6rem; border-radius: 2.2rem; }
   .lp-read__title { font-size: 3.4rem; line-height: 3.7rem; letter-spacing: -0.09rem; }
   .lp-read__lead { margin-top: 2rem; font-size: 1.9rem; line-height: 2.9rem; }
@@ -830,7 +883,8 @@
   .js .lp-photo, .js .lp-ph__note, .js .lp-ph__board, .js .lp-ph__curve,
   .js .lp-scan__cam, .js .lp-scan__grid,
   .js .lp-udv__curve, .js .lp-udv__round, .js .lp-udv__rank, .js .lp-udv__nums,
-  .js .lp-in__rows, .js .lp-in__post { animation: none; }
+  .js .lp-in__rows, .js .lp-in__post, .js .lp-d2__phone, .js .lp-d2__share, .js .lp-d2__hcp { animation: none; }
+  .lp-film__v { display: none; }
   .lp-cam__phone *, .lp-cam__scene { animation: none !important; }
   .lp-cam__scene { transform: none; filter: none; }
   .lp-pill, .lp-pill svg { transition: none; }
