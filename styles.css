@@ -1359,3 +1359,6 @@ p, li { text-wrap: pretty; }
 @media (max-width: 600px) {
   .hero__title { font-size: 4.6rem; line-height: 5rem; letter-spacing: -0.23rem; }
 }
+/* Forsidens DGU-telefoner: "Forbind med DGU" har samme hjørner og tynde sorte
+   kant som de to andre (Michel 27/11) */
+.dgu__tile--connect { border-radius: 3rem; border: 0.1rem solid var(--black); }
