@@ -1348,3 +1348,14 @@ html { scroll-behavior: smooth; }
   .news__confirm-circle, .news__confirm-tick { stroke-dashoffset: 0; animation: none; }
   .news__confirm-text { opacity: 1; transform: none; animation: none; }
 }
+
+/* ── Tilføjet 27/11-2026 (Michel) ── */
+/* Ingen horeunger: overskrifter fordeler ordene jævnt over linjerne, og
+   brødtekst lader aldrig et enkelt ord stå alene på sidste linje */
+h1, h2, h3 { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+/* Forsidens overskrift "Golf out loud!": kort, så den må fylde, og tæt sat */
+.hero__title { font-size: 8rem; line-height: 8.4rem; letter-spacing: -0.4rem; }
+@media (max-width: 600px) {
+  .hero__title { font-size: 4.6rem; line-height: 5rem; letter-spacing: -0.23rem; }
+}
