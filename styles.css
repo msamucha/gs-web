@@ -94,18 +94,12 @@ a { color: inherit; text-decoration: none; }
   padding: 0 var(--gut-wide);
 }
 
-/* Ingen horeunger: overskrifter fordeler ordene jævnt over linjerne, og
-   brødtekst lader aldrig et enkelt ord stå alene på sidste linje (Michel 27/11) */
-h1, h2, h3 { text-wrap: balance; }
-p, li { text-wrap: pretty; }
-
 .hero__title {
   max-width: 100.8rem;
   font-weight: 500;
-  /* Kort overskrift, så den må fylde (Michel 27/11: "Større") */
-  font-size: 8rem;
-  line-height: 8.4rem;
-  letter-spacing: -0.4rem;
+  font-size: 4.4rem;
+  line-height: 5.1rem;
+  letter-spacing: -0.1rem;
   color: var(--black);
 }
 
@@ -1165,7 +1159,7 @@ p, li { text-wrap: pretty; }
   .masthead__logo { width: 13rem; height: 2.3rem; }
   .masthead__nav { gap: 2rem; }
   .hero { margin-top: 8rem; gap: 2.6rem; }
-  .hero__title { font-size: 4.6rem; line-height: 5rem; letter-spacing: -0.23rem; max-width: 100%; }
+  .hero__title { font-size: 3.4rem; line-height: 3.9rem; letter-spacing: -0.08rem; max-width: 100%; }
   .hero__sub { font-size: 1.7rem; line-height: 2.3rem; max-width: 100%; }
   .badge svg { height: 4.4rem; }
 
@@ -1353,4 +1347,15 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   .news__confirm-circle, .news__confirm-tick { stroke-dashoffset: 0; animation: none; }
   .news__confirm-text { opacity: 1; transform: none; animation: none; }
+}
+
+/* ── Tilføjet 27/11-2026 (Michel) ── */
+/* Ingen horeunger: overskrifter fordeler ordene jævnt over linjerne, og
+   brødtekst lader aldrig et enkelt ord stå alene på sidste linje */
+h1, h2, h3 { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+/* Forsidens overskrift "Golf out loud!": kort, så den må fylde, og tæt sat */
+.hero__title { font-size: 8rem; line-height: 8.4rem; letter-spacing: -0.4rem; }
+@media (max-width: 600px) {
+  .hero__title { font-size: 4.6rem; line-height: 5rem; letter-spacing: -0.23rem; }
 }
