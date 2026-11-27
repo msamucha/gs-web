@@ -52,6 +52,7 @@
   font-size: 2rem;
   line-height: 3.2rem;
   color: rgba(255, 255, 255, 0.84);
+  text-wrap: pretty;   /* no single word alone on the last line */
 }
 
 .acta .acta__cta {
