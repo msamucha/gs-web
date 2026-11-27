@@ -1,0 +1,118 @@
+/* ════════════════════════════════════════════════════════════
+   Golfsocial — the app box inside an article  (added 2026-11-27)
+
+   Michel 27/11-2026 about the explainer articles from the Google
+   search list: "tænk også over hvordan vi laver connection og
+   samspil med Golfsocial, så det bliver vores CTA på siderne".
+
+   One deep-green card high up in the article. It picks up the
+   article's own point and turns it into a reason to use the app:
+   text on the left, one real app part standing free on the right,
+   one pill to /hent and one text link. Loaded AFTER styles.css and
+   article.css, only on the articles that use it. The selectors
+   are scoped with .acta so they win over .article__body p / h2 / a.
+   ════════════════════════════════════════════════════════════ */
+
+.article__body .acta {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  width: calc(100vw - 2 * var(--gut-wide));
+  max-width: 116rem;
+  margin-top: 7rem;
+  padding: 6.4rem 6.4rem 6.4rem 7rem;
+  border-radius: 3rem;
+  background: #123f36;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.acta .acta__text { flex: 1 1 56rem; }
+
+.acta .acta__kicker {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.acta .acta__title {
+  margin: 1.4rem 0 0;
+  font-size: 4rem;
+  line-height: 4.6rem;
+  font-weight: 500;
+  letter-spacing: -0.08rem;
+  color: #ffffff;
+  text-wrap: balance;
+}
+
+.acta .acta__p {
+  margin: 2.2rem 0 0;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: rgba(255, 255, 255, 0.84);
+  text-wrap: pretty;   /* no single word alone on the last line */
+}
+
+.acta .acta__cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.6rem 3rem;
+  margin-top: 3.6rem;
+}
+
+.acta .acta__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  height: 5.6rem;
+  padding: 0 2.8rem;
+  border-radius: 99rem;
+  background: #ffffff;
+  color: #16221f;
+  font-size: 1.9rem;
+  font-weight: 500;
+  letter-spacing: -0.02rem;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: transform 0.25s var(--ease-out), background 0.25s var(--ease);
+}
+.acta .acta__pill:hover { background: #e8efec; transform: translateY(-0.1rem); }
+.acta .acta__pill svg { width: 1.7rem; height: 1.7rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+.acta .acta__link {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 0.45rem;
+  text-decoration-thickness: 0.08rem;
+}
+.acta .acta__link:hover { text-underline-offset: 0.7rem; }
+
+/* the app part stands free: white, rounded, soft shadow, no phone */
+.acta .acta__visual {
+  flex: 0 1 40rem;
+  margin: 0;
+}
+.acta .acta__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2.4rem;
+  background: #ffffff;
+  box-shadow: 0 2.4rem 6rem rgba(0, 0, 0, 0.28), 0 0.4rem 1.2rem rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 1024px) {
+  .article__body .acta { display: block; width: 100%; max-width: 100%; padding: 5.2rem 4.4rem; }
+  .acta .acta__visual { max-width: 44rem; margin: 4.8rem auto 0; }
+}
+@media (max-width: 600px) {
+  .article__body .acta { padding: 4.4rem 2.8rem 3.6rem; border-radius: 2.4rem; }
+  .acta .acta__title { font-size: 3rem; line-height: 3.6rem; }
+  .acta .acta__p { font-size: 1.9rem; line-height: 3rem; }
+  .acta .acta__visual { margin-top: 4rem; }
+}
