@@ -94,6 +94,11 @@ a { color: inherit; text-decoration: none; }
   padding: 0 var(--gut-wide);
 }
 
+/* Ingen horeunger: overskrifter fordeler ordene jævnt over linjerne, og
+   brødtekst lader aldrig et enkelt ord stå alene på sidste linje (Michel 27/11) */
+h1, h2, h3 { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+
 .hero__title {
   max-width: 100.8rem;
   font-weight: 500;
